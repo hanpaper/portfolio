@@ -1,0 +1,38 @@
+.visual { position: relative; }
+.visual div { height: 185px;}
+
+/** bg1 **/
+.visual div.bg1 { background: url(img_slick_1.jpg) no-repeat center / 100% auto;}
+.visual div.bg1 p { font-size: 15px; text-align: center; font-weight: bold;}
+.visual div.bg1 .text1 { opacity: 0; transform: translateX(-50px); transition: all .7s .3s;}
+.visual div.bg1.slick-active .text1 { opacity: 1; transform: translateX(0);}
+.visual div.bg1 .text2 { opacity: 0; transform: translateX(50px); transition: all .7s .6s;}
+.visual div.bg1.slick-active .text2 { opacity: 1; transform: translateX(0);}
+.visual div.bg1 .text3 { opacity: 0; transform: translateY(50px); transition: all .7s .9s;}
+.visual div.bg1.slick-active .text3 { opacity: 1; transform: translateY(0);}
+
+/** bg2 **/
+.visual div.bg2 { background: url(img_slick_2.jpg) no-repeat center / 100% auto; text-align: center;}
+.visual div.bg2 h2 { font-size: 30px; font-weight: bold; color: red; opacity: 0;}
+.visual div.bg2 .text1 { font-size: 15px; font-weight: bold; opacity: 0;}
+.visual div.bg2 .text2 { font-size: 12px; opacity: 0;}
+.visual div.bg2.slick-active h2 { animation: ani 1 .6s .5s both;}
+    /** ani라는 키프레임을 0.6초동안 0.5초뒤에 실행시킨다. both: opacity 0=>1 간뒤 멈춤 **/
+.visual div.bg2.slick-active .text1 { animation: ani 1 .6s .7s both;}
+.visual div.bg2.slick-active .text2 { animation: ani 1 .6s .9s both;}
+
+@keyframes ani {
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+}
+    /** transition remind기능 때문에 끊김 현상이 발생함 => keyframe, animation 추천 **/
+
+    
+.visual div img {width: 100%;}
+.visual button { z-index: 99; position: absolute; top: 50%; transform: translateY(-50%); width: 50px; height: 50px; border-radius: 100%; border: 1.5px solid rgba(255, 255, 255, 0.5); background-color: rgba(0, 0, 0, 0.5); font-size: 0;}
+button.slick-prev { left: 30px;}
+button.slick-prev::before { content: "\e93d"; font-family: 'xeicon'; font-size: 30px; color: white;}
+button.slick-next { right: 30px;}
+button.slick-next::before { content: "\e940"; font-family: 'xeicon'; font-size: 30px; color: white;}
+.btn_group  { margin: 40px 0; text-align: center;}
+.btn_group button { cursor: pointer; width: 70px; height: 30px; border: 1px solid gray; background-color: white;}

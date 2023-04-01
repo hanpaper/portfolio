@@ -1,0 +1,18 @@
+body { padding: 0; margin: 0;}
+
+.swiper { height: 100vh;}
+.swiper .bg1 { background: url(visual1.jpg) no-repeat center / cover;}
+.swiper .bg2 { background: url(visual2.jpg) no-repeat center / cover;}
+.swiper .bg3 { background: url(visual3.jpg) no-repeat center / cover;}
+.swiper .swiper-slide { display: flex; flex-direction: column; justify-content: center; color: #fff; line-height: 0; text-indent: 50px;}
+.swiper .swiper-slide span { opacity: 0; font-size: 25px; color:coral; font-weight: bold;}
+.swiper .swiper-slide p { opacity: 0; padding: 30px 0 10px; font-size: 35px; font-weight: bolder;}
+.swiper .swiper-slide div { opacity: 0; font-size: 25px; }
+.swiper .swiper-slide.swiper-slide-active span { animation: text .4s .2s both;}
+.swiper .swiper-slide.swiper-slide-active p { animation: text .4s .5s both;}
+.swiper .swiper-slide.swiper-slide-active div { animation: text .4s .8s both;}
+
+@keyframes text {
+    0% { opacity: 0; transform: translateY(30px);}
+    100% { opacity: 1; transform: translateY(0);}
+}

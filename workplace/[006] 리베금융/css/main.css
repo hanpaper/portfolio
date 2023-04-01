@@ -1,0 +1,226 @@
+
+/** header **/
+header { position: relative; height: 50px;}
+header h1 { text-align: center; font-size: 0.75rem; line-height: 50px;}
+header h1.hide { font-size: 0;}
+header h2.hide { font-size: 0;}
+header div { position: absolute; top: 50%; transform: translateY(-50%);}
+header div:first-of-type { left: 0.6rem;}
+header div:last-of-type { right: 0.666rem;}
+header div button,
+header div a { display: inline-block; width: 30px; height: 30px; font-size: 0; background-repeat: no-repeat; background-position: center;}
+header div button~button{ margin: 0 0 0 0.4rem; }
+header .font_type button,
+header .font_type a { padding: 20px 0 0; margin: 0 0 0 0.4rem; width: auto; height: 31px; line-height: 0.416rem; font-size: 0.416rem; background-position: center 0; color: #333; box-sizing: border-box;}
+header .font_type .btn_menu { background-size: 0.883rem auto;}
+header .font_type .btn_alarm { background-size: 1rem auto;}
+header div a.btn_back { position: relative; background-image: url(../images/ico_back.png); background-size: 0.8rem auto;}
+header div button.btn_alarm { position: relative; background-image: url(../images/ico_alarm.png); background-size: 0.644rem auto;}
+header div button.btn_alarm::before { position: absolute; content: "N"; right: 3px; top: 3px; width: 10.666px; height: 10.666px; line-height: 10.666px; border-radius: 10.666px; background-color: #FF653F; color: #fff; font-size: 5px; text-align: center; vertical-align: middle;}
+header div button.btn_search { background-image: url(../images/btn_search.png); background-size: 0.883rem auto;}
+header div a.btn_home { background-image: url(../images/ico_home.png); background-size: 0.783rem auto;}
+header div a.btn_menu { background-image: url(../images/btn_menu.png); background-size: 1rem auto;}
+header div button.btn_close { background-image: url(../images/ico_close2.png); background-size: 0.7rem auto;}
+
+
+/** page_index **/
+.index_top { padding: 0.666rem 1rem 0 1rem;}
+.index_top .top a { padding: 0 0 0 23px; line-height: 18.333px; font-size: 0.666rem; background-repeat: no-repeat; background-position: 0 center;}
+.index_top .top a~a { margin: 0 0 0 1.166rem;}
+.index_top .top1 { background-image: url(../images/ico_index_top1.png); background-size: auto 18px;}
+.index_top .top2 { background-image: url(../images/ico_index_top2.png); background-size: auto 14px;}
+.index_top .top3 { background-image: url(../images/ico_index_top3.png); background-size: auto 16.89px;}
+.index_top .account { position: relative;}
+.index_top .account a { display: block; margin: 1.238rem 0 1.233rem ; padding: 0.95rem 0 0.8rem 1.083rem; border: 0.666px solid #E3E4E6; border-radius: 17.666px;}
+.index_top .account a div:first-child em { display: block; font-size: 0.633rem; line-height: 1.083rem; }
+.index_top .account a div:first-child i { padding: 0 0 0 0.483rem; }
+.index_top .account a div:last-child { margin: 0.266rem 0 0 ; height: 1.6rem; line-height: 1.6rem;}
+.index_top .account a div:last-child b { display: inline-block; font-size: 1.083rem; font-weight: 400; vertical-align: middle;}
+.index_top .account a div:last-child span { display: inline-block; margin: 0 0 0 0.383rem; padding: 0 0.316rem; line-height: 0.75rem; border-radius: 0.5rem; font-size: 0.5rem; border: 0.666px solid #D0D3D6; color: #333; font-weight: 400; vertical-align: middle;}
+.index_top .account button.btn_etc { position: absolute; right: 0.75rem; top: 1.23rem; width: 14px; height: 14px; background: url(../images/ico_index_menu.png) no-repeat center / auto 14px;}
+
+.index_list { padding: 0.65rem 1.1rem 0; background-color: #F2F3F7;}
+.index_list nav ul { display: flex; margin: 0 0 1.083rem 0;}
+.index_list nav ul li { flex:1; }
+.index_list nav ul li button { line-height: 1.433rem; font-size: 0.633rem; color: #98999B;}
+.index_list nav ul li.selected button { border-bottom: 1.666px solid #333; color: #333;}
+.index_list > ul { display: flex; flex-wrap: wrap; justify-content: space-between;}
+.index_list > ul li { margin: 0 0 1.2rem; height: 127.666px; width: calc( 50% - 0.433rem); border-radius: 17.666px; background: linear-gradient( 319deg, #fff 0% , #E8E8E8 100%); box-sizing: border-box; box-shadow: 14px 8px 26px #dcdde1;}
+.index_list > ul li:hover { background: #239DEE;}
+.index_list > ul li:hover a { color: #fff;}
+.index_list > ul li a { display: inline-block; padding: 0.5rem 0.75rem; height: 100%; width: 100%; font-size: 0.733rem; line-height: 0.916rem; background-repeat: no-repeat; background-position: right 0.833rem bottom 0.933rem; box-sizing: border-box; }
+.index_list > ul li a i { display: block; font-size: 0.5rem;}
+.index_list > ul li a.list1 { background-image: url(../images/ico_index1_off.png); background-size: auto 26.27px;}
+.index_list > ul li a.list2 { background-image: url(../images/ico_index2_off.png); background-size: auto 29.443px;}
+.index_list > ul li a.list3 { background-image: url(../images/ico_index3_off.png); background-size: auto 52.276px;}
+.index_list > ul li a.list4 { background-image: url(../images/ico_index4_off.png); background-size: auto 44.8px;}
+.index_list > ul li a.list5 { background-image: url(../images/ico_index5_off.png); background-size: auto 32.09px;}
+.index_list > ul li a.list6 { background-image: url(../images/ico_index6_off.png); background-size: auto 32.223px;}
+.index_list > ul li a.list1:hover { background-image: url(../images/ico_index1_on.png);}
+.index_list > ul li a.list2:hover { background-image: url(../images/ico_index2_on.png);}
+.index_list > ul li a.list3:hover { background-image: url(../images/ico_index3_on.png);}
+.index_list > ul li a.list4:hover { background-image: url(../images/ico_index4_on.png);}
+.index_list > ul li a.list5:hover { background-image: url(../images/ico_index5_on.png);}
+.index_list > ul li a.list6:hover { background-image: url(../images/ico_index6_on.png);}
+
+.index_popup { position: absolute; display: none; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);}
+.index_popup div { position: absolute; left: 0; bottom: 0; padding: 0 1.033rem; width: 100%; border-radius: 21px 21px 0 0; background-color: #fff; box-sizing: border-box;}
+.index_popup div h2 { padding: 0.666rem 0 1.325rem; line-height: 1.1rem; font-size: 0.75rem; text-align: center;}
+.index_popup div ul { border-top: 1px solid #ECECEC; }
+.index_popup div ul li button { width: 100%; line-height: 42px; border-bottom: 1px solid #ECECEC; font-size: 0.7rem; text-align: left;}
+.index_popup div .btn_close { position: absolute; left: 1.033rem; top: 0.583rem; width: 25px; height: 25px; background: url(../images/btn_close.png) no-repeat center / 25px auto; font-size: 0;}
+
+
+/** page_sub1 **/
+.page_sub,
+.page_sub a,
+.page_sub button { color: #333;}
+.sub_top nav { position: relative; height: 87.666px; color: #333;}
+.sub_top nav > ul { display: flex; padding: 0.45rem 0.566rem 0; height: 47.666px; box-sizing: border-box; background-color: #287BB2;}
+.sub_top nav > ul > li { flex: 1; }
+.sub_top nav > ul > li button { width: 100%; color: #fff; line-height: 38.666px; font-size: 0.783rem;}
+.sub_top nav > ul > li.selected { border-radius: 10px 10px 0 0; background-color: #fff; }
+.sub_top nav > ul > li.selected button { color: #287BB2;}
+.sub_top nav > ul > li.selected ul { display: flex; position: absolute; left: 0; top: 47.666px; width: 100%; height: 40px; background-color: #fff;}
+.sub_top nav > ul > li.selected ul li { flex: 1;}
+.sub_top nav > ul > li.selected ul li button { color: #333; font-size: 0.666rem;}
+.sub_top nav > ul > li.selected ul li.selected button { border-bottom: 2.333px solid #287BB2; color: #287BB2;}
+.sub_top div { position: relative; padding: 0 0.5rem; height: 86px; line-height: 86px; box-sizing: border-box; }
+.sub_top div p { display: inline; font-size: 0.75rem;}
+.sub_top div em { float: right; margin: 0 4.5rem 0 0; font-size: 1.083rem; text-align: right;}
+.sub_top div em i { font-size: 0.916rem;}
+.sub_top div input[type="checkbox"] { position: absolute; left: -999px; }
+.sub_top div label { position: absolute; right: 0.533rem; top: 50%; transform: translateY(-50%); display: inline-block; width: 75.333px; height: 25px; border-radius: 25px; background-color: rgba(40, 123, 178, 0.3); font-size: 0;}
+.sub_top div label::before {  position: absolute; content: "ON"; left: 0; padding: 0 9px; width: 100%; line-height: 25px; color: #fff; font-size: 13.333px; text-align: left; box-sizing: border-box;}
+.sub_top div label::after { transition: right .4s 0s; position: absolute; content: "잔액"; right: 0; top: 0; width: 37px; border-radius: 25px; line-height: 25px; font-size: 13.333px; color: #fff; background-color: #287BB2; text-align: center;}
+.sub_top div input[type="checkbox"]:checked + label::after { right: 38.32px;}
+.sub_top div input[type="checkbox"]:checked + label::before { content: "OFF"; text-align: right;}
+
+
+.sub_account { padding: 0.9rem 0.583rem 0.833rem; height: 100%; background-color: #EFEFEF; color: #333;}
+.sub_account .view_type { float: right; margin: 0 0 0.433rem;}
+.sub_account .view_type li { display: inline-block; }
+.sub_account .view_type li button { height: 0.966rem; width: 100%; font-size: 0.583rem; line-height: 0.866rem;}
+.sub_account .view_type li~li { position: relative; padding: 0 0 0 1.066rem ;}
+.sub_account .view_type li~li::before { position: absolute; content: ""; left: 0.533rem; top: 50%; transform: translateY(-50%); width: 0.666px; height: 10px; background-color: #707070;}
+.sub_account .account_list li { position: relative; padding: 0.5rem 0.75rem 0; width: 100%; height: 153px; border-radius: 3px; background-color: #fff; box-sizing: border-box; }
+.sub_account .account_list li::before { position: absolute; content: ""; left: 0; top: 0; width: 5.666px; height: 100%; border-radius: 3px 0 0 3px; background-color: #239DEE;}
+.sub_account .account_list li.focus::before { background-color: #FF653F;}
+.sub_account .account_list li~li { margin-top: 0.5rem;}
+.sub_account .account_list li > i { line-height: 0.983rem; font-size: 0.666rem; }
+.sub_account .account_list li p { line-height: 1.233rem; font-size: 0.833rem; }
+.sub_account .account_list li em { position: absolute; right: 0.75rem; bottom: 3rem; font-size: 1.083rem; line-height: 1.6rem;}
+.sub_account .account_list li em i { font-size: 0.916rem; }
+.sub_account .account_list li span { display: inline-block; margin: 0.166rem 0 0; padding: 0 0.533rem; height: 1rem; line-height: 1rem; border-radius: 1rem; border: 0.666px solid #D0D3D6; font-size: 0.5rem; color: #FF653F;}
+.sub_account .account_list .btn_group { position: absolute; left: 0; bottom: 1rem; padding: 0 0.583rem; width: 100%; box-sizing: border-box;}
+.sub_account .account_list .btn_group button~button { margin: 0 0 0 0.2rem;}
+.sub_account .account_list .btn_group .btn_history,
+.sub_account .account_list .btn_group .btn_trans { border-color: #239DEE; color: #239DEE;}
+.sub_account .account_list .btn_group .btn_etc { float: right; padding-right: 1.083rem; background: url(../images/btn_arrow_down.png) no-repeat right 0.4rem center / 0.285rem auto;}
+
+.info { padding: 0.766rem 0.55rem; margin: 1.166rem 0 0; background-color: #fff;}
+.info b { padding: 0 0 0 0.65rem; font-size: 0.583rem; background: url(../images/ico_info.png) no-repeat left 0 center / auto 0.558rem;}
+.info ul { margin: 0.357rem 0 0;}
+.info ul li { position: relative; padding-left: 0.55rem; margin: 0 0 0.2rem; font-size: 0.583rem; line-height: 0.667rem; letter-spacing: -0.77px; font-weight: 300;}
+.info ul li::before { position: absolute; content: "·"; left: 4px; top:0; line-height: 0.666rem;}
+
+
+/** page_sube2 **/
+.sub_product { padding: 1.283rem 0.733rem 1.566rem; height: 282.666px; background-color: #287BB2; box-sizing: border-box; }
+.sub_product h2 { margin: 0 0 0.566rem; font-size: 0.783rem; color: #fff; text-align: center; font-weight: 300;}
+.sub_product ul { display: flex;}
+.sub_product ul li { flex: 1; height: 188px;}
+.sub_product ul li~li { margin-left: 0.666rem;}
+.box_style1 { display: inline-block; position: relative; padding: 1.283rem 0.283rem 0 0.7rem; height: 100%; background-color: #fff; box-sizing: border-box;}
+.box_style1::before { position: absolute; content: ""; top: 0.766rem; left: 0.666rem; width: 28.666px; height: 2.666px; border-radius: 2.666px; background-color: #239DEE;}
+.sub_product ul li a em { line-height: 0.933rem; font-size: 0.633rem; color: #9EA8A7;}
+.sub_product ul li a > i { display: block; line-height: 0.916rem; font-size: 0.85rem;}
+.sub_product ul li a b { display: inline-block; margin: 0.3rem 0 0; line-height: 0.933rem; font-size: 0.633rem; font-weight: 400; color: #9EA8A7;}
+.sub_product ul li a strong { display: block; line-height: 1.95rem; font-size: 1.316rem; color: #239DEE;}
+.sub_product ul li a p { margin: 0.15rem 0 0; line-height: 0.65rem; font-size: 0.566rem; }
+
+.sub_product_list { padding: 0.983rem 0.65rem 1.633rem; background-color: #F6F6F6;}
+.sub_product_list ul { display: flex; flex-wrap: wrap; justify-content: space-between;}
+.sub_product_list ul li { margin: 0 0 0.333rem; height: 84.666px; width: calc(33.333% - 0.283rem);}
+.sub_product_list ul li a { display: block; border-radius: 1.666px; border: 0.666px solid #E3E7E8; background-color: #fff; font-size: 0.7rem; color: #0A2725;}
+.sub_product_list ul li:nth-child(1) a::before { background-color: #28B2A5;}
+.sub_product_list ul li:nth-child(2) a::before { background-color: #FF9700;}
+.sub_product_list ul li:nth-child(3) a::before { background-color: #3598DB;}
+.sub_product_list ul li:nth-child(4) a::before { background-color: #F25872;}
+.sub_product_list ul li:nth-child(5) a::before { background-color: #FF653F;}
+.sub_product_list ul li:nth-child(6) a::before { background-color: #2857B3;}
+
+.sub_product_list > div { display: flex; margin: 0.616rem 0 0;}
+.sub_product_list > div > div { position: relative; flex: 1; text-align: center;}
+.sub_product_list > div > div~div::before { position: absolute; content: ""; left: 0; top: 50%; transform: translateY(-50%); height: 12.333px; border-right: 1px solid #D4D8D9;}
+.sub_product_list > div > div button { padding: 0 0 0 1.166rem; height: 1.05rem; background-repeat: no-repeat; background-position: 0 center; font-weight: bold;}
+.sub_product_list > div > div:nth-child(1) button { background-image: url(../images/ico_search.png); color: #33ACA1; background-size: auto 1.05rem ;}
+.sub_product_list > div > div:nth-child(2) button { background-image: url(../images/ico_event.png); color: #4394CB; background-size: auto 0.733rem ;}
+
+.sub_menu ul li a { width: 100%; height: 92px; color: #fff;}
+.sub_menu ul li a h2 { font-size: 0.666rem; font-weight: 400; line-height: 1rem;}
+.sub_menu ul li a p { padding: 0.2rem 0 0 ; font-size: 0.55rem; line-height: 0.816rem;}
+.sub_menu ul li:nth-child(1) a { background: url(../images/ico_cart.png) no-repeat right 0.95rem bottom 1.133rem / 1.666rem auto #475E70;}
+.sub_menu ul li:nth-child(2) a { background: url(../images/ico_hirobot.png) no-repeat right 0.95rem bottom 1.133rem / 1.666rem auto #556B79;}
+.sub_menu ul li:nth-child(3) a { background: url(../images/ico_wallet.png) no-repeat right 0.95rem bottom 1.133rem / 1.666rem auto #239DEE;}
+.sub_menu ul li:nth-child(1) a::before { background-color: #28B2A5;}
+.sub_menu ul li:nth-child(2) a::before { background-color: #3598DB;}
+.sub_menu ul li:nth-child(3) a::before { background-color: #FFFFFF;}
+
+/** menu **/
+.page_menu{ position: relative;}
+
+.menu header { background-color: #287BB2;}
+.menu_top { padding: 0 1.95rem 1.2rem; background-color: #287BB2; color: #fff;}
+.menu_top span { display: inline-block; width: 28.666px; height: 28.666px; border-radius: 28.666px; background-color: #fff; vertical-align: top;}
+.menu_top .user { display: inline-block; margin: 0 0 0 0.75rem; line-height: 0.65rem; vertical-align: top;}
+.menu_top .user u { display: block; padding: 0 0 0.4rem; font-size: 0.65rem; text-decoration: underline;}
+.menu_top .user em { font-size: 0.416rem; }
+.menu_top .user i { font-size: 0.5rem;}
+.menu_top .user button { position: relative; margin: 0 0 0 0.7rem; padding: 0 0 0 0.75rem; font-size: 0.516rem; color: #fff; background: url(../images/ico_logout.png) no-repeat 0 center / auto 0.65rem; line-height: 0.65rem; vertical-align: top;}
+.menu_top .user button::before { position: absolute; content: ""; left: -0.25rem; top:50%; transform: translateY(-50%); width: 1px; height: 8.666px; background-color: #fff;}
+.menu_top .search { position: relative; margin: 0.883rem 0 0; padding: 0 2.5rem 0 0.633rem; height: 1.6rem; width: 100%; border-radius: 1.6rem; background-color: #fff; box-sizing: border-box;}
+.menu_top .search input { height: 100%; width: 100%; background: transparent;}
+.menu_top .search input::placeholder { line-height: 1.6rem; font-size: 0.533rem; color: #BBBBBB;}
+.menu_top .search button { position: absolute; right: 0.8rem; top: 50%; transform: translateY(-50%); width: 1.187rem; height: 1.6rem; background: url(../images/btn_search2.png) no-repeat center / 100% auto; font-size: 0;}
+
+
+.menu_list { position: relative; height: 100vh;}
+.menu_list > ul { display: inline-block; height: 100%; width: 111.666px; padding: 0.8rem 0 0 0; background-color: #F7F7F7;}
+.menu_list > ul > li.selected { margin: 0 0 0 0.4rem; width: 110px; height: 34.666px; border-radius: 34.666px; background-color: #287BB2; box-sizing: border-box;}
+.menu_list > ul > li.selected button { padding: 0 0 0 1.55rem; color: #fff; background-size: auto 10.89px; background-position: 0.683rem center ; background-repeat: no-repeat; }
+.menu_list > ul > li.selected button.menu_custom { background-image: url(../images/ico_menu_left1_on.png);}
+.menu_list > ul > li:not(.selected) { padding: 0 0 0 0.683rem;}
+.menu_list > ul > li button { display: inline-block; height: 34.666px; font-size: 0.55rem;}
+.menu_list > ul > li.selected > div { position: absolute; left: 111.666px; top: 0; padding: 0.558rem 0.891rem 0 1.266rem; width: calc(100% - 111.666px); box-sizing: border-box;}
+.menu_list > ul > li.selected > div .title { position: relative;}
+.menu_list > ul > li.selected > div .title h2 { font-size: 0.716rem; line-height: 2.133rem; border-bottom: 1.333px solid #287BB2; font-weight: 400; color: #0F2522;}
+.menu_list > ul > li.selected > div .title button { position: absolute; right: 0; top:50%; transform: translateY(-50%); width: 0.95rem; height: 0.95rem; background: url(../images/ico_menu_write.png) no-repeat center / 0.659rem auto;}
+.menu_list > ul > li.selected > div ul { margin: 0.783rem 0 0 ;}
+.menu_list > ul > li.selected > div ul li a { display: block; line-height: 1.75rem; font-size: 0.6rem; color: #0F2522; background-size: 0.666rem auto; background-repeat: no-repeat; background-position: right 0 center; font-weight: 600;}
+.menu_list > ul > li.selected > div ul li a.fav { background-image: url(../images/ico_fav.png);}
+.menu_list > ul > li.selected > div ul li a.history { background-image: url(../images/ico_menu_time.png);}
+
+
+.footer_menu { position: fixed; left: 0; bottom: 0; padding: 0 0.716rem; width: 100%; height: 41.333px; line-height: 41.333px; border-top: 1.666px solid #F7F7F7; background-color: #fff;}
+.footer_menu ul li { display: inline-block;}
+.footer_menu ul li~li { margin: 0 0 0 0.783rem ;}
+.footer_menu ul li a { padding: 0 0 0 17.666px; line-height: 0.75rem; font-size: 0.533rem; background-position: 0 center; background-repeat: no-repeat;}
+.footer_menu ul li:nth-child(1) a { background-image: url(../images/ico_menu1.png); background-size: 16px auto;}
+.footer_menu ul li:nth-child(2) a { background-image: url(../images/ico_menu2.png); background-size: 13px auto;}
+.footer_menu ul li:nth-child(3) a { background-image: url(../images/ico_menu2.png);  background-size: 13px auto;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

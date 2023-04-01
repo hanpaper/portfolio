@@ -1,0 +1,209 @@
+/** content1 **/
+.content1 { padding: 0.5rem; width: 100%;}
+.content1 h2 { float: none; width: 100%; font-size: 1.2rem; line-height: 1.7rem;}
+.content1 > div { float: none; width: 100%;}
+.content1 > div p { padding: 1.2rem 0 3.9rem; font-size: .8rem; line-height: 1.3rem;}
+.content1 > div h3{ font-size: .9rem;}
+.content1 > div em { padding: 1rem 0; font-size: .8rem;}
+.content1 > div div { padding: 0 0 2.6rem; line-height: 1.2rem; font-size: .7rem;}
+
+
+
+/** list1 **/
+.list1 ul { flex-direction: column; padding: 0;}
+.list1 ul::before { left: 3.7rem; top:0 ; width: 1px; height: 100%;}
+.list1 ul li { display: flex; flex-direction: column; justify-content: center; padding: 0 0 0 4.7rem; height: 5rem; text-align: left;}
+.list1 ul li::before { left: 3.6rem; top: 50%; transform: translateY(-50%); width: 0.3rem; height: 0.3rem; border-radius: 0.3rem;}
+.list1 ul li::after { top: 50%; left: 0; transform: translateY(-50%); width: 2.5rem; height: 2.5rem;}
+.list1 ul li b { margin: 0 0 0.5rem; font-size: 0.75rem;}
+.list1 ul li i { font-size: 0.45rem ;}
+
+
+
+/** list2 **/
+.list2 h2 { float: none; padding: 0 0 2.6rem; font-size: 1.15rem; line-height: 1;}
+.list2 div { float: none; width: 100%;}
+.list2 ul { width: 100%;}
+.list2 ul li { display: block; margin: 0 0 3rem 0; width: 100%; height: auto;}
+.list2 ul li:nth-child(even) { margin: 0 0 3rem 0;}
+.list2 ul li b { margin: 1.35rem 0 0.65rem; font-size: 0.85rem;}
+.list2 ul li p { font-size: 0.65rem; line-height: 1.25rem;}
+
+
+
+/** list3 **/
+.list_style1 > div { display: block; padding: 1rem 0.5rem; width: 100%; height: auto;}
+.list_style1 > div span { position: inherit; left: 0; top: 0; transform: none; width: 100%;}
+.list_style1 > div .info { float: none;}
+.list_style1 > div .group_btn { float: none;}
+.list_style1 .content { width: 100%; padding: 0.9rem 0 0;}
+.list_style1 .content h2 { margin: 0; font-size: 0.6rem;}
+.list_style1 .content h3 { margin: 0.45rem 0 1rem; font-size: 0.9rem;}
+.list_style1 .content ul { font-size: 0.55rem; line-height: 1.2rem;}
+.list_style1 .content ul li { position: relative; padding: 0 0 0 2.15rem;}
+.list_style1 .content ul li em::before { top: 0.5rem; left: -0.55rem; height: 0.55rem;}
+.list_style1 .group_btn { display: inline-block; margin: 1rem 0 0;}
+.list_style1 .group_btn button { width: 3.75rem; height: 1.75rem; border-radius: 0.1rem; font-size: 0.6rem;}
+.list_style1 .group_btn button~button { margin: 0 0 0 0.15em;}
+
+
+/** list6 **/
+.list6 { padding: 55px 30px;}
+.list6 > ul > li { display: block; }
+.list6 > ul > li .content span { padding: 0 4px; height: 14px; line-height: 14px; font-size: 10px;}
+.list6 > ul > li .content span~span { margin: 0 0 0 2px;}
+.list6 > ul > li .content i { padding: 22px 11px 0 0; font-size: 11px;}
+.list6 > ul > li .content b { padding: 16px 0 12px; font-size: 17px; }
+.list6 > ul > li .content p { font-size: 13px; line-height: 15px;}
+.list6 > ul > li .content ul { margin: 18px 0; font-size: 11px; line-height: 13px; }
+.list6 > ul > li .content ul li~li { padding: 0 0 0 17px;}
+.list6 > ul > li .content ul li~li::before { left: 7px; width: 1px; height: 10px;}
+.list6 > ul > li .group_btn { margin: 0 0 20px;}
+.list6 > ul > li .group_btn button { padding: 0 12px; height: 30px; border-radius: 2px; font-size: 12px;}
+.list6 > ul > li .group_btn .btn_like { width: 30px; background-size: 18px auto;}
+
+
+
+/** list7 **/
+.list7 { padding: 30px;}
+.list7 div { padding: 35px 0; height: auto;}
+.list7 ul { display: block;}
+.list7 ul li~li { padding: 50px 0 0;}
+.list7 ul li~li::before { left: 50%; top: 5px; transform: translateX(-50%); }
+
+
+/** tab1 **/
+.tab1 ul { display: inline-block; width: 100%; height: auto; border: 1px solid #d6d6d6; border-right:none; border-bottom: 0;}
+.tab1 ul li { display: inline-block; width: 33.333%; height: 2rem; border-bottom: 1px solid #d6d6d6; box-sizing: border-box; vertical-align: top; font-size: 0.65rem;}
+.tab1 ul li.selected button { border: 1px solid #000;}
+
+
+/** tab2 **/
+
+
+/** form1 **/
+.form1 form { padding: 2.8rem 0 2rem; }
+.form1 form select,
+.form1 form input { height: 43px; line-height: 43px; }
+.form1 form select { width: 37.5%;}
+.form1 form .search { width: calc( 62.5% - 0.9rem ); padding: 0 44px 0 0; margin: 0 0 0 0.9rem;}
+.form1 form .search button { width: 44px; height: 44px;}
+
+/** form2 **/
+.form2 { padding: 6.35rem 2.25rem 0 2.25rem;}
+.form2 h2 { margin: 0 0 0.85rem; font-size: 1rem;}
+.form2 form { width: 100%;}
+.form2 form input[type="text"],
+.form2 form input[type="password"] { height: 2.2rem; border-radius: 0.2rem; border: 1px solid #dddddd; font-size: 0.7rem; text-indent: 0.75rem;}
+.form2 form input[type="text"],
+.form2 form input[type="password"] { background-position: right 0.5rem center; background-size: 1rem auto;}
+.form2 form input[type="password"] { margin: 0.25rem 0 0;}
+.form2 form fieldset > div div input[type="checkbox"] { width: 0.85rem; height: 0.85rem;}
+.form2 form fieldset > div div label { margin: 0 0 0 0.2rem;}
+.form2 form fieldset > div div label,
+.form2 form fieldset > div div a { font-size: 0.6rem; line-height: 1.1rem; }
+.form2 form fieldset button { margin: 0.9rem 0 2.8rem; height: 2.1rem; font-size: 0.75rem;}
+.form2 > div { padding: 20px 26px; width: 100%; height: auto;}
+.form2 > div b { display: inline-block; position: inherit; left: auto; top: auto; transform: none; margin: 0 0 1.5rem; font-size:  0.75rem; line-height: 1.2rem;}
+.form2 > div b::before { bottom: -0.6rem;}
+.form2 > div p { margin: 0 0 0.7rem; font-size: 0.65rem; line-height: 1.1rem;}
+.form2 > div a { padding: 0; width: 8.9rem; height: 1.5rem; line-height: 1.5rem; border-radius: 1.5rem; background-position: 0.8rem center; background-size: 1rem auto; font-size: 0.55rem;}
+
+
+/** form3 **/
+.form3 button.btn_join { margin: 20px 0 0 ; width: 100px; height: 37px; font-size: 13px;}
+.form3 form table { border-top-width: 2px; font-size: 13px;}
+.form3 form table tr td { padding: 10px 0;}
+.form3 form table tr td div:first-child { float: none; padding: 0 10px; width: 100%; line-height: 19px;}
+.form3 form table tr td div:last-child { float: none; padding: 0 10px; margin: 7px 0 0; width: 100%; border-left: none; line-height: 1;}
+.form3 form table tr td input { height: 32px; width: 100%; font-size: 13px;}
+.form3 form table tr.email div:last-child { display: flex; flex-direction: row;}
+.form3 form table tr.email input { width: 100%;}
+.form3 form table tr.email button { margin: 0 0 0 5px; height: 32px; width: 70px; font-size: 13px;}
+.form3 form table tr.tel div:last-child { display: flex; flex-direction: row;}
+.form3 form table tr.tel div:last-child input { flex: 1; width: 100%;}
+.form3 form table tr.tel td em { width: 15px; line-height: 32px;}
+.form3 form table tr td i { margin: 0 ; line-height: 34px;}
+.form3 form table tr td label { padding: 0 6px 0 20px;}
+.form3 form table tr td label::before { width: 14px; height: 14px; border-radius: 14px; }
+.form3 form table tr td input[type="radio"]:checked + label::after { left: 4px; width: 8px; height: 8px; border-radius: 8px;}
+
+
+/** form4 **/
+.form4 form div textarea { width: 100%;}
+.form4 form div button { width: 100%; height: 50px;}
+.form4 form p { margin: 27px 0 0; }
+
+
+
+/** table1 **/
+.table1 table tbody tr { height: 54px; font-size: 12px;}
+.table1 table tbody tr td:nth-child(1) { width: 37px;}
+.table1 table tbody tr td:nth-child(2) div.title { float: none; margin: 0 0 8px;}
+.table1 table tbody tr td:nth-child(2) div.date { float: none; color: #999898; font-size: 8px;}
+.table1 table tbody tr td:nth-child(3) { width: 40px;}
+.table1 table tbody tr td:nth-child(3) button { background-size: 13px auto;}
+
+
+
+/** table2 **/
+.table2 { padding: 95px 30px;}
+.table2 h2 { position:static;  margin: 14px 0 34px; font-size: 24px; line-height: 1;}
+.table2 div { max-width: none; overflow: scroll;}
+.table2 div table { font-size: 12px; min-width: 520px; }
+.table2 div table tbody tr { height: 52px; }
+.table2 table tbody th { width: 107px;}
+.table2 table tbody td:nth-child(2) { width: 160px;}
+.table2 table tbody td:nth-child(3) { width: 90px;}
+.table2 table tbody td:nth-child(4) { width: 175px;}
+.table2 p { margin: 17px 0 0; text-align: left; font-size: 12px;}
+
+
+
+
+/** total1 **/
+.total1 { padding: 60px 30px;}
+.total1 table tbody tr th { padding: 15px 40px 0 0; width: 150px; font-size: 15px; line-height: 25px;}
+.total1 table tbody tr td { padding: 15px 0 20px 0; font-size: 13px; line-height: 23px;}
+.total1 table tbody tr td ul li { padding: 0 0 0 10px;}
+.total1 table tbody tr td ul li::before { top: 9px; width: 5px; height: 5px; border-radius: 5px;}
+.total1 .group_btn { margin: 10px 0 0; display: block;}
+.total1 .group_btn > div~div {margin: 20px 0 0;}
+.total1 .group_btn > div button { height: 52px; font-size: 12px;}
+
+
+
+/** total2 **/
+.total2 > div:first-child { padding: 0;}
+.total2 > div:first-child .img { float: none; width: 100%; height: auto;}
+.total2 > div:first-child .content { float: none; padding: 16px 20px 47px 20px; width: 100%; height: auto;}
+.total2 > div:first-child .content b { font-size: 19px;}
+.total2 > div:first-child .content .amount { margin: 0 0 20px;}
+.total2 > div:first-child .content .amount .total strong { font-size: 24px;}
+.total2 > div:first-child .content .amount .month strong { font-size: 14px; line-height: 24px ;}
+.total2 > div:first-child .benefit { display: block; padding: 15px 15px 25px 15px; height: auto; box-sizing: border-box;}
+.total2 > div:first-child .benefit li { display: inline-block; padding: 20px 0 30px; width: calc( 50% - 2px ) ; box-sizing: border-box;}
+.total2 > div:first-child .benefit li:nth-child(even) { border-left: 1px solid #e2e2e2;}
+.total2 > div:first-child .benefit li:nth-child(4n-3),
+.total2 > div:first-child .benefit li:nth-child(4n-2) { border-bottom: 1px solid #e2e2e2;;}
+.total2 > div:first-child .benefit li img { margin: 0 0 8px; width: 62px; height: 62px;}
+.total2 > div:first-child .benefit li~li::before { background-color: transparent;}
+.total2 > div:last-child nav ul li a { height: 57px; line-height: 57px; }
+
+
+
+
+/** total3 **/
+.total3 { padding: 0; height: 375px; text-align: center;}
+.total3 .box_top { width: 100%;}
+.total3 .box_top .float_right { float: none;}
+.total3 .box_top .float_right select { margin: 0; width: 100%; height: 44px; border:none;}
+.total3 .box_top .float_right ul { border-top: 1px solid #444; border-bottom: 1px solid #444; text-align: center;}
+.total3 .box_top .float_right ul li~li::before { background-color: transparent;}
+.total3 .box_top .float_right ul li b { display: inline-block; padding: 0 0 0 15px; font-size: 16px; line-height: 56px;}
+.total3 .box_top .float_left { float: none;}
+.total3 .box_top .float_left ul { padding: 0 40px; margin: 20px 0 12px; text-align: center;}
+.total3 .box_top .float_left ul li { font-size: 13px; line-height: 24px;}
+.total3 .box_top .float_left p { display: none;}
+.total3 .box_top .float_left button { display: inline-block; width: 180px; height: 30px; background: url(../images/ico_arrow_down4.png) no-repeat right 0 center / 20px auto; font-size: 14px; color: #fff;}
+.total3 .box_bottom .sns { padding: 28px 0 0; width: 100%; border: none; text-align: center;}

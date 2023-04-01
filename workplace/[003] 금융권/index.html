@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>리베하얀</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header_menubar">
+            <a href="index.html" class="btn_logo"><img src="images/bg_logo.png" alt="리베하얀 금융"></a>
+            <nav>
+                <ul>
+                    <li><a href="">계좌개설</a></li>
+                    <li><a href="">상품안내</a></li>
+                    <li><a href="">리서치</a></li>
+                    <li><a href="">투자정보</a></li>
+                    <li><a href="">고객지원</a></li>
+                </ul>
+            </nav>
+            <div class="menu">
+                <a href="" class="btn_mypage"></a>
+                <button class="btn_search"></button>
+                <button class="btn_menu">전체메뉴</button>
+            </div>
+            <div class="util">
+                <ul>
+                    <li><a href="login.html">로그인</a></li>
+                    <li><a href="join1.html">회원가입</a></li>
+                    <li><a href="">공인인증센터</a></li>
+                    <li><a href="">원격지원</a></li>
+                    <li><a href="">회사소개</a></li>
+                    <li><button>EN</button></li>
+                </ul>
+            </div>
+        </div>
+        <div class="popup">
+            <div class="popup_bg"></div>
+            <div class="popup_search">
+                <div>
+                    <input type="text" placeholder="검색어를 입력하세요">
+                    <button class="btn_search">검색</button>
+                    <button class="btn_close">닫기</button>
+                </div>
+            </div>
+            <div class="popup_menu">
+                <div class="menu_header">
+                    <div>
+                        <strong>전체메뉴</strong>
+                    </div>
+                    <div>
+                        <button class="btn_close">닫기</button>
+                    </div>
+                </div>
+                <div class="menu_list">
+                    <ul class="menu_depth1">
+                        <li><b>계좌개설</b>
+                            <ul class="menu_depth2">
+                                <li><a href="">계좌개설안내</a></li>
+                                <li><a href="">계좌사용등록</a></li>
+                                <li><a href="">투자자정보 갱신</a></li>
+                            </ul>
+                        </li>
+                        <li><b>상품안내</b>
+                            <ul class="menu_depth2">
+                                <li><a href="">국내선물</a>
+                                    <ul class="menu_depth3">
+                                        <li><a href="">국내선물이란</a></li>
+                                        <li><a href="">국내선물 가이드</a></li>
+                                        <li><a href="">야간선물 가이드</a></li>
+                                        <li><a href="">국내 증거금</a></li>
+                                        <li><a href="">상품명세</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">해외선물</a>
+                                    <ul class="menu_depth3">
+                                        <li><a href="">해외선물이란</a></li>
+                                        <li><a href="">해외선물 가이드</a></li>
+                                        <li><a href="">해외 증거금</a></li>
+                                        <li><a href="">상품명세</a></li>
+                                        <li><a href="">LEM(비칠금속)</a></li>
+                                        <li><a href="">중국거래소 안내</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">FX마진</a>
+                                    <ul class="menu_depth3">
+                                        <li><a href="">FX마진이란</a></li>
+                                        <li><a href="">FX마진 가이드</a></li>
+                                        <li><a href="">FX마진 증거금</a></li>
+                                        <li><a href="">상품명세</a></li>
+                                        <li><a href="">FDM 재무현황공시</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">해외주식(리베증권)</a>
+                                    <ul class="menu_depth3">
+                                        <li><a href="">해외주식이란</a></li>
+                                        <li><a href="">해외시장 가이드</a></li>
+                                        <li><a href="">글로벌ETF 가이드</a></li>
+                                        <li><a href="">해외주식 세금안내</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">기업대상</a>
+                                    <ul class="menu_depth3">
+                                        <li><a href="">환리스크관리센터</a></li>
+                                        <li><a href="">원자재센터</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><b>리서치</b>
+                            <ul class="menu_depth2">
+                                <li><a href="">리서치 모아보기</a></li>
+                                <li><a href="content1.html">데일리시황</a>
+                                    <ul class="menu_depth3">
+                                        <li><a href="content1.html">글로벌채권</a></li>
+                                        <li><a href="">외환</a></li>
+                                        <li><a href="">원자재</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">투자자정보 갱신</a>
+                                    <ul class="menu_depth3">
+                                        <li><a href="">주간정망</a></li>
+                                        <li><a href="">월간전망</a></li>
+                                        <li><a href="">연간전망</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">이슈분석</a></li>
+                                <li><a href="">동영상 시황</a>
+                                    <ul class="menu_depth3">
+                                        <li><a href="">데일리 Live</a></li>
+                                        <li><a href="">주간정망</a></li>
+                                        <li><a href="">월간전망</a></li>
+                                        <li><a href="">이슈분석</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><b>투자정보</b>
+                            <ul class="menu_depth2">
+                                <li><a href="">Premium <i>*</i></a>
+                                    <ul class="menu_depth3">
+                                        <li><a href="">서비스가이드</a></li>
+                                        <li><a href="">해외스팟뉴스<i>*</i></a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">시장정보</a>
+                                    <ul class="menu_depth3">
+                                        <li><a href="">실시간 시황 서비스</a></li>
+                                        <li><a href="">금주의 이슈 POLL</a></li>
+                                        <li><a href="">Today 경제지표</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">투자분석</a>
+                                    <ul class="menu_depth3">
+                                        <li><a href="">주요 선물시세</a></li>
+                                        <li><a href="">일간 시세정보</a></li>
+                                        <li><a href="">CFTC 투기적 순매수</a></li>
+                                        <li><a href="">Fed Watch Tool</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">동영상정보</a>
+                                    <ul class="menu_depth3">
+                                        <li><a href="">HTS활용꿀팁</a></li>
+                                        <li><a href="">주문유형 완전정복</a></li>
+                                        <li><a href="">MTS활용꿀팁</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section1">
+            <ul class="bxslider visual">
+                <li>
+                    <b>피싱사기 피해 예방만이 최선의 방법이다.</b>
+                    <strong>금융감독원 보이스피싱 지킴이</strong> 
+                </li>
+                <li>
+                    <b>[지역개발채권] 미상환지역개발채권 조회/상환 안내</b>
+                    <strong>만기 경과된 미상환지역개발채권을 조회 및 찾아가세요
+                    </strong>      
+                </li>
+                <li>
+                    <b>매일적금, 티끌을 모아보자</b>
+                    <strong>목적자금 마련을 위한 비대면전용 자유적립식 상품</strong>      
+                </li>
+                <li>
+                    <b>[이벤트] 감사 선물을 드려요</b>
+                    <strong>2023.02.08 ~ 03.31</strong>       
+                </li>
+                <li>
+                    <b>신나는 직장인 대출</b>
+                    <strong>공무원, 사립학교 교직원, 당행 선정 우량기업 임직원 대상 신용대출 상품</strong>  
+                </li>
+            </ul>
+            <div class="main_menu">
+                <div>
+                    <h2>
+                        <b>REBEHAYAN FUTURES</b>
+                        시작하기
+                    </h2>
+                    <div class="swiper swiper_type1">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <a href="">
+                                    <img src="images/btn_start_menu.png" alt="">
+                                    <b>계좌사용등록</b>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="">
+                                    <img src="images/btn_start_menu.png" alt="">
+                                    <b>계좌개설안내</b>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="">
+                                    <img src="images/btn_start_menu.png" alt="">
+                                    <b>공인인증센터</b>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="">
+                                    <img src="images/btn_start_menu.png" alt="">
+                                    <b>다운로드센터</b>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="">
+                                    <img src="images/btn_start_menu.png" alt="">
+                                    <b>모의거래</b>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="">
+                                    <img src="images/btn_start_menu.png" alt="">
+                                    <b>원격지원</b>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="">
+                                    <img src="images/btn_start_menu.png" alt="">
+                                    <b>추가1</b>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="">
+                                    <img src="images/btn_start_menu.png" alt="">
+                                    <b>추가2</b>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+            <div class="notice">
+                <div>
+                    <h2>공지사항</h2>
+                    <div class="swiper swiper_type2">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <a href=""><p>[해외선물] Australian Dollar(6A) 상품명세 변경 안내<span>2020-10-16</span></p></a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href=""><p>[해외선물] Australian Dollar(6A) 상품명세 변경 안내<span>2020-10-16</span></p></a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href=""><p>[해외선물] Australian Dollar(6A) 상품명세 변경 안내<span>2020-10-16</span></p></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="swiper-button-next">이전</div>
+                    <div class="swiper-button-prev">다음</div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <section class="section2 sectionstyle1">
+            <div>
+                <h2>리서치</h2>
+                <ul>
+                    <li>
+                        <a href="">
+                            <p>글로벌채권</p>
+                            <b>
+                                회복 기대 늦추는<br>
+                                재확산과 미국 부양책
+                                공방 지속
+                            </b>
+                            <div>
+                                2020-10-19
+                                <span>아무개</span>
+                            </div>
+                            <strong>PDF</strong>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>글로벌채권</p>
+                            <b>
+                                회복 기대 늦추는
+                                재확산과 미국 부양책
+                                공방 지속
+                            </b>
+                            <div>
+                                2020-10-19
+                                <span>아무개</span>
+                            </div>
+                            <strong>PDF</strong>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>글로벌채권</p>
+                            <b>
+                                회복 기대 늦추는
+                                재확산과 미국 부양책
+                                공방 지속
+                            </b>
+                            <div>
+                                2020-10-19
+                                <span>아무개</span>
+                            </div>
+                            <strong>PDF</strong>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>글로벌채권</p>
+                            <b>
+                                회복 기대 늦추는
+                                재확산과 미국 부양책
+                                공방 지속
+                            </b>
+                            <div>
+                                2020-10-19
+                                <span>아무개</span>
+                            </div>
+                            <strong>PDF</strong>
+                        </a>
+                    </li>
+                </ul>
+                <a href="" class="btn_more">더보기</a>
+            </div>
+        </section>
+        <section class="section3 sectionstyle1">
+            <div>
+                <div class="section3_1">
+                    <h2>실시간 뉴스</h2>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <p>
+                                    “나스닥 선물 하락
+                                    추세로 전환”
+                                </p>
+                                <div>
+                                    <img src="images/ico_news.png" alt="">
+                                    <b>지수</b>
+                                    <strong>2020-10-17</strong>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p>
+                                    “코로나19 백신 기대
+                                    재부상”
+                                </p>
+                                <div>
+                                    <img src="images/ico_news.png" alt="">
+                                    <b>지수</b>
+                                    <strong>2020-10-17</strong>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="" class="btn_more">더보기</a>
+                </div>
+                <div class="section3_2">
+                    <h2>해외 스팟 뉴스</h2>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="images/@thoumb1.png" alt="">
+                                <p>
+                                    [표]이번 주 글로벌 경제 주요 일정
+                                    <span>2020-10-19</span>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/@thoumb2.png" alt="">
+                                <p>
+                                    갈라서는 주식·채권 변동성 ...대전 전망은 ‘컨버전스’
+                                    <span>2020-10-19</span>
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="" class="btn_more">더보기</a>
+                </div>
+            </div>
+        </section>
+        <div class="ad">
+            <img src="images/@ad_btm.png" alt="">
+        </div>
+        <div class="center">
+            <div>
+                <a href="">
+                    <b>기업 환리스크관리센터</b>
+                    <p>삼성선물이기업회원의 환위험관리를 지원합니다</p>
+                </a>
+                <a href="">
+                    <b>기업 환리스크관리센터</b>
+                    <p>삼성선물이기업회원의 환위험관리를 지원합니다</p>
+                </a>
+            </div>
+        </div>
+        <div class="quickmenu">
+            <button class="btn_up">위로</button>
+            <button class="btn_alarm"></button>
+        </div>
+    </main>
+    <footer>
+        <div class="stock">
+                <p>국내선물/해외선물/FX(개인)    02-1234-5678 (24시간)</p>
+        </div>
+        <div class="tel_list">
+            <ul>
+                <li>외환/FX(일반법인) <b>02-1234-5678</b></li>
+                <li>외환/FX(금융법인) <b>02-1234-5678</b></li>
+                <li>중국/원자재/LME <b>02-4567-8978</b></li>
+                <li>리베증권 <b>1234-5678</b></li>
+            </ul>
+        </div>
+        <div class="footer">
+            <ul class="footer_nav clear">
+                <li><a href="">회사소개</a></li>
+                <li><a href="">윤리경영</a></li>
+                <li><a href="">전자민원접수</a></li>
+                <li><a href="">약관 및 위험고지</a></li>
+                <li><a href="">공인인증센터</a></li>
+                <li><a href="">다운로드센터</a></li>
+            </ul>
+            <ul class="footer_sns clear">
+                <li><button><img src="images/ico_footer_kakao.png" alt="네이버"></button></li>
+                <li><button><img src="images/ico_footer_blog.png" alt="카카오"></button></li>
+                <li><button><img src="images/ico_footer_youtube.png" alt="유튜브"></button></li>
+            </ul>
+            <div class="footer_address">
+                <ul class="clear">
+                    <li class="point"><a href="">개인정보처리방침</a></li>
+                    <li><a href="">비상시주문방법</a></li>
+                    <li><a href="">고객유의사항</a></li>
+                    <li>대표이사 리베하얀</li>
+                    <li>서울시 강서구 서초대로 66길</li>
+                    <li>사업자등록번호 123-45-67890</li>
+                </ul>
+                <p>COPYRIGHT(C) 2020 BY REBEHAYAN. ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+
+        $(function(){
+        $('.bxslider').bxSlider({
+            mode: 'fade',
+            auto : true,
+            pause : 3000,
+            autoStart : true,
+            });
+        });
+
+        
+        var swiper = new Swiper(".swiper_type1", {
+        slidesPerView: 6,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".main_menu .swiper-button-next",
+            prevEl: ".main_menu .swiper-button-prev",
+        }
+        });
+
+
+        var swiper = new Swiper(".swiper_type2", {
+        direction: "vertical",
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper_type2 .swiper-button-next",
+            prevEl: ".swiper_type2 .swiper-button-prev",
+        },
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false
+        }
+        });
+
+        
+        
+        
+
+        // menubar - popup
+        $('.menu .btn_search').click(function(){
+            if($('.popup').css("display") === 'none'){
+                $('.popup').css("display","block");
+                $('.popup_search').css("display","block");
+                $('body').css("overflow","hidden")
+            }else{
+                $('.popup').css("display","none");
+                $('.popup_search').css("display","none");
+                $('body').css("overflow","auto")
+            }
+        });
+        
+
+        $('.menu .btn_menu').click(function(){
+                $('.popup').css("display","block");
+                $('.popup_menu').css("display","block");
+                $('body').css("overflow","hidden")
+        });
+
+
+        $('.popup .btn_close').click(function(){
+                $('.popup').css("display","none");
+                $('.popup_search').css("display","none");
+                $('.popup_menu').css("display","none");
+                $('body').css("overflow","auto")
+            })
+    </script>
+</body>
+</html>

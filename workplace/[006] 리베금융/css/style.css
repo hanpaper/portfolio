@@ -1,0 +1,7 @@
+html { font-size: 20px; line-height: 1; }
+body { position: relative; font-size: 1rem; color: #000;}
+body a { color: #000;}
+
+main { font-size: 0;}
+
+.btn_style1 { padding: 0 0.4rem; min-width: 66px; height: 28.666px; border-radius: 28.666px; border: 1px solid #D0D3D6; font-size: 0.583rem; color: #333; box-sizing: border-box;}

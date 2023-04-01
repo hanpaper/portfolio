@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 스타벅스 튜메릭 라떼 | 스타벅스</title>
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body class="order_menu1">
+    <header>
+        <div class="top_menu align_justify">
+            <div><button class="btn_back">이전 페이지</button></div>
+            <div><button class="btn_export">공유하기</button></div>
+        </div>
+    </header>
+    <main>
+        <section class="menu_datail">            
+            <div class="menu_image">
+                <span>
+                    <img src="images/menu9.png" alt="">
+                </span>
+                <button class="btn_enlarge">사진확대</button>
+            </div>
+            <div class="menu_info">
+                <div class="menu_content">
+                    <h2>스타벅스 튜메릭 라떼 </h2>
+                    <i>Starbucks Turmeric Latte</i>
+                    <p>몸에 좋은 튜메릭이 은은하고 담백하게 블론드 샷과 어우러진 라떼<br>
+                        추운 겨울철 가슴 속에서부터 따듯한 기운을 복돋아주는 이국적인 느낌의 라떼 음료
+                    </p>
+                    <strong>6,100원</strong>
+                    <ul class="menu_temp script_sel">
+                        <li class="selected"><button class="btn_hot">HOT</button></li>
+                        <li><button class="btn_iced">ICED</button></li>
+                    </ul>
+                    <ul class="menu_notice">
+                        <li>
+                            강황, 울금이라고 불리는 튜메릭은 전세계에서<br>
+                            사용되고 있는 생각과 이국적인 스파이시(향신료)입니다. (튜메릭 ≠ 카레)
+                        </li>
+                        <li>
+                            튜메릭(강황)은 원료의 특성상 이염이 될 수 있으니<br>
+                            주의하여 주세요.
+                        </li>
+                    </ul>
+                    <ul class="menu_detail">
+                        <li><button class="btn_info"><b>제품 영양 정보</b></button></li>
+                        <li>
+                            <b>알레르기 유발 요인</b>
+                            <i>대두,우유</i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu_diff">
+                    <h3>비슷한 다른 메뉴</h3>
+                    <ul class="scroll_row view_style">
+                        <li>
+                            <a href="">
+                                <span><img src="images/menu10.png" alt=""></span>
+                                <em>블랙 햅쌀 고봉 라떼</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span><img src="images/menu1.png" alt=""></span>
+                                <em>골든 미모사 그린 티</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span><img src="images/menu14.png" alt=""></span>
+                                <em>얼 그레이 바닐라 티 라떼</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span><img src="images/menu16.png" alt=""></span>
+                                <em>스타벅스 돌체 라떼</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span><img src="images/menu17.png" alt=""></span>
+                                <em>카페 라떼</em>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button class="btn_up">맨위로</button>
+            <div class="bottom_fix">
+                <button id="btn_order_detail">주문하기</button>
+            </div>
+        </section>
+        <section id="order_detail" class="popup">
+            <div class="order_content">
+                <span class="bar"></span>
+                <b>스타벅스 튜메릭 라떼</b>
+                <p>환경을 위해 일회용컵 사용 줄이기에 동참해 주세요</p>
+                <ul>
+                    <li class="size">
+                        <strong>사이즈</strong>
+                        <ul class="script_sel">
+                            <li class="selected"><button class="btn_tall"></button><b>Tall</b><i>335ml</i></li>
+                            <li><button class="btn_grande"></button><b>Grande</b><i>473ml</i></li>
+                            <li><button class="btn_venti"></button><b>Venti</b><i>591ml</i></li>
+                        </ul>
+                    </li>
+                    <li class="cup">
+                        <strong>컵 선택</strong>
+                        <ul class="script_sel">
+                            <li class="selected"><button>매장컵</button></li>
+                            <li><button>개인컵</button></li>
+                            <li><button>일회용컵</button></li>
+                        </ul>
+                    </li>
+                    <li class="personal"><button><strong>퍼스널 옵션</strong></button></li>
+                </ul>
+                <div class="bottom_fix">
+                    <div class="count align_justify">
+                        <div class="count_btn">
+                            <button class="btn_minus">빼기</button>
+                            <b>1</b>
+                            <button class="btn_plus">추가</button>
+                        </div>
+                        <div class="sum">
+                            <strong>6,100원</strong>
+                        </div>
+                    </div>
+                    <div class="group_btn align_justify">
+                        <div>
+                            <button class="btn_favor_add">나만의 메뉴 추가</button>
+                        </div>
+                        <div>
+                            <button class="btn_basket_add">담기</button>
+                            <button class="btn_order">주문하기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+            var btnOpen = document.getElementById('btn_order_detail')
+            btnOpen.onclick=function(event){
+            document.getElementById('order_detail').style.display='block';
+            document.getElementsByTagName('body')[0].style.overflow='hidden';
+            };
+
+
+            // select box custom
+            // >> html구조 및 적용방법 <ul class="script_sel"><li><button>
+            $('.script_sel li button').click(function(){
+            $(event.target).parent().siblings().removeClass("selected")
+            $(event.target).parent().addClass("selected")
+            })
+
+
+            // var sel = document.getElementsByClassName('script_sel')
+            // for(var w=0; w<sel.length; w++){
+            //     var opts = sel[w].getElementsByTagName('button')
+            //         
+            //     for(var i=0; i<opts.length; i++){
+            //     opts[i].onclick = function(){
+            //         for(var k=0; k<opts.length; k++){
+            //             opts[k].parentNode.classList.remove('selected');
+            //         }
+            //     event.target.parentNode.classList.add('selected');}
+            // }
+            // }
+            
+            
+
+           
+
+    </script>
+</body>
+</html>

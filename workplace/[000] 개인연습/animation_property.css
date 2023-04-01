@@ -1,0 +1,75 @@
+span { display: inline-block; margin: 0 0 30px; border: 1px solid red; line-height: 50px; font-size: 15px; font-weight: bold;}
+
+span.direction { animation: trans1 2s .2s infinite;}
+span:nth-child(2) { animation-direction: normal;}
+span:nth-child(3) { animation-direction: reverse;}
+span:nth-child(4) { animation-direction: alternate;}
+span:nth-child(5) { animation-direction: alternate-reverse;}
+/**
+direction...
+keyframe의 애니메이션을 어떤 순서로 재생할 것인가 (infinite일 때)
+- normal  0% => 100% , 0% => 100%
+- reverse 100% => 0% , 100% => 0%
+- alternate 0% => 100% , 100% => 0%
+- alternate-reverse => 100 => 0% , 0% => 100%
+**/
+span.color { animation: trans1 2s .2s ;}
+span:nth-child(6) { animation-fill-mode: none;}
+span:nth-child(7) { animation-fill-mode: forwards;}
+span:nth-child(8) { animation-fill-mode: backwards;}
+span:nth-child(9) { animation-fill-mode: both;}
+/**
+fill-mode...
+애니메이션을 어떻게 끝낼 것인지 설정하는 속성
+forwards는 끝을 그대로 유지한다는 의미 같고...
+나머지는 여전히 잘 모르겠다.
+( 참고: https://brunch.co.kr/@99-life/3)
+**/
+
+@keyframes trans1 {
+    0% { transform: translateY(0);}
+    100% { transform: translateY(20px);}
+}
+
+
+div { display: inline-block; color: red; font-size: 70px; font-weight: bold;}
+div:hover { color: violet;}
+
+div.normal {transition: all .2s .3s;}
+div.hover:hover {transition: all .2s .3s;}
+div.all {transition: all .2s .3s;}
+div.all:hover {transition: all .2s .3s;}
+/**
+기본 스타일 - 호버 스타일
+어디에 transition을 적용하느냐에 따라 끝처리가 다르게 나타남
+.all과 .normal의 결과는 동일한 듯 하다.
+**/
+
+
+
+
+
+/** 이벤트(:hover)의 동적효과는 transition을 적용하자 **/
+div.box { position: relative; width: 100px; height: 100px; background-color: lightgray;}
+
+    /** transition 적용
+    ... a와 b의 '속성값 변화'를 적용시간 동안 보여줌 **/
+div.box1::before { transition: all .5s .2s;  position: absolute; content: ""; width: 0; height: 0; right: 0; bottom: 0; background-color: yellowgreen; }
+div.box1:hover::before { position: absolute; content: ""; width: 100%; height: 100%; right: 0; bottom: 0; background-color: yellowgreen;}
+
+
+    /** animation 적용
+    ... @keyframe의 '퍼센트(0% ~ 100%)별 변화'를 적용시간 동안 보여줌
+    **/
+div.box2::before { animation: ani2 .5s .2s forwards; position: absolute; content: ""; right: 0; bottom: 0; background-color: yellowgreen;}
+div.box2:hover::before { animation: ani1 .5s .2s forwards; position: absolute; content: ""; right: 0; bottom: 0; background-color: yellowgreen;}
+
+@keyframes ani1 {
+    0% { width: 0; height: 0;}
+    100% { width: 100%; height: 100%;}
+}
+
+@keyframes ani2 {
+    0% { width: 100%; height: 100%;}
+    100% { width: 0; height: 0;}
+}

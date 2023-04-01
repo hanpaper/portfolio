@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+* {padding:0; margin:0;}
+table { width:100%; border-collapse:collapse; border-spacing:0;}
+table caption { display:none;}
+ul, li, ol { list-style:none;}
+body {padding:30px;}
+legend {display:none;}
+fieldset {border:none;}
+/*
+border-collapse:collapse;  표라인 두 줄 => 한 줄
+border-spacing:0;  셀과 셀 사이 여백 초기화
+table caption { display:none;}  캡션 숨기기(접근성에 좋진 않음)
+* {padding:0; margin:0;}  모든 값의 안쪽/바깥쪽 여백 초기화(임시적으로 사용, *는 사이트 로딩속도를 낮춤)
+
+table (제일 추천)
+th td 
+tr => 옛날 브라우저까지 호환성 100%
+thead => 추천안함
+
+
+*/
+
+
+
+
+
+h1 {color: red; font-family: 'Noto Sans KR', sans-serif; font-weight: normal;}
+h2 {clear: both;}
+
+.TableType1 {width: 100%; font-size: 13px; font-weight: bold;}
+.TableType1 thead {height: 48px; border-top: 2px solid #12a3cc; border-bottom: 1px solid #b2b2b2; color: #6b6b6b;}
+.TableType1 tbody tr {height: 64px; border-bottom: 1px solid #e2e2e2; color: #7d7d7d; text-align: center;}
+.TableType1 tbody tr ins {color: #323232;}
+.TableType1 tbody tr .name {color: #323232;}
+
+
+
+
+.TableType3 {font-family: 'Noto Sans KR', sans-serif;}
+.TableType3 tbody tr {height: 130px; font-size: 18px; color: #000; font-weight: 400; line-height: 28px;}
+.TableType3 tbody tr:nth-child(odd) {background-color: #f4f4f4;}
+.TableType3 tbody tr.exl td:first-child { background-image: url(images/ico_exl.png); background-repeat: no-repeat; background-position: 50%;}
+.TableType3 tbody tr.pdf td:first-child { background-image: url(images/ico_pdf.png); background-repeat: no-repeat; background-position: 50%;}
+.TableType3 tbody tr p {font-size: 14px; color: #888888; line-height: 25px;}
+.TableType3 tbody tr Button {height: 48px; width: 140px; border: 1px solid #dddddd; background-color: transparent; font-size: 12px; font-weight: 400; color: #888888;}
+.TableType3 tbody tr Button img {padding: 0 0 0 26px;}
+
+
+
+
+.TableType4 {font-family: 'Noto Sans KR', sans-serif; font-weight: 400;}
+.TableType4 table {width: 100%; border-top: 1px solid #000; border-bottom: 1px solid #000;}
+.TableType4 th {padding: 0 0 0 15px; height: 53px; width: 150px; border-bottom: 1px solid #eeeeee; background-color: #f6f6f6; color: #444444; font-size: 13px; text-align: left;}
+.TableType4 td {padding: 0 0 0 12px;  color: #7b7c82; border-bottom: 1px solid #e0e0e0; font-size: 14px;}
+.TableType4 img {position: relative; margin: 0 5px; top:2px;}
+
+
+
+
+.TableType6 {font-family: 'Noto Sans KR', sans-serif; width: 100%; border-top: 2px solid #000;}
+.TableType6 tr {border-bottom: 1px solid #cccccc;}
+.TableType6 th {padding: 0 0 0 20px; width: 231px; border-right: 1px solid #000; background-color: #ededed; text-align: left; color: #000; font-weight: 400;}
+.TableType6 td {padding: 16px 0 16px 20px; color: #555555; line-height: 22px; font-weight: 400;}
+.TableType6 a {display: inline-block; padding: 0 10px; height: 25px; border: 1px solid #0d0509; color: #555555; text-decoration: none;}
+.TableType6 a img {margin: 0 0 0 5px;}
+.TableType6 .information {position: relative; top:2px;}
+
+
+
+
+.TableType9 {font-family: 'Noto Sans KR', sans-serif; width: 100%; border-top: 1px solid #393d46; border-bottom: 1px solid #acb0b6;
+    font-size: 16px; color: #6a6a6a;}
+.TableType9 thead th { height:60px; border-bottom: 1px solid #acb0b6; color: #010101; font-weight: 700;}
+.TableType9 tbody tr { border-top:1px solid #e1e1e1;}
+.TableType9 tbody tr th {width: 240px; border-right:1px solid #e1e1e1; font-weight: 300;}
+.TableType9 tbody tr td {padding: 15px 0px 15px 18px; width: 600px; border-left:1px solid #e1e1e1; font-weight: 200;}
+.TableType9 tbody tr td b {line-height: 30px; font-weight: 700;}
+
+
+
+.ListType1 ul {height: 37px; text-align: center; border: 1px solid #e1e1e1; border-left: none; border-bottom: 1px solid #333333; font-size: 14px;}
+.ListType1 ul:after {content:""; display: block; clear: both;}
+.ListType1 ul li {float: left; width: 10%;  border-left: 1px solid #e1e1e1; background-color: #f0f0f0; box-sizing: border-box;}
+.ListType1 ul li a {display: block; line-height: 37px; color: #888888; font-weight: 300; text-decoration: none;}
+.ListType1 ul .active {position:relative; top: -1px; left: 1px; border: 1px solid #333333; border-bottom: 1px solid #fff; background-color: #fff;}
+.ListType1 ul .active a { color: #070707;}
+
+
+
+
+.ListType2 ul { text-align: center;}
+.ListType2 ul li {float: left; width: 25%; background-color: #f3f3f3;}
+.ListType2 ul li a {display: block; color: #000; text-decoration:none; font-size: 14px; line-height: 60px;}
+.ListType2 ul .active {position: relative; z-index: 1; background-color: #f26e50; box-shadow: 0 8px 13px #f26e50;}
+.ListType2 ul .active a {color: #ffffff;}
+
+
+
+
+
+.ListType3 h2 {margin: 0 0 14px 0; font-size: 17px; font-weight: 700; color: #000;}
+.ListType3 ul li {font-size: 14px; font-weight: 300; color: #898989; line-height: 24px;}
+
+
+
+.ListType4 {color: #000; font-weight: 300; box-sizing: border-box; text-align: 1;}
+.ListType4 h3 {margin-bottom: 33px; font-size: 48px; text-align: center;}
+.ListType4 ul {width: 1200px; margin: 0 auto;}
+.ListType4 ul li {float: left; margin: 0 10px 16px 10px; width: 520px; height: 74px; border: 1px solid #a4b9e3; border-radius: 5px; font-size: 24px; line-height: 74px; letter-spacing: -3px;}
+.ListType4 ul li span {display: inline-block; margin: 0 13px 0 15px; width: 44px; height: 44px; border-radius: 22px; background-color: #6c62f1; font-size: 20px; color: #fff; text-align: center; line-height: 44px; font-weight: 500; letter-spacing: 0px;}
+
+
+
+.ListType5 {font-family: 'Noto Sans KR',sans-serif; padding: 30px 36px 35px 36px; width: 673px; height: 869px; background-color: #e4e6e7; box-sizing: border-box; line-height: 1; color: #3f3f3f; text-align: center;}
+.ListType5 h3 { margin:0 0 18px 0; font-size: 19px; font-weight: 500; text-align: left;}
+.ListType5 div {overflow: auto; counter-reset: num1; padding: 53px 58px 0px 45px; width: 600px; height: 710px; background-color: #fff; font-size: 13px; line-height: 20px; box-sizing: border-box; letter-spacing: 0.005px; text-align: left;}
+.ListType5 h4 {margin: 0 0 16px 0; font-size: 17px; text-indent: -15px;}
+.ListType5 h4:before {content:counter(num1)". "; counter-increment: num1 1;}
+.ListType5 p {position: relative; margin: 0 0 0 14px; }
+.ListType5 p:before {position: absolute; left:-14px; content:"* ";}
+.ListType5 ol {position: relative; margin: 6px 0 20px 14px; counter-reset: num2;}
+.ListType5 ol li:before {position: absolute; left:-14px; content:counter(num2)". "; counter-increment: num2 1;}
+.ListType5 span {display: inline-block; margin: 7px 0 20px 0; }
+.ListType5 button { margin: 20px 0 0 0; width: 130px; height: 38px; border:0; border-radius: 2px; background-color: #1d63b4; font-size: 15; color: #fff;}
+
+
+
+
+.ListType6 { padding: 50px; font-family: 'Noto Sans KR',sans-serif; font-weight: 400; color: #333333; font-size: 14px; text-align: center; background-color: #ecede8; box-sizing: border-box;}
+.ListType6 li { position: relative; display: inline-block; margin: 0 10px; padding: 34px 24px 0px 24px ; vertical-align: top; width: 250px; height: 310px;
+    box-sizing:border-box; border-radius: 5px; 
+    font-weight: normal; box-shadow: 0px 7px 16px rgba(21, 13, 7, 0.15); background-color: #fff; text-align: left;}
+.ListType6 .active {margin: -10px 10px 0 10px; box-shadow: 0px 9px 16px rgba(21, 13, 7, 0.27);}
+.ListType6 li div {margin: 0px 0px 11px 0px; font-size: 14px; line-height: 44px;}
+.ListType6 li b {font-size:35px; color:  #eb6242; line-height: 36px;}
+.ListType6 button { position: absolute; left:24px; bottom: 24px; border: 1px solid #e3e3e3; border-radius: 4px; background-color: white; width: 202px; height: 50px; font-family: 18px;}
+
+
+.ListType8 {font-family: 'Noto Sans KR', sans-serif; line-height: 1;}
+.ListType8 h3 {font-size: 24px;}
+.ListType8 .btn_more { display: inline-block; margin: 28px 0 40px; font-size: 16px; color: #ad8a70; text-decoration: none;}
+.ListType8 li { position: relative; display: inline-block; margin-right:15px; width: 340px; height: 455px; vertical-align:top;}
+.ListType8 li div {margin: 30px 0; font-size: 12.5px; font-weight: 300; color: #4c5057; }
+.ListType8 li strong { display: inline-block; margin: 0 0 12px 0; font-size: 19px; font-weight: 300; color: #4c5057; }
+.ListType8 li p {font-size: 14px; font-weight: 300; color: #847a74; text-indent: -0.04; line-height: 22px;}
+.ListType8 li a { position: absolute; left: 0; bottom: 25px; font-size: 14px; font-weight: 300; color: #b5967e; text-decoration: none;}
+
+
+
+.ListType9 {font-family: 'Noto Sans KR', sans-serif; margin: 0 auto; width: 1140px; border-top: 2px solid #333333;}
+.ListType9 li {position: relative; padding:30px 40px 30px 410px ; height: 303px; border-bottom: 1px solid #e5e5e5; box-sizing: border-box;}
+.ListType9 li strong {font-size: 27px; line-height: 47px; color: #333333; letter-spacing: -0.4px; font-size: 500;}
+.ListType9 li div {margin: 0 0 17jpx 0 ; font-size: 15px; line-height: 29px; color: #333333; letter-spacing: -0.1px; font-size: 500;}
+.ListType9 li b {font-size: 15px; line-height: 44px; color: #005891; letter-spacing: -0.005px; font-size: 400;}
+.ListType9 li p {font-size: 15px; line-height: 24px; color: #666666; font-size: 400;}
+.ListType9 li img {position: absolute; left: 0;}
+.ListType9 li button {position: absolute; top: 40px; right: 40px; width: 176px; height: 40px; border: 1px solid #005891; background-color: white; font-size: 15px; font-weight: 700; color: #005891;}
+
+
+
+
+.ListType13 {position: relative; height: 282px; text-align: center; font-size: 0; box-shadow:0px 11px 18px rgba(0, 25, 39, 0.12);}
+.ListType13 a {text-decoration: none; color: #333; font-size: 15.5px;}
+.ListType13 div { position: absolute; height: 62px; width: 100%; border-top: 1px solid #cccccc; border-bottom: 1px solid #cccccc; text-align: left; box-sizing: border-box;}
+.ListType13 div a { display: inline-block; margin: 0 0 0 20px; padding: 0 20px; height: 62px; line-height: 62px;}
+.ListType13 div a img {vertical-align: middle;}
+.ListType13 nav ul .group { display: inline-block; vertical-align: top;}
+.ListType13 nav ul .title { display: inline-block; width: 225px; line-height: 62px;}
+.ListType13 nav ul .active {position: relative; color: #136972;}
+.ListType13 nav ul .active:after {position: absolute; margin: 0 0 0 -30px; left: 50%; bottom: 0; content: ""; width: 60px; height: 2px; background-color: #136972;}
+.ListType13 nav ul .contents { padding: 23px 0 0 ; height: 220px; border-right: 1px solid #cccccc; box-sizing: border-box;}
+.ListType13 nav ul .contents li a { display: inline-block; width: 225px; line-height: 39px;}
+.ListType13 .etc { position:absolute; right:0; top:0;}
+.ListType13 .etc li {float: left; border-left: 1px solid #cccccc;}
+.ListType13 .etc li a {display: inline-block; padding: 0 20px; line-height: 62px; font-size: 13.5px;}
+.ListType13 .etc .lang {padding: 0 10px;}
+.ListType13 .etc .lang a { padding: 0 7px;}
+.ListType13 .etc .lang .active { position:relative; }
+.ListType13 .etc .lang .active:before { position: absolute; content: ""; margin: 0 0 0 -12.5px; top: 45px; left: 50%; width: 25px; height: 1px; background-color: #999;}
+
+
+
+
+
+.sample {border:1px solid #000; margin: 0 auto;}
+.sample .groups::after {content: ""; display: block; clear: both;}
+.sample .group {display: inline-block; vertical-align: top;}
+.sample .contents li a{position: relative;}
+.sample .contents li a:before {position: absolute; left: 0; top: 0; width: 10px; height: 1px; background-color: red;}
+
+
+
+
+.sample2 { display:flex; flex-direction: column;  }
+.sample2 div + div { color: red;}
+
+
+
+
+.FormType1 { padding: 75px 0; width: 690px; height: 620px; border: 20px solid #f4efeb; font-size: 16px; text-align: center; box-sizing: border-box; line-height: 1;}
+.FormType1 h2 { margin:0 0 55px 0; font-size: 33px; font-weight: 400; color: #333333;}
+.FormType1 p { margin: 0 0 39px 0; color: #777777;}
+.FormType1 div { margin: 0 0 22px 0;}
+.FormType1 label { display: inline-block; width: 117px; color: #777777; line-height: 56px; text-align: left;}
+.FormType1 input { width: 365px; height: 56px; border: 1px solid #e2e2e2;}
+.FormType1 button { margin: 30px 0; width: 489px; height: 58px; border-radius: 29px; border:0px; background-color: #957963; color: #fff;}
+.FormType1 a { margin: 0 30px; text-decoration: none; color: #777777;}
+
+
+
+
+.FormType5 table { font-family: 'Nanum Gothic', sans-serif; border-top:1px solid #9ea0a3; font-weight: 300; line-height: 1; font-size: 0;}
+.FormType5 table tr { border-bottom: 1px solid #e1e4e8;}
+.FormType5 table tr th { padding: 0 0 0 40px; width: 120px; background: url(images/ico_check.png) no-repeat left 20px top 50% #f8f8f8; font-weight: 300; text-align: left; font-size: 14px;}
+.FormType5 table tr td { padding: 10px 0 10px 20px; color: #6a6a6a;}
+.FormType5 table tr td p { margin: 10px 0 0; font-size: 14px;}
+.FormType5 table label { position: relative; padding: 0 20px 0 26px; font-size: 14px; line-height: 39px;}
+.FormType5 table label::before { position: absolute; content: ""; left: 0px; top: 0px; width: 15px; height: 15px; border: 1px solid #e2e5e9;}
+.FormType5 table input { text-indent: 15px; color:#000;}
+.FormType5 table input::placeholder { color:#ababab;}
+.FormType5 table input[type="checkbox"] { position: absolute; margin:0 0 0 -5000px;}
+.FormType5 table input[type="checkbox"]:checked + label::before {border: 2px solid #000;}
+.FormType5 table input[type="checkbox"]:checked + label { color: #000;}
+.FormType5 table input[type="text"] { margin: 0 3px 0 0; height: 36px; border:1px solid #d7d7d7; line-height: 36px; box-sizing: border-box;}
+.FormType5 .name input[type="text"] { width: 507px;}
+.FormType5 .address input[type="text"] { width: 307px;}
+.FormType5 .address input[type="text"]:nth-child(1) { width: 123px;}
+.FormType5 .phone input[type="text"] { width: 123px;}
+.FormType5 table select { display: inline-block; margin: 0 3px 0 0; width: 123px; height: 36px; border: 1px solid #d7d7d7; color: #6a6a6a; text-indent: 10px;}
+.FormType5 table button { display: inline-block; margin: 0 10px 0 0; height: 36px; padding: 0 18px; border:1px solid #d7d7d7; background-color: #f8f8f8; color: #6a6a6a;}
+
+
+
+
+
+.FormType9 { width: 710px; font-family: 'Noto Sans KR', sans-serif; font-size: 16px; font-weight: 400; text-align: center;}
+.FormType9 ul li {text-align: left;}
+.FormType9 ul li a {text-decoration: none; color: #727272; font-size: 14px;}
+.FormType9 ul li label {padding: 0 0 0 30px; background:url(images/btn_unchk2.png) no-repeat left / auto 23px; line-height: 22px;}
+.FormType9 ul li input {position: absolute; left: -5000px;}
+.FormType9 ul li input:checked + label {background:url(images/btn_chk.png) no-repeat left / auto 23px; text-align: left;}
+.FormType9 ul li div {overflow: auto; margin: 16px 0 40px 0; width: 710px; height: 140px; border: 1px solid #dddddd;}
+.FormType9 ul li span {display: block; margin: 40px 0; height: 1px; width: 712px; background-color: #f0f0f0;}
+.FormType9 button { margin: 0 4px; width: 120px; height: 40px; border-radius: 20px; }
+.FormType9 .btn_cancel {border:1px solid #dddddd; background-color: #fff; color: #000;}
+.FormType9 .btn_confirm {border:none; background-color: #dddddd; color: #fff;}
+
+
+
+.FormType11 { font-family: 'Noto Sans KR', sans-serif; font-size: 0; line-height: 18px; text-align: center;}
+.FormType11 table { width: 900px; margin: 0 auto; border: 1px solid #dddddd; border-bottom: none; font-size: 13px; text-align: left;}
+.FormType11 tr { border-bottom: 1px solid #dddddd; box-sizing: border-box;}
+.FormType11 th { padding: 20px; width: 160px; color: #595959; text-align: left; font-weight: 400; box-sizing: border-box;}
+.FormType11 td { padding: 20px 70px 20px 0;}
+.FormType11 tr input[type="checkbox"] { position: absolute; left: -5000px;}
+.FormType11 tr label { padding: 0 20px 0 22px; background:url(images/btn_unchk2.png) no-repeat left 0 top 1px ; color: #969696;}
+.FormType11 tr input:checked[type="checkbox"] + label { background:url(images/btn_chk2.png) no-repeat left 0 top 1px ; color: #595959;}
+.FormType11 tr textarea { overflow: auto; height: 75px; width: 100%; border: none; font-family: 'Noto Sans KR', sans-serif;}
+.FormType11 tr input[type="text"] { height: 18px; width: 100%; line-height: 18px; font-family: 'Noto Sans KR', sans-serif; font-size: 13px; border: none;}
+.FormType11 .title {position: relative;}
+.FormType11 .title::before {position: absolute; top: 20px; right: 20px; content: "0/30"; color: #cbcbcb; font-size: 13px;}
+.FormType11 .content {position: relative;}
+.FormType11 .content::before {position: absolute; top: 20px; right: 20px; content: "0/1000"; color: #cbcbcb; font-size: 13px;}
+.FormType11 .file { position: relative;}
+.FormType11 .file button { position: absolute; top: 20px; right: 20px; display: inline-block; width: 22px; height: 22px; background: url(images/btn_plus.png) no-repeat top left /20px; border: none;}
+.FormType11 .buttonstyle1 { margin: 40px 4px 0 4px; width: 120px; height: 40px; border: 1px solid #b9b9b9; border-radius: 20px; font-size: 13px;}
+.FormType11 .btn_cancel { background-color: #fff; color: #3f3f3f; }
+.FormType11 .btn_confirm { background-color: #b9b9b9; color: #fff;}

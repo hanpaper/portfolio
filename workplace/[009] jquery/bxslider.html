@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script> 
+    <title>Document</title>
+    <script>
+        $(document).ready(function(){
+
+            var slide1 = $('.slider').bxSlider({
+                auto:true,
+                pause:2000
+            });
+            $('.controls .play').on('click', function(){
+            slide1.startAuto();
+            })
+            $('.controls .pause').on('click', function(){
+            slide1.stopAuto();
+            })
+        });
+    </script>
+</head>
+<body>
+
+    <div class="slider">
+        <div><img src="slider.png" alt=""></div>
+        <div><img src="slider.png" alt=""></div>
+        <div><img src="slider.png" alt=""></div>
+    </div>
+    <div class="controls">
+        <button class="play">재생</button>
+        <button class="pause">정지</button>
+    </div>
+    <style>
+        body { padding: 80px 0;}
+        .bx-wrapper { position: relative;}
+        .bx-viewport { text-align: center;}
+        .bx-controls-direction a { display: inline-block; position: absolute; top: 50%; transform: translateY(-50%); width: 80px; height: 80px; font-size: 80px; text-decoration: none; overflow: hidden; color: lightgray;}
+        .bx-controls-direction a:hover { color: gray;}
+        .bx-controls-direction a.bx-prev { left: 0;}
+        .bx-controls-direction a.bx-prev:before { content: "\e93d"; font-family: 'xeicon'; vertical-align: top;}
+        .bx-controls-direction a.bx-next { right: 0;}
+        .bx-controls-direction a.bx-next:before { content: "\e940"; font-family: 'xeicon'; vertical-align: top;}
+        .bx-pager { position: absolute; bottom: -60px; width: 100%; text-align: center;}
+        .bx-pager div { display: inline-block; }
+        .bx-pager div a { display: inline-block; margin: 0 5px; width: 35px; height: 5px; background-color: lightgray; font-size: 0;}
+        .bx-pager div a.active { background-color: gray; }
+        img { width: 1100px;}
+        .controls { padding: 20px 0 0; text-align: center;}
+        .controls button { cursor: pointer; border: 1px solid gray; background-color: white;}
+    </style>
+</body>
+</html>

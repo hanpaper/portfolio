@@ -1,0 +1,128 @@
+body { line-height: 1;}
+button { background-color: transparent;}
+header { border-bottom: 1px solid #dadada;}
+
+
+/* 공통 영역 */
+main { text-align: center; box-sizing: border-box;}
+.titlebar { position: relative; z-index: 100; margin: 113px 0 0; padding: 23px 0 0; box-shadow: 0 4px 13px rgba(4,0,0,0.18);}
+.titlebar nav ul { margin: 0 auto; width: 1200px; text-align: left;}
+.titlebar nav ul li {display: inline-block;}
+.titlebar nav ul li~li { padding: 0 0 0 27px; background: url(images/bu_arrow_right3.png) no-repeat left 13px top 7px;}
+.titlebar nav ul li a { font-size: 11px; color: #000;}
+.titlebar h2 {line-height: 90px;}
+.titlebar_menu { position: relative; margin: 0 auto; width: 1028px; height: 47px;}
+.titlebar_menu b { position: absolute; left: 0; top:50%; transform: translateY(-50%); font-size: 15px;}
+.titlebar_menu ul li { display: inline-block;}
+.titlebar_menu ul li button { margin: 0 33px; height: 47px; font-size: 18px;}
+.titlebar_menu ul li.active button { border-bottom: 2px solid #000; font-weight: 600;}
+
+
+/* content1.html */
+.research_search { height: 128px; background-color:#067fd9; vertical-align: middle; line-height: 128px;}
+.research_search input { width: 580px; height: 35px; line-height: 35px; background-color: transparent; color: #fff; font-size: 17px; text-indent: 10px;}
+.research_search input::placeholder { color: #fff; font-size: 17px;}
+.research_search .btn_search { width: 35px; height: 35px; background: url(images/ico_search.png) no-repeat center / 23px auto;}
+
+.research_menu {margin: 90px 0 85px; font-size: 0;}
+.research_menu li { display: inline-block; margin: 0 0 0 -1px;}
+.research_menu button { width: 183px; height: 48px; border: 1px solid #e4e8eb; background-color: #fafafa; font-size: 15px;}
+.research_menu li.active button { position: relative; z-index: 100; border:1px solid #000; background-color: #fff;}
+
+.research_result { position: relative; padding: 45px 0 0; margin: 0 auto; width: 996px;}
+.research_result > p,
+.research_result > span { position: absolute; top:0;}
+.research_result > p { left: 0;}
+.research_result > span {right: 0;}
+.research_result .btn_view_list { padding:  0 0 0 20px; background: url(images/ico_list.png) no-repeat left 0 top 0; line-height: 15px;}
+.research_result .btn_view_card { padding:  0 0 0 20px; background: url(images/ico_card.png) no-repeat left 0 top 0; line-height: 15px;}
+.research_result > span button~button { position: relative; margin: 0 0 0 15px;}
+.research_result > span button~button::before { position: absolute; content: ""; left: -11px; top:0; width: 1px; height: 15px; background-color: #e4e8eb;}
+.research_result table { border-top: 2px solid #000;}
+.research_result table tr { height: 81px; border-bottom: 1px solid #e4e8eb;}
+.research_result table .doc { width: 86px; }
+.research_result table .doc span { display: inline-block; padding: 0 9px; line-height: 24px; border:1px solid #e65338; color: #e65338; font-size: 11px; font-weight: 500;}
+.research_result table .title { text-align: left;}
+.research_result table .title a { color: #000;}
+.research_result table .title p { margin: 0 0 13px 0; font-size: 17px;}
+.research_result table .title p img { margin: 0 0 0 7px;}
+.research_result table .title ul { display: inline-block;}
+.research_result table .title ul li { display: inline-block;}
+.research_result table .title ul li a { font-size: 13px; line-height: 17px; color: #0041b2 ; vertical-align: top;}
+.research_result table .title i { font-size: 13px; line-height: 17px; vertical-align: top;}
+.research_result table .date { width: 115px; font-size: 13px;}
+.research_result .btn_more { padding: 0 23px 0 0; margin: 47px 0 105px; font-size: 15px; background: url(images/bu_arrow_down.png) no-repeat right 0 top 50%;}
+
+
+/* form_button */
+.form .btnstyle { display: inline-block; margin:44px 0 0; width: 100%; height: 56px; line-height: 56px; background-color: #9da1a5; font-size: 17px; color: #fefefe; font-weight: 600;}
+.form .btn_before,
+.form .btn_next { margin:50px 10px 0; width: 142px;}
+.form .btn_before { background-color:#081b50;}
+
+
+/* login.html */
+form { text-align: left;}
+.form { padding: 40px 0 ; border-top: 1px solid #e4e8eb; background-color: #f4f4f4;}
+.form > div { display: inline-block; padding: 52px 42px 45px; width: 640px; background-color: #fff; box-sizing: border-box; text-align: center;}
+.form_login input[type="text"],
+.form_login input[type="password"] { margin: 12px 0 ; padding: 0 13px; height: 48px; width: 100%; border:1px solid #e4e8eb; color: #000; font-size: 15px; box-sizing: border-box;}
+.form_login div { margin: 3px 0 0; height: 20px; box-sizing: border-box; font-size: 0;}
+.form_login div input[type="checkbox"] { width: 20px; height: 20px;}
+.form_login div label { margin: 0 0 0 12px; line-height: 20px; font-size: 15px;}
+.form_login input::placeholder {color: #000;}
+.form_forget { margin: 42px 0 0; text-align: center;}
+.form_forget li { display: inline-block;}
+.form_forget li a { font-weight: 600; color: #000; font-size: 13px;}
+.form_forget li~li { position: relative; padding: 0 0 0 28px;}
+.form_forget li~li a:before { position: absolute; content: ""; left: 14px; top:5px; width: 1px; height: 12px; background-color: #dededf; }
+
+.info { position: relative; margin: 0 auto 65px; width: 1028px; text-align: left;}
+.info > b { display: inline-block; margin: 29px 0 20px; padding: 0 0 0 28px; background: url(images/ico_info.png) no-repeat left 4px top 50%; line-height: 16px;}
+.info ul { padding: 20px 0 0; border-top: 1px solid #e4e8eb;}
+.info ul li { position: relative; margin: 0 0 0 20px; font-size: 15px; line-height: 24px;}
+.info ul li b { display: block; padding: 0 0 0 8px; font-weight: 400;}
+.info ul li b::before { position: absolute; content: ""; width: 3px; height: 3px; top:11px; left: 0px; background-color: #000;}
+.info ul li~li { margin: 25px 0 0 20px ;}
+.info .btn_control { position: absolute; right: 25px; top:30px; width: 16px; height: 16px; background: url(images/bu_arrow_up.png) no-repeat;}
+
+.form_agree fieldset > div { margin: 12px 0; width: 100%; border:1px solid #e4e8eb; box-sizing: border-box;}
+.form_agree input { position: absolute; left: -5000px;}
+/* .form_agree input:focus + label { border: 1px solid #000;} */
+.form_agree label { padding: 0 0 0 34px;}
+.form_agree fieldset > div > span { position: relative; display: block; margin: 0 20px;}
+.form_agree fieldset > div > span label { display: inline-block; background: url(images/ico_check_on.png) no-repeat left 0 top 50%; line-height: 68px;  font-size: 15px; font-weight: 600;}
+.form_agree fieldset > div > span input:checked + label { background: url(images/ico_check_off.png) no-repeat left 0 top 50%;}
+.form_agree fieldset > div > div { padding: 18px 0 20px; margin: 0 20px; border-top:1px solid #e4e8eb;}
+.form_agree .checkbox_detail > div { position: relative;}
+.form_agree .checkbox_detail label { line-height: 34px;  font-size: 13px; font-weight: 400; background: url(images/ico_check2_on.png) no-repeat left 5px top 50%;}
+.form_agree .checkbox_detail input:checked + label { background: url(images/ico_check2_off.png) no-repeat left 5px top 50%;}
+.form_agree .contact div { display: inline-block; margin: 0 25px 0 0;}
+.form_agree .contact label { position: relative; padding: 0 0 0 30px; line-height: 20px;  font-size: 13px; font-weight: 400;}
+.form_agree .contact label::before { position: absolute; content:""; left: 0; top:0; width: 20px; height: 20px; border: 1px solid #d9d9d9;}
+.form_agree .contact input:checked + label::before { position: absolute; content:""; left: 0; top:0; width: 20px; height: 20px; border: 1px solid #34b4ed; background: url(images/ico_check2_off.png) no-repeat left 4px top 50%;}
+.form_agree .link_detail { position: absolute; right: 0; top:50%; transform: translateY(-50%); color: #02a2e8; font-size: 13px; font-weight: 600; text-decoration: underline;}
+
+
+.form_join th { width: 140px; vertical-align: top; font-size: 15px; font-weight: 400; color: #00003f; text-align: left;}
+.form_join th label { line-height: 48px;}
+.form_join th em { display: inline-block; padding: 0 0 0 3px; transform: translateY(12px); color: #f97017; font-size: 25px;}
+.form_join tr~tr th,
+.form_join tr~tr td { padding: 40px 0 0;}
+.form_join td { font-size: 0;}
+.form_join select { appearance: none; -webkit-appearance: none; background: url(images/ico_arrow_down.png) no-repeat right 14px center / 20px auto #fff;}
+.form_join select::-ms-expand { display: none;}
+.form_join td select,
+.form_join td input { padding: 0 0 0 15px; height: 48px; width: 100%; border: 1px solid #e4e8eb; line-height: 48px; vertical-align: top; box-sizing: border-box; }
+.form_join td input:disabled { border: 1px solid #e4e8eb; background-color: #f7f9fa;}
+.form_join td > div { position: relative; padding: 0 94px 0 0 ; }
+.form_join td > div button { position: absolute; right: 0; top: 0; margin: 0; width: 86px; height: 48px; border: 1px solid #081b50; font-size: 15px; font-weight: 400; color: #00003f; background-color: #fff;}
+.form_join td p { margin: 2px 0 0; font-size: 14px; color: #747474; line-height: 28px; letter-spacing: -1.005px;}
+.form_join .address td > input { margin: 12px 0 0;}
+.form_join .phone input,
+.form_join .cellphone input,
+.form_join .cellphone select { width: 120px;}
+.form_join i { display: inline-block; width: 25px; line-height: 48px; font-size: 15px; text-align: center;}
+.form_join .email select,
+.form_join .email input { width: 194px;}
+.btn_before { width: 142px;}

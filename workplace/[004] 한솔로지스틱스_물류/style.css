@@ -1,0 +1,57 @@
+body { position: relative; line-height: 1; color: #333;}
+
+header { position: absolute; z-index: 300; height: 100px; width: 100%; border-bottom: 1px solid rgba(255, 255, 255, 0.2); text-align: center; box-sizing: border-box;}
+header > div { position: relative; margin: 0 auto; max-width: 1800px; }
+header > div h1 { position: absolute; left: 0; height: 100px; line-height: 100px; width: 200px; box-sizing: border-box; float: left;}
+header > div h1 a { display: inline; cursor: pointer;}
+header > div h1 img { height: 50px;}
+header nav { width: 100%;}
+header nav > ul > li { display: inline-block; vertical-align: top;}
+header nav > ul > li:hover {background-color: rgb(0, 0, 0, 0.3);}
+header nav > ul > li > a { display: inline-block; width: 180px; font-size: 18px; color: #fff; font-weight: 700; line-height: 100px;}
+header nav > ul > li .nav_list { display: none; padding: 20px 0 28px;}
+header nav > ul > li:hover .nav_list { display: block;}
+header nav > ul > li .nav_list a { display: inline-block; width: 180px; line-height: 42px; color: rgba(255, 255, 255, 0.4);}
+header nav > ul > li .nav_list a:hover { color: rgba(255, 255, 255, 1);}
+
+
+header .header_right { position: absolute; right: 0; top: 0; display: table; float: right; padding: 0 10px 0 0; height: 100px;}
+header .header_right .tablecell { display: table-cell; vertical-align: middle;}
+header .header_right .btn_lang { display: inline-block; font-size: 0; }
+header .header_right .btn_lang li { position: relative; display: inline-block; }
+header .header_right .btn_lang li~li:before { position: absolute; content: ""; left: 0; top:50%; transform: translateY(-50%); width: 1px; height: 12px; background-color: rgba(255, 255, 255, 0.4);}
+header .header_right .btn_lang li button { transition: all .3s 0s; padding: 0 20px; height: 33px; font-size: 18px; color: rgba(255, 255, 255, 0.4); font-weight: 400; }
+header .header_right .btn_lang li button:hover { color: #fff;}
+header .header_right .btn_lang li button.active { position: relative; color: #fff; box-sizing: border-box; font-weight: 600;}
+header .header_right .btn_lang li button.active::before { position: absolute; content: ""; left: 50%; bottom: 0; transform: translateX(-50%); width: 22px; height: 100%; border-bottom: 2px solid #fff;}
+header .header_right .btn_menu { position: relative; margin: 0 0 0 66px; width: 30px; height: 33px; background-color: transparent;}
+header .header_right .btn_menu:after { position: absolute; content: ""; right: 0; top: 6px; width: 30px; height: 2px; background-color: white;}
+header .header_right .btn_menu span { transition: all .3s 0s; position: absolute; display: inline-block; right: 0; top: 15px; width: 20px; height: 2px; background-color: white;}
+header .header_right .btn_menu:hover span { width: 30px;}
+header .header_right .btn_menu:before { position: absolute; content: ""; right: 0; top: 24px; width: 30px; height: 2px; background-color: white;}
+
+
+
+
+.quick_menu { z-index: 999; position: fixed; bottom: 20px; right: 10px; }
+.quick_menu button { padding: 30px 0 0; width: 70px; height: 70px; border-radius: 6px; font-size: 14px; background: url(images/ico_arrow_up.png) no-repeat top 15px left 50% / auto #007dc6; color: #fff; font-weight: 600;}
+
+/** style**/
+.txt_style1 { background: linear-gradient(to right, #007dc6 5%, #00a651); -webkit-background-clip: text; color: transparent; font-family: poppins; font-weight: 800;}
+
+
+
+
+/** footer **/
+
+footer { padding: 60px 0 70px 0; background: #222222; font-size: 15px; color: #727272; line-height: 23px;}
+footer > div { padding: 0 0 0 223px; position: relative; margin: 0 auto; width: 1420px; box-sizing: border-box;}
+footer > div ul li { display: inline-block;}
+footer > div ul li~li { position: relative; padding: 0 0 0 41px;}
+footer > div ul li~li:before { position: absolute; content: ""; left: 20px; top:50%; transform: translateY(-50%);  width: 1px; height: 10px; background-color: #474747;}
+footer > div .footer_nav { padding: 0 0 25px; border-bottom: 1px solid #4e4e4e;}
+footer > div .footer_nav li a { color: #fff; }
+footer > div .footer_company { padding: 22px 0 0;}
+footer > div .footer_company li:first-child { color: #fff;}
+footer > div .footer_info { padding: 0 0 34px;}
+footer > div > select { position: absolute; right: 120px; bottom: 0; width: 220px; height: 50px; border: 1px solid #313131; background-color: #1e1e1e; color: #7d7d7d; font-size: 15px; text-indent: 32px; }
