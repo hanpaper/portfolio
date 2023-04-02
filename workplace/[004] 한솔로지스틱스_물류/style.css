@@ -1,13 +1,13 @@
 body { position: relative; line-height: 1; color: #333;}
 
-header { position: absolute; z-index: 300; height: 100px; width: 100%; border-bottom: 1px solid rgba(255, 255, 255, 0.2); text-align: center; box-sizing: border-box;}
+header { position: fixed; z-index: 300; height: 100px; width: 100%; border-bottom: 1px solid rgba(255, 255, 255, 0.2); text-align: center; box-sizing: border-box;}
 header > div { position: relative; margin: 0 auto; max-width: 1800px; }
 header > div h1 { position: absolute; left: 0; height: 100px; line-height: 100px; width: 200px; box-sizing: border-box; float: left;}
 header > div h1 a { display: inline; cursor: pointer;}
 header > div h1 img { height: 50px;}
 header nav { width: 100%;}
 header nav > ul > li { display: inline-block; vertical-align: top;}
-header nav > ul > li:hover {background-color: rgb(0, 0, 0, 0.3);}
+header nav > ul > li:hover {background-color: rgb(0, 0, 0, 0.7);}
 header nav > ul > li > a { display: inline-block; width: 180px; font-size: 18px; color: #fff; font-weight: 700; line-height: 100px;}
 header nav > ul > li .nav_list { display: none; padding: 20px 0 28px;}
 header nav > ul > li:hover .nav_list { display: block;}
