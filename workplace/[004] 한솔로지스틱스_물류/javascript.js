@@ -7,6 +7,10 @@ $( document ).ready(function() {
         }
     })
 
+    $('.btn_up').click(function(){
+        window.scrollTo(0, 0)
+    })
+
     $('.jq_slider1').slick({
         infinite: true,
         slidesToShow: 4,
