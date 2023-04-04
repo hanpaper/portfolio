@@ -53,8 +53,9 @@
 .section_business ul li:nth-child(3) a div{ background: url(images/main_business_img3.jpg) no-repeat center /auto;}
 .section_business ul li:nth-child(4) a div{ background: url(images/main_business_img4.jpg) no-repeat center /auto;}
 .section_business ul li:nth-child(5) a div{ background: url(images/main_business_img5.jpg) no-repeat center /auto;}
-.section_business ul li a div { position: relative; width: 100%; height: 430px; line-height: 430px; text-align: center; overflow: hidden; background-repeat: no-repeat; background-position: center; background-size: auto;}
-.section_business ul li a:hover div::after { position: absolute; content: "MORE DETAILS"; left: 0; top: 0; width: 100%; height: 100%; line-height: 430px; padding: 19px 0 0; background: url(images/ico_serach.jpg) no-repeat left 50% top calc(50% - 17px) / auto;  text-align: center; color: #fff; font-size: 14px; font-weight: 600; vertical-align: middle; box-sizing: border-box;}
+.section_business ul li a div { position: relative; width: 100%; height: 430px; line-height: 430px; text-align: center; overflow: hidden; background-repeat: no-repeat; background-position: center; background-size: auto; font-size: 0;}
+.section_business ul li a:hover div::after { position: absolute; content: "MORE DETAILS"; left: 0; top: 0; width: 100%; height: 100%; line-height: 430px; padding: 19px 0 0;  text-align: center; color: #fff; font-size: 14px; font-weight: 600; vertical-align: middle; box-sizing: border-box;}
+.section_business ul li a:hover div::before { position: absolute; z-index: 1; content: "\e97a"; left: 0; top: -10px; width: 100%; height: 100%; font-size: 23px; color: white; font-family: 'xeicon';}
 .section_business ul li a div span { transition: all 0.4s 0s; transform: rotate(-45deg); display: inline-block; width: 50%; height: 50%; background-color: rgba(0,125,198,.0); vertical-align: middle;}
 .section_business ul li a:hover div span { width: 100%; height: 100%; transform: rotate(-180deg); background-color: rgba(0,125,198,.7);}
 .section_business ul li a i { display: inline-block; padding: 30px 0 23px; font-size: 16px; color: rgba(255, 255, 255, 0.5);}
@@ -72,7 +73,7 @@
 .section_esg ul li~li { position: relative; border-left: 1px solid rgba(255, 255, 255, 0.2);}
 .section_esg ul li~li::before { position: absolute; content: ""; left: -2px; top: calc( 50% - 6px ); width: 3px; height: 3px; background-color: #007dc6;}
 .section_esg ul li~li::after { position: absolute; content: ""; left: -2px; top: calc( 50% + 3px ); width: 3px; height: 3px; background-color: #00a651;}
-.section_esg ul li img { width: 50px; margin: 0 auto;}
+.section_esg ul li i { font-size: 50px; margin: 0 auto; font-weight: 300; color: #00a651;}
 .section_esg ul li p { padding: 26px 0 19px 0;}
 .section_esg ul li span { display: block; font-size: 16px; color: rgba(255, 255, 255, 0.5); font-weight: 400;}
 .section_esg ul li a { opacity: 0; transition: all .3s .1s; margin: 30px auto 0 auto; width: 176px; line-height: 48px; border: 1px solid rgba(255, 255, 255, 0.3); color: rgba(255, 255, 255, 0.5); font-size: 14px; font-weight: 400;}
@@ -97,15 +98,23 @@
 .section_ir > div > ul { position: absolute; top: 165px; right: 0;}
 .section_ir > div > ul li { display: inline-block;}
 .section_ir > div > ul li~li { margin: 0 0 0 20px;}
-.section_ir > div > ul li a { display: inline-block; position: relative; padding: 60px 45px; width: 360px; height: 440px; box-sizing: border-box;}
-.section_ir > div > ul li:nth-child(1) a { background: url(images/bg_main_ir_banner1.jpg) no-repeat left 0 top 0 / 100% ;}
-.section_ir > div > ul li:nth-child(2) a { background: url(images/bg_main_ir_banner2.jpg) no-repeat left 0 top 0 / 100% ;}
-.section_ir > div > ul li a b { font-size: 24px; color: #fff;}
-.section_ir > div > ul li a p { padding: 20px 0 0 0; font-size: 15px; color: rgba(255, 255, 255, 0.8); line-height: 24px;}
-.section_ir > div > ul li a::before { position: absolute; content: ""; bottom: 30px; right: 30px; width: 50px; height: 50px; background: url(images/ico_serach.jpg) no-repeat left 50% top 50% #007dc6;}
-.section_ir > div > ul li a:hover::before { z-index: 2; content: "MORE DETAILS"; bottom: 0; right: 0; width: 100%; height: 100%; padding: 230px 0 0; background-position: left 50% top calc(50% - 18px); background-color: transparent; text-align: center; color: #fff; font-weight: 600; font-size: 14px; box-sizing: border-box;}
-.section_ir > div > ul li a::after { z-index: 1; transition: all .35s .1s; position: absolute; content: ""; bottom: 0; right: 0; width: 0; height: 0; background-color: rgba(0,125,198,.8);}
-.section_ir > div > ul li a:hover::after { width: 100%; height: 100%;}
+.section_ir > div > ul li a div { display: inline-block; position: relative; padding: 60px 45px; width: 360px; height: 440px; box-sizing: border-box;}
+.section_ir > div > ul li a div b { font-size: 24px; color: #fff;}
+.section_ir > div > ul li a div p { padding: 20px 0 0 0; font-size: 15px; color: rgba(255, 255, 255, 0.8); line-height: 24px;}
+.section_ir > div > ul li:nth-child(1) a div { background: url(images/bg_main_ir_banner1.jpg) no-repeat left 0 top 0 / 100% ;}
+.section_ir > div > ul li:nth-child(2) a div { background: url(images/bg_main_ir_banner2.jpg) no-repeat left 0 top 0 / 100% ;}
+/* icon_normal */
+.section_ir > div > ul li a div::before { transition: all .2s 0s; position: absolute; content: "\e97a"; bottom: 30px; right: 30px; width: 50px; height: 50px; font-size: 23px; color: #fff; font-family: 'xeicon'; line-height: 50px; text-align: center; background-color: #007dc6;}
+.section_ir > div > ul li a:hover div::before  { opacity: 0;}
+/* icon_hover */
+.section_ir > div > ul li a span { transition: all .3s .1s; position: absolute; z-index: 1; display: inline-block; left: 0; top: 0; width: 100%; height: 100%; padding: 230px 0 0; color: #fff; font-weight: 600; font-size: 14px; text-align: center; box-sizing: border-box; opacity: 0;}
+.section_ir > div > ul li a:hover span { opacity: 1;}
+.section_ir > div > ul li a span::after { transition: all .3s .1s; position: absolute; z-index: 1; content: "\e97a"; bottom: 0; right: 0; width: 100%; height: 100%; padding: 190px 0 0; background-color: transparent; font-size: 23px; color: #fff; font-family: 'xeicon'; text-align: center; box-sizing: border-box; opacity: 0;}
+.section_ir > div > ul li a:hover span::after { opacity: 1;}
+/* background_hover */
+.section_ir > div > ul li a div::after { transition: all .3s .1s; position: absolute; content: ""; bottom: 0; right: 0; width: 0; height: 0; background-color: rgba(0,125,198,.8);}
+.section_ir > div > ul li a:hover div::after { width: 100%; height: 100%;}
+
 @keyframes ani1{
     0% { width: 0; height: 0;}
     100% { width: 100%; height: 100%;}
@@ -118,7 +127,9 @@
 .section_ir .article_ir > h4 { padding: 0 0 12px; font-size: 24px; color: #fff;}
 .section_ir .article_ir > p { font-size: 16px; color: rgba(255, 255, 255, 0.5);}
 .section_ir .article_ir > div { position: relative; width: calc(100% + 20px);}
-.section_ir .article_ir > .btn_detail { position: absolute; top:35px; right: 0; padding: 0 20px 0 0; font-size: 14px; font-weight: bold; color: rgba(255, 255, 255, 0.5); background: url(images/ico_arrow_right.png) no-repeat right 0 top 50% ;}
+.section_ir .article_ir > .btn_detail { transition: all .25s 0s; position: absolute; top:35px; right: 0; padding: 0 20px 0 0; font-size: 14px; font-weight: bold; color: rgba(255, 255, 255, 0.5);}
+.section_ir .article_ir > .btn_detail::before { position: absolute; left: 0; top: 0; width: 100%; height: 100%; content:"\e907"; font-family: 'xeicon'; text-align: right;}
+.section_ir .article_ir > .btn_detail:hover { color: #fff;}
 .section_ir .article_ir > div ul { display: flex; flex-direction: row; justify-content: stretch; margin: 36px 0 0;}
 .section_ir .article_ir > div ul li~li { margin: 0 0 0 20px;}
 .section_ir .article_ir > div ul li a { transition: all .4s; display: inline-block; position: relative; padding: 30px; height: 190px; border: 1px solid rgba(255, 255, 255, 0.3); color: #fff; box-sizing: border-box;}
@@ -127,11 +138,12 @@
 .section_ir .article_ir > div ul li a p { display: inline-block; padding: 19px 0 0; width: 270px; font-size: 16px; opacity: 0.5; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
 .section_ir .article_ir > div ul li a i { position: absolute; padding: 0 0 0 20px; left: 30px; top: 140px; font-size: 14px; opacity: 0.5; background: url(images/ico_clock.png) no-repeat left 0 top 50%;}
 /** jquery slider (slick) **/
-.section_ir .article_ir > div .jq_slider1 button { position: absolute; top:50%; transform: translateY(-50%); width: 60px; height: 60px; border-radius: 30px; font-size: 0;}
-.section_ir .article_ir > div .jq_slider1 .slick-prev { left: -90px; background: url(images/ico_arrow_left.png) no-repeat left 50% top 50% #2a3036;}
-.section_ir .article_ir > div .jq_slider1 .slick-prev:hover { background-image: url(images/ico_arrow_left2.png); background-color: #007dc6;}
-.section_ir .article_ir > div .jq_slider1 .slick-next { right: -90px; background: url(images/ico_arrow_right.png) no-repeat left 50% top 50% #2a3036;}
-.section_ir .article_ir > div .jq_slider1 .slick-next:hover { background-image: url(images/ico_arrow_right2.png); background-color: #007dc6;}
+.section_ir .article_ir > div .jq_slider1 button { transition: all .25s 0s; position: absolute; top:50%; transform: translateY(-50%); width: 60px; height: 60px; border-radius: 30px; background-color: #2a3036; font-size: 0; color: #fff;}
+.section_ir .article_ir > div .jq_slider1 button:hover { background-color: #007dc6;}
+.section_ir .article_ir > div .jq_slider1 .slick-prev { left: -90px;}
+.section_ir .article_ir > div .jq_slider1 .slick-prev::before { position: absolute; content: "\e906"; left: 0; top: 0; width: 100%; height: 100%; font-family: 'xeicon';  font-size: 20px; text-align: center; line-height: 60px;}
+.section_ir .article_ir > div .jq_slider1 .slick-next { right: -90px; }
+.section_ir .article_ir > div .jq_slider1 .slick-next::before { position: absolute; content: "\e907"; left: 0; top: 0; width: 100%; height: 100%; font-family: 'xeicon'; font-size: 20px; text-align: center; line-height: 60px;}
 .slick-slide { width: 340px;}
 
 /* only css
@@ -160,7 +172,8 @@
 .section_pr > div .article_sns .content li a { transition: all .4s; position: relative; display: inline-block; padding: 0 0 0 30px; width: 100%; height: 70px; border-bottom: 1px solid rgba(255, 255, 255, 0.15); line-height: 70px; font-size: 17px; color: rgba(255, 255, 255, 0.6); box-sizing: border-box;}
 .section_pr > div .article_sns .content li a:hover { background-color: rgba(255, 255, 255, 0.1);}
 .section_pr > div .article_sns .content li a:hover b { color: #fff;}
-.section_pr > div .article_sns .content li a i { display: inline-block; position: absolute; right: 30px; top:50%; padding: 0 0 0 20px ; transform: translateY(-50%); font-size: 14px;  background: url(images/ico_clock.png) no-repeat left 0 top 50%;}
+.section_pr > div .article_sns .content li a i { display: inline-block; position: absolute; right: 30px; top:50%; padding: 0 0 0 20px ; transform: translateY(-50%); font-size: 14px;}
+.section_pr > div .article_sns .content li a i::before { position: absolute; content: "\ea2c"; left: 0; top: 0; font-family: 'xeicon'; font-size: 14px;}
 .section_pr > div .article_sns .content li a b { display: inline-block; width: 510px; font-weight: 400; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
 .section_pr > div .article_sns .content .main a { position: relative; padding: 0 0 0 220px; height: 220px; box-sizing: border-box; line-height: 1;}
 .section_pr > div .article_sns .content .main a span { display: inline-block; position: absolute; left: 30px; top:50%; transform: translateY(-50%); width: 160px;}
@@ -173,8 +186,10 @@
 .section_pr > div .article_brochure > div { position: relative; padding: 83px 0 0 392px; height: 430px; border-bottom: 1px solid rgba(255, 255, 255, 0.15);box-sizing: border-box;}
 .section_pr > div .article_brochure > div img { position: absolute; left: 136px; top: 72px; width: 206px;}
 .section_pr > div .article_brochure > div p { padding: 0 0 28px; font-size: 22px; color: #fff; line-height: 30px;}
-.section_pr > div .article_brochure > div ul li button { transition: all .4s; margin: 0 0 10px; padding: 0 23px 0 0; width: 162px; height: 50px; border: 1px solid rgba(255, 255, 255, 0.15); color: #fff; font-size: 16px; background: url(images/ico_download1.png) no-repeat right 28px top 50%;}
-.section_pr > div .article_brochure > div ul li button:hover { background-color: #fff; color: #000; background-image: url(images/ico_download2.png);}
+.section_pr > div .article_brochure > div ul li button { transition: all .4s 0s; position: relative; margin: 0 0 10px; padding: 0 23px 0 0; width: 162px; height: 50px; border: 1px solid rgba(255, 255, 255, 0.15); color: #fff; font-size: 16px;}
+.section_pr > div .article_brochure > div ul li button::before { position: absolute; content: "\eb7c"; top: 50%; right: 28px; transform: translateY(-50%); font-size:16px; font-family: 'xeicon';}
+.section_pr > div .article_brochure > div ul li button:hover { background-color: #fff; color: #000;}
+.section_pr > div .article_brochure > div ul li button:hover::before { color: #000;}
 
 .btn_more { transition: all .2s; display: inline-block; position: absolute; right: 0; top: 0; width: 40px; height: 40px; border: 1px solid rgba(255, 255, 255, 0.3); font-size: 0;}
 .btn_more::before { position: absolute; content: ""; left: 50%; top: calc(50% - 0.7px); transform: translateX(-50%); width: 13px; height: 1.4px; background-color: white;}
