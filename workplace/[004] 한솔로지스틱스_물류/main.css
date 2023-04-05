@@ -1,27 +1,6 @@
-.swiper {
-    width: 100%;
-    height: 100%;
-  }
-
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
 .visual { height: 100vh;}
-.swiper-slide { background: url(images/bg_main_visual.jpg) no-repeat center / auto 100%;}
-.visual .content { width: 1420px; text-align: left;}
+.visual > div { width: 100%; height: 100%; background: url(images/bg_main_visual.jpg) no-repeat center / 100% auto;}
+.visual .content { margin: 0 auto; width: 1420px; text-align: left;}
 .visual .content h2 { color: #fff; font-size: 50px;}
 .visual .content h2 b { display: inline-block; padding: 20px 0 73px; font-size: 56px; font-family: poppins;}
 .visual .content .visual_number ul li { float: left; margin: 0 15px 0 21px;}
@@ -31,6 +10,8 @@
 .visual .content .visual_number ul li.active { position: relative; margin-right: 95px;}
 .visual .content .visual_number ul li.active::after { position: absolute; content: ""; left: 34px; top: 50%; width: 80px; height: 2px; background-color: rgba(255, 255, 255, 0.4);}
 .visual .content .visual_number ul li.active::before { animation: ani3 6s 0s; position: absolute; content: ""; left: 34px; top: 50%; height: 2px; background-color: #fff;}
+.bx-viewport .bxslider > div { width: auto;}
+
 @keyframes ani3 {
     0% { width: 0;}
     100% { width: 80px;}
