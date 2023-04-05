@@ -6,12 +6,11 @@ header > div h1 { position: absolute; left: 0; height: 100px; line-height: 100px
 header > div h1 a { display: inline; cursor: pointer;}
 header > div h1 img { height: 50px;}
 header nav { width: 100%;}
-header nav > ul > li { display: inline-block; vertical-align: top;}
-header nav > ul > li:hover {background-color: rgb(0, 0, 0, 0.7);}
-header nav > ul > li > a { display: inline-block; width: 180px; font-size: 18px; color: #fff; font-weight: 700; line-height: 100px;}
-header nav > ul > li .nav_list { display: none; padding: 20px 0 28px;}
-header nav > ul > li:hover .nav_list { display: block;}
-header nav > ul > li .nav_list a { display: inline-block; width: 180px; line-height: 42px; color: rgba(255, 255, 255, 0.4);}
+header nav > ul > li { position: relative; display: inline-block; width: 180px; vertical-align: top;}
+header nav > ul > li > a { position: absolute; z-index: 1; left: 0; top: 0; display: inline-block; width: 180px; font-size: 18px; color: #fff; font-weight: 700; line-height: 100px;}
+header nav > ul > li .nav_list { transition: all .2s 0s; position: absolute; left: 0; top: 0; padding: 120px 0 28px; background-color: rgb(0, 0, 0, 0.7); opacity: 0; pointer-events: none;}
+header nav > ul > li:hover .nav_list { opacity: 1; pointer-events: all;}
+header nav > ul > li .nav_list a { transition: color .3s 0s; display: inline-block; width: 180px; line-height: 42px; color: rgba(255, 255, 255, 0.4);}
 header nav > ul > li .nav_list a:hover { color: rgba(255, 255, 255, 1);}
 
 
