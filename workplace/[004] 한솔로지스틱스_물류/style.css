@@ -45,7 +45,7 @@ header .header_right .btn_menu:before { position: absolute; content: ""; right: 
 /** footer **/
 
 footer { padding: 60px 0 70px 0; background: #222222; font-size: 15px; color: #727272; line-height: 23px;}
-footer > div { padding: 0 0 0 223px; position: relative; margin: 0 auto; width: 1420px; box-sizing: border-box;}
+footer > div { padding: 0 20px 0 220px; position: relative; margin: 0 auto; max-width: 1380px; box-sizing: border-box;}
 footer > div ul li { display: inline-block;}
 footer > div ul li~li { position: relative; padding: 0 0 0 41px;}
 footer > div ul li~li:before { position: absolute; content: ""; left: 20px; top:50%; transform: translateY(-50%);  width: 1px; height: 10px; background-color: #474747;}

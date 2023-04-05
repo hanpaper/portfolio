@@ -35,9 +35,9 @@
 
 
 /** 사업영역 **/
-.contents { padding: 55px 0 0; margin: 0 auto; width: 1420px;}
+.contents { padding: 55px 0 0; margin: 0 auto; padding: 0 20px; max-width: 1380px;}
 .contents article { position: relative; margin: 110px 0 0; padding: 0 0 0 240px; box-sizing: border-box;}
-.contents article > h4 { position: absolute; left: 0; top:0; font-size: 24px; line-height: 31px; }
+.contents article > h4 { position: absolute; left: 20px; top:0; font-size: 24px; line-height: 31px; }
 .contents .transport > ul { display: flex; justify-content: space-between; flex-wrap: wrap;}
 .contents .transport > ul > li { display: inline-block; margin: 0 0 55px; width: 560px;}
 .contents .transport > ul > li:nth-last-child(1) { margin: 0;}
@@ -74,7 +74,7 @@
 
 
 /** 투자정보 | IR News**/
-.news { margin: 0 auto; width: 1420px; text-align: center;}
+.news { margin: 0 auto; padding: 0 20px; max-width: 1380px; text-align: center; box-sizing: border-box;}
 .news h3 { padding: 57px 0 26px; font-size: 18px; color: #007dc5; font-family: poppins; font-weight: 700;}
 .news p { margin: 0 0 70px 0; line-height: 26px; font-size: 17px; color: #666;}
 .group_research { margin: 80px 0 0; line-height: 150px; background-color: #f8f8f8; font-size: 0; text-align: center;}
@@ -121,7 +121,7 @@
 
 .contact { position: relative; width: 100%; height: 500px; padding: 120px 0 0; background: url(images/contact_bg2.png) no-repeat right 0px top 0px / 500px auto #fafafa; box-sizing: border-box;}
 .contact:before { position: absolute; z-index: -1; content: ""; left: 0; top: 0; width: 100%; height: 100%; background: url(images/contact_bg1.png) no-repeat left 0px top 0px / auto 500px;}
-.contact article { margin: 0 auto; width: 1420px;}
+.contact article { margin: 0 auto; padding: 0 20px 0 240px; width: 1380px;}
 .contact article b { font-size: 18px;}
 .contact article p { padding: 19px 0 56px; font-size: 17px; color: #58595b;}
 .contact article > div { display: table; position: relative; padding: 0 0 0 450px; height: 222px; width: 100%; border: 1px solid #eeeeee; box-sizing: border-box; vertical-align: middle; background-color: #fff;}
@@ -134,7 +134,7 @@
 .contact article > div div a.mail { background: url(images/ico_mail.png) no-repeat left top 9px / 17px auto;}
 .contact article > div div a:hover { text-decoration: underline;}
 
-.contact_form { margin: 115px auto 0; width: 1420px;}
+.contact_form { margin: 115px auto 0; padding: 0 20px; max-width: 1380px;}
 .contact_form > p { padding: 0 0 25px; font-size: 15px; color: #555; text-align: right;}
 .contact_form form table { border-top: 2px solid #222; text-align: left;}
 .contact_form form table tr { border-bottom: 1px solid #f0f0f0;}
@@ -169,7 +169,7 @@
 
 
 /** 홍보센터 | 소셜미디어 **/
-.social { margin: 0 auto; width: 1420px;}
+.social { margin: 0 auto; padding: 0 20px; max-width: 1380px;}
 .social > span { display: inline-block; margin: 55px 0 35px; padding: 0 0 0 24px; line-height: 14px; font-size: 15px; background: url(images/ico_page.png) no-repeat 0 center / auto 14px;}
 .social > span i { color: #007dc6;}
 .social > .social_list { display: flex; flex-direction: row; justify-content: space-between; flex-wrap: wrap;}
