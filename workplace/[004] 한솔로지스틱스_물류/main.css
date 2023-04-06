@@ -74,12 +74,14 @@
 
 .section_ir { width: 100%; height: 992px; background: url(images/bg_main_ir.jpg) no-repeat left 0 top 0 / 100% 100%;}
 .section_ir > div { position: relative; margin: 0 auto; padding: 165px 20px 0 ; max-width: 1380px; box-sizing: border-box;}
-.section_ir > div > h3 { padding: 114px 0 21px; display: inline-block; font-size: 18px;}
-.section_ir > div > p { padding: 0 0 202px; line-height: 40px; color: #fff; font-size: 34px;}
-.section_ir > div > ul { position: absolute; top: 165px; right: 20px;}
-.section_ir > div > ul li { display: inline-block;}
+.section_ir > div .title { position: absolute; left: 20px; top: 160px;}
+.section_ir > div .title h3 { padding: 114px 0 21px; display: inline-block; font-size: 18px;}
+.section_ir > div .title p { padding: 0 0 202px; line-height: 40px; color: #fff; font-size: 34px;}
+.section_ir > div > ul { display: flex; justify-content: flex-end; padding: 0 0 0 550px; width: 100%; box-sizing: border-box; } 
+.section_ir > div > ul li { flex: 1; display: inline-block; max-width: 360px; min-width: 330px; height: 440px;}
 .section_ir > div > ul li~li { margin: 0 0 0 20px;}
-.section_ir > div > ul li a div { display: inline-block; position: relative; padding: 60px 45px; width: 360px; height: 440px; box-sizing: border-box;}
+.section_ir > div > ul li a { display: inline-block; width: 100%; height: 100%;}
+.section_ir > div > ul li a div { display: inline-block; position: relative; padding: 60px 45px; width: 100%; height: 100%; box-sizing: border-box;}
 .section_ir > div > ul li a div b { font-size: 24px; color: #fff;}
 .section_ir > div > ul li a div p { padding: 20px 0 0 0; font-size: 15px; color: rgba(255, 255, 255, 0.8); line-height: 24px;}
 .section_ir > div > ul li:nth-child(1) a div { background: url(images/bg_main_ir_banner1.jpg) no-repeat left 0 top 0 / 100% ;}
@@ -104,8 +106,8 @@
     0% { width: 100%; height: 100%; bottom: 0; right: inherit;0}
     100% { width: 0; height: 0;}
 }
-.section_ir .article_ir { position: relative;}
-.section_ir .article_ir > h4 { padding: 0 0 12px; font-size: 24px; color: #fff;}
+.section_ir .article_ir { clear: both; position: relative;}
+.section_ir .article_ir > h4 { padding: 23px 0 12px; font-size: 24px; color: #fff;}
 .section_ir .article_ir > p { font-size: 16px; color: rgba(255, 255, 255, 0.5);}
 .section_ir .article_ir > div { position: relative; width: calc(100% + 20px);}
 .section_ir .article_ir > .btn_detail { transition: all .25s 0s; position: absolute; top:35px; right: 0; padding: 0 20px 0 0; font-size: 14px; font-weight: bold; color: rgba(255, 255, 255, 0.5);}
