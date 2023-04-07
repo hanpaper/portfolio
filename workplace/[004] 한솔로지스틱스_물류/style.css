@@ -41,7 +41,8 @@ header .header_right .btn_menu:before { position: absolute; content: ""; right: 
 
 /** 공통 - footer **/
 
-footer { padding: 60px 0 70px 0; background: #222222; font-size: 15px; color: #727272; line-height: 23px;}
+.main footer { margin: 0;}
+footer { margin: 240px 0 0; padding: 60px 0 70px 0; background: #222222; font-size: 15px; color: #727272; line-height: 23px;}
 footer > div { padding: 0 20px 0 220px; position: relative; margin: 0 auto; max-width: 1380px; box-sizing: border-box;}
 footer > div ul li { display: inline-block;}
 footer > div ul li~li { position: relative; padding: 0 0 0 41px;}
@@ -83,12 +84,12 @@ footer > div > select { position: absolute; right: 120px; bottom: 0; width: 220p
 
 
 /** sub_title**/
-.title { height: 347px; text-align: center; font-size: 0;}
-.title h2 { font-size: 36px; line-height: 228px;}
-.title ul li { display: inline-block;}
-.title ul li a { display: inline-block; width: 230px; height: 60px; line-height: 60px; border:1px solid #e5e5e5; font-size: 16px; color: #000; box-sizing: border-box; }
-.title ul li.inactive a:hover { color:#007dc6;}
-.title ul li.active a { background-color: #007dc6; color: #fff; border: none;}
+.sub_title { height: 347px; text-align: center; font-size: 0;}
+.sub_title h2 { font-size: 36px; line-height: 228px;}
+.sub_title ul li { display: inline-block;}
+.sub_title ul li a { display: inline-block; width: 230px; height: 60px; line-height: 60px; border:1px solid #e5e5e5; font-size: 16px; color: #000; box-sizing: border-box; }
+.sub_title ul li.inactive a:hover { color:#007dc6;}
+.sub_title ul li.active a { background-color: #007dc6; color: #fff; border: none;}
 .title_visual { position: relative; height: 480px; text-align: center;}
 .title_visual img { height: 100%;}
 .title_visual div { position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 100%; }
