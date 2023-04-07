@@ -1,3 +1,4 @@
+/** 메인화면 **/
 .visual { height: 100vh;}
 .visual > div { width: 100%; height: 100%; background: url(images/bg_main_visual.jpg) no-repeat center / 100% auto;}
 .visual .content { margin: 0 auto; width: 1420px; text-align: left;}
@@ -194,4 +195,160 @@
 .section_etc article span a:hover { background-color: #fff; color: #000;}
 .section_etc article span a:hover::before { background-color: #000;}
 .section_etc article span a:hover::after { background-color: #000;}
+
+
+
+
+/** 사업영역 **/
+.contents { padding: 55px 0 0; margin: 0 auto; padding: 0 20px; max-width: 1380px;}
+.contents article { position: relative; margin: 110px 0 0; padding: 0 0 0 240px; box-sizing: border-box;}
+.contents article > h4 { position: absolute; left: 20px; top:0; font-size: 24px; line-height: 31px; }
+.contents .transport > ul { display: flex; justify-content: space-between; flex-wrap: wrap;}
+.contents .transport > ul > li { display: inline-block; margin: 0 0 55px; width: 560px;}
+.contents .transport > ul > li:nth-last-child(1) { margin: 0;}
+.contents .transport > ul > li:nth-last-child(2) { margin: 0;}
+.contents .transport > ul > li img { display: block;}
+.contents .transport > ul > li strong { display: inline-block; padding: 36px 0 15px; font-size: 20px;}
+.contents .transport > ul > li ul li { font-size: 16px; color: #666; line-height: 34px;}
+.contents .transport > ul > li ul li:before { content: "· ";}
+
+.contents .service > p { padding: 0 0 30px; font-size: 18px; }
+.contents .service img { display: block; margin: 0 0 19px; width: 100%; border:1px solid #e5e5e5;}
+.contents .service ul li { display: flex; flex-direction: column; justify-content: center; height: 117px; border-bottom: 1px dashed #e5e5e5;}
+.contents .service ul li b { padding: 0 0 14px; font-size: 18px; }
+.contents .service ul li p { font-size: 16px; color: #666;}
+
+.contents table { border-top: 2px solid #222; font-size: 15px; text-align: center; box-sizing: border-box;}
+.contents table thead tr { height: 70px; border-bottom: 1px solid #222; color: #222; }
+.contents table tbody tr { height: 76px; border-bottom: 1px solid #e5e5e5; color: #555; }
+.contents table td { border-right: 1px solid #e5e5e5;}
+.contents table thead tr td:last-child,
+.contents table tbody tr td:last-child { border-right: none;}
+.contents .contact table tr td:nth-child(1) { width: 300px;}
+.contents .contact table tr td:nth-child(2) { width: 251px;}
+.contents .contact table tr td:nth-child(3) { width: 257px;}
+.contents .contact table tr td:nth-child(4) { width: 372px;}
+.contents .contact table tr td a { color: #555;}
+.contents .contact table tr td a:hover { text-decoration: underline;}
+.contents .corporation table tr td:nth-child(1) { width: 287px;}
+.contents .corporation table tr td:nth-child(2) { width: 402px;}
+.contents .corporation table tr td:nth-child(3) { width: 491px;}
+.contents .corporation table tr td a { color: #555;}
+.contents .corporation table tr td a:hover { text-decoration: underline;}
+
+
+
+/** 투자정보 | IR News**/
+.news { margin: 0 auto; padding: 0 20px; max-width: 1380px; text-align: center; box-sizing: border-box;}
+.news h3 { padding: 57px 0 26px; font-size: 18px; color: #007dc5; font-family: poppins; font-weight: 700;}
+.news p { margin: 0 0 70px 0; line-height: 26px; font-size: 17px; color: #666;}
+.group_research { margin: 80px 0 0; line-height: 150px; background-color: #f8f8f8; font-size: 0; text-align: center;}
+.group_research select, 
+.group_research input { height: 50px; line-height: 50px; border: 1px solid #e5e5e5; background-color: #fff; font-size: 15px; text-indent: 20px; color: #bbb;}
+.group_research input::placeholder{ color: #bbb;}
+.group_research select { position: relative; width: 150px; appearance: none; -webkit-appearance: none; background: url(images/ico_select_arrow.png) no-repeat right 11px center / auto #fff;}
+.group_research select::-ms-expand { display: none;}
+.group_research input { margin: 0 0 0 5px; width: 320px; color: #333;}
+.group_research button { width: 80px; height: 50px; background-color: #333333; color: #fff; font-size: 15px;}
+
+.news_list li { margin: 0 0 20px 0;}
+.news_list li a { display: inline-block; position: relative; padding: 0 0 0 167px; width: 100%; height: 168px; line-height: 168px; text-align: left; box-sizing: border-box; color: #333; border:1px solid #eeeeee;}
+.news_list li a::after { transition: all .4s 0s; position: absolute; content: "\e913"; right: 80px; top:50%; transform: translateY(-50%); width: 50px; height: 50px; line-height: 50px; text-align: center; font-weight: bold; border: 1px solid #eee; font-family: 'xeicon'; color: #aaa;}
+.news_list li a:hover::after { background-color:#007dc5; color: #fff;}
+.news_list li a::before { transition: all .4s 0s; position: absolute; content: ""; left: 0; top: 0; width: 100%; height: 100%; border:3px solid transparent; box-sizing: border-box;}
+.news_list li a:hover::before { border: 3px solid #007dc5; }
+.news_list li a strong { transition: all .4s 0s; position: absolute; left: 60px; top:50%; transform: translateY(-50%); font-size: 16px; color: #d0d0d0; line-height: 1; text-align: center; font-family: poppins;}
+.news_list li a strong i { display: block; padding: 0 0 7px 0; font-size: 60px; font-weight: 700;}
+.news_list li a:hover strong { color: #222;}
+.news_list li a b { font-size: 20px;}
+.news_list li a:hover b { color:#003880;}
+
+.page_number { margin: 80px 0 0; text-align: center;}
+.page_number li { display: inline-block; }
+.page_number li a { transition: all .3s 0s; display: inline-block; width: 40px; height: 40px; line-height: 40px; border: 1px solid #e5e5e5; background: #fff; color: #999;}
+.page_number li.page_move a { background-position: center; background-repeat: no-repeat; background-size: 38px auto;}
+.page_number li.btn_backend a { background-image: url(images/btn_backend.png);}
+.page_number li.btn_backend a:hover { background-image: url(images/btn_backend_hover.png);}
+.page_number li.btn_back a { background-image: url(images/btn_back.png);}
+.page_number li.btn_back a:hover { background-image: url(images/btn_back_hover.png);}
+.page_number li.btn_front a { background-image: url(images/btn_front.png);}
+.page_number li.btn_front a:hover { background-image: url(images/btn_front_hover.png);}
+.page_number li.btn_frontend a { background-image: url(images/btn_frontend.png);}
+.page_number li.btn_frontend a:hover { background-image: url(images/btn_frontend_hover.png);}
+.page_number li:not(.active) a:hover { border: 1px solid #222; color: #222;}
+.page_number li.active a { background: #333; color: #fff;}
+.page_number li~li { margin: 0 0 0 5px;}
+
+
+
+/** 투자정보 | Contact IR **/
+.import::before { content: "*"; color: #007dc6;}
+
+.contact { position: relative; width: 100%; height: 500px; padding: 120px 0 0; background: url(images/contact_bg2.png) no-repeat right 0px top 0px / 500px auto #fafafa; box-sizing: border-box;}
+.contact:before { position: absolute; z-index: -1; content: ""; left: 0; top: 0; width: 100%; height: 100%; background: url(images/contact_bg1.png) no-repeat left 0px top 0px / auto 500px;}
+.contact article { margin: 0 auto; padding: 0 20px 0 240px; width: 1380px;}
+.contact article b { font-size: 18px;}
+.contact article p { padding: 19px 0 56px; font-size: 17px; color: #58595b;}
+.contact article > div { display: table; position: relative; padding: 0 0 0 450px; height: 222px; width: 100%; border: 1px solid #eeeeee; box-sizing: border-box; vertical-align: middle; background-color: #fff;}
+.contact article > div span { display: table; position: absolute; left: 0; top: 50%; transform: translateY(-50%); padding: 0 0 0 205px; width: 390px; height: 120px; border-right: 1px solid #eeeeee; background: url(images/contact_icon2.png) no-repeat 95px center / 45px auto; box-sizing: border-box; vertical-align: middle;}
+.contact article > div span b { display: table-cell; line-height: 33px; vertical-align: middle;}
+.contact article > div div { display: table-cell; vertical-align: middle;}
+.contact article > div div strong { display: inline-block; margin: 0 0 20px 0; font-size: 20px; color: #555;}
+.contact article > div div a { display: block; padding: 0 0 0 32px; font-size: 17px; color: #888; line-height: 28px;}
+.contact article > div div a.tel { background: url(images/ico_tel.png) no-repeat 0px center / 17px auto;}
+.contact article > div div a.mail { background: url(images/ico_mail.png) no-repeat left top 9px / 17px auto;}
+.contact article > div div a:hover { text-decoration: underline;}
+
+.contact_form { margin: 115px auto 0; padding: 0 20px; max-width: 1380px;}
+.contact_form > p { padding: 0 0 25px; font-size: 15px; color: #555; text-align: right;}
+.contact_form form table { border-top: 2px solid #222; text-align: left;}
+.contact_form form table tr { border-bottom: 1px solid #f0f0f0;}
+.contact_form form table tr th { padding: 0 0 0 30px; width: 250px; border-right: 1px solid #f0f0f0; font-size: 17px; box-sizing: border-box;}
+.contact_form form table tr td { padding: 0 15px; font-size: 16px; color: #000; }
+.contact_form form table tr input,
+.contact_form form table tr select,
+.contact_form form table tr textarea { margin: 15px 7px; height: 50px; border: 1px solid #dddddd; text-indent: 30px; box-sizing: border-box;}
+.contact_form form table tr textarea::placeholder,
+.contact_form form table tr input::placeholder { color: #b7b7b7;}
+.contact_form form table .company input,
+.contact_form form table .name input { width: 450px;}
+.contact_form form table .tel input { width: 137px;}
+.contact_form form table .mail input { width: 213px; }
+.contact_form form table .mail select { width: 213px; text-indent: 17px; appearance: none; -webkit-appearance: none; background: url(images/ico_select_arrow2.png) no-repeat right 20px center / auto ;}
+.contact_form form table .mail select::-ms-expand { display: none;}
+.contact_form form table .content textarea { padding: 20px 30px 0 30px; width: 100%; height: 250px; line-height: ; text-indent: 0; resize:none;}
+.contact_form .contact_agree { text-align: left; }
+.contact_form .contact_agree > b { display: inline-block    ; padding: 80px 0 25px;}
+.contact_form .contact_agree > div { border: 1px solid #dddddd;}
+.contact_form .contact_agree .textarea { display: inline-block; padding: 35px 40px 0; width: 100%; height: 190px; border-bottom: 1px solid #f0f0f0; line-height: 24px; font-size: 15px; box-sizing: border-box; overflow: auto;}
+.contact_form .contact_agree .textarea b { display: block;}
+.contact_form .contact_agree .textarea span { display: block; height: 20px;}
+.contact_form .contact_agree .checkbox { display: inline-block; padding: 0 0 0 40px; line-height: 70px;}
+.contact_form .contact_agree .checkbox input { position: absolute; left: -5000px;}
+.contact_form .contact_agree .checkbox label { position: relative; padding: 0 0 0 25px;}
+.contact_form .contact_agree .checkbox label::before { position: absolute; content: ""; left: 0; top:5px; width: 16px; height: 16px; background: url(images/ico_unselect.png) no-repeat center / auto;}
+.contact_form .contact_agree .checkbox input:checked + label::before { background-image: url(images/ico_select.png);}
+
+.contact_form button { transition: all .3s 0s; margin: 80px auto 0; display: block; padding: 0 80px 0 0; width: 200px; height: 65px; background-color: #007dc6; color: #fff; font-size: 17px; font-weight: 600; background: url(images/ico_pencil.png) no-repeat right 30px center / auto #007dc6; box-sizing: border-box; }
+.contact_form button:hover { border:1px solid #007dc6; background-image: url(images/ico_pencil_hover.png); background-color: #fff; color: #007dc6;}
+
+
+/** 홍보센터 | 소셜미디어 **/
+.social { margin: 0 auto; padding: 0 20px; max-width: 1380px;}
+.social > span { display: inline-block; margin: 55px 0 35px; padding: 0 0 0 24px; line-height: 14px; font-size: 15px; background: url(images/ico_page.png) no-repeat 0 center / auto 14px;}
+.social > span i { color: #007dc6;}
+.social > .social_list { display: flex; flex-direction: row; justify-content: space-between; flex-wrap: wrap;}
+.social > .social_list li a { display: inline-block; margin: 0 0 50px; height: 460px; width: 440px; color: #333; box-sizing: border-box; }
+.social > .social_list li a span { position: relative; display: inline-block; margin: 0 0 30px 0; width: 440px; height: 247px; border: 1px solid #eee; overflow: hidden;}
+.social > .social_list li a span img { width: 100%; position: absolute; top: 50%; transform: translateY(-50%);}
+.social > .social_list li a b { transition: all .3s 0s; font-size: 20px; line-height: 30px;}
+.social > .social_list li a:hover b { color: #007dc6;}
+.social > .social_list li a p { transition: all .3s 0s; margin: 0 0 30px; padding: 21px 0 27px; border-bottom: 1px solid #e5e5e5; font-size: 16px; color: #777; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.social > .social_list li a:hover p { border-bottom-color: #007dc6;}
+.social > .social_list li a i { padding: 0 0 0 24px; background: url(images/ico_clock2.png) no-repeat 0 center / auto; font-size: 14px; color: #858585; font-family: poppins;}
+.social > .social_list li a strong { float: right; padding: 0 26px 0 0; background: url(images/ico_plus4.png) no-repeat right 3px center / auto; font-size: 16px; color: #222;}
+
+
+footer { margin: 240px 0 0;}
+
 
