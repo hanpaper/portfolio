@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="default.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" media="(min-width:600px) and (max-width:1279px)" href="tablet.css">
+    <link rel="stylesheet" media="(min-width:0px) and (max-width:1279px)" href="tablet.css">
+    <link rel="stylesheet" media="(min-width:0px) and (max-width:599px)" href="mobile.css">
     <script src="javascript.js"></script>
 </head>
 <body class="main">
@@ -245,7 +246,7 @@
             <div class="article_ir">
                 <h4>IR News</h4>
                 <p>한솔로지스틱스의 새로운 IR 소식을 안내드립니다.</p>
-                <div>
+                <!-- <div>
                      <ul class="jq_slider1">
                         <li>
                             <a href="">
@@ -292,7 +293,7 @@
                     </ul>
                     <button class="btn_before"></button>
                     <button class="btn_next"></button>
-                </div>
+                </div> -->
                 <a href="" class="btn_detail">MORE DETAILS</a>
             </div>
         </div>
@@ -342,14 +343,16 @@
                 </div>
                 <div class="article_brochure">
                     <b>브로슈어</b>
-                    <div>
-                        <img src="images/main_brochure_img.jpg" alt="">
-                        <p><strong>한솔로지스틱스 </strong><i>브로슈어 다운로드</i></p>
-                        <ul>
-                            <li><button>국문 다운로드</button></li>
-                            <li><button>영문 다운로드</button></li>
-                            <li><button>중문 다운로드</button></li>
-                        </ul>
+                    <div class="flex">
+                        <div><img src="images/main_brochure_img.jpg" alt=""></div>
+                        <div>
+                            <p><strong>한솔로지스틱스 </strong><i>브로슈어 다운로드</i></p>
+                            <ul>
+                                <li><button>국문 다운로드</button></li>
+                                <li><button>영문 다운로드</button></li>
+                                <li><button>중문 다운로드</button></li>
+                            </ul>
+                        </div>
                     </div>
                     <a href="" class="btn_more">더보기</a>
                 </div>

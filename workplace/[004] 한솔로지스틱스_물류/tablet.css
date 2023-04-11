@@ -4,10 +4,14 @@ header > div h1 { height: 80px; line-height: 75px;}
 header nav > ul > li > a { font-size: 16px; line-height: 80px;}
 header .header_right { height: 80px; }
 
+
+.section_business > div > p { font-size: 30px;}
+.section_business > div h2 { font-size: 54px;}
 .section_business ul { flex-wrap: wrap; }
 .section_business ul li { width: 33.333%;}
 .section_business ul li a div {max-height: 350px;}
 
+.section_ir > div .title p { font-size: 30px;}
 .section_ir > div .title { position: static; text-align: center;}
 .section_ir > div > ul { padding: 55px 0 58px 0 ;}
 .section_ir > div > ul li { width: 100%; min-width: auto; max-width: auto; height: 250px; justify-content:center; max-width: none; min-width: none;}
@@ -15,18 +19,31 @@ header .header_right { height: 80px; }
 .section_ir > div > ul li:nth-child(1) a div,
 .section_ir > div > ul li:nth-child(2) a div { background-size: 100% auto;}
 
+
+.section_esg div > p { font-size: 30px;}
 .section_esg ul { flex-direction: column; max-width: 700px; margin: 0 auto; padding: 0;}
-.section_esg ul li { animation: none; height: 290px; width: 560px; margin: 0 auto;}
+.section_esg ul li { animation: none; height: 290px; max-width: 560px; margin: 0 auto;}
 .section_esg ul li~li { position: relative; border-top: 1px solid rgba(255, 255, 255, 0.2); border-left: none;}
 .section_esg ul li~li::before { position: absolute; content: ""; top: -2px; left: calc( 50% - 6px ); width: 3px; height: 3px; background-color: #007dc6;}
 .section_esg ul li~li::after { position: absolute; content: ""; top: -2px; left: calc( 50% + 3px ); width: 3px; height: 3px; background-color: #00a651;}
 .section_esg ul li a { opacity: 1; }
 .section_esg ul li:hover { animation: none;}
 
-.section_pr > div .flex { display: block;}
-.section_pr > div .flex div~div { margin: 65px 0 0;}
-.section_pr > div .article_brochure > div p i { display: inline;}
-.section_pr > div .article_brochure > div ul li button { width: 300px; }
+
+.section_pr > div > p { font-size: 30px;}
+.section_pr > div > .flex { display: block;}
+.section_pr > div > .flex > div { width: 100%;}
+.section_pr > div > .flex > div~div { margin: 65px 0 0;}
+@media (min-width: 0px) and (max-width:768px){
+    .section_pr > div .article_sns .content .main a { padding: 0 0 0 30px;}
+    .section_pr > div .article_sns .content .main a span { display: none;}
+}
+.section_pr > div .article_sns .content .main a i { left: 30px;}
+.section_pr > div .article_brochure > span p i { display: inline;}
+.section_pr > div .article_brochure > span ul li button { width: 300px; }
+
+
 
 .section_etc > div { width: 100%;}
 .section_etc > div article { text-align: center;}
+.section_etc article span { margin: 0; justify-content: center;}
