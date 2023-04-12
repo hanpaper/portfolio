@@ -163,7 +163,7 @@
 .section_pr > div .article_sns .content .main a { position: relative; padding: 0 0 0 220px; height: 220px; box-sizing: border-box; line-height: 1;}
 .section_pr > div .article_sns .content .main a span { display: inline-block; position: absolute; left: 30px; top:50%; transform: translateY(-50%); width: 160px;}
 .section_pr > div .article_sns .content .main a span img { width: 100%;}
-.section_pr > div .article_sns .content .main a b { display: block; width: 420px; padding: 95px 0 45px; font-size: 20px; font-weight: 600;}
+.section_pr > div .article_sns .content .main a b { display: block; max-width: 420px; padding: 95px 0 45px; font-size: 20px; font-weight: 600;}
 .section_pr > div .article_sns .content .main a p { padding: 0 20px 0 0; width: 100%; font-size: 16px; color: rgba(255, 255, 255, 0.3);  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; box-sizing: border-box;}
 .section_pr > div .article_sns .content .main a i { left: 220px; top: 50px;}
 .section_pr > div .article_brochure { position: relative; text-align: center;}
@@ -184,20 +184,23 @@
 .btn_more:hover { background-color: #007dc5; border-color: #007dc5;}
 
 .section_etc { line-height: 1; font-size: 0;}
-.section_etc > div { display: inline-block; height: 505px; width: 50%;}
+.section_etc article { display: inline-block; position: relative; height: 505px; width: 50%; padding: 190px 0  0 140px; text-align: left; color: #fff; box-sizing: border-box;}
 .section_etc .article_service { background: url(images/bg_main_banner1.jpg) no-repeat left 0 top 50% / cover; }
 .section_etc .article_recruit { background: url(images/bg_main_banner2.jpg) no-repeat left 0 top 50% / cover; }
-.section_etc > div article { position: relative; padding: 190px 0 0; margin: 0 auto; width: 520px; height: 100%; text-align: left; color: #fff; box-sizing: border-box;}
 
 .section_etc article h3 { font-size: 26px;}
 .section_etc article p { padding: 27px 0 0; font-size: 18px; line-height: 27px;}
-.section_etc article span { position: absolute; left:0px; bottom: 100px; margin: 0 0 0 -5px; width: 100%; display: flex; justify-content: left;}
+.section_etc article span { position: absolute; left:0; bottom: 100px; margin: 0 0 0 -5px; padding: 0 0 0 140px; display: flex; justify-content: left;  width: 100%; box-sizing: border-box;}
 .section_etc article span a { transition: all .4s; position: relative; display: inline-block; padding: 0 73px 0 30px; margin: 0 5px; line-height: 60px; border: 1px solid rgba(255, 255, 255, 0.3); font-size: 17px; color: #fff; text-align: center;}
 .section_etc article span a::before { position: absolute; content: ""; right: 32px; top: calc(50% - 0.7px); width: 13px; height: 1.4px; background-color: white;}
 .section_etc article span a::after { position: absolute; content: ""; right: 38px ; top: 50%; transform: translateY(-50%); width: 1.4px; height: 13px; background-color: white;} 
 .section_etc article span a:hover { background-color: #fff; color: #000;}
 .section_etc article span a:hover::before { background-color: #000;}
 .section_etc article span a:hover::after { background-color: #000;}
+@media (min-width: 0px) and (max-width:1460px){ 
+    .section_etc article { text-align: center; padding: 190px 0 0 0;}
+    .section_etc article span { padding: 0; justify-content: center; }
+}
 
 
 

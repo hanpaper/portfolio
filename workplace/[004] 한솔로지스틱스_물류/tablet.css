@@ -42,8 +42,12 @@ header .header_right { height: 80px; }
 .section_pr > div .article_brochure > span p i { display: inline;}
 .section_pr > div .article_brochure > span ul li button { width: 300px; }
 
+.section_etc article { width: 100%;}
 
 
-.section_etc > div { width: 100%;}
-.section_etc > div article { text-align: center;}
-.section_etc article span { margin: 0; justify-content: center;}
+/* footer */
+footer { padding: 20px 20px 70px 20px;}
+footer > div { flex-wrap: wrap;}
+footer > div div:nth-child(1) { padding: 0 20px; background: none;}
+footer > div .footer_info li:nth-child(1) { display: block;}
+footer > div .footer_info li:nth-child(2) { padding: 0;}

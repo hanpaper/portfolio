@@ -43,17 +43,19 @@ header .header_right .btn_menu:before { position: absolute; content: ""; right: 
 /** 공통 - footer **/
 
 .main footer { margin: 0;}
-footer { margin: 240px 0 0; padding: 60px 0 70px 0; background: #222222; font-size: 15px; color: #727272; line-height: 23px;}
-footer > div { padding: 0 20px 0 220px; position: relative; margin: 0 auto; max-width: 1380px; box-sizing: border-box;}
-footer > div ul li { display: inline-block;}
-footer > div ul li~li { position: relative; padding: 0 0 0 41px;}
-footer > div ul li~li:before { position: absolute; content: ""; left: 20px; top:50%; transform: translateY(-50%);  width: 1px; height: 10px; background-color: #474747;}
-footer > div .footer_nav { padding: 0 0 25px; border-bottom: 1px solid #4e4e4e;}
-footer > div .footer_nav li a { color: #fff; }
-footer > div .footer_company { padding: 22px 0 0;}
-footer > div .footer_company li:first-child { color: #fff;}
-footer > div .footer_info { padding: 0 0 34px;}
-footer > div > select { position: absolute; right: 120px; bottom: 0; width: 220px; height: 50px; border: 1px solid #313131; background-color: #1e1e1e; color: #7d7d7d; font-size: 15px; text-indent: 32px; }
+footer { margin: 240px 0 0; padding: 60px 20px 70px 20px; background: #222222; font-size: 15px; color: #727272; line-height: 23px;}
+footer > div { display: flex; justify-content: space-between; margin: 0 auto; max-width: 1380px;}
+footer > div div:nth-child(1) { padding: 0 0 0 220px; box-sizing: border-box; background: url(images/logo.svg) no-repeat 20px 0 / 126px auto;}
+footer > div div ul li { display: inline-block;}
+footer > div div ul li~li { position: relative; padding: 0 0 0 41px;}
+footer > div div ul li~li:before { position: absolute; content: ""; left: 20px; top:50%; transform: translateY(-50%);  width: 1px; height: 10px; background-color: #474747;}
+footer > div div .footer_nav { padding: 0 0 25px; border-bottom: 1px solid #4e4e4e;}
+footer > div div .footer_nav li a { color: #fff; }
+footer > div div .footer_company { padding: 22px 0 0;}
+footer > div div .footer_company li:first-child { color: #fff;}
+footer > div div .footer_info { padding: 0 0 34px;}
+footer > div div:nth-child(2) { display: flex; align-items: end;}
+footer > div div:nth-child(2) select { margin: 30px 0 0; width: 220px; height: 50px; border: 1px solid #313131; background-color: #1e1e1e; color: #7d7d7d; font-size: 15px; text-indent: 32px; vertical-align: bottom;}
 
 
 
