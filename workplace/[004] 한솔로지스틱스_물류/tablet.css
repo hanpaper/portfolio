@@ -47,7 +47,6 @@ header .header_right { height: 80px; }
 
 /* footer */
 footer { padding: 20px 20px 70px 20px;}
-footer > div { flex-wrap: wrap;}
-footer > div div:nth-child(1) { padding: 0 20px; background: none;}
+footer > div { padding: 0; background: none;}
 footer > div .footer_info li:nth-child(1) { display: block;}
 footer > div .footer_info li:nth-child(2) { padding: 0;}
