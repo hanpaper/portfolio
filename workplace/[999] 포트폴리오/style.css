@@ -1,0 +1,42 @@
+body { position: relative;}
+
+header { position: sticky; z-index: 99; left: 0; top: 0; padding: 0 30px; width: 100%; height: 60px; line-height: 60px; border: 1px solid #000; background-color: #fff; box-sizing: border-box;}
+header p { float: left;}
+header nav { float: right;}
+header nav ul li {display: inline-block; padding: 0 15px;}
+
+
+section { height: 100vh; border: 1px solid #000;}
+section > div { position: relative; margin: 0 auto; padding: 0 30px; max-width: 1200px; height: 100%; box-sizing: border-box;}
+
+.visual { position: relative;}
+.visual h1 { font-size: 0;}
+.visual p { position: absolute; left: 50%; top: 50%; transform: translateX(-50%) translateY(-50%); font-size: 50px; font-weight: bold; line-height: 45px;}
+.visual strong { position: absolute; right: 0; top: 50%; transform: translateY(-50%) rotate(-90deg); font-size: 40px; font-weight: bold; color: rgba(0,0,0,.1); }
+
+
+
+.about .flex { display: flex; justify-content: space-between; gap: 70px;}
+.about .flex-left { padding: 120px 0;}
+.about .flex-left h2 { margin: 0 0 50px; font-size: 50px; font-weight: bold; line-height: 45px;}
+.about .flex-left h2 i { position: relative; display: inline-block; margin: 0 3px; width: 20px; height: 45px;}
+.about .flex-left h2 i::before { position: absolute; content: ""; left: 0; top: 30px; width: 100%; height: 5px; background-color: #000;}
+.about .flex-left span { position: relative; display: inline-block; width: 320px; height: 500px; overflow: hidden;}
+.about .flex-left span img { position: absolute; top: 0; left: 35%; transform: translateX(-50%); height: 100%;}
+
+.about .flex-right { padding: 290px 0 0 0; width: 650px; height: 100%; overflow: scroll; white-space:nowrap; box-sizing: border-box;}
+/* ::-webkit-scrollbar { visibility: hidden;} */
+.about .flex-right article { display: inline-block; width: 650px; height: 100%; vertical-align: top;}
+.about .flex-right div { width: 500px}
+.about .flex-right h3 { margin: 0 0 65px 0; display: inline-block; font-size: 30px;}
+.about .flex-right p { margin: 0 0 150px; font-size: 18px; line-height: 37px; white-space: initial;}
+.about .flex-right strong { display: block; padding: 0 0 75px; font-size: 25px; }
+.about .flex-right strong i { display: block; font-size: 35px; font-weight: 600; color: rgba(0,0,0,.1); line-height: 9px;}
+
+
+.works h2 { padding: 120px 0 0; font-size: 50px; font-weight: bold; line-height: 45px; text-align: right;}
+.works li { position: relative; height: 240px; border-bottom: 1px solid lightgray;}
+.works li span { position: absolute; left: 0; top: 50%; transform: translateY(-50%); display: inline-block; width: 300px; height: 200px; background-color: lightgray;}
+.works li div { padding: 20px 0 20px 360px; height: 100%; box-sizing: border-box;}
+.works li div b { display: block; font-size: 20px;}
+.works li div i { font-size: 15px;}
