@@ -34,9 +34,13 @@ section > div { position: relative; margin: 0 auto; padding: 0 30px; max-width: 
 .about .flex-right strong i { display: block; font-size: 35px; font-weight: 600; color: rgba(0,0,0,.1); line-height: 9px;}
 
 
-.works h2 { padding: 120px 0 0; font-size: 50px; font-weight: bold; line-height: 45px; text-align: right;}
-.works li { position: relative; height: 240px; border-bottom: 1px solid lightgray;}
-.works li span { position: absolute; left: 0; top: 50%; transform: translateY(-50%); display: inline-block; width: 300px; height: 200px; background-color: lightgray;}
-.works li div { padding: 20px 0 20px 360px; height: 100%; box-sizing: border-box;}
+.works h2 { padding: 120px 0 70px; font-size: 50px; font-weight: bold; line-height: 45px; text-align: right;}
+.works li { position: relative; margin: 0 0 0 140px; height: 150px; border-bottom: 1px solid lightgray; box-sizing: border-box;}
+.works li:hover { margin: 0; height: 250px;}
+.works li span { position: absolute; left: 20px; top: 50%; transform: translateY(-50%); display: inline-block; width: 180px; height: 110px; background-color: lightgray;}
+.works li:hover span { width: 320px; height: 210px;}
+.works li div { padding: 20px 0 20px 260px; height: 100%; box-sizing: border-box;}
+.works li:hover div { padding-left: 400px;}
 .works li div b { display: block; font-size: 20px;}
-.works li div i { font-size: 15px;}
+.works li div i { font-size: 15px; opacity: 0;}
+.works li:hover div i { opacity: 1;}
