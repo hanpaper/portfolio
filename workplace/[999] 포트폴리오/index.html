@@ -15,6 +15,7 @@
             <ul>
                 <li><button>About</button></li>
                 <li><button>Works</button></li>
+                <li><button>Etc</button></li>
                 <li><button>Contact</button></li>
             </ul>
         </nav>
@@ -22,7 +23,7 @@
     <main>
         <section class="visual">
             <h1>Web Publisher Portfolio</h1>
-            <div>
+            <div class="contentBox">
                 <p>
                     Hello :)<br>
                     &nbsp;&nbsp;I am<br>
@@ -32,7 +33,7 @@
             </div>
         </section>
         <section class="about">
-            <div class="flex">
+            <div class="contentBox flex">
                 <div class="flex-left">
                     <h2>
                         Hello<br>
@@ -44,15 +45,15 @@
                 <div class="flex-right">
                     <article>
                         <div>
-                            <h2>반가워요!<br>
-                                신뢰와 성실함으로 놀래켜드릴게요</h2>
+                            <h3>반가워요!<br>
+                                신뢰와 성실함으로 놀래켜드릴게요</h3>
                             <p>저는 웹 퍼블리셔를 꿈꾸며 열심히 공부 중인 '한지영'입니다.<br>
                                 새로운 것을 배우며 더 나은 사이트를 만들어가는 일이 즐겁습니다. 늘 사용자 입장에서 생각하며 효율적인 UI/UX가 무엇일지 계속 고민하고,웹 표준과 웹 접근성을 고려한 마크업을 하기 위해 노력합니다. 모든 사람이 사용하기에 편리하고, 즐거운 사이트를 만드는 것이 제가 하는 일이라고 생각합니다.
                             </p>
                         </div>
                     </article>
                     <article>
-                        <h2><br>전 이렇게 일한답니다!</h2>
+                        <h3><br>전 이렇게 일한답니다!</h3>
                         <strong><i>01</i>&nbsp;&nbsp;항상 웹 접근성을 우선으로</strong>
                         <strong><i>02</i>&nbsp;&nbsp;일처리는 신중하고 꼼꼼하게</strong>
                         <strong><i>03</i>&nbsp;&nbsp;빠르게 실행하며,<br>&nbsp;&nbsp;목표달성을 위해 집요하게</strong>
@@ -61,14 +62,13 @@
             </div>
         </section>
         <section class="works">
-            <div>
-                <h2>Works</h2>
+            <div class="title"><h2>Works</h2></div>
+            <div class="contentBox">
                 <ul>
                     <li>
                         <a href="">
-                            <span></span>
                             <div>
-                                <b>사이트명</b>
+                                <b>금융권 웹사이트</b>
                                 <i>설명</i>
                             </div>
                         </a>
@@ -77,7 +77,7 @@
                         <a href="">
                             <span></span>
                             <div>
-                                <b>사이트명</b>
+                                <b>한솔로지스틱스 웹사이트</b>
                                 <i>설명</i>
                             </div>
                         </a>
@@ -86,7 +86,7 @@
                         <a href="">
                             <span></span>
                             <div>
-                                <b>사이트명</b>
+                                <b>리베금융 모바일웹</b>
                                 <i>설명</i>
                             </div>
                         </a>
@@ -95,36 +95,52 @@
                         <a href="">
                             <span></span>
                             <div>
-                                <b>사이트명</b>
+                                <b>스타벅스 모바일웹</b>
                                 <i>설명</i>
                             </div>
                         </a>
                     </li>
                 </ul>
             </div>
+            <div class="works_detail">
+                <h3>한솔로지스틱스</h3>
+                <p>작업테이블, 상세내용</p>
+                <button class="btn_close">닫기</button>
+            </div>
         </section>
-        <section class="blog">
-            <div>
-                <h2>blog</h2>
-                <p>공부내용을 기록하고 있어요</p>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+        <section class="etc">
+            <div class="contentBox">
+                <div class="etc_github">
+                    <h2>Github</h2>
+                    <div>
+                        <p>버전관리로 프로젝트를 관리하고 있어요 </p>
+                        <a href="https://github.com/hanpaper" class="btnStyle1">Github 바로가기</a>
+                    </div>
+                </div>
+                <div class="etc_blog">
+                    <h2>blog</h2>
+                    <div>
+                        <p>공부내용을 기록하고 있어요</p>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="contact">
             <div>
                 <h2>Contact</h2>
                 <p>저에 대해 더 알고싶으신가요?</p>
-                <a href="">과거 흔적보기</a>
-                <button>이력서 다운받기</button>
-                <div class="ending">
-                    <span><em>Thank you for visiting</em><i>Don’t forget me</i><em>Thank you for visiting</em><i>Don’t forget me</i></span>
-                    <span><em>Thank you for visiting</em><i>Don’t forget me</i><em>Thank you for visiting</em><i>Don’t forget me</i></span>
-                </div>
+                <a href="" class="btnStyle1">과거 흔적보기</a>
+                <button class="btnStyle1">이력서 다운받기</button>
             </div>
+            <span class="ending">
+                <span><em>Thank you for visiting</em><i>Don’t forget me</i><em>Thank you for visiting</em><i>Don’t forget me</i></span>
+                <span><em>Thank you for visiting</em><i>Don’t forget me</i><em>Thank you for visiting</em><i>Don’t forget me</i></span>
+            </span>
         </section>
     </main>
 </body>
