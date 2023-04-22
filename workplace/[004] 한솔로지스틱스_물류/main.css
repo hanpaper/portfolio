@@ -209,11 +209,12 @@
 .contents { padding: 55px 0 0; margin: 0 auto; padding: 0 20px; max-width: 1380px;}
 .contents article { position: relative; margin: 110px 0 0; padding: 0 0 0 240px; box-sizing: border-box;}
 .contents article > h4 { position: absolute; left: 20px; top:0; font-size: 24px; line-height: 31px; }
+.contents article > h4 b { display: block;}
 .contents .transport > ul { display: flex; justify-content: space-between; flex-wrap: wrap;}
-.contents .transport > ul > li { display: inline-block; margin: 0 0 55px; width: 560px;}
+.contents .transport > ul > li { display: inline-block; margin: 0 0 55px; width: calc(50% - 30px);}
 .contents .transport > ul > li:nth-last-child(1) { margin: 0;}
 .contents .transport > ul > li:nth-last-child(2) { margin: 0;}
-.contents .transport > ul > li img { display: block;}
+.contents .transport > ul > li img { display: block; width: 100%;}
 .contents .transport > ul > li strong { display: inline-block; padding: 36px 0 15px; font-size: 20px;}
 .contents .transport > ul > li ul li { font-size: 16px; color: #666; line-height: 34px;}
 .contents .transport > ul > li ul li:before { content: "· ";}

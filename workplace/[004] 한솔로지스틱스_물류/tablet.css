@@ -1,9 +1,27 @@
-@media (min-width: 0px) and (max-width:1029px){ header nav { display: none;}}
+/* 공통 - header */
+@media (min-width: 0px) and (max-width:1029px){
+    header nav { display: none;}
+}
 header { height: 80px;}
 header > div h1 { height: 80px; line-height: 75px;}
 header nav > ul > li > a { font-size: 16px; line-height: 80px;}
 header .header_right { height: 80px; }
 
+/* 공통 - footer */
+footer { padding: 20px 20px 70px 20px;}
+footer > div { padding: 0; background: none;}
+footer > div .footer_info li:nth-child(1) { display: block;}
+footer > div .footer_info li:nth-child(2) { padding: 0;}
+
+
+/** style **/
+.contents article { padding: 0;}
+.contents article > h4 { position: static; padding: 0 0 30px;}
+.contents article > h4 b { display: inline;}
+.contents .transport > ul > li { width: calc(50% - 15px);}
+
+
+/** 메인화면 **/
 
 .section_business > div > p { font-size: 30px;}
 .section_business > div h2 { font-size: 54px;}
@@ -45,8 +63,8 @@ header .header_right { height: 80px; }
 .section_etc article { width: 100%;}
 
 
-/* footer */
-footer { padding: 20px 20px 70px 20px;}
-footer > div { padding: 0; background: none;}
-footer > div .footer_info li:nth-child(1) { display: block;}
-footer > div .footer_info li:nth-child(2) { padding: 0;}
+/** sub 공통 **/
+@media (min-width: 0px) and (max-width:1029px){
+    .sub_visual nav > ul > li { max-width: none;}
+    .sub_visual nav > ul > li:nth-child(4) { display: none;}
+}
