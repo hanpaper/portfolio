@@ -68,3 +68,16 @@ footer > div .footer_info li:nth-child(2) { padding: 0;}
     .sub_visual nav > ul > li { max-width: none;}
     .sub_visual nav > ul > li:nth-child(4) { display: none;}
 }
+
+
+/** 투자정보_News **/
+.news_list li a { padding: 0 0 0 130px;}
+.news_list li a strong { left: 40px;}
+.news_list li a strong i { font-size: 40px;}
+.news_list li a b { font-size: 18px;}
+@media (min-width: 0px) and (max-width:768px){
+.news_list li a { padding: 30px 20px; line-height: normal;}
+.news_list li a strong { display: block; position: static; padding: 25px 0 0; font-weight: 500; font-size: 15px; text-align: left;}
+.news_list li a strong i { font-size: 0;}
+.news_list li a::after { top: auto; right: 20px; bottom: 20px; transform: none;}
+}
