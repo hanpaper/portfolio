@@ -291,38 +291,38 @@
 /** 투자정보 | Contact IR **/
 .import::before { content: "*"; color: #007dc6;}
 
-.contact { position: relative; width: 100%; height: 500px; padding: 120px 0 0; background: url(images/contact_bg2.png) no-repeat right 0px top 0px / 500px auto #fafafa; box-sizing: border-box;}
+.contact { position: relative; width: 100%; height: 500px; padding-top: 120px; background: url(images/contact_bg2.png) no-repeat right 0px top 0px / 500px auto #fafafa; box-sizing: border-box;}
 .contact:before { position: absolute; z-index: -1; content: ""; left: 0; top: 0; width: 100%; height: 100%; background: url(images/contact_bg1.png) no-repeat left 0px top 0px / auto 500px;}
 .contact article { margin: 0 auto; padding: 0 20px 0 240px; max-width: 1380px;}
 .contact article b { font-size: 18px;}
 .contact article p { padding: 19px 0 56px; font-size: 17px; color: #58595b;}
-.contact article > div { display: table; position: relative; padding: 0 0 0 450px; height: 222px; width: 100%; border: 1px solid #eeeeee; box-sizing: border-box; vertical-align: middle; background-color: #fff;}
-.contact article > div span { display: table; position: absolute; left: 0; top: 50%; transform: translateY(-50%); padding: 0 0 0 205px; width: 390px; height: 120px; border-right: 1px solid #eeeeee; background: url(images/contact_icon2.png) no-repeat 95px center / 45px auto; box-sizing: border-box; vertical-align: middle;}
-.contact article > div span b { display: table-cell; line-height: 33px; vertical-align: middle;}
-.contact article > div div { display: table-cell; vertical-align: middle;}
-.contact article > div div strong { display: inline-block; margin: 0 0 20px 0; font-size: 20px; color: #555;}
-.contact article > div div a { display: block; padding: 0 0 0 32px; font-size: 17px; color: #888; line-height: 28px;}
-.contact article > div div a.tel { background: url(images/ico_tel.png) no-repeat 0px center / 17px auto;}
-.contact article > div div a.mail { background: url(images/ico_mail.png) no-repeat left top 9px / 17px auto;}
-.contact article > div div a:hover { text-decoration: underline;}
+.contact article > div { position: relative; padding: 0 0 0 450px; height: 222px; width: 100%; border: 1px solid #eeeeee; box-sizing: border-box; vertical-align: middle; background-color: #fff;}
+.contact article > div b { position: absolute; left: 0; top: 50%; transform: translateY(-50%); padding: 0 0 0 205px; width: 390px; line-height: 33px; border-right: 1px solid #eeeeee; background: url(images/contact_icon2.png) no-repeat 95px center / 45px auto; box-sizing: border-box; vertical-align: middle; font-size: 24px;}
+.contact article > div b strong { display: block;}
+.contact article > div > div { display: flex; flex-direction: column; justify-content: center; height: 100%;}
+.contact article > div > div strong { display: inline-block; margin: 0 0 20px 0; font-size: 20px; color: #555;}
+.contact article > div > div a { padding: 0 0 0 32px; font-size: 17px; color: #888; line-height: 28px;}
+.contact article > div > div a.tel { background: url(images/ico_tel.png) no-repeat 0px center / 17px auto;}
+.contact article > div > div a.mail { background: url(images/ico_mail.png) no-repeat left top 9px / 17px auto;}
+.contact article > div > div a:hover { text-decoration: underline;}
 
-.contact_form { margin: 115px auto 0; padding: 0 20px; max-width: 1380px;}
+.contact_form { margin: 115px auto 0; padding: 0 20px; max-width: 1380px; box-sizing: border-box;}
 .contact_form > p { padding: 0 0 25px; font-size: 15px; color: #555; text-align: right;}
 .contact_form form table { border-top: 2px solid #222; text-align: left;}
 .contact_form form table tr { border-bottom: 1px solid #f0f0f0;}
 .contact_form form table tr th { padding: 0 0 0 30px; width: 250px; border-right: 1px solid #f0f0f0; font-size: 17px; box-sizing: border-box;}
-.contact_form form table tr td { padding: 0 15px; font-size: 16px; color: #000; }
+.contact_form form table tr td { padding: 0 12px; font-size: 16px; color: #000; }
+.contact_form form table tr td > div { display: flex; width: 100%; max-width: 450px; }
+.contact_form form table tr td > div > div { padding: 0 10px; width: 100%; box-sizing: border-box;}
 .contact_form form table tr input,
 .contact_form form table tr select,
-.contact_form form table tr textarea { margin: 15px 7px; height: 50px; border: 1px solid #dddddd; text-indent: 30px; box-sizing: border-box;}
+.contact_form form table tr textarea { margin: 15px 0; height: 50px; width: 100%; border: 1px solid #dddddd; text-indent: 30px; box-sizing: border-box;}
 .contact_form form table tr textarea::placeholder,
 .contact_form form table tr input::placeholder { color: #b7b7b7;}
-.contact_form form table .company input,
-.contact_form form table .name input { width: 450px;}
-.contact_form form table .tel input { width: 137px;}
-.contact_form form table .mail input { width: 213px; }
-.contact_form form table .mail select { width: 213px; text-indent: 17px; appearance: none; -webkit-appearance: none; background: url(images/ico_select_arrow2.png) no-repeat right 20px center / auto ;}
+.contact_form form table .mail td > div { display: inline-flex;}
+.contact_form form table .mail select { text-indent: 17px; appearance: none; -webkit-appearance: none; background: url(images/ico_select_arrow2.png) no-repeat right 20px center / auto ;}
 .contact_form form table .mail select::-ms-expand { display: none;}
+.contact_form form table .content td > div { max-width: none;}
 .contact_form form table .content textarea { padding: 20px 30px 0 30px; width: 100%; height: 250px; line-height: ; text-indent: 0; resize:none;}
 .contact_form .contact_agree { text-align: left; }
 .contact_form .contact_agree > b { display: inline-block    ; padding: 80px 0 25px;}

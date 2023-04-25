@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="default.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" media="(min-width:0px) and (max-width:1279px)" href="tablet.css">
+    <link rel="stylesheet" media="(min-width:0px) and (max-width:599px)" href="mobile.css">
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script src="javascript.js"></script>
 </head>
@@ -144,15 +146,11 @@
             <b>당사의 IR관련 문의를 하시려는 고객님을 위해 마련한 커뮤니케이션 창구입니다.</b>
             <p>아래 담당자에게 전화 또는 홈페이지를 통해 문의주시면 IR 관련 문의에 성실히 답변해 드리겠습니다.</p>
             <div>
-                <span>
-                    <b>
-                        전화 및<br>
-                        홈페이지 문의</b>
-                </span>
+                <b><strong>전화 및</strong> 홈페이지 문의</b>
                 <div>
                     <strong>한솔로지스틱스㈜ 혁신팀 IR담당자</strong>
-                    <a class="tel" href="tel:">02-3287-7234</a>
-                    <a class="mail" href="mailto:sylee3044@hansol.com">sylee3044@hansol.com</a>
+                    <div><a class="tel" href="tel:">02-3287-7234</a></div>
+                    <div><a class="mail" href="mailto:sylee3044@hansol.com">sylee3044@hansol.com</a></div>
                 </div>
             </div>
         </article>
@@ -170,30 +168,57 @@
                     <tbody>
                         <tr class="company">
                             <th>회사명 <i class="import"></i></th>
-                            <td><input type="text" placeholder="회사명을 입력해주세요"></td>
+                            <td>
+                                <div>
+                                    <div><input type="text" placeholder="회사명을 입력해주세요"></div>
+                                </div>
+                            </td>
                         </tr>
                         <tr class="name">
                             <th>담당자명 <i class="import"></i></th>
-                            <td><input type="text" placeholder="담당하시는 분의 성함을 입력해주세요."></td>
+                            <td>
+                                <div>
+                                    <div><input type="text" placeholder="담당하시는 분의 성함을 입력해주세요."></div>
+                                </div>
+                            </td>
                         </tr>
                         <tr class="tel">
                             <th>연락처 <i class="import"></i></th>
-                            <td><input type="text">-<input type="text">-<input type="text"></td>
+                            <td>
+                                <div>
+                                    <div><input type="text"></div>
+                                    <div><input type="text"></div>
+                                    <div><input type="text"></div>
+                                </div>
+                            </td>
                         </tr>
                         <tr class="mail">
                             <th>메일주소 <i class="import"></i></th>
                             <td>
-                                <input type="text">@<input type="text">
-                                <select>
-                                    <option>직접입력</option>
-                                    <option>naver.com</option>
-                                    <option>gmail.com</option>
-                                </select>
+                                <div>
+                                    <div><input type="text"></div>
+                                    <div><input type="text"></div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <select>
+                                            <option>직접입력</option>
+                                            <option>naver.com</option>
+                                            <option>gmail.com</option>
+                                        </select>
+                                        </div>
+                                        <div>
+                                    </div>
+                                </div>
                             </td>
                         </tr>
                         <tr class="content">
                             <th>내용 <i class="import"></i></th>
-                            <td><textarea placeholder="내용을 입력해주세요"></textarea></td>
+                            <td>
+                                <div>
+                                    <div><textarea placeholder="내용을 입력해주세요"></textarea></div>
+                                </div>
+                            </td>
                         </tr>
                     </tbody>
                 </table>

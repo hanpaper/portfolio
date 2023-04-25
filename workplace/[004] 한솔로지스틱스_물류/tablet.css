@@ -81,3 +81,18 @@ footer > div .footer_info li:nth-child(2) { padding: 0;}
 .news_list li a strong i { font-size: 0;}
 .news_list li a::after { top: auto; right: 20px; bottom: 20px; transform: none;}
 }
+
+
+/** 투자정보_Contact **/
+
+@media (min-width: 0px) and (max-width:1029px){
+.contact article > div { padding: 20px; text-align: center;}
+.contact article > div b { position: static; display: inline-block; padding: 0 0 0 70px; width: auto; transform: none; height: 60px; line-height: 60px; text-align: left; background-position: left 0 center; border: none;}
+.contact article > div b strong { display: inline-block;}
+.contact article > div > div { padding: 20px 0 0; display: block;}
+
+
+.contact_form form table tr th { width: auto; max-width: 250px; min-width: 140px;}
+.contact_form form table tr td > div { max-width: none;}
+.contact_form form table .mail select { width: 100%;}
+}
