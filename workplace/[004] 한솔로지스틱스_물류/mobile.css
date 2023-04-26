@@ -49,3 +49,6 @@ footer > div .footer_top .footer_nav li:nth-child(3) { width: 100%;}
 .contact_form form .table-td > div > div textarea { margin: 5px 0;}
 .contact_form form .table-row.mail .empty { flex: 0; padding: 0;}
 .contact_form form .table-row.content .table-td > div > div textarea { height: 200px;}
+
+/** **/
+.social > .social_list li { width: 100%;}

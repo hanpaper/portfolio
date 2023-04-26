@@ -96,3 +96,14 @@ footer > div .footer_info li:nth-child(2) { padding: 0;}
 .contact_form form .table-td > div { max-width: none;}
 .contact_form form .table-row.mail select { width: 100%;}
 }
+
+/** **/
+
+@media (min-width: 0px) and (max-width:768px){
+    .group_research > div .select { display: block; width: 100%; }
+    .group_research > div .input { display: block; padding-left: 0; margin-top: 10px; }
+}
+@media (min-width: 0px) and (max-width:1029px){
+    .social > .social_list li { width: 50%;}
+
+}

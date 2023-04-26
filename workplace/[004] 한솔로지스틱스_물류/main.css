@@ -249,14 +249,17 @@
 .news { margin: 0 auto; padding: 0 20px; max-width: 1380px; text-align: center; box-sizing: border-box;}
 .news h3 { padding: 57px 0 26px; font-size: 18px; color: #007dc5; font-family: poppins; font-weight: 700;}
 .news p { margin: 0 0 70px 0; line-height: 26px; font-size: 17px; color: #666;}
-.group_research { margin: 80px 0 0; line-height: 150px; background-color: #f8f8f8; font-size: 0; text-align: center;}
+.group_research { margin: 80px 0 0; padding: 50px 20px; background-color: #f8f8f8; font-size: 0; text-align: center;}
+.group_research > div { display: table; margin: 0 auto; width: 100%; max-width: 550px;}
+.group_research > div .select { display: table-cell; width: 150px; }
+.group_research > div .input { display: table-cell; position: relative; padding: 0 80px 0 5px; box-sizing: border-box;}
 .group_research select, 
-.group_research input { height: 50px; line-height: 50px; border: 1px solid #e5e5e5; background-color: #fff; font-size: 15px; text-indent: 20px; color: #bbb;}
+.group_research input { height: 50px; line-height: 50px; border: 1px solid #e5e5e5; background-color: #fff; font-size: 15px; text-indent: 20px; color: #bbb; vertical-align: top;}
 .group_research input::placeholder{ color: #bbb;}
-.group_research select { position: relative; width: 150px; appearance: none; -webkit-appearance: none; background: url(images/ico_select_arrow.png) no-repeat right 11px center / auto #fff;}
+.group_research select { position: relative; width: 100%; appearance: none; -webkit-appearance: none; background: url(images/ico_select_arrow.png) no-repeat right 11px center / auto #fff;}
 .group_research select::-ms-expand { display: none;}
-.group_research input { margin: 0 0 0 5px; width: 320px; color: #333;}
-.group_research button { width: 80px; height: 50px; background-color: #333333; color: #fff; font-size: 15px;}
+.group_research input { width: 100%; color: #333;}
+.group_research button { position: absolute; right: 0; top: 0; width: 80px; height: 50px; background-color: #333333; color: #fff; font-size: 15px;}
 
 .news_list li { margin: 0 0 20px 0;}
 .news_list li a { display: inline-block; position: relative; padding: 0 0 0 167px; width: 100%; height: 168px; line-height: 168px; text-align: left; box-sizing: border-box; color: #333; border:1px solid #eeeeee;}
@@ -348,15 +351,16 @@
 .social { margin: 0 auto; padding: 0 20px; max-width: 1380px;}
 .social > span { display: inline-block; margin: 55px 0 35px; padding: 0 0 0 24px; line-height: 14px; font-size: 15px; background: url(images/ico_page.png) no-repeat 0 center / auto 14px;}
 .social > span i { color: #007dc6;}
-.social > .social_list { display: flex; flex-direction: row; justify-content: space-between; flex-wrap: wrap;}
-.social > .social_list li a { display: inline-block; margin: 0 0 50px; height: 460px; width: 440px; color: #333; box-sizing: border-box; }
-.social > .social_list li a span { position: relative; display: inline-block; margin: 0 0 30px 0; width: 440px; height: 247px; border: 1px solid #eee; overflow: hidden;}
+.social > .social_list { display: flex; flex-direction: row; justify-content: space-between; flex-wrap: wrap; margin: 0 -26px;}
+.social > .social_list li { padding: 0 25px; width: 33.333%; box-sizing: border-box;}
+.social > .social_list li a { display: inline-block; margin: 0 0 50px; height: 460px; width: 100%; color: #333; box-sizing: border-box; }
+.social > .social_list li a span { position: relative; display: inline-block; margin: 0 0 30px 0; width: 100%; height: 247px; border: 1px solid #eee; overflow: hidden;}
 .social > .social_list li a span img { width: 100%; position: absolute; top: 50%; transform: translateY(-50%);}
-.social > .social_list li a b { transition: all .3s 0s; font-size: 20px; line-height: 30px;}
+.social > .social_list li a b { transition: all .3s 0s; font-size: 20px; line-height: 30px; font-weight: 600;}
 .social > .social_list li a:hover b { color: #007dc6;}
 .social > .social_list li a p { transition: all .3s 0s; margin: 0 0 30px; padding: 21px 0 27px; border-bottom: 1px solid #e5e5e5; font-size: 16px; color: #777; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
 .social > .social_list li a:hover p { border-bottom-color: #007dc6;}
 .social > .social_list li a i { padding: 0 0 0 24px; background: url(images/ico_clock2.png) no-repeat 0 center / auto; font-size: 14px; color: #858585; font-family: poppins;}
-.social > .social_list li a strong { float: right; padding: 0 26px 0 0; background: url(images/ico_plus4.png) no-repeat right 3px center / auto; font-size: 16px; color: #222;}
+.social > .social_list li a strong { float: right; padding: 0 26px 0 0; background: url(images/ico_plus4.png) no-repeat right 3px center / auto; font-size: 16px; color: #222; font-weight: 600;}
 
 
