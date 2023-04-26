@@ -160,68 +160,62 @@
         <form>
             <fieldset>
                 <legend>문의내용 입력란</legend>
-                <table>
-                    <colgroup>
-                        <col>
-                        <col>
-                    </colgroup>
-                    <tbody>
-                        <tr class="company">
-                            <th>회사명 <i class="import"></i></th>
-                            <td>
+                <div class="table">
+                    <div class="company table-row">
+                        <div class="table-th">회사명 <i class="import"></i></div>
+                        <div class="table-td">
+                            <div>
+                                <div><input type="text" placeholder="회사명을 입력해주세요"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="name table-row">
+                        <div class="table-th">담당자명 <i class="import"></i></div>
+                        <div class="table-td">
+                            <div>
+                                <div><input type="text" placeholder="담당하시는 분의 성함을 입력해주세요."></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tel table-row">
+                        <div class="table-th">연락처 <i class="import"></i></div>
+                        <div class="table-td">
+                            <div>
+                                <div><input type="text"></div>
+                                <div><input type="text"></div>
+                                <div><input type="text"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mail table-row">
+                        <div class="table-th">메일주소 <i class="import"></i></div>
+                        <div class="table-td">
+                            <div>
+                                <div><input type="text"></div>
+                                <div><input type="text"></div>
+                            </div>
+                            <div>
                                 <div>
-                                    <div><input type="text" placeholder="회사명을 입력해주세요"></div>
+                                    <select>
+                                        <option>직접입력</option>
+                                        <option>naver.com</option>
+                                        <option>gmail.com</option>
+                                    </select>
                                 </div>
-                            </td>
-                        </tr>
-                        <tr class="name">
-                            <th>담당자명 <i class="import"></i></th>
-                            <td>
-                                <div>
-                                    <div><input type="text" placeholder="담당하시는 분의 성함을 입력해주세요."></div>
+                                <div class="empty">
                                 </div>
-                            </td>
-                        </tr>
-                        <tr class="tel">
-                            <th>연락처 <i class="import"></i></th>
-                            <td>
-                                <div>
-                                    <div><input type="text"></div>
-                                    <div><input type="text"></div>
-                                    <div><input type="text"></div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="mail">
-                            <th>메일주소 <i class="import"></i></th>
-                            <td>
-                                <div>
-                                    <div><input type="text"></div>
-                                    <div><input type="text"></div>
-                                </div>
-                                <div>
-                                    <div>
-                                        <select>
-                                            <option>직접입력</option>
-                                            <option>naver.com</option>
-                                            <option>gmail.com</option>
-                                        </select>
-                                        </div>
-                                        <div>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="content">
-                            <th>내용 <i class="import"></i></th>
-                            <td>
-                                <div>
-                                    <div><textarea placeholder="내용을 입력해주세요"></textarea></div>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content table-row">
+                        <div class="table-th">내용 <i class="import"></i></div>
+                        <div class="table-td">
+                            <div>
+                                <div><textarea placeholder="내용을 입력해주세요"></textarea></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </fieldset>
         </form>
         <div class="contact_agree">
@@ -370,31 +364,39 @@
     </section>
     <footer>
         <div>
-            <ul class="footer_nav">
-                <li><a href="">이용약관</a></li>
-                <li><a href="">개인정보처리방침</a></li>
-                <li><a href="">이메일무단수집거부</a></li>
-            </ul>
-            <ul class="footer_company">
-                <li>한솔로지스틱스㈜</li>
-                <li>사업자등록번호 : 102-81-41359</li>
-            </ul>
-            <ul class="footer_info">
-                <li>서울특별시 중구 을지로 100(을지로2가, 파인에비뉴 B동) 22층</li>
-                <li>TEL : 02-3287-7400</li>
-                <li>FAX : 02-6031-0981</li>
-            </ul>
-            <p>Copyright © 2022 Hansol Logistics Co,.Ltd All Rights Reserved.</p>
-            <select>
-                <option>한솔그룹</option>
-                <option>한솔제지</option>
-                <option>한솔PNS</option>
-                <option>한솔홈데코</option>
-                <option>한솔테크닉스</option>
-                <option>한솔EME</option>
-                <option>한솔Inticube</option>
-                <option>한솔케미칼</option>
-            </select>
+            <div class="footer_top">
+                <ul class="footer_nav">
+                    <li><a href="">이용약관</a></li>
+                    <li><a href="">개인정보처리방침</a></li>
+                    <li><a href="">이메일무단수집거부</a></li>
+                </ul>
+            </div>
+            <div class="footer_bottom">
+                <div>
+                    <ul class="footer_company">
+                        <li>한솔로지스틱스㈜</li>
+                        <li>사업자등록번호 : 102-81-41359</li>
+                    </ul>
+                    <ul class="footer_info">
+                        <li>서울특별시 중구 을지로 100(을지로2가, 파인에비뉴 B동) 22층</li>
+                        <li>TEL : 02-3287-7400</li>
+                        <li>FAX : 02-6031-0981</li>
+                    </ul>
+                    <p>Copyright © 2022 Hansol Logistics Co,.Ltd All Rights Reserved.</p>
+                </div>
+                <div>
+                    <select>
+                        <option>한솔그룹</option>
+                        <option>한솔제지</option>
+                        <option>한솔PNS</option>
+                        <option>한솔홈데코</option>
+                        <option>한솔테크닉스</option>
+                        <option>한솔EME</option>
+                        <option>한솔Inticube</option>
+                        <option>한솔케미칼</option>
+                    </select>
+                </div>
+            </div>
         </div>
     </footer>
 </body>

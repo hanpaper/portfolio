@@ -92,7 +92,7 @@ footer > div .footer_info li:nth-child(2) { padding: 0;}
 .contact article > div > div { padding: 20px 0 0; display: block;}
 
 
-.contact_form form table tr th { width: auto; max-width: 250px; min-width: 140px;}
-.contact_form form table tr td > div { max-width: none;}
-.contact_form form table .mail select { width: 100%;}
+.contact_form form .table-th { width: auto; max-width: 250px; min-width: 140px;}
+.contact_form form .table-td > div { max-width: none;}
+.contact_form form .table-row.mail select { width: 100%;}
 }
