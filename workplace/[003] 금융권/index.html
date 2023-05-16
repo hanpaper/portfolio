@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>리베하얀</title>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <link rel="stylesheet" href="default.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="style.css">
@@ -183,36 +185,39 @@
     </header>
     <main>
         <section class="section1">
-            <ul class="bxslider visual">
-                <li>
-                    <b>피싱사기 피해 예방만이 최선의 방법이다.</b>
-                    <strong>금융감독원 보이스피싱 지킴이</strong> 
-                </li>
-                <li>
-                    <b>[지역개발채권] 미상환지역개발채권 조회/상환 안내</b>
-                    <strong>만기 경과된 미상환지역개발채권을 조회 및 찾아가세요
-                    </strong>      
-                </li>
-                <li>
-                    <b>매일적금, 티끌을 모아보자</b>
-                    <strong>목적자금 마련을 위한 비대면전용 자유적립식 상품</strong>      
-                </li>
-                <li>
-                    <b>[이벤트] 감사 선물을 드려요</b>
-                    <strong>2023.02.08 ~ 03.31</strong>       
-                </li>
-                <li>
-                    <b>신나는 직장인 대출</b>
-                    <strong>공무원, 사립학교 교직원, 당행 선정 우량기업 임직원 대상 신용대출 상품</strong>  
-                </li>
-            </ul>
+            <div class="swiper swiper_type1">
+                <ul class="visual swiper-wrapper">
+                    <li class="swiper-slide">
+                        <b>피싱사기 피해 예방만이 최선의 방법이다.</b>
+                        <strong>금융감독원 보이스피싱 지킴이</strong> 
+                    </li>
+                    <li class="swiper-slide">
+                        <b>[지역개발채권] 미상환지역개발채권 조회/상환 안내</b>
+                        <strong>만기 경과된 미상환지역개발채권을 조회 및 찾아가세요
+                        </strong>      
+                    </li>
+                    <li class="swiper-slide">
+                        <b>매일적금, 티끌을 모아보자</b>
+                        <strong>목적자금 마련을 위한 비대면전용 자유적립식 상품</strong>      
+                    </li>
+                    <li class="swiper-slide">
+                        <b>[이벤트] 감사 선물을 드려요</b>
+                        <strong>2023.02.08 ~ 03.31</strong>       
+                    </li>
+                    <li class="swiper-slide">
+                        <b>신나는 직장인 대출</b>
+                        <strong>공무원, 사립학교 교직원, 당행 선정 우량기업 임직원 대상 신용대출 상품</strong>  
+                    </li>
+                </ul>
+                <div class="swiper-pagination"></div>
+            </div>
             <div class="main_menu">
                 <div>
                     <h2>
                         <b>REBEHAYAN FUTURES</b>
                         시작하기
                     </h2>
-                    <div class="swiper swiper_type1">
+                    <div class="swiper swiper_type2">
                         <ul class="swiper-wrapper">
                             <li class="swiper-slide">
                                 <a href="">
@@ -264,28 +269,26 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next btn_next_type2"></div>
+                    <div class="swiper-button-prev btn_prev_type2"></div>
                 </div>
             </div>
             <div class="notice">
                 <div>
                     <h2>공지사항</h2>
-                    <div class="swiper swiper_type2">
-                        <ul class="swiper-wrapper">
-                            <li class="swiper-slide">
+                    <div>
+                        <ul class="bxslider_type1">
+                            <li>
                                 <a href=""><p>[해외선물] Australian Dollar(6A) 상품명세 변경 안내<span>2020-10-16</span></p></a>
                             </li>
-                            <li class="swiper-slide">
+                            <li>
                                 <a href=""><p>[해외선물] Australian Dollar(6A) 상품명세 변경 안내<span>2020-10-16</span></p></a>
                             </li>
-                            <li class="swiper-slide">
+                            <li>
                                 <a href=""><p>[해외선물] Australian Dollar(6A) 상품명세 변경 안내<span>2020-10-16</span></p></a>
                             </li>
                         </ul>
                     </div>
-                    <div class="swiper-button-next">이전</div>
-                    <div class="swiper-button-prev">다음</div>
                 </div>
                 </div>
             </div>
@@ -477,78 +480,5 @@
             </div>
         </div>
     </footer>
-    <script>
-
-        $(function(){
-        $('.bxslider').bxSlider({
-            mode: 'fade',
-            auto : true,
-            pause : 3000,
-            autoStart : true,
-            });
-        });
-
-        
-        var swiper = new Swiper(".swiper_type1", {
-        slidesPerView: 6,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        navigation: {
-            nextEl: ".main_menu .swiper-button-next",
-            prevEl: ".main_menu .swiper-button-prev",
-        }
-        });
-
-
-        var swiper = new Swiper(".swiper_type2", {
-        direction: "vertical",
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        navigation: {
-            nextEl: ".swiper_type2 .swiper-button-next",
-            prevEl: ".swiper_type2 .swiper-button-prev",
-        },
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false
-        }
-        });
-
-        
-        
-        
-
-        // menubar - popup
-        $('.menu .btn_search').click(function(){
-            if($('.popup').css("display") === 'none'){
-                $('.popup').css("display","block");
-                $('.popup_search').css("display","block");
-                $('body').css("overflow","hidden")
-            }else{
-                $('.popup').css("display","none");
-                $('.popup_search').css("display","none");
-                $('body').css("overflow","auto")
-            }
-        });
-        
-
-        $('.menu .btn_menu').click(function(){
-                $('.popup').css("display","block");
-                $('.popup_menu').css("display","block");
-                $('body').css("overflow","hidden")
-        });
-
-
-        $('.popup .btn_close').click(function(){
-                $('.popup').css("display","none");
-                $('.popup_search').css("display","none");
-                $('.popup_menu').css("display","none");
-                $('body').css("overflow","auto")
-            })
-    </script>
 </body>
 </html>
