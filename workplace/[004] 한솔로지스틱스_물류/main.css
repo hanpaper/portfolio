@@ -1,17 +1,23 @@
 /** 메인화면 **/
 .visual { height: 100vh;}
-.visual > div { width: 100%; height: 100%; background: url(images/bg_main_visual.jpg) no-repeat center / cover;}
-.visual .content { margin: 0 auto; max-width: 1420px; text-align: left;}
-.visual .content h2 { color: #fff; font-size: 50px;}
-.visual .content h2 b { display: inline-block; padding: 20px 0 73px; font-size: 56px; font-family: poppins;}
-.visual .content .visual_number ul li { float: left; margin: 0 15px 0 21px;}
-.visual .content .visual_number ul li:nth-child(1) { margin-left: 0;}
-.visual .content .visual_number ul li button { font-size: 16px; font-weight: 600; color: rgba(255, 255, 255, 0.4);}
-.visual .content .visual_number ul li.active button { color: #fff;}
-.visual .content .visual_number ul li.active { position: relative; margin-right: 95px;}
-.visual .content .visual_number ul li.active::after { position: absolute; content: ""; left: 34px; top: 50%; width: 80px; height: 2px; background-color: rgba(255, 255, 255, 0.4);}
-.visual .content .visual_number ul li.active::before { animation: ani3 6s 0s; position: absolute; content: ""; left: 34px; top: 50%; height: 2px; background-color: #fff;}
-.bx-viewport .bxslider > div { width: auto;}
+.visual > div { position: relative; height: 100vh; }
+.visual > div video { height: 100%; width: 100%; background-repeat: no-repeat; background-position: center; background-size: cover;}
+.visual > div:nth-child(1) { background-image: url(images/bg_main_visual.jpg);}
+.visual > div:nth-child(2) { background-image: url(images/bg_main_visual.jpg);}
+.visual > div:nth-child(3) { background-image: url(images/bg_main_visual.jpg);}
+.visual > div > div { position: absolute; left: 50%; transform: translateX(-50%); top: 0; margin: 0 auto; padding: 0 20px; width: 100%; max-width: 1380px; height: 100vh; box-sizing: border-box;}
+.visual > div > div h2 { position: absolute; bottom: 300px; color: #fff; font-size: 50px;}
+.visual > div > div h2 b { display: inline-block; padding: 20px 0 73px; font-size: 56px; font-family: poppins;} */
+.bx-viewport { position: relative; height: 100vh;}
+.bx-wrapper { margin-bottom:0; border: none; background-color: #333;}
+.bx-pager-item .bx-pager-link { font-size: 16px; font-weight: 600; color: #000; }
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto { margin: 0 0 0 -21px; padding: 0 20px; left: 50%; transform: translateX(-50%); bottom: 300px; max-width: 1380px; box-sizing: border-box;}
+.bx-wrapper .bx-pager { text-align: left;}
+.bx-wrapper .bx-pager.bx-default-pager a { margin: 0 15px 0 21px; text-indent: 0; background-color: transparent; color: rgba(255,255,255,.3);}
+.bx-wrapper .bx-pager.bx-default-pager a.active { position: relative; margin-right: 95px; background-color: transparent; color: #fff;}
+.bx-wrapper .bx-pager.bx-default-pager a.active::after{ position: absolute; content: ""; left: 34px; top: 0; width: 80px; height: 2px; background-color: rgba(255, 255, 255, 0.4);}
+.bx-wrapper .bx-pager.bx-default-pager a.active::before { animation: ani3 5s 0s; position: absolute; content: ""; left: 34px; top: 0; height: 2px; background-color: #fff;}
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus { background-color: transparent;}
 
 @keyframes ani3 {
     0% { width: 0;}

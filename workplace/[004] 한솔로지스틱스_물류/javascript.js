@@ -11,6 +11,19 @@ $( document ).ready(function() {
         window.scrollTo(0, 0)
     })
 
+
+
+    $(".slider").bxSlider({
+        auto: true,
+        mode: 'fade',
+        controls: false,
+        speed: 1000,
+        infiniteLoop: true,
+    });    
+    $('.bx-viewport').css('height','100%');
+    $('.bx-pager-link').prepend('0');
+    
+
     $('.jq_slider1').slick({
         infinite: true,
         slidesToShow: 4,
