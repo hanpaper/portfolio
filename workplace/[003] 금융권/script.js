@@ -5,6 +5,7 @@ $( document ).ready(function() {
         window.scrollTo(0,0)
     })
     
+
     //slider
     var swiper = new Swiper(".swiper_type1", {
         spaceBetween: 30,
@@ -38,5 +39,31 @@ $( document ).ready(function() {
             pause:2500,
           });
   
-          
+          // menubar - popup
+        $('.menu .btn_search').click(function(){
+            if($('.popup').css("display") === 'none'){
+                $('.popup').css("display","block");
+                $('.popup_search').css("display","block");
+                $('body').css("overflow","hidden")
+            }else{
+                $('.popup').css("display","none");
+                $('.popup_search').css("display","none");
+                $('body').css("overflow","auto")
+            }
+        });
+        
+
+        $('.menu .btn_menu').click(function(){
+                $('.popup').css("display","block");
+                $('.popup_magamenu').css("display","block");
+                $('body').css("overflow","hidden")
+        });
+
+
+        $('.popup .btn_close').click(function(){
+                $('.popup').css("display","none");
+                $('.popup_search').css("display","none");
+                $('.popup_magamenu').css("display","none");
+                $('body').css("overflow","auto")
+            })
     });

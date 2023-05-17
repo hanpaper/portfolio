@@ -27,7 +27,7 @@ header .util ul li a { display: block; margin: 0 0 0 15px; color: white; backgro
 .popup_search div .btn_search { width: 30px; height: 30px; background: url(images/bu_arrow_right5.png) no-repeat center / auto 15px; font-size: 0;}
 .popup_search div .btn_close { position: absolute; right: 0; top: 50%; padding: 20px 0 0; width: 30px; height: 30px; transform: translateY(-50%); background: url(images/btn_close.png) no-repeat center top / 14px auto; font-size: 11px; color: #404040; box-sizing: border-box;}
 /** 헤더 팝업창 - 전체메뉴 **/
-.popup_menu { display: none; position: absolute; left: 0; top: -113px; width: 100%; height: 100%; overflow: auto; background-color: #3f0cac;}
+.popup_magamenu { display: none; position: absolute; left: 0; top: -113px; width: 100%; height: 100%; overflow: auto; background-color: #3f0cac;}
 .menu_header { width: 1200px; margin: 0 auto; padding: 0 90px; height: 113px; line-height: 113px; box-sizing: border-box;}
 .menu_header div:first-child { float: left;}
 .menu_header div:last-child { float: right;}
