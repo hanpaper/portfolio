@@ -7,7 +7,7 @@ header nav { float: right;}
 header nav ul li {display: inline-block; padding: 0 15px;}
 header nav ul li a { color: #333;}
 header.scroll { background-color: rgba(0,0,0,.8); color: white;}
-header.scroll nav ul li button { color: white;}
+header.scroll nav ul li a { color: white;}
 
 
 section { min-height: 100vh; border: 1px solid #000;}
@@ -15,55 +15,86 @@ section .contentBox { position: relative; margin: 0 auto; padding: 0 30px; max-w
 h2 { padding: 160px 0 20px ; font-size: 50px; line-height: 45px;}
 
 
-.btnStyle1 { display: inline-block; width: 200px; height: 50px; line-height: 50px; text-align: center; font-size: 15px; box-sizing: border-box;}
+.btnStyle1 { transition: all .3s; display: inline-block; width: 200px; height: 50px; line-height: 50px; text-align: center; font-size: 15px; box-sizing: border-box; background-color: white; color: #333;}
 
 
 
 /** section - visual **/
 .visual { position: relative;}
 .visual h1 { font-size: 0;}
-.visual p { position: absolute; left: 50%; top: 50%; transform: translateX(-50%) translateY(-50%); font-size: 50px; font-weight: bold; line-height: 45px;}
+.visual .intro { position: absolute; left: 50%; top: 50%; transform: translateX(-50%) translateY(-50%); width: 250px; font-size: 50px; font-weight: bold; line-height: 45px; white-space:nowrap;}
+.visual .intro p.line1 { position: absolute; left: 0; top: 0; font-weight: bold; animation: aniShake .8s 0.5s 1 both; }
+.visual .intro p.line1 em { position: absolute; left: 150px; top: 0;}
+/* .visual .intro p.line1 em {color: goldenrod; animation: aniRotate .8s 1.3s 1 both;} */
+.visual .intro p.line2{ animation: aniAppear 1s 1.5s 1 both;}
+.visual .intro p.line2 i { position: relative; display: inline-block; margin: 0 3px; width: 20px; height: 45px; animation: aniStretch 2s 2.5s 1 both; animation-timing-function: cubic-bezier(1.075, 0.82, 0.165, 1);}
+.visual .intro p.line2 i::before { position: absolute; content: ""; left: 0; top: 30px; width: 100%; height: 5px; background-color: #000;}
+@keyframes aniShake{
+    0% { top: 0px;}
+    25% { top: -8px;}
+    50% { top: 0px;}
+    75% { top: -8px;}
+    100% { top: 0px;}
+}
+/* @keyframes aniRotate{
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(90deg);}
+} */
+@keyframes aniStretch{
+    0% { width: 20px;}
+    70% { width: 60px;}
+    100% { width: 20px;}
+}
+@keyframes aniAppear{
+    0% {  opacity: 0;}
+    100% {  opacity: 1;}
+}
 .visual strong { position: absolute; right: -25px; top: 50%; transform: translateY(-50%) rotate(-90deg); font-size: 25px; font-weight: bold; color: rgba(0,0,0,.1); }
 
 
 /** section - about **/
-.about .flex { display: flex; justify-content: space-between; gap: 70px;}
-.about .flex-left h2 { padding-bottom: 50px;}
-.about .flex-left h3 i { position: relative; display: inline-block; margin: 0 3px; width: 20px; height: 45px;}
-.about .flex-left h3 i::before { position: absolute; content: ""; left: 0; top: 30px; width: 100%; height: 5px; background-color: #000;}
-.about .flex-left span { position: relative; display: inline-block; width: 320px; height: 500px; overflow: hidden;}
-.about .flex-left span img { position: absolute; top: 0; left: 35%; transform: translateX(-50%); height: 100%;}
+.about .contentBox { padding: 0 0 0 500px; box-sizing: border-box;}
+.about .profile { position: absolute; left: 0;}
+.about .profile h2 { padding-bottom: 50px;}
+.about .profile h3 i { position: relative; display: inline-block; margin: 0 3px; width: 20px; height: 45px;}
+.about .profile h3 i::before { position: absolute; content: ""; left: 0; top: 30px; width: 100%; height: 5px; background-color: #000;}
+.about .profile span { position: relative; display: inline-block; width: 320px; height: 500px; overflow: hidden;}
+.about .profile span img { position: absolute; top: 0; left: 35%; transform: translateX(-50%); height: 100%;}
 
-.about .flex-right { padding: 330px 0 0 0; width: 650px; height: 100%; overflow: scroll; white-space:nowrap; box-sizing: border-box;}
+.about .textbox { padding: 330px 0 0 0; height: 100vh; overflow :scroll; box-sizing: border-box;}
 /* ::-webkit-scrollbar { visibility: hidden;} */
-.about .flex-right article { display: inline-block; width: 100%; max-width: 650px; height: 100%; vertical-align: top;}
-.about .flex-right h3 { margin: 0 0 65px 0; display: inline-block; font-size: 30px; white-space: normal;}
-.about .flex-right p { margin: 0 0 150px; font-size: 18px; line-height: 37px; white-space: initial;}
-.about .flex-right strong { display: block; padding: 0 0 75px; font-size: 25px; }
-.about .flex-right strong i { display: block; font-size: 35px; font-weight: 600; color: rgba(0,0,0,.1); line-height: 9px;}
+.about .textbox article { width: 100%; max-width: 650px; height: 100%; vertical-align: top;}
+.about .textbox h3 { margin: 0 0 65px 0; display: inline-block; font-size: 30px; white-space: normal;}
+.about .textbox p { margin: 0 0 150px; font-size: 18px; line-height: 37px; white-space: initial;}
+.about .textbox strong { display: block; padding: 0 0 75px; font-size: 25px; }
+.about .textbox strong i { display: block; font-size: 35px; font-weight: 600; color: rgba(0,0,0,.1); line-height: 9px;}
 
 
 
 
 /** section - works **/
-.works { position: relative;}
-.works .title { position: absolute; z-index: 9; left: 50%; top: 0; transform: translateX(-50%); padding: 0 30px; width: 100%; max-width: 1200px; box-sizing: border-box;}
+.works { position: relative; overflow: hidden;}
+.works .title { position: absolute; left: 50%; top: 0; transform: translateX(-50%); padding: 0 30px; width: 100%; max-width: 1200px; box-sizing: border-box;}
 .works .contentBox { padding: 100px 0;} 
-.works ul,
-.works ul li { text-align: center; line-height: 1; font-size: 0;}
-.works ul li a { position: relative; margin: 10px; display: inline-block; padding: 20px 30px; border-radius: 7px; background-color: lightgray; text-align: left; box-sizing: border-box;}
-.works ul.web li a { width: 340px; height: 200px;} 
-.works ul.mobile li { display: inline-block;}
-.works ul.mobile li a { width: 200px; height: 340px;} 
-.works ul li a div { transition: all .3s; position: absolute; left: 0; top: 0; padding: 20px; width: 100%; height: 100%; border-radius: 7px; background-color: #333; color: #fff; box-sizing: border-box; opacity: 0;}
+.works ul { position: absolute; left: 0; top: 50%; transform: translateY(-50%); padding: 0 30px; white-space: nowrap;}
+.works ul li { display: inline-block; text-align: center; line-height: 1; font-size: 0;}
+.works ul li~li {margin-left: 20px;}
+.works ul li a { position: relative; display: inline-block; padding: 20px 30px; border-radius: 7px; background-color: lightgray; text-align: left; box-sizing: border-box; white-space: normal;}
+.works ul li.web a { width: 500px; height: 300px;} 
+.works ul li.mobile a { width: 250px; height: 400px;} 
+.works ul li a div { transition: all .3s; position: absolute; left: 0; top: 0; padding: 130px 30px 0 40px; width: 100%; height: 100%; border-radius: 7px; background-color: #333; color: #fff; box-sizing: border-box; opacity: 0;}
+.works ul li.mobile a div { padding-top: 150px;}
 .works ul li a:hover div { opacity: 1;}
-.works ul li a div b { display: block; margin: 10px 0; font-size: 20px;}
-.works ul li a div i { font-size: 15px;}
-.works .works_detail { display: none; position: absolute; left: 0; top:0; padding: 165px 30px 0 ; width: 120%; height: 100%; background-color: #fff; box-sizing: border-box; box-shadow: -2px 0 8px rgba(0,0,0,.3);}
-.works .works_detail h3 { padding: 0 0 40px; font-size: 40px;}
-.works .works_detail p { font-size: 20px;}
+.works ul li a div b { font-size: 25px; line-height: 32px;}
+.works ul li a div i { display: block; margin: 16px 0 30px; font-size: 17px; color: yellow; }
+.works ul li a div em { font-size: 17px; color: rgba(255,255,255,.5);}
+.works .works_detail { display: none; position: absolute; left: 0; top:0; padding: 206px 460px 0 30px ; width: 120%; height: 100%; background-color: #fff; box-sizing: border-box; box-shadow: -2px 0 8px rgba(0,0,0,.3);}
+.works .works_detail h3 { font-size: 40px;}
+.works .works_detail .btnStyle1 { margin: 40px 0 15px; font-size: 16px; width: 160px; height: 42px; line-height: 38px; background-color: transparent; border: 2px solid #333; font-weight: bold;}
+.works .works_detail .btnStyle1:hover { background-color: #333; color: #fff;}
+.works .works_detail p { font-size: 16px;}
 .works .works_detail .btn_close { position: absolute; right: 30px; top: 30px; width: 50px; height: 50px; background-color: lightgray; font-size: 0;}
-.works .works_detail table { position: absolute; left: 0; top: 420px; margin: 0 30px;}
+.works .works_detail table { margin: 20px 0;}
 .works .works_detail table,
 .works .works_detail table tr { border: 1px solid lightgray;}
 .works .works_detail table td,
@@ -78,23 +109,22 @@ h2 { padding: 160px 0 20px ; font-size: 50px; line-height: 45px;}
 .etc .contentBox > div { position: relative;}
 .etc .contentBox > div h2 { position: absolute; left: 0; top: 0;}
 .etc .contentBox > div > div { padding: 165px 0 0 280px;}
-.etc .contentBox .etc_github a { margin: 20px 0; width: 150px; background-color: #333; color: #fff;}
-.etc .contentBox .etc_github a:hover { background-color: #fff; color: #333; border: 2px solid #333; line-height: 46px; box-sizing: border-box; font-weight: bold;}
+.etc .contentBox .etc_github a { margin: 20px 0; width: 150px; background-color: #333; color: #fff; border: 2px solid #333; line-height: 46px; box-sizing: border-box; font-weight: bold;}
+.etc .contentBox .etc_github a:hover { background-color: #fff; color: #333; border-color: #333;}
 .etc .contentBox .etc_blog > div{ padding-top: 85px;}
 .etc .contentBox .etc_blog h2 { padding-top: 70px;}
 
 
 
 /** section - contact **/
-.contact { position: relative;}
+.contact { position: relative; overflow: hidden;}
 .contact > div { text-align: center;}
 .contact h2 { padding-top: 290px; padding-bottom: 20px;}
 .contact p { margin: 0 0 50px;}
 .contact a,
 .contact button { display: block; margin: 10px auto; }
-.contact a { border: 1px solid #333; color: #333;}
+.contact a { border: 2px solid #333; color: #333; line-height: 46px;}
 .contact button { background-color: #333; color: #fff;}
 .contact .ending { position: absolute; left: 0; bottom: 0; width: 100%;}
-.contact .ending span { display: inline-block; width: 100%; height: 100px; white-space:nowrap; overflow: scroll;}
-.contact .ending span em,
-.contact .ending span i { margin: 0 20px; font-size: 50px; font-weight: bold;}
+.contact .ending span { position: relative; display: inline-block; width: 100%; height: 100px; white-space:nowrap;}
+.contact .ending span em { position: absolute; font-size: 50px; font-weight: bold; color: rgba(0,0,0,.2);}
