@@ -10,7 +10,7 @@ header.scroll { background-color: rgba(0,0,0,.8); color: white;}
 header.scroll nav ul li a { color: white;}
 
 
-section { min-height: 100vh; border: 1px solid #000;}
+section { min-height: 100vh; border: 1px solid #000; box-sizing: border-box;}
 section .contentBox { position: relative; margin: 0 auto; padding: 0 30px; max-width: 1200px; min-height: 100vh; box-sizing: border-box;}
 h2 { padding: 160px 0 20px ; font-size: 50px; line-height: 45px;}
 
@@ -19,10 +19,15 @@ h2 { padding: 160px 0 20px ; font-size: 50px; line-height: 45px;}
 
 
 
+
+
 /** section - visual **/
-.visual { position: relative;}
+main { position: relative;}
+.visual { position: absolute; z-index: 50; width: 100%; height: 100vh; pointer-events: none;}
 .visual h1 { font-size: 0;}
-.visual .intro { position: absolute; left: 50%; top: 50%; transform: translateX(-50%) translateY(-50%); width: 250px; font-size: 50px; font-weight: bold; line-height: 45px; white-space:nowrap;}
+.visual .intro { transition: all 1.5s; position: absolute; left: 50%; top: 160px; transform: translateX(-50%) ; width: 250px; font-size: 50px; font-weight: bold; line-height: 45px; white-space:nowrap;}
+/* mouse wheel event */
+.visual .intro.eventOn { left: 30px; top: 160px; transform: none; }
 .visual .intro p.line1 { position: absolute; left: 0; top: 0; font-weight: bold; animation: aniShake .8s 0.5s 1 both; }
 .visual .intro p.line1 em { position: absolute; left: 150px; top: 0;}
 /* .visual .intro p.line1 em {color: goldenrod; animation: aniRotate .8s 1.3s 1 both;} */
@@ -53,17 +58,18 @@ h2 { padding: 160px 0 20px ; font-size: 50px; line-height: 45px;}
 
 
 /** section - about **/
-.about .contentBox { padding: 0 0 0 500px; box-sizing: border-box;}
-.about .profile { position: absolute; left: 0;}
-.about .profile h2 { padding-bottom: 50px;}
-.about .profile h3 i { position: relative; display: inline-block; margin: 0 3px; width: 20px; height: 45px;}
-.about .profile h3 i::before { position: absolute; content: ""; left: 0; top: 30px; width: 100%; height: 5px; background-color: #000;}
-.about .profile span { position: relative; display: inline-block; width: 320px; height: 500px; overflow: hidden;}
+.about .profile { position: absolute; left: 30px;}
+.about .profile h2 { padding-bottom: 50px; color: transparent;}
+.about .profile h2 i { position: relative; display: inline-block; margin: 0 3px; width: 20px; height: 45px; }
+.about .profile h2 i::before { position: absolute; content: ""; left: 0; top: 30px; width: 100%; height: 5px; background-color: transparent;}
+.about .profile span { transition: all 1.5s; position: relative; left: -320px; display: inline-block; width: 320px; height: 500px; overflow: hidden; opacity: 0;}
+/* mouse wheel event */
+.about .profile span.eventOn { left: 0; opacity: 1;}
 .about .profile span img { position: absolute; top: 0; left: 35%; transform: translateX(-50%); height: 100%;}
 
-.about .textbox { padding: 330px 0 0 0; height: 100vh; overflow :scroll; box-sizing: border-box;}
+.about .textbox { padding: 100vh 0 0 500px; width: 100%; height: 100vh; overflow :scroll; box-sizing: border-box; }
 /* ::-webkit-scrollbar { visibility: hidden;} */
-.about .textbox article { width: 100%; max-width: 650px; height: 100%; vertical-align: top;}
+.about .textbox article { display: inline-block; width: 100%; max-width: 650px; height: 100%;}
 .about .textbox h3 { margin: 0 0 65px 0; display: inline-block; font-size: 30px; white-space: normal;}
 .about .textbox p { margin: 0 0 150px; font-size: 18px; line-height: 37px; white-space: initial;}
 .about .textbox strong { display: block; padding: 0 0 75px; font-size: 25px; }
