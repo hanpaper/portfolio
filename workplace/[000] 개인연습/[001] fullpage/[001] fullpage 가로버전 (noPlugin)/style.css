@@ -1,0 +1,20 @@
+body { margin: 0;}
+        
+.container {
+    /* transition: all 0.5s; */
+}
+.otherContainer { height: 100vh;}
+.box {
+    /* 아래 두줄은 제이쿼리 부분에서 box에 css 주는거 없을때 필요  */
+    /* float: left;
+    width: calc(100% / 4); */
+    height: 100vh;
+
+    font-size: 100px;
+    line-height: 100vh;
+    text-align: center;
+
+    border: 10px solid;
+    box-sizing: border-box;
+
+}

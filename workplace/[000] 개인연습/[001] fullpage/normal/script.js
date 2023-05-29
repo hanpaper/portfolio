@@ -12,7 +12,8 @@ $(document).ready(function() {
         
         afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){
             console.log('현재 슬라이드 번호는?' + slideIndex)
-        }
+        },
+
 	});
     
 });
