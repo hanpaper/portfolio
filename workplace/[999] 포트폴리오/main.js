@@ -22,53 +22,6 @@ $('main').on('scroll touchmove mousewheel', function(e) {
 // scroll 기능 풀기
 $('main').off('scroll touchmove mousewheel');
 
-
-// visual event
-// 1. 마우스 휠을 내렸을 때
-// 2. 요소에 (관련 이벤트를 담은) 클래스'eventOn'을 추가한다.
-var a = document.getElementsByClassName('about')[0];
-a.addEventListener('wheel' , function(e){
-    e.preventDefault;
-    var t = document.getElementsByClassName('eventOff');
-    t[0].className += ' eventOn';
-    t[1].className += ' eventOn';
-});
-
-
-// 특정 위치에서 scroll 정지, 가로 스크롤 작동
-// 1. window.offset()가 a에 도달했을 때,
-// 2. 마우스 휠 이벤트를 중지한다
-// setInterval(function(){
-//     if ($(window).scrollTop() >= 925.3333358764648){
-//         $(window).scrollTop(925.3333358764648,0);
-// 
-//         $('main').on('scroll touchmove mousewheel', function(e) {
-//             e.preventDefault();
-//             e.stopPropagation();
-//             return false;
-//         });
-//     }
-// });
-
-
-var b = $('.works').offset().top;
-    var a = $('.works').offset().top - 150;
-    var c = document.getElementsByClassName('works')[0];
-    
-setInterval(function(){
-
-    if ($(window).scrollTop() > a){
-        c.scrollIntoView({behavior:"smooth"});
-    }
-});
-
-
-
-
-
-
-
-
 // scroll 기능 제거 (function으로 빼기)
 // function scroll_on() {
 //     $('main').on('scroll touchmove mousewheel', function(e) {
@@ -83,12 +36,19 @@ setInterval(function(){
 
 // offset()측정
 setInterval(function(){
-    //console.log('맨위에서 section까지의 거리 :'+$('.works').offset().top);
-    //console.log('스크롤된 정도:'+$(window).scrollTop());
+    console.log('맨위에서 section까지의 거리 :'+$('.works').offset().top);
+    console.log('스크롤된 정도:'+$(window).scrollTop());
 },2000);
 
 
 
+// works datail window
+document.getElementById('hansol').addEventListener('click', function(){
+    document.getElementById('detail_hansol').style.display = 'block';
+});
+document.getElementById('btn_close').addEventListener('click', function(){
+    document.getElementById('detail_hansol').style.display = 'none';
+});
 
 
 

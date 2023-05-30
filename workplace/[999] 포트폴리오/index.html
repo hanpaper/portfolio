@@ -9,6 +9,7 @@
     <script src="jquery.fullPage.js"></script>
     <link rel="stylesheet" href="jquery.fullPage.css"> -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <link rel="stylesheet" href="default.css">
     <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
@@ -29,15 +30,15 @@
         <section class="visual section" data-menuanchor="section1">
             <h1>Web Publisher Portfolio</h1>
             <div class="contentBox">
-                <div class="intro eventOff">
+                <div class="intro">
                     <p class="line1">Hello<em>:)</em></p><br>
                     <p class="line2">
-                        &nbsp;&nbsp;I am<br>
+                        &nbsp;&nbsp;&nbsp;I am<br>
                         Ji<i></i>young<br>
                     </p>
                 </div>
-                <strong>Folio v.01 2023</strong>
             </div>
+            <strong>Folio v.01 2023</strong>
         </section>
         <section class="about section" data-menuanchor="section2">
             <div class="contentBox flex">
@@ -47,7 +48,7 @@
                         &nbsp;&nbsp;I am<br>
                         Ji<i></i>young<br>
                     </h2>
-                    <span class="eventOff"><img src="images/profile.jpg"></span>
+                    <span><img src="images/profile.jpg"></span>
                 </div>
                 <div class="textbox">
                     <article>
@@ -70,56 +71,93 @@
         </section>
         <section class="works section" data-menuanchor="section3">
             <div class="title"><h2>Works</h2></div>
-            <div class="contentBox scrollbox">
                 <ul>
                     <li class="web">
-                        <a href="">
-                            <div>
-                                <b>금융권 웹사이트</b>
-                                <i>#키워드 #키워드 #키워드</i>
-                                <em>설명</em>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="web">
-                        <a href="">
+                        <button id="hansol">
                             <span></span>
                             <div>
                                 <b>한솔로지스틱스 웹사이트</b>
                                 <i>#키워드 #키워드 #키워드</i>
-                                <em>설명</em>
                             </div>
-                        </a>
+                        </button>
+                    </li>
+                    <li class="web">
+                        <button>
+                            <div>
+                                <b>금융권 웹사이트</b>
+                                <i>#키워드 #키워드 #키워드</i>
+                            </div>
+                        </button>
                     </li>
                     <li class="mobile">
-                        <a href="">
+                        <button>
                             <span></span>
                             <div>
                                 <b>리베금융<br>모바일웹</b>
                                 <i>#키워드 #키워드 #키워드</i>
-                                <em>설명</em>
                             </div>
-                        </a>
+                        </button>
                     </li>
                     <li class="mobile">
-                        <a href="">
+                        <button>
                             <span></span>
                             <div>
                                 <b>스타벅스<br>모바일웹</b>
                                 <i>#키워드 #키워드 #키워드</i>
-                                <em>설명</em>
                             </div>
-                        </a>
+                        </button>
                     </li>
                 </ul>
-                <div class="works_detail">
+        </section>
+        <section class="etc section" data-menuanchor="section4">
+            <div class="contentBox">
+                <div class="etc_github">
+                    <h2>Github</h2>
+                    <div>
+                        <p>버전관리로 프로젝트를 관리하고 있어요 </p>
+                        <a href="https://github.com/hanpaper" class="btnStyle1" target="_blank">Github 바로가기</a>
+                    </div>
+                </div>
+                <div class="etc_blog">
+                    <h2>blog</h2>
+                    <div>
+                        <p>공부내용을 기록하고 있어요</p>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact section" data-menuanchor="section5">
+            <div>
+                <h2>Contact</h2>
+                <p>저에 대해 더 알고싶으신가요?</p>
+                <a href="https://foamy-season-52d.notion.site/339884e4e85a429cbf74373d39f33241?v=10b8f8de627344d69a1e1ae967815af1" class="btnStyle1">과거 흔적보기</a>
+                <button class="btnStyle1">이력서 다운받기</button>
+            </div>
+            <span class="ending">
+                <span class="infSlider_wrapper">
+                    <em class="infSlider">Thank you for visiting</em><em class="infSlider">Don’t forget me</em><em class="infSlider">Thank you for visiting</em><em class="infSlider">Don’t forget me</em>
+                </span>
+                <!-- <span class="infSlider_wrapper">
+                    <em class="infSlider">Thank you for visiting</em><em class="infSlider">Don’t forget me</em><em class="infSlider">Thank you for visiting</em><em class="infSlider">Don’t forget me</em>
+                </span> -->
+            </span>
+        </section>
+        <div id="detail_hansol">
+            <div>
+                <div>
+                    <i></i>
                     <h3>한솔로지스틱스</h3>
-                    <a href="" class="btnStyle1">사이트 바로가기</a>
                     <p>
                         프로젝트 설명~~~~~<br>
                         프로젝트 설명~~~~~<br>
                         프로젝트 설명~~~~~
                     </p>
+                    <a href="" class="btnStyle1">사이트 바로가기</a>
                     <table>
                         <colgroup>
                             <col style="width:px">
@@ -178,48 +216,10 @@
                             </tr>  
                         </tbody>   
                     </table>
-                    <button class="btn_close">닫기</button>
                 </div>
+                <button id="btn_close">닫기</button>
             </div>
-        </section>
-        <section class="etc section" data-menuanchor="section4">
-            <div class="contentBox">
-                <div class="etc_github">
-                    <h2>Github</h2>
-                    <div>
-                        <p>버전관리로 프로젝트를 관리하고 있어요 </p>
-                        <a href="https://github.com/hanpaper" class="btnStyle1">Github 바로가기</a>
-                    </div>
-                </div>
-                <div class="etc_blog">
-                    <h2>blog</h2>
-                    <div>
-                        <p>공부내용을 기록하고 있어요</p>
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="contact section" data-menuanchor="section5">
-            <div>
-                <h2>Contact</h2>
-                <p>저에 대해 더 알고싶으신가요?</p>
-                <a href="https://foamy-season-52d.notion.site/339884e4e85a429cbf74373d39f33241?v=10b8f8de627344d69a1e1ae967815af1" class="btnStyle1">과거 흔적보기</a>
-                <button class="btnStyle1">이력서 다운받기</button>
-            </div>
-            <span class="ending">
-                <span class="infSlider_wrapper">
-                    <em class="infSlider">Thank you for visiting</em><em class="infSlider">Don’t forget me</em><em class="infSlider">Thank you for visiting</em><em class="infSlider">Don’t forget me</em>
-                </span>
-                <!-- <span class="infSlider_wrapper">
-                    <em class="infSlider">Thank you for visiting</em><em class="infSlider">Don’t forget me</em><em class="infSlider">Thank you for visiting</em><em class="infSlider">Don’t forget me</em>
-                </span> -->
-            </span>
-        </section>
+        </div>
     </main>
 </body>
 </html>

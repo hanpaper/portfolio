@@ -1,5 +1,6 @@
 /** 공통 스타일**/
 body { position: relative;}
+main { position: relative;}
 
 header { transition: all .3s; position: fixed; z-index: 99; left: 0; top: 0; padding: 0 30px; width: 100%; height: 60px; line-height: 60px; border: 1px solid #000; background-color: #fff; box-sizing: border-box;}
 header p { float: left;}
@@ -10,7 +11,7 @@ header.scroll { background-color: rgba(0,0,0,.8); color: white;}
 header.scroll nav ul li a { color: white;}
 
 
-section { min-height: 100vh; border: 1px solid #000; box-sizing: border-box;}
+section { min-height: 100vh; border: 1px solid #000;}
 section .contentBox { position: relative; margin: 0 auto; padding: 0 30px; max-width: 1200px; min-height: 100vh; box-sizing: border-box;}
 h2 { padding: 160px 0 20px ; font-size: 50px; line-height: 45px;}
 
@@ -19,17 +20,12 @@ h2 { padding: 160px 0 20px ; font-size: 50px; line-height: 45px;}
 
 
 
-
-
 /** section - visual **/
-main { position: relative;}
-.visual { position: absolute; z-index: 50; width: 100%; height: 100vh; pointer-events: none;}
+.visual { position: relative;}
 .visual h1 { font-size: 0;}
-.visual .intro { transition: all 1.5s; position: absolute; left: 50%; top: 160px; transform: translateX(-50%) ; width: 250px; font-size: 50px; font-weight: bold; line-height: 45px; white-space:nowrap;}
-/* mouse wheel event */
-.visual .intro.eventOn { left: 30px; top: 160px; transform: none; }
+.visual .intro { position: absolute; left: 50%; top: 50%; transform: translateX(-50%) translateY(-50%); width: 250px; font-size: 60px; font-weight: bold; line-height: 48px; white-space:nowrap;}
 .visual .intro p.line1 { position: absolute; left: 0; top: 0; font-weight: bold; animation: aniShake .8s 0.5s 1 both; }
-.visual .intro p.line1 em { position: absolute; left: 150px; top: 0;}
+.visual .intro p.line1 em { position: absolute; left: 170px; top: 0;}
 /* .visual .intro p.line1 em {color: goldenrod; animation: aniRotate .8s 1.3s 1 both;} */
 .visual .intro p.line2{ animation: aniAppear 1s 1.5s 1 both;}
 .visual .intro p.line2 i { position: relative; display: inline-block; margin: 0 3px; width: 20px; height: 45px; animation: aniStretch 2s 2.5s 1 both; animation-timing-function: cubic-bezier(1.075, 0.82, 0.165, 1);}
@@ -54,22 +50,21 @@ main { position: relative;}
     0% {  opacity: 0;}
     100% {  opacity: 1;}
 }
-.visual strong { position: absolute; right: -25px; top: 50%; transform: translateY(-50%) rotate(-90deg); font-size: 25px; font-weight: bold; color: rgba(0,0,0,.1); }
+.visual strong { position: absolute; right: 0; top: 50%; transform: translateY(-50%) rotate(-90deg); font-size: 25px; font-weight: bold; color: rgba(0,0,0,.1); }
 
 
 /** section - about **/
-.about .profile { position: absolute; left: 30px;}
-.about .profile h2 { padding-bottom: 50px; color: transparent;}
-.about .profile h2 i { position: relative; display: inline-block; margin: 0 3px; width: 20px; height: 45px; }
-.about .profile h2 i::before { position: absolute; content: ""; left: 0; top: 30px; width: 100%; height: 5px; background-color: transparent;}
-.about .profile span { transition: all 1.5s; position: relative; left: -320px; display: inline-block; width: 320px; height: 500px; overflow: hidden; opacity: 0;}
-/* mouse wheel event */
-.about .profile span.eventOn { left: 0; opacity: 1;}
+.about .contentBox { padding: 0 0 0 500px; box-sizing: border-box;}
+.about .profile { position: absolute; left: 0;}
+.about .profile h2 { padding-bottom: 50px;}
+.about .profile h3 i { position: relative; display: inline-block; margin: 0 3px; width: 20px; height: 45px;}
+.about .profile h3 i::before { position: absolute; content: ""; left: 0; top: 30px; width: 100%; height: 5px; background-color: #000;}
+.about .profile span { position: relative; display: inline-block; width: 320px; height: 500px; overflow: hidden;}
 .about .profile span img { position: absolute; top: 0; left: 35%; transform: translateX(-50%); height: 100%;}
 
-.about .textbox { padding: 100vh 0 0 500px; width: 100%; height: 100vh; overflow :scroll; box-sizing: border-box; }
+.about .textbox { padding: 330px 0 0 0; height: 100vh; overflow :scroll; box-sizing: border-box;}
 /* ::-webkit-scrollbar { visibility: hidden;} */
-.about .textbox article { display: inline-block; width: 100%; max-width: 650px; height: 100%;}
+.about .textbox article { width: 100%; max-width: 650px; height: 100%; vertical-align: top;}
 .about .textbox h3 { margin: 0 0 65px 0; display: inline-block; font-size: 30px; white-space: normal;}
 .about .textbox p { margin: 0 0 150px; font-size: 18px; line-height: 37px; white-space: initial;}
 .about .textbox strong { display: block; padding: 0 0 75px; font-size: 25px; }
@@ -84,30 +79,40 @@ main { position: relative;}
 .works .contentBox { padding: 100px 0;} 
 .works ul { position: absolute; left: 0; top: 50%; transform: translateY(-50%); padding: 0 30px; white-space: nowrap;}
 .works ul li { display: inline-block; text-align: center; line-height: 1; font-size: 0;}
-.works ul li~li {margin-left: 20px;}
-.works ul li a { position: relative; display: inline-block; padding: 20px 30px; border-radius: 7px; background-color: lightgray; text-align: left; box-sizing: border-box; white-space: normal;}
-.works ul li.web a { width: 500px; height: 300px;} 
-.works ul li.mobile a { width: 250px; height: 400px;} 
-.works ul li a div { transition: all .3s; position: absolute; left: 0; top: 0; padding: 130px 30px 0 40px; width: 100%; height: 100%; border-radius: 7px; background-color: #333; color: #fff; box-sizing: border-box; opacity: 0;}
-.works ul li.mobile a div { padding-top: 150px;}
-.works ul li a:hover div { opacity: 1;}
-.works ul li a div b { font-size: 25px; line-height: 32px;}
-.works ul li a div i { display: block; margin: 16px 0 30px; font-size: 17px; color: yellow; }
-.works ul li a div em { font-size: 17px; color: rgba(255,255,255,.5);}
-.works .works_detail { display: none; position: absolute; left: 0; top:0; padding: 206px 460px 0 30px ; width: 120%; height: 100%; background-color: #fff; box-sizing: border-box; box-shadow: -2px 0 8px rgba(0,0,0,.3);}
-.works .works_detail h3 { font-size: 40px;}
-.works .works_detail .btnStyle1 { margin: 40px 0 15px; font-size: 16px; width: 160px; height: 42px; line-height: 38px; background-color: transparent; border: 2px solid #333; font-weight: bold;}
-.works .works_detail .btnStyle1:hover { background-color: #333; color: #fff;}
-.works .works_detail p { font-size: 16px;}
-.works .works_detail .btn_close { position: absolute; right: 30px; top: 30px; width: 50px; height: 50px; background-color: lightgray; font-size: 0;}
-.works .works_detail table { margin: 20px 0;}
-.works .works_detail table,
-.works .works_detail table tr { border: 1px solid lightgray;}
-.works .works_detail table td,
-.works .works_detail table thead th~th { border-left: 1px solid lightgray;}
-.works .works_detail table thead { background-color: #333; color: #fff; font-size: 12px;}
-.works .works_detail table tbody { font-size: 12px; text-align: center;}
-.works .works_detail table tr { height: 55px;}
+.works ul li~li {margin-left: 45px;}
+.works ul li > button { transition: all .5s; position: relative; display: inline-block; padding: 20px 30px; border-radius: 7px; background-color: lightgray; text-align: left; box-sizing: border-box; white-space: normal; box-shadow: 0px 0px 20px rgba(0,0,0,.3); background-position: center; background-repeat: no-repeat;}
+.works ul li:nth-child(1) > button { background-image: url(images/works1.png);}
+.works ul li:nth-child(2) > button { background-image: url(images/works2.png);}
+.works ul li:nth-child(3) > button { background-image: url(images/works3.png);}
+.works ul li:nth-child(4) > button { background-image: url(images/works4.png);}
+.works ul li.web > button { width: 550px; height: 300px; background-size: auto 100%;} 
+.works ul li.mobile > button { width: 250px; height: 440px; background-size: 100% auto;} 
+.works ul li > button div { display: flex; flex-direction: column; justify-content: center; transition: all .3s; position: absolute; left: 0; top: 0; width: 100%; height: 100%; border-radius: 7px; background-color: rgba(0,0,0,.8); backdrop-filter: blur(1px); color: #fff; box-sizing: border-box; opacity: 0; text-align: center;}
+.works ul li.web > button:hover { background-size: auto 110%;}
+.works ul li.mobile > button:hover { background-size: 110% auto;}
+.works ul li > button:hover div { opacity: 1;}
+.works ul li > button div b { font-size: 23px; line-height: 32px;}
+.works ul li > button div i { display: block; margin: 16px 0 0; font-size: 15px; }
+.works ul li > button div em { font-size: 17px; color: rgba(255,255,255,.5);}
+#detail_hansol { position: fixed; left: 0; top: 0; display: none; width: 100vw; height: 100vh; background-color: rgba(0,0,0,.3); }
+#detail_hansol > div { position: absolute; left: 50%; top: 50px; transform: translateX(-50%); width: 100%; height: calc(100% - 50px); max-width: 1400px; background-color: #fff; box-shadow: -2px 0 8px rgba(0,0,0,.3);}
+#detail_hansol > div > div { position: absolute; left: 50%; top: 50%; transform: translateX(-50%) translateY(-50%); display: inline-block; padding: 110px 30px 0 ; width: 100%; max-width: 1200px; height: 100%; overflow: scroll; box-sizing: border-box;}
+#detail_hansol > div > div i { display: inline-block; margin: 0 0 60px; width: 40px; height: 40px; background: url(images/arrow.png) no-repeat center/ 40px auto;}
+#detail_hansol > div > div h3 { font-size: 40px;}
+#detail_hansol > div > div p { margin: 20px 0 20px; font-size: 16px;}
+#detail_hansol > div > div .btnStyle1 { font-size: 16px; width: 160px; height: 42px; line-height: 38px; background-color: transparent; border: 2px solid #333; font-weight: bold;}
+#detail_hansol > div > div .btnStyle1:hover { background-color: #333; color: #fff;}
+#detail_hansol > div #btn_close { position: absolute; right: 30px; top: 30px; width: 50px; height: 50px; font-size: 0;}
+#detail_hansol > div #btn_close::before { transition: all .5s ; position: absolute; content: "\e9af"; left: 50%; top: 50%; transform: translateX(-50%) translateY(-50%); font-size: 35px; font-family: "xeicon";}
+#detail_hansol > div #btn_close:hover::before { transform: translateX(-50%) translateY(-50%) rotate(180deg);}
+#detail_hansol > div > div table { margin-top: 40px;}
+#detail_hansol > div > div table,
+#detail_hansol > div > div table tr { border: 1px solid lightgray;}
+#detail_hansol > div > div table td,
+#detail_hansol > div > div table thead th~th { border-left: 1px solid lightgray;}
+#detail_hansol > div > div table thead { background-color: #333; color: #fff; font-size: 12px;}
+#detail_hansol > div > div table tbody { font-size: 12px; text-align: center;}
+#detail_hansol > div > div table tr { height: 55px;}
 
 
 
