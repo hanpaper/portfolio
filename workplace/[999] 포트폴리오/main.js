@@ -1,27 +1,36 @@
 $(document).ready(function() {
-
+    
 // scroll 기능
-    const body = document.getElementsByTagName('body')[0]
+    const body = document.getElementsByTagName('body')[0];
     const main = document.getElementsByTagName('main')[0];
-    const sec = document.getElementsByClassName('section')
+    const sec = document.getElementsByClassName('section');
+    const works = document.getElementsByClassName('works')[0];
+    const contBox = works.getElementsByClassName('contentBox')[0];
+    const scrollBox = document.getElementById('scrollBox');
+    let a = 0;
     let k = 0;
 
 
     body.addEventListener('wheel', function(e){
+        
+        if(works.offsetTop*-1 + 'px' === main.style.top && a < 0 && a > -900 ||
+        works.offsetTop*-1 + 'px' === main.style.top && a === 0 && e.deltaY > 0 || 
+        works.offsetTop*-1 + 'px' === main.style.top && a === -900 && e.deltaY < 0)
+        {
+            scrollRow(e.deltaY);
+            return;
+        }else if(works.offsetTop*-1 + 'px' === main.style.top && a === 0 && e.deltaY < 0 || 
+        works.offsetTop*-1 + 'px' === main.style.top && a === -1200 && e.deltaY > 0){
+            move_slider(e.deltaY);
+        };
         move_slider(e.deltaY);
+        
         console.log('마우스:' + e.deltaY);
     });
 
 
     function move_slider(amount){
         k += amount;
-        
-        if(k < 0){ // 시작점
-            k=0;
-        }
-        else if( k > sec[sec.length-1].offsetTop + sec[sec.length-1].offsetHeight - window.innerHeight){ // 종료점
-            k = sec[sec.length-1].offsetTop + sec[sec.length-1].offsetHeight - window.innerHeight;
-        };
         
         for(i=1 ; i < sec.length ; i++){ // 섹션구간정지
             if( sec[i].offsetTop - 150 < k && k < sec[i].offsetTop ||
@@ -30,9 +39,35 @@ $(document).ready(function() {
             }
         };
 
-        main.style.transform = 'translateY('+k*-1+'px)';
+        if(k < 0){ // 시작점
+            k=0;
+            return;
+        }
+        else if( k > sec[sec.length-1].offsetTop + sec[sec.length-1].offsetHeight - window.innerHeight){ // 종료점
+            k = sec[sec.length-1].offsetTop + sec[sec.length-1].offsetHeight - window.innerHeight;
+            return;
+        };
+
+        main.style.top = k*-1 + 'px';
         console.log('k값:' + k)
     };
+
+
+    setInterval(function(){
+        scrollBox.style.paddingLeft = contBox.offsetLeft + 30 + 'px';
+    });
+
+    function scrollRow(amount){
+        a -= amount;        
+        if(a > 0){
+            a = 0;
+            return;
+        }else if(a < -900){
+            a = -900;
+        };
+        scrollBox.style.left = a + 'px';
+        return;
+    }
 
 
 
@@ -48,15 +83,17 @@ $(document).ready(function() {
 
 
 
+
+
     // scroll 기능 제거
-    $('main').on('scroll touchmove mousewheel', function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-        return false;
-    });
+    // $('main').on('scroll touchmove mousewheel', function(e) {
+    //     e.preventDefault();
+    //     e.stopPropagation();
+    //     return false;
+    // });
 
     // scroll 기능 풀기
-    $('main').off('scroll touchmove mousewheel');
+    // $('main').off('scroll touchmove mousewheel');
 
     // scroll 기능 제거 (function으로 빼기)
     // function scroll_on() {
