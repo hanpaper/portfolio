@@ -1,11 +1,11 @@
 /** 공통 스타일**/
-html { width: 100%; height: 100%; overflow: hidden; font-family: 'Noto Sans KR', sans-serif;}
-body { width: 100%; height: 100%; overflow: hidden;}
-main { position: relative; width: 100%; height: 100%; overflow: hidden;}
-main #part2 section:nth-child(odd) { background-color: #fff; color: #222;}
-main #part2 section:nth-child(odd) h2 { color: #222;}
-main #part2 section:nth-child(even) { background-color: #222; color: #fff;}
-main #part2 section:nth-child(even) h2 { color: #fff; }
+html { width: 100%; height: 100%;  font-family: 'Noto Sans KR', sans-serif;}
+body { width: 100%; height: 100%; }
+main { position: relative; width: 100%; height: 100%; }
+main section:nth-child(odd) { background-color: #fff; color: #222;}
+main section:nth-child(odd) h2 { color: #222;}
+main section:nth-child(even) { background-color: #222; color: #fff;}
+main section:nth-child(even) h2 { color: #fff; white-space: nowrap;}
 .contentBox h2 { display: inline-block; font-size: 0;}
 .contentBox h2 i { position: relative; font-weight: bold; font-size: 65px;}
 .contentBox h2 i::after { transition: all .9s; position: absolute; content: ""; left: -13px; top: 0; transform: rotate(20deg); width: 170%; height: 140%; }
@@ -23,7 +23,7 @@ header nav ul li button::before { transition: all .5s; position: absolute; conte
 header nav ul li:hover button::before { width: 110%;}
 
 
-.section { width: 100%; min-height: 100%; border: 1px solid #000; overflow: hidden;}
+.section { width: 100%; min-height: 100%; overflow: hidden; }
 .section .contentBox { position: relative; margin: 0 auto; padding: 160px 30px; max-width: 1200px; min-height: 100vh; box-sizing: border-box;}
 h2 { padding: 0 0 20px ; font-size: 65px; line-height: 1; font-family: 'Playfair Display', serif;}
 
@@ -32,18 +32,13 @@ h2 { padding: 0 0 20px ; font-size: 65px; line-height: 1; font-family: 'Playfair
 .font-playfair { font-family: 'Playfair Display', serif;}
 
 
-#part1 { position: absolute; left: 0; top: 0; width: 100%; height: 100%;}
-#part2 { transition: all .7s; position: absolute; left: 0; top: 0; width: 100%; height: 100%;}
-#part2 > div:first-child { height: 200%;}
-#part2 > div:first-child .contentBox { height: 100%;}
-
 
 /** section - visual **/
-.visual { position: relative; width: 100vw; height: 100vh;}
-.visual::before { position: absolute; content: ""; right: 50%; top: 0; width: 50%; height: 100%; background: url(images/bg.jpg) no-repeat left  top 67% / 153% auto;}
+.visual { position: relative; width: 100%; height: 100%;}
+.visual::before { position: absolute; content: ""; right: 50%; top: 0; width: 50%; height: 100%; background: url(images/bg.jpg) no-repeat left top 67% / cover;}
 .visual h1 { font-size: 0;}
 .visual .contentBox { position: relative; }
-.visual .contentBox b { position: absolute; right: 50%; top: 50%; transform: translateY(-50%); font-size: 220px; color: #fff;}
+.visual .contentBox b { position: absolute; right: 50%; top: 50%; transform: translateY(-50%); font-size: 15vw; color: #fff;}
 #typo_start, #typo_iam { transition: all .7s; position: absolute; font-size: 180px; white-space: nowrap; transform-origin: left bottom; font-weight: bold;}
 #typo_iam { left: 50%; bottom: 0; transform: rotate(-90deg); text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000; color: white;}
 #typo_iam i { color: #222; font-weight: bold;}
@@ -67,18 +62,19 @@ h2 { padding: 0 0 20px ; font-size: 65px; line-height: 1; font-family: 'Playfair
 
 /** section - about **/
 .about .contentBox { display: flex; flex-direction: row; justify-content: space-between;}
-.about .contentBox > div { position: relative;}
+.about .contentBox > div { position: relative; min-width: 250px;}
 /* .about .contentBox > div span { position: absolute; right: 0; top: 0; margin: 280px 0 0; display: inline-block; width: 600px; height: 100%; overflow:hidden;}
 .about .contentBox > div span img { position: absolute; left: 50%; top: 50%; transform: translateX(-50%) translateY(-50%); width: 100%;} */
-.about .contentBox .resume { color: #fff; box-sizing: border-box;}
-.about .contentBox .resume > li { margin: 0 0 50px; display: flex; flex-direction: row; font-size: 15px; line-height: 30px; font-weight: 200;}
-.about .contentBox .resume > li h3 { width: 180px; margin: 0 30px 0 0; border-right: 1.5px solid rgba(255,255,255,.1); font-size: 20px; font-weight: 500;}
-.about .contentBox .resume_career > li { line-height: normal;}
-.about .contentBox .resume_career > li~li { margin-top: 40px;}
+.about .contentBox .resume { max-width: 600px; width: 100%; color: #fff; box-sizing: border-box;}
+.about .contentBox .resume > li { display: flex; flex-direction: row; margin: 0 0 50px; font-size: 15px; line-height: 30px; font-weight: 200;}
+.about .contentBox .resume > li::after { display: block; content: ""; clear: both;}
+.about .contentBox .resume > li h3 { width: 180px; margin: 0 30px 0 0; border-right: 1.5px solid rgba(255,255,255,.1); font-size: 20px; font-weight: 500; box-sizing: border-box;}
 .about .contentBox .resume_career > li b { font-weight: 500;}
-.about .contentBox .resume_career > li p { line-height: 38px;}
+.about .contentBox .resume_career > li p { display: block; line-height: 38px;}
 .about .contentBox .resume_career > li em { line-height: 22px; color: gray; font-weight: 200;}
-.about .contentBox .resume_skills li { display: inline-block; width: 150px; vertical-align: top;}
+/* .about .contentBox .resume_career > li { line-height: normal;}
+.about .contentBox .resume_career > li~li { margin-top: 40px;}
+.about .contentBox .resume_skills li { display: inline-block; width: 150px; vertical-align: top;} */
 
 
 
@@ -87,7 +83,7 @@ h2 { padding: 0 0 20px ; font-size: 65px; line-height: 1; font-family: 'Playfair
 .works { position: relative; overflow: hidden;}
 /* .works .title { position: absolute; left: 50%; top: 0; transform: translateX(-50%); padding: 0 30px; width: 100%; max-width: 1200px; box-sizing: border-box;} */
 /* .works .contentBox { padding: 100px 0;}  */
-.works ul { transition: all .7s; position: absolute; left: 0px; top: 50%; transform: translateY(-40%); padding: 0 30px; white-space: nowrap; box-sizing: border-box;}
+.works ul { transition: all .7s;  white-space: nowrap; box-sizing: border-box;}
 .works ul li { display: inline-block; text-align: center; line-height: 1; font-size: 0;}
 .works ul li~li {margin-left: 45px;}
 .works ul li > a { transition: all .5s; position: relative; display: inline-block; padding: 20px 30px; border-radius: 15px; background-color: lightgray; text-align: left; box-sizing: border-box; white-space: normal; box-shadow: 0px 0px 25px rgba(0,0,0,.2); background-position: center; background-repeat: no-repeat;}

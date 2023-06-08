@@ -31,99 +31,19 @@ $(document).ready(function() {
     let k = 0;
 
 
-    body.addEventListener('wheel', function(e){
-        
-        if(works.offsetTop*-1 + 'px' === part2.style.top && a < 0 && a > -900 ||
-        works.offsetTop*-1 + 'px' === part2.style.top && a === 0 && e.deltaY > 0 || 
-        works.offsetTop*-1 + 'px' === part2.style.top && a === -900 && e.deltaY < 0)
-        {
-            scrollRow(e.deltaY);
-            return;
-        }else if(works.offsetTop*-1 + 'px' === part2.style.top && a === 0 && e.deltaY < 0 || 
-        works.offsetTop*-1 + 'px' === part2.style.top && a === -1200 && e.deltaY > 0){
-            move_slider(e.deltaY);
-        };
-        
-        move_slider(e.deltaY);
-        move_typo(e.deltaY);
-        
-        console.log('마우스:' + e.deltaY);
+    let preScrollTop = 0;
+
+    body.addEventListener('scroll',() => {
+        let nextScrollTop = window.scrollY;
+    
+        if(preScrollTop < nextScrollTop) {
+        console.log('Down!');
+        }
+        else { // (preScrollTop > nextScrollTop)
+        console.log('Up!');
+        }
+        preScrollTop = nextScrollTop;
     });
-    
-
-    function move_slider(amount){
-        k += amount;
-
-        console.log('k값:' + k);
-        
-        for(i=0 ; i < sec.length ; i++){ // 섹션구간정지
-            
-            if( sec[i].offsetTop - 150 < k && k < sec[i].offsetTop && amount > 0 ||
-            sec[i].offsetTop < k && k < sec[i].offsetTop + 150 && amount < 0 ){
-                part2.style.top = -sec[i].offsetTop + 'px';
-                k = sec[i].offsetTop;
-            };
-        };
-
-        if(k < 0){ // 시작점
-            k=0;
-            return;
-        }
-        else if( k > sec[sec.length-1].offsetTop + sec[sec.length-1].offsetHeight - window.innerHeight ){ // 종료점
-            k = sec[sec.length-1].offsetTop + sec[sec.length-1].offsetHeight - window.innerHeight ;
-            return;
-        };
-
-        part2.style.top = - k + 'px';
-        console.log('part2 top값:' + sec[1].offsetTop);
-    };
-
-
-
-     function scrollRow(amount){
-        a -= amount;        
-        if(a > 0){
-            a = 0;
-            return;
-        }else if(a < -900){
-            a = -900;
-        };
-        scrollBox.style.left = a + 'px';
-        return;
-    }
-
-
-
-
-
-    // typo position
-    const typoIam = document.getElementById('typo_iam');
-    const typoStart = document.getElementById('typo_start');
-
-    
-    sec[0].style.height = 'calc(100% + '+typoStart.offsetWidth+'px)'
-    typoIam.style.left = 'calc(50% + '+typoIam.offsetHeight+'px)';
-    typoIam.style.bottom = 'calc(100% - 274px)';
-
-    typoStart.style.right = - typoStart.offsetWidth + typoStart.offsetHeight/2 + 'px';
-    
-
-
-    let m = 274
-    
-
-    function move_typo(amount){
-        m += amount 
-        
-        
-        if(m < 274){
-            m=274;
-            return;
-        }
-        typoIam.style.bottom = 'calc(100% - '+m+'px)';
-        
-        return;
-    };
 
 
 
