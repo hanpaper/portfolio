@@ -21,8 +21,8 @@ li{list-style:none;}
 
 /*  */
 #cont_2{
-    top:0%;
-    /* top:100%; */
+    /* top:0%; */
+    top:100%;
     background:#fff;
     transition:top 1s;}
 
