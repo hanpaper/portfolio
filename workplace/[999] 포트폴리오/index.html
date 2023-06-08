@@ -1,227 +1,380 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
+    <title>Portfolio</title>
     <!--
     <script src="jquery.fullPage.js"></script>
     <link rel="stylesheet" href="jquery.fullPage.css"> -->
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="default.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?ver=2">
     <script src="main.js"></script>
 </head>
+
 <body>
     <header>
         <p>Web Publisher Portfolio</p>
-        <nav>
+        <nav id="">
             <ul>
-                <li><a href="#section2">About</a></li>
-                <li><a href="#section3">Works</a></li>
-                <li><a href="#section4">Etc</a></li>
-                <li><a href="#section5">Contact</a></li>
+                <li><button onclick="alert('준비중입니다')">About</button></li>
+                <li><button onclick="alert('준비중입니다')">Works</button></li>
+                <li><button onclick="alert('준비중입니다')">Etc</button></li>
+                <li><button onclick="alert('준비중입니다')">Contact</button></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="visual section">
-            <h1>Web Publisher Portfolio</h1>
-            <div class="contentBox">
-                <div class="intro">
-                    <p class="line1">Hello<em>:)</em></p><br>
-                    <p class="line2">
-                        &nbsp;&nbsp;&nbsp;I am<br>
-                        Ji<i></i>young<br>
-                    </p>
+        <div id="part1">
+            <section class="visual section">
+                <h1>Web Publisher Portfolio</h1>
+                <div class="contentBox">
+                    <b class="font-playfair">Hello,</b>
+                    <strong class="font-playfair" id="typo_iam">I'm ji-young</strong>
+                </div>
+                <strong>Folio v.01 2023</strong>
+                <div class="scrolldown">
+                    <span></span>
+                </div>
+            </section>
+        </div>
+        <div id="part2">
+            <div class="section">
+                <div class="contentBox">
+                    <strong class="font-playfair" id="typo_start">Let's start</strong>
                 </div>
             </div>
-            <strong>Folio v.01 2023</strong>
-        </section>
-        <section class="about section">
-            <div class="contentBox flex">
-                <div class="profile">
-                    <h2>
-                        Hello<br>
-                        &nbsp;&nbsp;I am<br>
-                        Ji<i></i>young<br>
-                    </h2>
-                    <span><img src="images/profile.jpg"></span>
-                </div>
-                <div class="textbox">
-                    <article>
-                        <div>
-                            <h3>안녕하세요!<br>
-                                신뢰와 성실함으로 놀래켜드릴게요</h3>
-                            <p>저는 웹 퍼블리셔를 꿈꾸며 열심히 공부 중인 '한지영'입니다.<br>
-                                새로운 것을 배우며 더 나은 사이트를 만들어가는 일이 즐겁습니다. 늘 사용자 입장에서 생각하며 효율적인 UI/UX가 무엇일지 계속 고민하고,웹 표준과 웹 접근성을 고려한 마크업을 하기 위해 노력합니다. 모든 사람이 사용하기에 편리하고, 즐거운 사이트를 만드는 것이 제가 하는 일이라고 생각합니다.
-                            </p>
-                        </div>
-                    </article>
-                    <article>
-                        <h3><br>전 이렇게 일한답니다!</h3>
-                        <strong><i>01</i>&nbsp;&nbsp;항상 웹 접근성을 우선으로</strong>
-                        <strong><i>02</i>&nbsp;&nbsp;일처리는 신중하고 꼼꼼하게</strong>
-                        <strong><i>03</i>&nbsp;&nbsp;빠르게 실행하며,<br>&nbsp;&nbsp;목표달성을 위해 집요하게</strong>
-                    </article>
-                </div>
-            </div>
-        </section>
-        <section class="works section">
-            <div class="contentBox">
-                <h2>Works</h2>
-            </div>
-            <ul id="scrollBox">
-                <li class="web">
-                    <button id="hansol">
-                        <span></span>
-                        <div>
-                            <b>한솔로지스틱스 웹사이트</b>
-                            <i>#키워드 #키워드 #키워드</i>
-                        </div>
-                    </button>
-                </li>
-                <li class="web">
-                    <button>
-                        <div>
-                            <b>금융권 웹사이트</b>
-                            <i>#키워드 #키워드 #키워드</i>
-                        </div>
-                    </button>
-                </li>
-                <li class="mobile">
-                    <button>
-                        <span></span>
-                        <div>
-                            <b>리베금융<br>모바일웹</b>
-                            <i>#키워드 #키워드 #키워드</i>
-                        </div>
-                    </button>
-                </li>
-                <li class="mobile">
-                    <button>
-                        <span></span>
-                        <div>
-                            <b>스타벅스<br>모바일웹</b>
-                            <i>#키워드 #키워드 #키워드</i>
-                        </div>
-                    </button>
-                </li>
-            </ul>
-        </section>
-        <section class="etc section">
-            <div class="contentBox">
-                <div class="etc_github">
-                    <h2>Github</h2>
+            <section class="about section">
+                <div class="contentBox">
                     <div>
+                        <h2>
+                            <i>a</i>
+                            <i>b</i>
+                            <i>o</i>
+                            <i>u</i>
+                            <i>t</i>
+                        </h2>
+                        <!-- <span><img src="images/profile(2).jfif" alt=""></span> -->
+                    </div>
+                    <ul class="resume">
+                        <li>
+                            <h3>Career</h3>
+                            <ul class="resume_career">
+                                <li>
+                                    <b>2018.09 ~ 2022.05</b>
+                                    <p>근로복지공단 재활공학연구소 (연구원)</p>
+                                    <em>
+                                        - 재활보조기구 3d 모델링<br>
+                                        - 연구용 소프트웨어 UX/UI 디자인 및 퍼블리싱
+                                    </em>
+                                </li>
+                                <li>
+                                    <b>2022.06 ~ 2022.11</b>
+                                    <p>(주)미래로시스템 (대리)</p>
+                                    <em>
+                                        - 반도체 웨이퍼 디펙 시스템 UX/UI 디자인<br>
+                                        - XAML 퍼블리싱 전담
+                                    </em>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3>Certification</h3>
+                            <p>
+                                정보처리기사 (23.05 필기합격)<br>
+                                굿 디자인 어워드 | 우수디자인 선정<br>
+                                2종 보통운전면허
+
+                            </p>
+                        </li>
+                        <li>
+                            <h3>Skills</h3>
+                            <ul class="resume_skills">
+                                <li>
+                                    HTML5<br>
+                                    CSS3<br>
+                                    Javascript
+                                </li>
+                                <li>
+                                    Illustration<br>
+                                    Photoshop<br>
+                                    Figma
+                                </li>
+                                <li>
+                                    Rhino<br>
+                                    Keyshot
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="works section">
+                <div class="contentBox">
+                    <h2>
+                        <i>W</i>
+                        <i>o</i>
+                        <i>r</i>
+                        <i>k</i>
+                        <i>s</i>
+                    </h2>
+                </div>
+                <ul id="scrollBox">
+                    <li class="web">
+                        <a href="[004] 한솔로지스틱스_물류/index.html" id="hansol" target="_blank">
+                            <span></span>
+                            <div>
+                                <b>한솔로지스틱스 웹사이트</b>
+                                <i>#키워드 #키워드 #키워드</i>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="web">
+                        <a href="[003] 금융권/index.html" id="bank" target="_blank">
+                            <div>
+                                <b>금융권 웹사이트</b>
+                                <i>#키워드 #키워드 #키워드</i>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="mobile">
+                        <a href="[007] 스타벅스/index.html" id="backMobile" target="_blank">
+                            <span></span>
+                            <div>
+                                <b>리베금융<br>모바일웹</b>
+                                <i>#키워드 #키워드 #키워드</i>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="mobile">
+                        <a href="[006] 리베금융/index.html" id="starbucks" target="_blank">
+                            <span></span>
+                            <div>
+                                <b>스타벅스<br>모바일웹</b>
+                                <i>#키워드 #키워드 #키워드</i>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="etc section">
+                <div class="contentBox">
+                    <div class="github">
+                        <h2>
+                            <i>G</i>
+                            <i>i</i>
+                            <i>t</i>
+                            <i>h</i>
+                            <i>u</i>
+                            <i>b</i>
+                        </h2>
                         <p>버전관리로 프로젝트를 관리하고 있어요 </p>
                         <a href="https://github.com/hanpaper" class="btnStyle1" target="_blank">Github 바로가기</a>
                     </div>
-                </div>
-                <div class="etc_blog">
-                    <h2>blog</h2>
-                    <div>
+                    <div class="blog">
+                        <h2>
+                            <i>b</i>
+                            <i>l</i>
+                            <i>o</i>
+                            <i>g</i>
+                        </h2>
                         <p>공부내용을 기록하고 있어요</p>
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
+                            <ul>
+                                <li>
+                                    <a href="" class="blogUrl" target=”_blank”>    
+                                        <b class="blogTitle"></b>
+                                        <p class="blogDate"></p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="blogUrl" target=”_blank”>    
+                                        <b class="blogTitle"></b>
+                                        <p class="blogDate"></p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="blogUrl" target=”_blank”>    
+                                        <b class="blogTitle"></b>
+                                        <p class="blogDate"></p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="blogUrl" target=”_blank”>    
+                                        <b class="blogTitle"></b>
+                                        <p class="blogDate"></p>
+                                    </a>
+                                </li>
+                            </ul>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="contact section">
-            <div>
-                <h2>Contact</h2>
-                <p>저에 대해 더 알고싶으신가요?</p>
-                <a href="https://foamy-season-52d.notion.site/339884e4e85a429cbf74373d39f33241?v=10b8f8de627344d69a1e1ae967815af1" class="btnStyle1">과거 흔적보기</a>
-                <button class="btnStyle1">이력서 다운받기</button>
-            </div>
-            <span class="ending">
-                <span class="infSlider_wrapper">
-                    <em class="infSlider">Thank you for visiting</em><em class="infSlider">Don’t forget me</em><em class="infSlider">Thank you for visiting</em><em class="infSlider">Don’t forget me</em>
-                </span>
-                <!-- <span class="infSlider_wrapper">
-                    <em class="infSlider">Thank you for visiting</em><em class="infSlider">Don’t forget me</em><em class="infSlider">Thank you for visiting</em><em class="infSlider">Don’t forget me</em>
-                </span> -->
-            </span>
-        </section>
-        <div id="detail_hansol">
-            <div>
+            </section>
+     <section class="contact section">
                 <div>
-                    <i></i>
-                    <h3>한솔로지스틱스</h3>
-                    <p>
-                        프로젝트 설명~~~~~<br>
-                        프로젝트 설명~~~~~<br>
-                        프로젝트 설명~~~~~
-                    </p>
-                    <a href="" class="btnStyle1">사이트 바로가기</a>
-                    <table>
-                        <colgroup>
-                            <col style="width:px">
-                            <col style="width:px">
-                            <col style="width:px">
-                            <col style="width:px">
-                            <col style="width:px">
-                            <col style="width:px">
-                            <col style="width:px">
-                            <col style="width:px">
-                        </colgroup>
-                        <thead>
-                            <tr>
-                            <th>1Depth</th>
-                            <th>2Depth</th>
-                            <th>3Depth</th>
-                            <th>File Name</th>
-                            <th>History</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>메인페이지</td>
-                            <td></td>
-                            <td></td>
-                            <td><a href="[004] 한솔로지스틱스_물류/index.html" target="_blank">index.html</a></td>
-                            <td>2022.12 .23 ~ 2022.12.27</td>
-                            </tr>
-                            <tr>
-                                <td>사업영역</td>
-                                <td>글로벌물류</td>
-                                <td></td>
-                                <td><a href="[004] 한솔로지스틱스_물류/사업영역.html" target="_blank">content1.html</a></td>
-                                <td>2023.01.03 ~ 2023.01.03</td>
-                            </tr>
-                            <tr class="line">
-                                <td>투자정보</td>
-                                <td>IR News</td>
-                                <td></td>
-                                <td><a href="[004] 한솔로지스틱스_물류/투자정보_IR News.html" target="_blank">투자정보_IR News.html</a></td>
-                                <td>2023.01.04 ~ 2023.01.04</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td>Contact IR</td>
-                                <td></td>
-                                <td><a href="[004] 한솔로지스틱스_물류/투자정보_Contact IR.html" target="_blank">투자정보_Contact IR.html</a></td>
-                                <td>2023.01.05 ~ 2023.01.05</td>
-                            </tr>
-                            <tr>
-                                <td>홍보센터</td>
-                                <td>소셜미디어</td>
-                                <td></td>
-                                <td><a href="[004] 한솔로지스틱스_물류/홍보센터_소셜미디어.html" target="_blank">홍보센터_소셜미디어.html</a></td>
-                                <td>2023.01.10 ~ 2023.01.10</td>
-                            </tr>  
-                        </tbody>   
-                    </table>
+                    <h2>Contact</h2>
+                    <p>저에 대해 더 알고싶으신가요?</p>
+                    <a href="디자인 포트폴리오_한지영.pdf" class="btnStyle1 btnPort" download="" target="_blank">디자인 포폴 다운로드</a>
+                    <a href="이력서_한지영.pdf" class="btnStyle1 btnResume" download="" target="_blank">이력서 다운로드</a>
                 </div>
-                <button id="btn_close">닫기</button>
-            </div>
+                <span class="ending">
+                    <span class="infSlider_wrapper">
+                        <em class="infSlider">Thank you for visiting</em><em class="infSlider">Thank you for visiting</em>
+                        <em class="infSlider">Thank you for visiting</em><em class="infSlider">Thank you for visiting</em>
+                    </span>
+                    <!-- <span class="infSlider_wrapper">
+                        <em class="infSlider">Thank you for visiting</em><em class="infSlider">Don’t forget me</em><em class="infSlider">Thank you for visiting</em><em class="infSlider">Don’t forget me</em>
+                    </span> -->
+                </span>
+            </section>
+            <!-- <div id="detailWin">
+                <div id="detailHansol">
+                    <div>
+                        <i></i>
+                        <h3>한솔로지스틱스</h3>
+                        <p></p>
+                        <a href="" class="btnStyle1">사이트 바로가기</a>
+                        <table>
+                            <colgroup>
+                                <col style="width:px">
+                                <col style="width:px">
+                                <col style="width:px">
+                                <col style="width:px">
+                                <col style="width:px">
+                                <col style="width:px">
+                                <col style="width:px">
+                                <col style="width:px">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>1Depth</th>
+                                    <th>2Depth</th>
+                                    <th>3Depth</th>
+                                    <th>File Name</th>
+                                    <th>History</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>메인페이지</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="[004] 한솔로지스틱스_물류/index.html" target="_blank">index.html</a></td>
+                                    <td>2022.12 .23 ~ 2022.12.27</td>
+                                </tr>
+                                <tr>
+                                    <td>사업영역</td>
+                                    <td>글로벌물류</td>
+                                    <td></td>
+                                    <td><a href="[004] 한솔로지스틱스_물류/사업영역.html" target="_blank">content1.html</a></td>
+                                    <td>2023.01.03 ~ 2023.01.03</td>
+                                </tr>
+                                <tr class="line">
+                                    <td>투자정보</td>
+                                    <td>IR News</td>
+                                    <td></td>
+                                    <td><a href="[004] 한솔로지스틱스_물류/투자정보_IR News.html" target="_blank">투자정보_IR
+                                            News.html</a></td>
+                                    <td>2023.01.04 ~ 2023.01.04</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>Contact IR</td>
+                                    <td></td>
+                                    <td><a href="[004] 한솔로지스틱스_물류/투자정보_Contact IR.html" target="_blank">투자정보_Contact
+                                            IR.html</a></td>
+                                    <td>2023.01.05 ~ 2023.01.05</td>
+                                </tr>
+                                <tr>
+                                    <td>홍보센터</td>
+                                    <td>소셜미디어</td>
+                                    <td></td>
+                                    <td><a href="[004] 한솔로지스틱스_물류/홍보센터_소셜미디어.html" target="_blank">홍보센터_소셜미디어.html</a>
+                                    </td>
+                                    <td>2023.01.10 ~ 2023.01.10</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <button id="btn_close">닫기</button>
+                </div>
+                <div id="detailBank">
+                    <div>
+                        <i></i>
+                        <h3>금융권 웹사이트</h3>
+                        <p></p>
+                        <a href="" class="btnStyle1">사이트 바로가기</a>
+                        <table>
+                            <colgroup>
+                                <col style="width:px">
+                                <col style="width:px">
+                                <col style="width:px">
+                                <col style="width:px">
+                                <col style="width:px">
+                                <col style="width:px">
+                                <col style="width:px">
+                                <col style="width:px">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>1Depth</th>
+                                    <th>2Depth</th>
+                                    <th>3Depth</th>
+                                    <th>File Name</th>
+                                    <th>History</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>메인페이지</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="[003] 금융권/index.html" target="_blank">index.html</a></td>
+                                    <td>2022.12 .11 ~ 2022.12.12</td>
+                                </tr>
+                                <tr>
+                                    <td>리서치</td>
+                                    <td>데일리 시황</td>
+                                    <td></td>
+                                    <td><a href="[003] 금융권/content1.html" target="_blank">content1.html</a></td>
+                                    <td>2022.12 .13 ~ 2022.12.13</td>
+                                </tr>
+                                <tr class="line">
+                                    <td>로그인/회원가입</td>
+                                    <td>로그인</td>
+                                    <td></td>
+                                    <td><a href="[003] 금융권/login.html" target="_blank">login.html</a></td>
+    <td>2022.12 .13 ~ 2022.12.14</td>
+                                </tr>
+                                <tr>
+                                    <td>회원가입</td>
+                                    <td>약관동의</td>
+                                    <td></td>
+                                    <td><a href="[003] 금융권/join1.html" target="_blank">join1.html</a></td>
+      <td>2022.12 .14 ~ 2022.12.14</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td>회원정보 입력</td>
+                                    <td><a href="[003] 금융권/join2.html" target="_blank">join2.htmll</a></td>
+      <td>2022.12 .15 ~ 2023.12.15</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <button id="btn_close">닫기</button>
+                </div>
+            </div> -->
         </div>
     </main>
 </body>
+
 </html>
