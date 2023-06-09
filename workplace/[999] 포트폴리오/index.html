@@ -23,18 +23,18 @@
 
 <body>
     <header>
-        <p>Web Publisher Portfolio</p>
+        <a href="#">Web Publisher Portfolio</a>
         <nav id="">
             <ul>
-                <li><button onclick="alert('준비중입니다')">About</button></li>
-                <li><button onclick="alert('준비중입니다')">Works</button></li>
-                <li><button onclick="alert('준비중입니다')">Etc</button></li>
-                <li><button onclick="alert('준비중입니다')">Contact</button></li>
+                <li><a href="#section2">About</a></li>
+                <li><a href="#section3">Works</a></li>
+                <li><a href="#section4">Etc</a></li>
+                <li><a href="#section5">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="visual section">
+        <section class="visual section" id="#section1">
             <h1>Web Publisher Portfolio</h1>
             <div class="contentBox">
                 <b class="font-playfair">Hello,</b>
@@ -49,7 +49,7 @@
         <!-- <div class="contentBox">
                     <strong class="font-playfair" id="typo_start">Let's start</strong>
                 </div> -->
-        <section class="about section">
+        <section class="about section" id="section2">
             <div class="contentBox">
                 <div>
                     <h2>
@@ -114,55 +114,57 @@
                 </ul>
             </div>
         </section>
-        <section class="works section">
+        <section class="works section" id="section3">
             <div class="contentBox">
-                <h2>
-                    <i>W</i>
-                    <i>o</i>
-                    <i>r</i>
-                    <i>k</i>
-                    <i>s</i>
-                </h2>
+                <div>
+                    <h2>
+                        <i>W</i>
+                        <i>o</i>
+                        <i>r</i>
+                        <i>k</i>
+                        <i>s</i>
+                    </h2>
+                </div>
                 <ul id="scrollBox">
                     <li class="web">
-                        <a href="[004] 한솔로지스틱스_물류/index.html" id="hansol" target="_blank">
+                        <button id="hansol">
                             <span></span>
                             <div>
                                 <b>한솔로지스틱스 웹사이트</b>
                                 <i>#키워드 #키워드 #키워드</i>
                             </div>
-                        </a>
+                        </button>
                     </li>
                     <li class="web">
-                        <a href="[003] 금융권/index.html" id="bank" target="_blank">
+                        <button id="bank">
                             <div>
                                 <b>금융권 웹사이트</b>
                                 <i>#키워드 #키워드 #키워드</i>
                             </div>
-                        </a>
+                        </button>
                     </li>
                     <li class="mobile">
-                        <a href="[007] 스타벅스/index.html" id="backMobile" target="_blank">
-                            <span></span>
-                            <div>
-                                <b>리베금융<br>모바일웹</b>
-                                <i>#키워드 #키워드 #키워드</i>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="mobile">
-                        <a href="[006] 리베금융/index.html" id="starbucks" target="_blank">
+                        <button id="starbucks">
                             <span></span>
                             <div>
                                 <b>스타벅스<br>모바일웹</b>
                                 <i>#키워드 #키워드 #키워드</i>
                             </div>
-                        </a>
+                        </button>
+                    </li>
+                    <li class="mobile">
+                        <button id="bankMobile" >
+                            <span></span>
+                            <div>
+                                <b>리베금융<br>모바일웹</b>
+                                <i>#키워드 #키워드 #키워드</i>
+                            </div>
+                        </button>
                     </li>
                 </ul>
             </div>
         </section>
-        <section class="etc section">
+        <section class="etc section" id="section4">
             <div class="contentBox">
                 <div class="github">
                     <h2>
@@ -213,30 +215,40 @@
                 </div>
             </div>
         </section>
-        <section class="contact section">
-            <div>
+        <section class="contact section" id="section5">
+            <div class="contentBox">
                 <h2>Contact</h2>
                 <p>저에 대해 더 알고싶으신가요?</p>
                 <a href="디자인 포트폴리오_한지영.pdf" class="btnStyle1 btnPort" download="" target="_blank">디자인 포폴 다운로드</a>
                 <a href="이력서_한지영.pdf" class="btnStyle1 btnResume" download="" target="_blank">이력서 다운로드</a>
-            </div>
-            <span class="ending">
-                <span class="infSlider_wrapper">
-                    <em class="infSlider">Thank you for visiting</em><em class="infSlider">Thank you for visiting</em>
-                    <em class="infSlider">Thank you for visiting</em><em class="infSlider">Thank you for visiting</em>
+                <span class="ending">
+                    <span class="infSlider_wrapper">
+                        <em class="infSlider">Thank you for visiting</em><em class="infSlider">Thank you for
+                            visiting</em>
+                        <em class="infSlider">Thank you for visiting</em><em class="infSlider">Thank you for
+                            visiting</em>
+                    </span>
+                    <!-- <span class="infSlider_wrapper">
+                            <em class="infSlider">Thank you for visiting</em><em class="infSlider">Don’t forget me</em><em class="infSlider">Thank you for visiting</em><em class="infSlider">Don’t forget me</em>
+                        </span> -->
                 </span>
-                <!-- <span class="infSlider_wrapper">
-                        <em class="infSlider">Thank you for visiting</em><em class="infSlider">Don’t forget me</em><em class="infSlider">Thank you for visiting</em><em class="infSlider">Don’t forget me</em>
-                    </span> -->
-            </span>
+            </div>
         </section>
-        <!-- <div id="detailWin">
+
+        <div id="detailWin">
                 <div id="detailHansol">
                     <div>
                         <i></i>
                         <h3>한솔로지스틱스</h3>
-                        <p></p>
-                        <a href="" class="btnStyle1">사이트 바로가기</a>
+                        <em>
+                            <b>[기여도]</b> 100% &nbsp;&nbsp;
+                            <b>[제작방식]</b> HTML, CSS, Javascript, jQuery
+                        </em>
+                        <p>
+                            한솔로지스틱스의 실제 페이지와 가깝게 구현하였습니다.<br>
+                            PC/태블릿/모바일에 대응할 수 있도록 반응형으로 제작하였습니다.
+                        </p>
+                        <a href="[004] 한솔로지스틱스_물류/index.html" class="btnStyle1">사이트 바로가기</a>
                         <table>
                             <colgroup>
                                 <col style="width:px">
@@ -269,15 +281,14 @@
                                     <td>사업영역</td>
                                     <td>글로벌물류</td>
                                     <td></td>
-                                    <td><a href="[004] 한솔로지스틱스_물류/사업영역.html" target="_blank">content1.html</a></td>
+                                    <td><a href="[004] 한솔로지스틱스_물류/사업영역.html" target="_blank">사업영역.html</a></td>
                                     <td>2023.01.03 ~ 2023.01.03</td>
                                 </tr>
                                 <tr class="line">
                                     <td>투자정보</td>
                                     <td>IR News</td>
                                     <td></td>
-                                    <td><a href="[004] 한솔로지스틱스_물류/투자정보_IR News.html" target="_blank">투자정보_IR
-                                            News.html</a></td>
+                                    <td><a href="[004] 한솔로지스틱스_물류/투자정보_IR News.html" target="_blank">투자정보_IR News.html</a></td>
                                     <td>2023.01.04 ~ 2023.01.04</td>
                                 </tr>
                                 <tr>
@@ -299,14 +310,21 @@
                             </tbody>
                         </table>
                     </div>
-                    <button id="btn_close">닫기</button>
+                    <button class="btn_close">닫기</button>
                 </div>
                 <div id="detailBank">
                     <div>
                         <i></i>
                         <h3>금융권 웹사이트</h3>
-                        <p></p>
-                        <a href="" class="btnStyle1">사이트 바로가기</a>
+                        <em>
+                            <b>[기여도]</b> 100% &nbsp;&nbsp;
+                            <b>[제작방식]</b> HTML, CSS, jQuery, swiper, bxslider
+                        </em>
+                        <p>
+                            금융 웹사이트로 메인 페이지에 구성된 슬라이더를 플러그인(swiper, bxslider)을 이용해 제작하였습니다.
+                            
+                        </p>
+                        <a href="[003] 금융권/index.html" class="btnStyle1">사이트 바로가기</a>
                         <table>
                             <colgroup>
                                 <col style="width:px">
@@ -366,9 +384,165 @@
                             </tbody>
                         </table>
                     </div>
-                    <button id="btn_close">닫기</button>
+                    <button class="btn_close">닫기</button>
                 </div>
-            </div> -->
+                <div id="detailStarbucks">
+                    <div>
+                        <i></i>
+                        <h3>스타벅스 모바일 웹</h3>
+                        <em>
+                            <b>[기여도]</b> 100% &nbsp;&nbsp;
+                            <b>[제작방식]</b> HTML, CSS
+                        </em>
+                        <p>
+                            스타벅스 모바일 앱을 web버전으로 구현하였습니다.<br>
+                            디바이스 해상도에 따라 텍스트 및 이미지 크기를 조정할 수 있도록
+                            가변단위인 rem을 사용하였습니다.
+                        </p>
+                        <a href="[007] 스타벅스/order_new.html" class="btnStyle1">사이트 바로가기</a>
+                        <table>
+                            <colgroup>
+                                <col style="width:px">
+                                <col style="width:px">
+                                <col style="width:px">
+                                <col style="width:px">
+                                <col style="width:px">
+                                <col style="width:px">
+                                <col style="width:px">
+                                <col style="width:px">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>1Depth</th>
+                                    <th>2Depth</th>
+                                    <th>3Depth</th>
+                                    <th>File Name</th>
+                                    <th>History</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Home</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="[007] 스타벅스/index.html" target="_blank">index.html</a></td>
+                                    <td>2023.02.01 ~ 2023.02.01</td>
+                                </tr>
+                                <tr>
+                                    <td>Pay</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="[007] 스타벅스/pay.html" target="_blank">pay.html</a></td>
+                                    <td>2023.02.02 ~ 2023.02.02</td>
+                                </tr>
+                                <tr>
+                                    <td>Order</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="[007] 스타벅스/order.html" target="_blank">order.html</a></td>
+                                    <td>2023.02.04 ~ 2023.02.07</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>New</td>
+                                    <td></td>
+                                    <td><a href="[007] 스타벅스/order_new.html" target="_blank">order_new.html</a></td>
+                                    <td>2023.02.04 ~ 2023.02.07</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Starbucks Turmeric Latte</td>
+                                    <td><a href="[007] 스타벅스/order_menu1.html" target="_blank">order_menu1.html</a></td>
+                                    <td>2023.02.04 ~ 2023.02.07</td>
+                                </tr>
+                                <tr>
+                                    <td>Gift</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="[007] 스타벅스/gift.html" target="_blank">content1.html</a></td>
+                                    <td>2023.02.07 ~ 2023.02.07</td>
+                                </tr>
+                                <tr>
+                                    <td>Other</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="[007] 스타벅스/other.html" target="_blank">other.html</a></td>
+                                    <td>2023.02.07 ~ 2023.02.07</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <button class="btn_close">닫기</button>
+                </div>
+                <div id="detailBankmobile">
+                    <div>
+                        <i></i>
+                        <h3>리베금융 모바일 웹</h3>
+                        <em>
+                            <b>[기여도]</b> 100% &nbsp;&nbsp;
+                            <b>[제작방식]</b> HTML, CSS
+                        </em>
+                        <p>
+                            디바이스 해상도에 따라 텍스트 및 이미지 크기를 조정할 수 있도록
+                            가변단위인 rem을 사용해 제작하였습니다.
+                        </p>
+                        <a href="[006] 리베금융/index.html" class="btnStyle1">사이트 바로가기</a>
+                        <table>
+                            <colgroup>
+                                <col style="width:px">
+                                <col style="width:px">
+                                <col style="width:px">
+                                <col style="width:px">
+                                <col style="width:px">
+                                <col style="width:px">
+                                <col style="width:px">
+                                <col style="width:px">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>1Depth</th>
+                                    <th>2Depth</th>
+                                    <th>3Depth</th>
+                                    <th>File Name</th>
+                                    <th>History</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>메인페이지</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="[006] 리베금융/index.html" target="_blank">index.html</a></td>
+                                    <td>2023.01.19 ~ 2022.01.20</td>
+                                </tr>
+                                <tr>
+                                    <td>예금계좌조회</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="[006] 리베금융/sub1.html" target="_blank">sub1.html</a></td>
+                                    <td>2023.01 .20 ~ 2023.01.20</td>
+                                </tr>
+                                <tr class="line">
+                                    <td>추천상품</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="[006] 리베금융/sub2.html" target="_blank">sub2.html</a></td>
+                                    <td>2023.01.21 ~ 2023.01.21</td>
+                                </tr>
+                                <tr>
+                                    <td>메뉴</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="[006] 리베금융/menu.html" target="_blank">menu.html</a></td>
+                                    <td>2023.01.21 ~ 2023.01.22</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <button class="btn_close">닫기</button>
+                </div>
+            </div>
     </main>
 </body>
 
