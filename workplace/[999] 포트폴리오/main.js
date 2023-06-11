@@ -30,22 +30,23 @@ $(document).ready(function () {
     var sec =document.getElementsByClassName('section');
 
     const works = document.getElementsByClassName('works')[0];
-    const contBox = works.getElementsByClassName('contentBox')[0];
     const scrollBox = document.getElementById('scrollBox');
 
 
     
     
-    // window.onclick = function(){
-        //     console.log('이벤트 발생!!!!!!!!!!');
-        //     window.scroll({top:sec[1].offsetTop ,  behavior:'smooth'})
-        // }
-        // window.scroll({
-            //     top:0,
-    //     left:100,
-    //     behavior: 'smooth'
-    // })
-    
+
+    // works 가로 스크롤
+    // 1. works 가로 스크롤 - 왼쪽 여백
+    setInterval(function(){
+        const works_Left = works.getElementsByTagName('h2')[0].offsetLeft;
+        scrollBox.style.paddingLeft = works_Left + 'px';
+        works.style.height = scrollBox.scrollWidth + 'px';
+        });
+
+
+    // 2. works 가로 스크롤 - scroll 이벤트
+
     let preScrollTop = 0;
 
     window.addEventListener('scroll', () => {
@@ -61,8 +62,7 @@ $(document).ready(function () {
             scrollBox.style.transform = 'translateX('+-1*offset+'px)';
             console.log('offset:'+offset);
             console.log('transform:'+scrollBox.style.transform);
-        }else if(offset > 900)
-        { scrollBox.style.transform = 'translateX(-900px)';}
+        }
         
         // if (preScrollTop < nextScrollTop) {
         //     console.log('Down!');
@@ -77,11 +77,7 @@ $(document).ready(function () {
 
 
 
-    // header
-    // setInterval(function(){
-    // 
-    // scrollBox.style.paddingLeft = contBox.offsetLeft + 30 + 'px';
-    // });
+
 
 
 
