@@ -99,9 +99,9 @@
 /* icon_hover */
 .section_ir > div > ul li a span { position: absolute; z-index: 1; display: inline-block; left: 0; top: 0; width: 100%; height: 100%; opacity: 0;}
 .section_ir > div > ul li a:hover span { opacity: 1;}
-.section_ir > div > ul li a span::after { transition: all .3s .1s; position: absolute; z-index: 1; content: "\e97a"; top: 50%; right: 0; transform: translateY(-25px); width: 100%; height: 100%; background-color: transparent; font-size: 23px; color: #fff; font-family: 'xeicon'; text-align: center; box-sizing: border-box; opacity: 0;}
+.section_ir > div > ul li a span::after { transition: all .3s .1s; position: absolute; z-index: 1; content: "\e97a"; top: 50%; right: 0; transform: translateY(-25px); width: 100%; background-color: transparent; font-size: 23px; color: #fff; font-family: 'xeicon'; text-align: center; box-sizing: border-box; opacity: 0;}
 .section_ir > div > ul li a:hover span::after { opacity: 1;}
-.section_ir > div > ul li a span::before { transition: all .3s .1s; position: absolute; content: "MORE DETAILS"; display: inline-block; left: 0; top: 50%; transform: translateY(15px); width: 100%; height: 100%; color: #fff; font-weight: 600; font-size: 14px; text-align: center;}
+.section_ir > div > ul li a span::before { transition: all .3s .1s; position: absolute; content: "MORE DETAILS"; display: inline-block; left: 0; top: 50%; transform: translateY(15px); width: 100%; color: #fff; font-weight: 600; font-size: 14px; text-align: center;}
 /* background_hover */
 .section_ir > div > ul li a div::after { transition: all .3s .1s; position: absolute; content: ""; bottom: 0; right: 0; width: 0; height: 0; background-color: rgba(0,125,198,.8);}
 .section_ir > div > ul li a:hover div::after { width: 100%; height: 100%;}
@@ -117,25 +117,30 @@
 .section_ir .article_ir { clear: both; position: relative;}
 .section_ir .article_ir > h4 { padding: 0 0 12px; font-size: 24px; color: #fff;}
 .section_ir .article_ir > p { font-size: 16px; color: rgba(255, 255, 255, 0.5);}
-.section_ir .article_ir > div { position: relative; width: calc(100% + 20px);}
-.section_ir .article_ir > .btn_detail { transition: all .25s 0s; position: absolute; top:35px; right: 0; padding: 0 20px 0 0; font-size: 14px; font-weight: bold; color: rgba(255, 255, 255, 0.5);}
-.section_ir .article_ir > .btn_detail::before { position: absolute; left: 0; top: 0; width: 100%; height: 100%; content:"\e907"; font-family: 'xeicon'; text-align: right;}
+.section_ir .article_ir .btn_detail { transition: all .25s 0s; position: absolute; top:35px; right: 0; padding: 0 20px 0 0; font-size: 14px; font-weight: bold; color: rgba(255, 255, 255, 0.5);}
+.section_ir .article_ir .btn_detail::before { position: absolute; left: 0; top: 0; width: 100%; height: 100%; content:"\e907"; font-family: 'xeicon'; text-align: right;}
 .section_ir .article_ir > .btn_detail:hover { color: #fff;}
-.section_ir .article_ir > div ul { display: flex; flex-direction: row; justify-content: stretch; margin: 36px 0 0;}
-.section_ir .article_ir > div ul li~li { margin: 0 0 0 20px;}
-.section_ir .article_ir > div ul li a { transition: all .4s; display: inline-block; position: relative; padding: 30px; height: 190px; border: 1px solid rgba(255, 255, 255, 0.3); color: #fff; box-sizing: border-box;}
-.section_ir .article_ir > div ul li a:hover { background-color: rgba(255, 255, 255, 0.1); border-color: rgba(255, 255, 255, 0.1);}
-.section_ir .article_ir > div ul li a b { display: inline-block; width: 270px; font-size: 18px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
-.section_ir .article_ir > div ul li a p { display: inline-block; padding: 19px 0 0; width: 270px; font-size: 16px; opacity: 0.5; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
-.section_ir .article_ir > div ul li a i { position: absolute; padding: 0 0 0 20px; left: 30px; top: 140px; font-size: 14px; opacity: 0.5; background: url(images/ico_clock.png) no-repeat left 0 top 50%;}
+.section_ir .article_ir > div { position: relative; margin: 36px 0 0; font-size: 0;}
+.section_ir .article_ir .slide_wrapper { position: relative; height: 190px; width: calc(100% + 20px); margin-left: -10px; overflow: hidden;}
+.section_ir .article_ir .slides { position: absolute; left: 0; width: 100%; height: 100%; white-space: nowrap;}
+.section_ir .article_ir .slides.animated { transition: all .5s; }
+.section_ir .article_ir .slide { display: inline-block; padding: 0 10px; width: 100%; height: 100%; box-sizing: border-box;}
+.section_ir .article_ir .slide a { display: inline-block; position: relative; padding: 30px; width: 100%; height: 100%; border: 1px solid rgba(255, 255, 255, 0.3); color: #fff; box-sizing: border-box;}
+.section_ir .article_ir .slide a:hover { background-color: rgba(255, 255, 255, 0.1); border-color: rgba(255, 255, 255, 0.1);}
+.section_ir .article_ir .slide a b { display: block; width: 100%; font-size: 18px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.section_ir .article_ir .slide a p { display: inline-block; padding: 19px 0 0; width: 100%; font-size: 16px; opacity: 0.5; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.section_ir .article_ir .slide a i { position: absolute; padding: 0 0 0 20px; left: 30px; top: 140px; font-size: 14px; opacity: 0.5; background: url(images/ico_clock.png) no-repeat left 0 top 50%;}
 /** jquery slider (slick) **/
-.section_ir .article_ir > div .jq_slider1 button { transition: all .25s 0s; position: absolute; top:50%; transform: translateY(-50%); width: 60px; height: 60px; border-radius: 30px; background-color: #2a3036; font-size: 0; color: #fff;}
-.section_ir .article_ir > div .jq_slider1 button:hover { background-color: #007dc6;}
-.section_ir .article_ir > div .jq_slider1 .slick-prev { left: -90px;}
-.section_ir .article_ir > div .jq_slider1 .slick-prev::before { position: absolute; content: "\e906"; left: 0; top: 0; width: 100%; height: 100%; font-family: 'xeicon';  font-size: 20px; text-align: center; line-height: 60px;}
-.section_ir .article_ir > div .jq_slider1 .slick-next { right: -90px; }
-.section_ir .article_ir > div .jq_slider1 .slick-next::before { position: absolute; content: "\e907"; left: 0; top: 0; width: 100%; height: 100%; font-family: 'xeicon'; font-size: 20px; text-align: center; line-height: 60px;}
-.slick-slide { width: 340px;}
+.section_ir .article_ir .btn_prev,
+.section_ir .article_ir .btn_next { transition: all .25s 0s; position: absolute; top:50%; transform: translateY(-50%); width: 60px; height: 60px; border-radius: 30px; background-color: #2a3036; font-size: 0; color: #fff;}
+.section_ir .article_ir .btn_prev { left: -80px;}
+.section_ir .article_ir .btn_next { right: -80px;}
+.section_ir .article_ir .btn_prev:hover,
+.section_ir .article_ir .btn_next:hover { background-color: #007dc6;}
+/* .section_ir .article_ir > div .btn_prev { left: -90px;}
+.section_ir .article_ir > div .btn_prev::before { position: absolute; content: "\e906"; left: 0; top: 0; width: 100%; height: 100%; font-family: 'xeicon';  font-size: 20px; text-align: center; line-height: 60px;}
+.section_ir .article_ir > div .btn_next { right: -90px; }
+.section_ir .article_ir > div .btn_next::before { position: absolute; content: "\e907"; left: 0; top: 0; width: 100%; height: 100%; font-family: 'xeicon'; font-size: 20px; text-align: center; line-height: 60px;} */
 
 /* only css
 .section_ir .article_ir > div button { position: absolute; top:50%; transform: translateY(-50%); width: 60px; height: 60px; border-radius: 30px;}

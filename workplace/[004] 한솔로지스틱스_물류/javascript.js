@@ -24,12 +24,7 @@ $( document ).ready(function() {
     $('.bx-pager-link').prepend('0');
     
 
-    $('.jq_slider1').slick({
-        infinite: true,
-        slidesToShow: 4,
-        slidesToScroll: 1
-        });
-
+    
 
     var swiper = new Swiper(".mySwiper", {
     
@@ -41,5 +36,9 @@ $( document ).ready(function() {
         }
 
         });
+
+
+
+
 
 });
