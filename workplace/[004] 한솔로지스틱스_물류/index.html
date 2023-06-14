@@ -10,8 +10,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <script src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <link rel="stylesheet" href="default.css">
@@ -19,7 +17,7 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" media="(min-width:0px) and (max-width:1279px)" href="tablet.css">
     <link rel="stylesheet" media="(min-width:0px) and (max-width:599px)" href="mobile.css">
-    <script src="javascript.js"></script>
+    <script src="main.js"></script>
 </head>
 <body class="main">
     <header>
@@ -101,39 +99,21 @@
     <div class="quick_menu">
         <button class="btn_up">TOP</button>
     </div>
-    <section class="visual slider">
-            <div>
-                <video src=""></video>
-                <div>
-                    <h2>
-                        고객이 만족하는 최고의1<br>
-                        <b class="txt_style1">SCM Solution Provider</b>
-                    </h2>
-                </div>
+    <section class="visual">
+            <div class="slide fade">
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
-            <div>
-                <div>
-                    <div>
-                        <h2>
-                            고객이 만족하는 최고의2<br>
-                            <b class="txt_style1">SCM Solution Provider</b>
-                        </h2>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <div>
-                        <h2>
-                            고객이 만족하는 최고의3<br>
-                            <b class="txt_style1">SCM Solution Provider</b>
-                        </h2>
-                    </div>
-                </div>
+            <div class="contentBox">
+                <h2>
+                    고객이 만족하는 최고의<br>
+                    <b class="txt_style1">SCM Solution Provider</b>
+                </h2>
             </div>
     </section>
     <section class="section_business">
-        <div>
+        <div class="contentBox">
             <h2>HANSOL <i>LOGISTICS</i></h2>
             <h3 class="txt_style1">BUSINESS AREA</h3>
             <p><strong>고객의 성공 파트너</strong><b>TPL 전문기업</b> 한솔로지스틱스</p>
@@ -194,7 +174,7 @@
         </div>
     </section>
     <section class="section_esg">
-        <div>
+        <div class="contentBox">
             <h3 class="txt_style1">ESG MANAGEMENT</h3>
             <p>
                 전사 차원의 체계적인 ESG활동을 통해<br>
@@ -223,7 +203,7 @@
         </div>
     </section>
     <section class="section_ir">
-        <div>
+        <div class="contentBox">
             <div class="title">
                 <h3 class="txt_style1">IR INFORMATION</h3>
                 <p>
@@ -262,62 +242,58 @@
             <div class="article_ir">
                 <h4>IR News</h4>
                 <p>한솔로지스틱스의 새로운 IR 소식을 안내드립니다.</p>
-                <div>
-                    <div class="slide_wrapper">
-                        <ul class="slides">
-                           <li class="slide">
-                               <a href="">
-                                   <b>[종목체크] 'LG이노텍‧비스토스‧한솔로지스틱스'…기대에 부응할까</b>
-                                   <p>이날 한화투자증권은 한솔로지스틱스에 대해 아시아 외에 북미, 유럽 등으로 물류 범위 확장에 집중하고 있어 시장 성장에 따른 수혜가 기대된다는 분석을 제시했다.</p>
-                                   <i>2022.12.07</i>
-                               </a>
-                           </li>
-                           <li class="slide">
-                               <a href="">
-                                   <b>[종목체크] 'LG이노텍‧비스토스‧한솔로지스틱스'…기대에 부응할까</b>
-                                   <p>이날 한화투자증권은 한솔로지스틱스에 대해 아시아 외에 북미, 유럽 등으로 물류 범위 확장에 집중하고 있어 시장 성장에 따른 수혜가 기대된다는 분석을 제시했다.</p>
-                                   <i>2022.12.07</i>
-                               </a>
-                           </li>
-                           <li class="slide">
-                               <a href="">
-                                   <b>[종목체크] 'LG이노텍‧비스토스‧한솔로지스틱스'…기대에 부응할까</b>
-                                   <p>이날 한화투자증권은 한솔로지스틱스에 대해 아시아 외에 북미, 유럽 등으로 물류 범위 확장에 집중하고 있어 시장 성장에 따른 수혜가 기대된다는 분석을 제시했다.</p>
-                                   <i>2022.12.07</i>
-                               </a>
-                           </li>
-                           <li class="slide">
-                               <a href="">
-                                   <b>[종목체크] 'LG이노텍‧비스토스‧한솔로지스틱스'…기대에 부응할까</b>
-                                   <p>이날 한화투자증권은 한솔로지스틱스에 대해 아시아 외에 북미, 유럽 등으로 물류 범위 확장에 집중하고 있어 시장 성장에 따른 수혜가 기대된다는 분석을 제시했다.</p>
-                                   <i>2022.12.07</i>
-                               </a>
-                           </li>
-                           <li class="slide">
-                               <a href="">
-                                   <b>[종목체크] 'LG이노텍‧비스토스‧한솔로지스틱스'…기대에 부응할까</b>
-                                   <p>이날 한화투자증권은 한솔로지스틱스에 대해 아시아 외에 북미, 유럽 등으로 물류 범위 확장에 집중하고 있어 시장 성장에 따른 수혜가 기대된다는 분석을 제시했다.</p>
-                                   <i>2022.12.07</i>
-                               </a>
-                           </li>
-                           <li class="slide">
-                               <a href="">
-                                   <b>[종목체크] 'LG이노텍‧비스토스‧한솔로지스틱스'…기대에 부응할까</b>
-                                   <p>이날 한화투자증권은 한솔로지스틱스에 대해 아시아 외에 북미, 유럽 등으로 물류 범위 확장에 집중하고 있어 시장 성장에 따른 수혜가 기대된다는 분석을 제시했다.</p>
-                                   <i>2022.12.07</i>
-                               </a>
-                           </li>
-                       </ul>
-                   </div> 
-                   <button class="btn_prev"></button>
-                   <button class="btn_next"></button>
-                </div>
+                 <div>
+                     <ul class="slides slick-slider1">
+                        <li>
+                            <a href="">
+                                <b>[종목체크] 'LG이노텍‧비스토스‧한솔로지스틱스'…기대에 부응할까</b>
+                                <p>이날 한화투자증권은 한솔로지스틱스에 대해 아시아 외에 북미, 유럽 등으로 물류 범위 확장에 집중하고 있어 시장 성장에 따른 수혜가 기대된다는 분석을 제시했다.</p>
+                                <i>2022.12.07</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <b>[종목체크] 'LG이노텍‧비스토스‧한솔로지스틱스'…기대에 부응할까</b>
+                                <p>이날 한화투자증권은 한솔로지스틱스에 대해 아시아 외에 북미, 유럽 등으로 물류 범위 확장에 집중하고 있어 시장 성장에 따른 수혜가 기대된다는 분석을 제시했다.</p>
+                                <i>2022.12.07</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <b>[종목체크] 'LG이노텍‧비스토스‧한솔로지스틱스'…기대에 부응할까</b>
+                                <p>이날 한화투자증권은 한솔로지스틱스에 대해 아시아 외에 북미, 유럽 등으로 물류 범위 확장에 집중하고 있어 시장 성장에 따른 수혜가 기대된다는 분석을 제시했다.</p>
+                                <i>2022.12.07</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <b>[종목체크] 'LG이노텍‧비스토스‧한솔로지스틱스'…기대에 부응할까</b>
+                                <p>이날 한화투자증권은 한솔로지스틱스에 대해 아시아 외에 북미, 유럽 등으로 물류 범위 확장에 집중하고 있어 시장 성장에 따른 수혜가 기대된다는 분석을 제시했다.</p>
+                                <i>2022.12.07</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <b>[종목체크] 'LG이노텍‧비스토스‧한솔로지스틱스'…기대에 부응할까</b>
+                                <p>이날 한화투자증권은 한솔로지스틱스에 대해 아시아 외에 북미, 유럽 등으로 물류 범위 확장에 집중하고 있어 시장 성장에 따른 수혜가 기대된다는 분석을 제시했다.</p>
+                                <i>2022.12.07</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <b>[종목체크] 'LG이노텍‧비스토스‧한솔로지스틱스'…기대에 부응할까</b>
+                                <p>이날 한화투자증권은 한솔로지스틱스에 대해 아시아 외에 북미, 유럽 등으로 물류 범위 확장에 집중하고 있어 시장 성장에 따른 수혜가 기대된다는 분석을 제시했다.</p>
+                                <i>2022.12.07</i>
+                            </a>
+                        </li>
+                    </ul>
+                </div> 
                 <a href="" class="btn_detail">MORE DETAILS</a>
             </div>
         </div>
     </section>
     <section class="section_pr">
-        <div>
+        <div class="contentBox">
             <h3 class="txt_style1">PR CENTER</h3>
             <p>
                 고객이 만족하는 최고의<br>
@@ -438,93 +414,5 @@
             </div>
         </div>
     </footer>
-    <script>
-        
-// 무한 반복 슬라이드
-let slides = document.querySelector('.slides');
-        let slide = document.querySelectorAll('.slide');
-        let slideCount = slide.length;
-        let slideAll = document.getElementsByClassName('slide');
-        let slideAllCount = slideAll.length;
-        let slideGroup = 4;
-        const prevBtn = document.getElementsByClassName('btn_prev')[0];
-        const nextBtn = document.getElementsByClassName('btn_next')[0];
-        
-
-        // slide width값
-
-        for(i=0; i < slideCount ; i++){
-            slide[i].style.width = 100/slideGroup + '%'
-        };
-        
-        // slides 초기 위치값 설정
-        setInitialPos();
-        function setInitialPos(){
-            InitialPos = -1*slide[0].clientWidth*slideCount;
-            slides.style.left = InitialPos + 'px'
-        };
-
-        // slides animate class 추가
-        setTimeout(function(){
-            slides.classList.add('animated')
-        }, 500);
-
-
-        // slide 클론
-        makeClone();
-
-        function makeClone(){
-            for(i = 0 ; i < slideCount ; i++){
-                let cloneSlide = slide[i].cloneNode(true);
-                cloneSlide.classList.add('clone');
-                slides.appendChild(cloneSlide);
-            }
-            for(i = slideCount - 1 ; i>=0 ; i--){
-                let cloneSlide = slide[i].cloneNode(true);
-                cloneSlide.classList.add('clone');
-                slides.prepend(cloneSlide);
-            };
-        };
-
-
-        // slides 이동
-        let currentIdx = 0;
-
-        function moveSlides(idx){
-            slides.style.left = InitialPos - idx*slide[0].clientWidth + 'px'
-            currentIdx = idx;
-            console.log(currentIdx)
-
-            if (currentIdx === slideCount || -currentIdx === slideCount){
-                setTimeout(function(){
-                    slides.classList.remove('animated')
-                    setInitialPos();
-                },500)
-                setTimeout(function(){
-                    slides.classList.add('animated')
-                },510)
-                currentIdx = 0;
-                }
-            };
-        
-        
-        nextBtn.addEventListener('click',function(e){
-            e.preventDefault();
-            moveSlides(currentIdx + 1);
-            nextBtn.style.pointerEvents = 'none';
-            setTimeout(function(){
-                nextBtn.style.pointerEvents = 'all';
-            },500)
-        });
-
-        prevBtn.addEventListener('click',function(e){
-            e.preventDefault();
-            moveSlides(currentIdx - 1);
-            prevBtn.style.pointerEvents = 'none';
-            setTimeout(function(){
-                prevBtn.style.pointerEvents = 'all';
-            },500)
-        });
-    </script>
 </body>
 </html>

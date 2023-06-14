@@ -54,7 +54,7 @@ footer > div .footer_info li:nth-child(2) { padding: 0;}
 .section_pr > div > .flex { display: block;}
 .section_pr > div > .flex > div { width: 100%;}
 .section_pr > div > .flex > div~div { margin: 65px 0 0;}
-@media (min-width: 0px) and (max-width:768px){
+@media (min-width: 0px) and (max-width:769px){
     .section_pr > div .article_sns .content .main a { padding: 0 0 0 30px;}
     .section_pr > div .article_sns .content .main a span { display: none;}
 }
