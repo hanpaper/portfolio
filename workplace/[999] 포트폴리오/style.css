@@ -91,6 +91,7 @@ h2 { padding: 0 0 20px ; font-size: 65px; line-height: 1; font-family: 'Playfair
 .works ul li > button { transition: all .5s; position: relative; display: inline-block; padding: 20px 30px; background-color: lightgray; text-align: left; box-sizing: border-box; white-space: normal; box-shadow: 0px 0px 25px rgba(0,0,0,.2); background-position: center; background-repeat: no-repeat;}
 .works ul li:nth-child(1) > button { background-image: url(images/works1.png);}
 .works ul li:nth-child(2) > button { background-image: url(images/works2.png);}
+/* .works ul li:nth-child(3) > button { background-image: url();} */
 .works ul li:nth-child(3) > button { background-image: url(images/works3.png);}
 .works ul li:nth-child(4) > button { background-image: url(images/works4.png);}
 .works ul li.web > button { width: 650px; height: 355px; background-size: auto 100%;} 

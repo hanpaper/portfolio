@@ -26,8 +26,8 @@ $(document).ready(function () {
     // scroll 기능
     const body = document.getElementsByTagName('body')[0];
     const main = document.getElementsByTagName('main')[0];
-    var header = document.querySelector('header');
-    var sec =document.getElementsByClassName('section');
+    const header = document.querySelector('header');
+    const sec =document.getElementsByClassName('section');
 
     const works = document.getElementsByClassName('works')[0];
     const scrollBox = document.getElementById('scrollBox');
@@ -118,6 +118,7 @@ $(document).ready(function () {
     const detailBank = document.getElementById('detailBank')
     const detailStarbucks = document.getElementById('detailStarbucks')
     const detailBankmobile = document.getElementById('detailBankmobile')
+    const detailPortfolio = document.getElementById('detailPortfolio')
     
     // 1. 상세페이지 - 한솔
     document.getElementById('hansol').addEventListener('click', function(){
@@ -142,6 +143,18 @@ $(document).ready(function () {
         document.getElementById('detailWin').style.pointerEvents = 'none';
         detailBank.style.right = '-100%';
     });
+
+    // 3. 상세페이지 - 포트폴리오
+    // document.getElementById('portfolio').addEventListener('click', function(){
+    //     document.getElementById('detailWin').style.opacity = '1'
+    //     document.getElementById('detailWin').style.pointerEvents = 'all';
+    //     detailPortfolio.style.right = '0px';
+    // });
+    // detailPortfolio.getElementsByClassName('btn_close')[0].addEventListener('click', function(){
+    //     document.getElementById('detailWin').style.opacity = '0'
+    //     document.getElementById('detailWin').style.pointerEvents = 'none';
+    //     detailPortfolio.style.right = '-100%';
+    // });
 
     // 3. 상세페이지 - 스타벅스
     document.getElementById('starbucks').addEventListener('click', function(){
@@ -171,13 +184,13 @@ $(document).ready(function () {
 
 
     // infinite slider 기능
-    var bannerLeft = 0;
-    var first = 1;
-    var last;
-    var sliderNum = 0;
-    var slider = $(".infSlider");
-    var $first;
-    var $last;
+    let bannerLeft = 0;
+    let first = 1;
+    let last;
+    let sliderNum = 0;
+    let slider = $(".infSlider");
+    let $first;
+    let $last;
 
     slider.each(function () {   // 20px 간격으로 배너 처음 위치 시킴
         $(this).css("left", bannerLeft);
