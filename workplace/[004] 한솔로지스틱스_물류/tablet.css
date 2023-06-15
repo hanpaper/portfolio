@@ -34,7 +34,7 @@ footer > div .footer_info li:nth-child(2) { padding: 0;}
 .section_ir > div .title p { font-size: 30px;}
 .section_ir > div .title { position: static; text-align: center;}
 .section_ir > div > ul { padding: 55px 0 58px 0 ;}
-.section_ir > div > ul li { width: 100%; min-width: auto; max-width: auto; height: 250px; justify-content:center; max-width: none; min-width: none;}
+.section_ir > div > ul li { width: 100%; max-width:none; height: 250px; justify-content:center;}
 .section_ir > div > ul li a div { padding: 35px 30px;}
 .section_ir > div > ul li:nth-child(1) a div,
 .section_ir > div > ul li:nth-child(2) a div { background-size: 100% auto;}
@@ -102,8 +102,8 @@ footer > div .footer_info li:nth-child(2) { padding: 0;}
 /** **/
 
 @media (min-width: 0px) and (max-width:768px){
-    .news_search .table > div:first-child { display: block; width: 100%; }
-    .news_search .table > div:last-child { display: block; padding-left: 0; margin-top: 10px; }
+    .searchBox .table > div:first-child { display: block; width: 100%; }
+    .searchBox .table > div:last-child { display: block; padding-left: 0; margin-top: 10px; }
 }
 @media (min-width: 0px) and (max-width:1029px){
     .social > .social_list li { width: 50%;}
