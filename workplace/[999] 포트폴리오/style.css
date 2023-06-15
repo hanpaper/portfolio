@@ -16,6 +16,7 @@ main section:nth-child(even) .contentBox h2 i::after { background-color: #222;}
 
 header { transition: all .7s; position: fixed; z-index: 99; left: 0; top: 0; padding: 0 30px; width: 100%; height: 80px; line-height: 80px; box-sizing: border-box;}
 header > a { float: left; color: dimgray; font-size: 15px;}
+header > a img { margin-right: 5px; width: 25px; height: 25px; transform: translateY(-2px);}
 header nav { float: right;}
 header nav ul li {display: inline-block; padding: 0 15px;}
 header nav ul li a { position: relative; color: dimgray; font-size: 15px;}
@@ -107,18 +108,20 @@ h2 { padding: 0 0 20px ; font-size: 65px; line-height: 1; font-family: 'Playfair
 #detailWin > div { transition: all .7s; position: absolute; right: -100%; top: 0; width: 100%; height: 100%; max-width: 1300px; background-color: #fff; box-shadow: -2px 0 8px rgba(0,0,0,.3); }
 #detailWin > div > div { position: absolute; left: 50%; top: 50%; transform: translateX(-50%) translateY(-50%); display: inline-block; padding: 110px 40px 40px ; width: 100%; max-width: 1200px; height: 100%; box-sizing: border-box; overflow: scroll;}
 #detailWin > div > div i { display: inline-block; margin: 0 0 60px; width: 40px; height: 40px; background: url(images/arrow.png) no-repeat center/ 40px auto;}
-#detailWin > div > div h3 { font-size: 40px;}
-#detailWin > div > div p { display: block; margin: 30px 0; font-size: 16px; line-height: 25px;}
-#detailWin > div > div .mark { display: flex; margin: 20px 0 0; height: 33px;}
+#detailWin > div > div h3 { font-size: 50px;}
+#detailWin > div > div p { display: block; margin: 0 0 30px; font-size: 16px; line-height: 25px; font-weight: 300;}
+#detailWin > div > div .mark { display: flex; justify-content: end; margin: 30px 0 20px; height: 33px;}
 #detailWin > div > div .mark_browser img { height: 100%;}
-#detailWin > div > div .mark_w3c img {  padding: 0 0 0 7px;}
-#detailWin > div > div em { display: block; font-size: 16px; line-height: 25px;}
-#detailWin > div > div .btnStyle1 { margin: 30px 0 0; font-size: 16px; width: 160px; height: 42px; line-height: 38px; background-color: transparent; border: 1.5px solid #333; font-weight: bold;}
+#detailWin > div > div .mark_w3c { padding: 0 0 0 10px;}
+#detailWin > div > div .mark_w3c img { padding: 0 0 0 7px; height: 17px;}
+#detailWin > div > div .mark_w3c img:nth-child(2) { height: 20px;}
+#detailWin > div > div em { display: inline-block; padding: 40px 0 20px; font-size: 16px; line-height: 25px;}
+#detailWin > div > div .btnStyle1 { font-size: 16px; width: 160px; height: 42px; line-height: 38px; background-color: transparent; border: 1.5px solid #333; font-weight: bold;}
 #detailWin > div > div .btnStyle1:hover { background-color: #333; color: #fff;}
 #detailWin > div .btn_close { position: absolute; right: 30px; top: 30px; width: 50px; height: 50px; font-size: 0;}
 #detailWin > div .btn_close::before { transition: all .5s ; position: absolute; content: "\e9af"; left: 50%; top: 50%; transform: translateX(-50%) translateY(-50%); font-size: 35px; font-family: "xeicon";}
 #detailWin > div .btn_close:hover::before { transform: translateX(-50%) translateY(-50%) rotate(180deg);}
-#detailWin > div > div table { margin-top: 50px; font-size: 12px;}
+#detailWin > div > div table { font-size: 12px;}
 #detailWin > div > div table tr { border-bottom: 1px solid lightgray;}
 #detailWin > div > div table thead { background-color: #333; color: #fff;}
 #detailWin > div > div table thead tr { height: 30px;}
@@ -134,7 +137,7 @@ h2 { padding: 0 0 20px ; font-size: 65px; line-height: 1; font-family: 'Playfair
 /** section - etc **/
 .part2 { position: absolute; top: 400vh;}
 .etc .contentBox > div { position: relative; padding: 0 0 0 310px;}
-.etc .contentBox > div~div { margin-top: 160px;}
+.etc .contentBox > div~div { margin-top: 130px;}
 .etc .contentBox > div h2 { position: absolute; left: 0; top: 0; padding: 0;}
 .etc .contentBox > div > p { margin: 0 0 20px 0 ;}
 .etc .contentBox .github a { width: 150px; background-color: transparent; color: #fff; border: 1.5px solid #fff; line-height: 46px; box-sizing: border-box; font-weight: bold;}
