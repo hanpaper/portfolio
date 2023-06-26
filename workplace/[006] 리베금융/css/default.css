@@ -11,6 +11,7 @@ label,img,input,select,textarea,button,a {vertical-align:middle;}
 u,ins,a{text-decoration:none;}
 button {cursor:pointer; background-color: transparent;}
 table caption, form legend { font-size: 0;}
+a,button { color: #000;}
 
 
 /* Normalize */

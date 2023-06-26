@@ -39,7 +39,7 @@ header div button.btn_close { background-image: url(../images/ico_close2.png); b
 .index_top .account a div:last-child span { display: inline-block; margin: 0 0 0 0.383rem; padding: 0 0.316rem; line-height: 0.75rem; border-radius: 0.5rem; font-size: 0.5rem; border: 0.666px solid #D0D3D6; color: #333; font-weight: 400; vertical-align: middle;}
 .index_top .account button.btn_etc { position: absolute; right: 0.75rem; top: 1.23rem; width: 14px; height: 14px; background: url(../images/ico_index_menu.png) no-repeat center / auto 14px;}
 
-.index_list { padding: 0.65rem 1.1rem 0; background-color: #F2F3F7;}
+.index_list { padding: 0.65rem 1.1rem 0; height: 100vh; background-color: #F2F3F7; box-sizing: ;}
 .index_list nav ul { display: flex; margin: 0 0 1.083rem 0;}
 .index_list nav ul li { flex:1; }
 .index_list nav ul li button { line-height: 1.433rem; font-size: 0.633rem; color: #98999B;}
@@ -81,13 +81,13 @@ header div button.btn_close { background-image: url(../images/ico_close2.png); b
 .sub_top nav > ul > li button { width: 100%; color: #fff; line-height: 38.666px; font-size: 0.783rem;}
 .sub_top nav > ul > li.selected { border-radius: 10px 10px 0 0; background-color: #fff; }
 .sub_top nav > ul > li.selected button { color: #287BB2;}
-.sub_top nav > ul > li.selected ul { display: flex; position: absolute; left: 0; top: 47.666px; width: 100%; height: 40px; background-color: #fff;}
+.sub_top nav > ul > li.selected ul { display: flex; position: absolute; left: 0; top: 47.666px; margin-top: -1px; width: 100%; height: 40px; background-color: #fff;}
 .sub_top nav > ul > li.selected ul li { flex: 1;}
 .sub_top nav > ul > li.selected ul li button { color: #333; font-size: 0.666rem;}
 .sub_top nav > ul > li.selected ul li.selected button { border-bottom: 2.333px solid #287BB2; color: #287BB2;}
-.sub_top div { position: relative; padding: 0 0.5rem; height: 86px; line-height: 86px; box-sizing: border-box; }
-.sub_top div p { display: inline; font-size: 0.75rem;}
-.sub_top div em { float: right; margin: 0 4.5rem 0 0; font-size: 1.083rem; text-align: right;}
+.sub_top div { position: relative; display: flex; justify-content: space-between; padding: 0 0.5rem; height: 86px; line-height: 86px; box-sizing: border-box; }
+.sub_top div p { position: absolute; font-size: 0.75rem;}
+.sub_top div em { display: inline-block; padding: 0 4.5rem 0 0; width: 100%; font-size: 1.083rem; text-align: right; box-sizing: border-box;}
 .sub_top div em i { font-size: 0.916rem;}
 .sub_top div input[type="checkbox"] { position: absolute; left: -999px; }
 .sub_top div label { position: absolute; right: 0.533rem; top: 50%; transform: translateY(-50%); display: inline-block; width: 75.333px; height: 25px; border-radius: 25px; background-color: rgba(40, 123, 178, 0.3); font-size: 0;}
@@ -109,8 +109,8 @@ header div button.btn_close { background-image: url(../images/ico_close2.png); b
 .sub_account .account_list li~li { margin-top: 0.5rem;}
 .sub_account .account_list li > i { line-height: 0.983rem; font-size: 0.666rem; }
 .sub_account .account_list li p { line-height: 1.233rem; font-size: 0.833rem; }
-.sub_account .account_list li em { position: absolute; right: 0.75rem; bottom: 3rem; font-size: 1.083rem; line-height: 1.6rem;}
-.sub_account .account_list li em i { font-size: 0.916rem; }
+.sub_account .account_list li em { position: absolute; display: block; height: 1.6rem; right: 0.75rem; bottom: 3rem; width: 100%; font-size: 1.083rem; line-height: 1.6rem; text-align: right;}
+.sub_account .account_list li em i { display: inline; font-size: 0.916rem; }
 .sub_account .account_list li span { display: inline-block; margin: 0.166rem 0 0; padding: 0 0.533rem; height: 1rem; line-height: 1rem; border-radius: 1rem; border: 0.666px solid #D0D3D6; font-size: 0.5rem; color: #FF653F;}
 .sub_account .account_list .btn_group { position: absolute; left: 0; bottom: 1rem; padding: 0 0.583rem; width: 100%; box-sizing: border-box;}
 .sub_account .account_list .btn_group button~button { margin: 0 0 0 0.2rem;}
@@ -126,12 +126,12 @@ header div button.btn_close { background-image: url(../images/ico_close2.png); b
 
 
 /** page_sube2 **/
-.sub_product { padding: 1.283rem 0.733rem 1.566rem; height: 282.666px; background-color: #287BB2; box-sizing: border-box; }
+.sub_product { padding: 1.283rem 0.733rem 1.566rem; background-color: #287BB2; box-sizing: border-box; }
 .sub_product h2 { margin: 0 0 0.566rem; font-size: 0.783rem; color: #fff; text-align: center; font-weight: 300;}
 .sub_product ul { display: flex;}
-.sub_product ul li { flex: 1; height: 188px;}
+.sub_product ul li { flex: 1;}
 .sub_product ul li~li { margin-left: 0.666rem;}
-.box_style1 { display: inline-block; position: relative; padding: 1.283rem 0.283rem 0 0.7rem; height: 100%; background-color: #fff; box-sizing: border-box;}
+.box_style1 { display: inline-block; position: relative; padding: 1.283rem 0.283rem 1.1rem 0.7rem; width: 100%; height: 100%; background-color: #fff; box-sizing: border-box;}
 .box_style1::before { position: absolute; content: ""; top: 0.766rem; left: 0.666rem; width: 28.666px; height: 2.666px; border-radius: 2.666px; background-color: #239DEE;}
 .sub_product ul li a em { line-height: 0.933rem; font-size: 0.633rem; color: #9EA8A7;}
 .sub_product ul li a > i { display: block; line-height: 0.916rem; font-size: 0.85rem;}
@@ -171,7 +171,7 @@ header div button.btn_close { background-image: url(../images/ico_close2.png); b
 .page_menu{ position: relative;}
 
 .menu header { background-color: #287BB2;}
-.menu_top { padding: 0 1.95rem 1.2rem; background-color: #287BB2; color: #fff;}
+.menu_top { margin-top:-1px; padding: 0 1.95rem 1.2rem; background-color: #287BB2; color: #fff;}
 .menu_top span { display: inline-block; width: 28.666px; height: 28.666px; border-radius: 28.666px; background-color: #fff; vertical-align: top;}
 .menu_top .user { display: inline-block; margin: 0 0 0 0.75rem; line-height: 0.65rem; vertical-align: top;}
 .menu_top .user u { display: block; padding: 0 0 0.4rem; font-size: 0.65rem; text-decoration: underline;}
