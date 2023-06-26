@@ -23,7 +23,7 @@ main > section:first-child { padding: 87.5px 0 0; box-sizing: border-box;}
 
 /** home **/
 .home main { padding: 0 0 78.5px 0;}
-.home .home_top { margin: 0; width: 100%; height: 244px; box-sizing: border-box;}
+.home .home_top { margin: 0; width: 100%; box-sizing: border-box;}
 .home .home_top .visual { position: relative;}
 .home .home_top .visual img { width: 100%;}
 .home .home_top .visual h2 { position: absolute; top: 2.45rem; left: 1.05rem; font-size: 1.025rem; line-height: 1.6rem;}
@@ -185,7 +185,7 @@ article.home_card~article.home_card { margin: 0.5rem 0 0 0;}
 .menu_datail .menu_diff .view_style { padding: 0 0 0 1.075rem; font-size: 0.55rem; line-height: 0.65rem; box-sizing: border-box;}
 .menu_datail .menu_diff .view_style li { width: 70px;}
 .menu_datail .menu_diff .view_style li~li { margin: 0 0 0 0.7rem;}
-.menu_datail .menu_diff .view_style li span { width: 70px; height: 70px; border-radius: 70px;}
+.menu_datail .menu_diff .view_style li span { width: 70px; height: 70px; border-radius: 70px; overflow: hidden;}
 .menu_datail .menu_diff .view_style li em { margin: 0.55rem 0 0 ; width: 70px; line-height: 0.7rem; color: #6a6a6a;}
 .menu_datail .btn_up { position: fixed; right: 13px; bottom: 90px; width: 43px; height: 43px; border-radius: 43px; background: url(../images/ico_arrow_up.png) no-repeat center / 30px auto #fff ; font-size: 0; box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.2);}
 .menu_datail .bottom_fix { position: fixed; bottom: 0; left: 0; padding: 0 1.075rem; width: 100%; height: 77.5px; line-height: 77.5px; background-color: #fff; box-sizing: border-box; vertical-align: middle; box-shadow: 0px -2px 5px rgb(0, 0, 0, 0.1);}
