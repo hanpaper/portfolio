@@ -1,31 +1,37 @@
-header nav { display: none;}
+.header__lnb { display: none;}
+.main section { padding-top: 70px;}
+.main .main-visual,
+.main .main-etc { padding-top: 0;}
 
-.section_business > div h2 { padding: 110px 0 30px; font-size: 36px; text-align: center;}
-.section_business > div > p {line-height: 35px;}
-.section_business > div > p > strong { display: block; }
+/** 공통 - style **/
+.main-title {  text-align: center;}
+.main-title > h2 { padding-bottom: 36px; font-size: 36px; }
+.main-title > h2 i { font-weight: 100;}
+.main-title > h4 { padding: 0 0 20px; display: inline-block; font-size: 18px;}
+.main-title > p { padding-bottom: 50px; font-size: 28px; line-height: 35px;}
+
+.main-visual h2 { font-size: 28px;}
+.main-visual h2 b { font-size: 30px;}
+
+.main_business > div > p {line-height: 35px;}
+.main_business > div > p > strong { display: block; }
+
+.main_ir > div > ul { display: block;}
+.main_ir > div > ul li { height: 220px;}
+.main_ir > div > ul li~li { margin: 20px 0 0 0;}
+.main_ir .article_ir .btn_detail { top: 60px;}
 
 
-.section_esg { padding: 110px 0 100px;}
-
-.section_pr > div { padding: 110px 20px 70px;}
-
-.section_ir > div > ul { display: block;}
-.section_ir > div > ul li { height: 220px;}
-.section_ir > div > ul li~li { margin: 20px 0 0 0;}
+.main-pr__brochure-content { flex-direction: column; height: auto;}
+.main-pr__brochure-content div:last-child p { margin: 20px 0 0; text-align: center;}
+.main-pr__brochure-content div:last-child ul li button { max-width: 300px; width: 100%;}
 
 
-.section_pr > div .article_brochure > div { flex-direction: column; height: auto;}
-.section_pr > div .article_brochure > div div p { margin: 20px 0 0; text-align: center;}
-.section_pr > div .article_brochure > div div ul { display: flex; flex-wrap: wrap;}
-.section_pr > div .article_brochure > div div ul li { width: 50%; padding: 0 5px; box-sizing: border-box;}
-.section_pr > div .article_brochure > div div ul li button { width: 100%; }
+.main_business ul li { width: 50%;}
 
-
-.section_business ul li { width: 50%;}
-
-.section_etc article { padding: 120px 0 0; height: 430px;}
-.section_etc article span { bottom: 50px; flex-direction: column; align-items: center;}
-.section_etc article span a { margin: 10px 0 0; padding: 0 50px 0 30px; width: 230px; height: 50px; line-height: 50px; text-align: left; box-sizing: border-box;}
+.main_etc article { padding: 120px 0 0; height: 430px;}
+.main_etc article span { bottom: 50px; flex-direction: column; align-items: center;}
+.main_etc article .btn-more { margin: 10px 0 0; padding: 0 50px 0 30px; width: 230px; height: 50px; line-height: 50px; text-align: left; box-sizing: border-box;}
 
 
 footer { margin: 100px 0 0;}
