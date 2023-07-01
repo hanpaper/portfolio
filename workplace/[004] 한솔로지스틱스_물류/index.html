@@ -1,22 +1,16 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>한솔로지스틱스</title>
-    <!-- xeicon -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
-    <!-- add font-family -->
-    <link rel="stylesheet" type="text/css"
-        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
-    <!-- slick-plugin -->
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <script src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <link rel="stylesheet" href="default.css">
     <link rel="stylesheet" href="style.css">
@@ -25,235 +19,153 @@
     <link rel="stylesheet" media="(min-width:0px) and (max-width:599px)" href="mobile.css">
     <script src="main.js"></script>
 </head>
-
 <body class="main">
-    <header class="header">
-        <div class="header__wrap">
+    <header>
+        <div class="clear">
             <h1>
-                <a href="index.html" class="header__logo logo">한솔로지스틱스</a>
+                <a href="index.html">
+                    <img src="images/logo.svg" alt="한솔로지스틱스">
+                </a>
             </h1>
-            <nav class="main-gnb gnb">
-                <ul class="gnb__depth1">
-                    <li class="gnb__item">
-                        <a href="" class="gnb__link">회사소개</a>
-                        <ul class="gnb__depth2">
-                            <li class="gnb__item"><a href="" class="gnb__link">개요</a></li>
-                            <li class="gnb__item"><a href="" class="gnb__link">CEO 인사말</a></li>
-                            <li class="gnb__item"><a href="" class="gnb__link">CI</a></li>
-                            <li class="gnb__item"><a href="" class="gnb__link">연혁</a></li>
-                            <li class="gnb__item"><a href="" class="gnb__link">인증</a></li>
-                            <li class="gnb__item"><a href="" class="gnb__link">네트워크</a></li>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="">회사소개</a>
+                        <ul class="nav_list">
+                            <li><a href="">개요</a></li>
+                            <li><a href="">CEO 인사말</a></li>
+                            <li><a href="">CI</a></li>
+                            <li><a href="">연혁</a></li>
+                            <li><a href="">인증</a></li>
+                            <li><a href="">네트워크</a></li>
                         </ul>
                     </li>
-                    <li class="gnb__item">
-                        <a href="" class="gnb__link">사업영역</a>
-                        <ul class="gnb__depth2">
-                            <li class="gnb__item"><a href="사업영역.html" class="gnb__link">글로벌물류</a></li>
-                            <li class="gnb__item"><a href="" class="gnb__link">디지털트럭운송</a></li>
-                            <li class="gnb__item"><a href="" class="gnb__link">컨테이너운송</a></li>
-                            <li class="gnb__item"><a href="" class="gnb__link">W&D</a></li>
-                            <li class="gnb__item"><a href="" class="gnb__link">물류컨설팅</a></li>
+                    <li>
+                        <a href="">사업영역</a>
+                        <ul class="nav_list">
+                            <li><a href="사업영역.html">글로벌물류</a></li>
+                            <li><a href="">디지털트럭운송</a></li>
+                            <li><a href="">컨테이너운송</a></li>
+                            <li><a href="">W&D</a></li>
+                            <li><a href="">물류컨설팅</a></li>
                         </ul>
                     </li>
-                    <li class="gnb__item">
-                        <a href="" class="gnb__link">지속가능경영</a>
-                        <ul class="gnb__depth2">
-                            <li class="gnb__item"><a href="" class="gnb__link">환경경영</a></li>
-                            <li class="gnb__item"><a href="" class="gnb__link">사회책임경영</a></li>
-                            <li class="gnb__item"><a href="" class="gnb__link">기업지배구조</a></li>
-                            <li class="gnb__item"><a href="" class="gnb__link">ESG성과</a></li>
+                    <li>
+                        <a href="">지속가능경영</a>
+                        <ul class="nav_list">
+                            <li><a href="">환경경영</a></li>
+                            <li><a href="">사회책임경영</a></li>
+                            <li><a href="">기업지배구조</a></li>
+                            <li><a href="">ESG성과</a></li>
                         </ul>
                     </li>
-                    <li class="gnb__item">
-                        <a href="" class="gnb__link">투자정보</a>
-                        <ul class="gnb__depth2">
-                            <li class="gnb__item"><a href="" class="gnb__link">재무정보</a></li>
-                            <li class="gnb__item"><a href="" class="gnb__link">배당현황</a></li>
-                            <li class="gnb__item"><a href="" class="gnb__link">공시정보</a></li>
-                            <li class="gnb__item"><a href="투자정보_News.html" class="gnb__link">IR News</a></li>
-                            <li class="gnb__item"><a href="투자정보_Contact.html" class="gnb__link">Contact IR</a></li>
+                    <li>
+                        <a href="">투자정보</a>
+                        <ul class="nav_list">
+                            <li><a href="">재무정보</a></li>
+                            <li><a href="">배당현황</a></li>
+                            <li><a href="">공시정보</a></li>
+                            <li><a href="투자정보_News.html">IR News</a></li>
+                            <li><a href="투자정보_Contact.html">Contact IR</a></li>
                         </ul>
                     </li>
-                    <li class="gnb__item">
-                        <a href="" class="gnb__link">홍보센터</a>
-                        <ul class="gnb__depth2">
-                            <li class="gnb__item"><a href="" class="gnb__link">물류상담서비스</a></li>
-                            <li class="gnb__item"><a href="" class="gnb__link">언론보도</a></li>
-                            <li class="gnb__item"><a href="" class="gnb__link">브로슈어</a></li>
-                            <li class="gnb__item"><a href="홍보센터_소셜미디어.html" class="gnb__link">소셜미디어</a></li>
-                            <li class="gnb__item"><a href="" class="gnb__link">인재채용</a></li>
+                    <li>
+                        <a href="">홍보센터</a>
+                        <ul class="nav_list">
+                            <li><a href="">물류상담서비스</a></li>
+                            <li><a href="">언론보도</a></li>
+                            <li><a href="">브로슈어</a></li>
+                            <li><a href="홍보센터_소셜미디어.html">소셜미디어</a></li>
+                            <li><a href="">인재채용</a></li>
                         </ul>
                     </li>
                 </ul>
             </nav>
-            <div class="header__side">
-                <div>
-                    <ul class="header__lang">
-                        <li class="header__lang__item"><button class="header__lang__btn active">KR</button></li>
-                        <li class="header__lang__item"><button class="header__lang__btn">EN</button></li>
+            <div class="header_right table">
+                <div class="tablecell">
+                    <ul class="btn_lang">
+                        <li><button class="active">KR</button></li>
+                        <li><button>EN</button></li>
                     </ul>
                 </div>
-                <div>
-                    <button class="header__menu">전체메뉴 열기/닫기
-                        <span class="header__menu__deco"></span>
+                <div class="tablecell">
+                    <button class="btn_menu">
+                        <span></span>
                     </button>
                 </div>
             </div>
         </div>
-        <div class="sub-gnb gnb">
-            <ul class="gnb__depth1">
-                <li><a href=""><span>회사소개</span></a><button class="btn-submenu">하위메뉴 열기/닫기</button>
-                    <ul class="gnb__depth2">
-                        <li><a href=""><span>개요</span></a></li>
-                        <li><a href=""><span>CEO 인사말</span></a></li>
-                        <li><a href=""><span>CI</span></a></li>
-                        <li><a href=""><span>연혁</span></a></li>
-                        <li><a href=""><span>인증</span></a></li>
-                        <li><a href=""><span>네트워크</span></a>
-                            <ul class="gnb__depth3">
-                                <li><a href=""><span>국내</span></a></li>
-                                <li><a href=""><span>글로벌</span></a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li><a href=""><span>사업영역</span></a><button class="btn-submenu">하위메뉴 보기</button>
-                    <ul class="gnb__depth2">
-                        <li><a href=""><span>글로벌물류</span></a>
-                            <ul class="gnb__depth3">
-                                <li><a href=""><span>해상·항공운송</span></a></li>
-                                <li><a href=""><span>철도운송</span></a></li>
-                            </ul>
-                        </li>
-                        <li><a href=""><span>디지털트럭운송</span></a></li>
-                        <li><a href=""><span>컨테이너운송</span></a></li>
-                        <li><a href=""><span>W&D</span></a></li>
-                        <li><a href=""><span>물류컨설팅</span></a></li>
-                    </ul>
-                </li>
-                <li><a href=""><span>지속가능경영</span></a><button class="btn-submenu">하위메뉴 보기</button>
-                    <ul class="gnb__depth2">
-                        <li><a href=""><span>환경경영</span></a>
-                            <ul class="gnb__depth3">
-                                <li><a href=""><span>환경방침 및 목표</span></a></li>
-                                <li><a href=""><span>환경경영체계 및 추진조직</span></a></li>
-                                <li><a href=""><span>친환경 활동</span></a></li>
-                                <li><a href=""><span>환경인증현황</span></a></li>
-                            </ul>
-                        </li>
-                        <li><a href=""><span>사회책임경영</span></a>
-                            <ul class="gnb__depth3">
-                                <li><a href=""><span>품질경영</span></a></li>
-                                <li><a href=""><span>안전경영</span></a></li>
-                                <li><a href=""><span>윤리경영</span></a></li>
-                            </ul>
-                        </li>
-                        <li><a href=""><span>기업지배구조</span></a>
-                            <ul class="gnb__depth3">
-                                <li><a href=""><span>이사회</span></a></li>
-                                <li><a href=""><span>감사위원회</span></a></li>
-                                <li><a href=""><span>주주총회</span></a></li>
-                                <li><a href=""><span>관련규정</span></a></li>
-                            </ul>
-                        </li>
-                        <li><a href=""><span>ESG성과</span></a></li>
-                    </ul>
-                </li>
-                <li><a href=""><span>투자정보</span></a><button class="btn-submenu">하위메뉴 보기</button>
-                    <ul class="gnb__depth2">
-                        <li><a href=""><span>재무정보</span></a></li>
-                        <li><a href=""><span>배당현황</span></a></li>
-                        <li><a href=""><span>공시정보</span></a></li>
-                        <li><a href=""><span>IR News</span></a></li>
-                        <li><a href=""><span>Contact IR</span></a></li>
-                    </ul>
-                </li>
-                <li><a href=""><span>홍보센터</span></a><button class="btn-submenu">하위메뉴 보기</button>
-                    <ul class="gnb__depth2">
-                        <li><a href=""><span>물류상담서비스</span></a>
-                            <ul class="gnb__depth3">
-                                <li><a href=""><span>물류문의</span></a></li>
-                                <li><a href=""><span>파트너사문의</span></a></li>
-                            </ul>
-                        </li>
-                        <li><a href=""><span>언론보도</span></a></li>
-                        <li><a href=""><span>브로슈어</span></a></li>
-                        <li><a href=""><span>소셜미디어</span></a></li>
-                        <li><a href=""><span>인재채용</span></a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
     </header>
-    <section class="main-visual">
-        <div class="slide slide-slick1">
-            <div class="slide__item"></div>
-            <div class="slide__item"></div>
-            <div class="slide__item"></div>
-        </div>
-        <div class="main-title inner">
-            <h2 class="main__heading heading-level-2">
-                고객이 만족하는 최고의<br>
-                <b class="txt-style__gra">SCM Solution Provider</b>
-            </h2>
-        </div>
-    </section>
-    <section class="main-business">
-        <div class="inner">
-            <div class="main-title">
-                <h2 class="heading-level-2"><b>HANSOL </b>LOGISTICS</i></h2>
-                <h4 class="heading-level-4 txt-style__gra">BUSINESS AREA</h4>
-                <h3 class="heading-level-3"><b>고객의 성공 파트너 TPL 전문기업</b> 한솔로지스틱스</h3>
+    <div class="quick_menu">
+        <button class="btn_up">TOP</button>
+    </div>
+    <section class="visual">
+            <div class="slide fade">
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
-            <ul class="main-business__list">
-                <li class="main-business__item">
-                    <a href="" class="main-business__link">
-                        <div class="main-business__img"><span class="box-style__detail"></span></div>
-                        <i class="main-business__item__title-en">Global Logistics</i>
-                        <h5 class="heading-level-5">글로벌물류</h5>
-                        <p class="main-business__item__txt">
+            <div class="contentBox">
+                <h2>
+                    고객이 만족하는 최고의<br>
+                    <b class="txt_style1">SCM Solution Provider</b>
+                </h2>
+            </div>
+    </section>
+    <section class="section_business">
+        <div class="contentBox">
+            <h2>HANSOL <i>LOGISTICS</i></h2>
+            <h3 class="txt_style1">BUSINESS AREA</h3>
+            <p><strong>고객의 성공 파트너</strong><b>TPL 전문기업</b> 한솔로지스틱스</p>
+            <ul>
+                <li>
+                    <a href="">
+                        <div class="xi-search"><span></span></div>
+                        <i>Global Logistics</i>
+                        <h4>글로벌물류</h4>
+                        <p>
                             글로벌 물류네트워크 및 대규모 취급물량을 기반으로 산업·국가별 물류전문가가
                             현지에 특화된 3PL Solution을 제공합니다.
                         </p>
                     </a>
                 </li>
-                <li class="main-business__item">
-                    <a href="" class="main-business__link">
-                        <div class="main-business__img"><span class="box-style__detail"></span></div>
-                        <i class="main-business__item__title-en">Digital Truck Transportation</i>
-                        <h5 class="heading-level-5">디지털트럭운송</h5>
-                        <p class="main-business__item__txt">
+                <li>
+                    <a href="">
+                        <div><span></span></div>
+                        <i>Digital Truck Transportation</i>
+                        <h4>디지털트럭운송</h4>
+                        <p>
                             전국 운송네트워크와 풍부한 운송자원을 활용하여 직접배차 서비스가 가능한
                             Digital 트럭운송 Solution을 제공합니다.
                         </p>
                     </a>
                 </li>
-                <li class="main-business__item">
-                    <a href="" class="main-business__link">
-                        <div class="main-business__img"><span class="box-style__detail"></span></div>
-                        <i class="main-business__item__title-en">Container Transportation</i>
-                        <h5 class="heading-level-5">컨테이너운송</h5>
-                        <p class="main-business__item__txt">
+                <li>
+                    <a href="">
+                        <div><span></span></div>
+                        <i>Container Transportation</i>
+                        <h4>컨테이너운송</h4>
+                        <p>
                             최적의 컨테이너운송 플래닝을 통해 수요와 공급을 조절하여 Waste를 최소화할 수 있는 컨테이너운송 Solution을 제공합니다.
                         </p>
                     </a>
                 </li>
-                <li class="main-business__item">
-                    <a href="" class="main-business__link">
-                        <div class="main-business__img"><span class="box-style__detail"></span></div>
-                        <i class="main-business__item__title-en">Warehouse & Distribution</i>
-                        <h5 class="heading-level-5">W&D</h5>
-                        <p class="main-business__item__txt">
+                <li>
+                    <a href="">
+                        <div><span></span></div>
+                        <i>Warehouse & Distribution</i>
+                        <h4>W&D</h4>
+                        <p>
                             다양한 산업의 운영경험과 확장성을 갖춘 대형물류센터를 활용하여 B2B·B2C 고객에게 Total W&D Solution을 제공합니다.
                         </p>
                     </a>
                 </li>
-                <li class="main-business__item">
-                    <a href="" class="main-business__link">
-                        <div class="main-business__img"><span class="box-style__detail"></span></div>
-                        <i class="main-business__item__title-en">SCM Consulting</i>
-                        <h5 class="heading-level-5">물류컨설팅</h5>
-                        <p class="main-business__item__txt">
+                <li>
+                    <a href="">
+                        <div><span></span></div>
+                        <i>SCM Consulting</i>
+                        <h4>물류컨설팅</h4>
+                        <p>
                             산업별 물류전문가 및 운영 Know-how로 자체 개발한 Consulting Solution을 활용하여 고객의 Pain Points를 해결합니다.
                         </p>
                     </a>
@@ -261,283 +173,234 @@
             </ul>
         </div>
     </section>
-    <section class="main-esg">
-        <div class="inner">
-            <div class="main-title">
-                <h4 class="heading-level-4 txt-style__gra">ESG MANAGEMENT</h4>
-                <h3 class="heading-level-3">
-                    전사 차원의 체계적인 ESG활동을 통해<br>
-                    <b>환경적, 사회적, 경제적 책임을 다하는</b> 한솔로지스틱스
-                </h3>
-            </div>
-            <ul class="main-esg__list">
-                <li class="main-esg__item">
+    <section class="section_esg">
+        <div class="contentBox">
+            <h3 class="txt_style1">ESG MANAGEMENT</h3>
+            <p>
+                전사 차원의 체계적인 ESG활동을 통해<br>
+                <strong>환경적, 사회적, 경제적 책임을 다하는</strong> 한솔로지스틱스
+            </p>
+            <ul>
+                <li>
                     <i class="xi-users-o"></i>
-                    <h5 class="main-esg__title heading-level-5">기업지배구조</h5>
-                    <span class="main-esg__title-en">Corporate Governance</span>
-                    <a href="" class="btn-style__border">MORE DETAILS</a>
+                    <p>기업지배구조</p>
+                    <span>Corporate Governance</span>
+                    <a href="">MORE DETAILS</a>
                 </li>
-                <li class="main-esg__item">
+                <li>
                     <i class="xi-briefcase"></i>
-                    <h5 class="main-esg__title heading-level-5">사회책임경영</h5>
-                    <span class="main-esg__title-en">Corporate Social Responsibility</span>
-                    <a href="" class="btn-style__border">MORE DETAILS</a>
+                    <p>사회책임경영</p>
+                    <span>Corporate Social Responsibility</span>
+                    <a href="">MORE DETAILS</a>
                 </li>
-                <li class="main-esg__item">
+                <li>
                     <i class="xi-chart-line"></i>
-                    <h5 class="main-esg__title heading-level-5">ESG평가등급</h5>
-                    <span class="main-esg__title-en">ESG Evaluation</span>
-                    <a href="" class="btn-style__border">MORE DETAILS</a>
+                    <p>ESG평가등급</p>
+                    <span>ESG Evaluation</span>
+                    <a href="">MORE DETAILS</a>
                 </li>
             </ul>
         </div>
     </section>
-    <section class="main-ir">
-        <div class="inner">
-            <div class="main-title">
-                <h4 class="heading-level-4 txt-style__gra">IR INFORMATION</h4>
-                <h3 class="heading-level-3">
+    <section class="section_ir">
+        <div class="contentBox">
+            <div class="title">
+                <h3 class="txt_style1">IR INFORMATION</h3>
+                <p>
                     투명한 투자정보 공개를 바탕으로<br>
-                    <b>정도경영 실현을 꿈꾸는</b> 한솔로지스틱스
-                </h3>
+                    <strong>정도경영 실현을 꿈꾸는</strong> 한솔로지스틱스
+                </p>
             </div>
-            <div class="main_ir__side">
-                <article class="article">
-                    <a href="" class="article__link">
-                        <div class="article__wrap">
-                            <h5 class="article__title heading-level-5">재무정보</h5>
-                            <p class="article__txt">
+            <ul>
+                <li>
+                    <a href="">     
+                        <div>
+                            <b>재무정보</b>
+                            <p>
                                 한솔로지스틱스의 고객중심 비전
                                 “고객이 만족하는 최고의 SCM Provider”
                                 실현과 함께 주주가치를 극대화하겠습니다.
                             </p>
-                            <span class="box-style__detail"></span>
-                        </div>
+                            <span></span>
+                        </div>                   
                     </a>
-                </article>
-                <article class="article">
-                    <a href="" class="article__link">
-                        <div class="article__wrap">
-                            <h5 class="article__title heading-level-5">Contact IR</h5>
-                            <p class="article__txt">
+                </li>
+                <li>
+                    <a href="">                        
+                        <div>
+                            <b>Contact IR</b>
+                            <p>
                                 한솔로지스틱스 IR과 관련된 문의는
                                 전화 또는 홈페이지 문의를 통해
                                 친절하고 신속하게 상담해 드리겠습니다.
                             </p>
-                            <span class="box-style__detail"></span>
+                            <span></span>
                         </div>
                     </a>
-                </article>
-            </div>
-            <div class="main-ir__news">
-                <h5 class="main-ir__news__title heading-level-5">IR News</h5>
-                <p class="main-ir__news__txt">한솔로지스틱스의 새로운 IR 소식을 안내드립니다.</p>
-                <div class="main-ir__news__wrap">
-                    <ul class="main-ir__list slide-slick2">
-                        <li class="main-ir__item">
-                            <a href="" class="main-ir__item__link">
-                                <b class="main-ir__item__title">[종목체크] 'LG이노텍‧비스토스‧한솔로지스틱스'…기대에 부응할까</b>
-                                <p class="main-ir__item__text">이날 한화투자증권은 한솔로지스틱스에 대해 아시아 외에 북미, 유럽 등으로 물류 범위 확장에 집중하고 있어 시장 성장에 따른 수혜가 기대된다는 분석을
-                                    제시했다.</p>
-                                <i class="date">2022.12.07</i>
+                </li>
+            </ul>
+            <div class="article_ir">
+                <h4>IR News</h4>
+                <p>한솔로지스틱스의 새로운 IR 소식을 안내드립니다.</p>
+                 <div>
+                     <ul class="slides slick-slider1">
+                        <li>
+                            <a href="">
+                                <b>[종목체크] 'LG이노텍‧비스토스‧한솔로지스틱스'…기대에 부응할까</b>
+                                <p>이날 한화투자증권은 한솔로지스틱스에 대해 아시아 외에 북미, 유럽 등으로 물류 범위 확장에 집중하고 있어 시장 성장에 따른 수혜가 기대된다는 분석을 제시했다.</p>
+                                <i>2022.12.07</i>
                             </a>
                         </li>
-                        <li class="main-ir__item">
-                            <a href="" class="main-ir__item__link">
-                                <b class="main-ir__item__title">[종목체크] 'LG이노텍‧비스토스‧한솔로지스틱스'…기대에 부응할까</b>
-                                <p class="main-ir__item__text">이날 한화투자증권은 한솔로지스틱스에 대해 아시아 외에 북미, 유럽 등으로 물류 범위 확장에 집중하고 있어 시장 성장에 따른 수혜가 기대된다는 분석을
-                                    제시했다.</p>
-                                <i class="date">2022.12.07</i>
+                        <li>
+                            <a href="">
+                                <b>[종목체크] 'LG이노텍‧비스토스‧한솔로지스틱스'…기대에 부응할까</b>
+                                <p>이날 한화투자증권은 한솔로지스틱스에 대해 아시아 외에 북미, 유럽 등으로 물류 범위 확장에 집중하고 있어 시장 성장에 따른 수혜가 기대된다는 분석을 제시했다.</p>
+                                <i>2022.12.07</i>
                             </a>
                         </li>
-                        <li class="main-ir__item">
-                            <a href="" class="main-ir__item__link">
-                                <b class="main-ir__item__title">[종목체크] 'LG이노텍‧비스토스‧한솔로지스틱스'…기대에 부응할까</b>
-                                <p class="main-ir__item__text">이날 한화투자증권은 한솔로지스틱스에 대해 아시아 외에 북미, 유럽 등으로 물류 범위 확장에 집중하고 있어 시장 성장에 따른 수혜가 기대된다는 분석을
-                                    제시했다.</p>
-                                <i class="date">2022.12.07</i>
+                        <li>
+                            <a href="">
+                                <b>[종목체크] 'LG이노텍‧비스토스‧한솔로지스틱스'…기대에 부응할까</b>
+                                <p>이날 한화투자증권은 한솔로지스틱스에 대해 아시아 외에 북미, 유럽 등으로 물류 범위 확장에 집중하고 있어 시장 성장에 따른 수혜가 기대된다는 분석을 제시했다.</p>
+                                <i>2022.12.07</i>
                             </a>
                         </li>
-                        <li class="main-ir__item">
-                            <a href="" class="main-ir__item__link">
-                                <b class="main-ir__item__title">[종목체크] 'LG이노텍‧비스토스‧한솔로지스틱스'…기대에 부응할까</b>
-                                <p class="main-ir__item__text">이날 한화투자증권은 한솔로지스틱스에 대해 아시아 외에 북미, 유럽 등으로 물류 범위 확장에 집중하고 있어 시장 성장에 따른 수혜가 기대된다는 분석을
-                                    제시했다.</p>
-                                <i class="date">2022.12.07</i>
+                        <li>
+                            <a href="">
+                                <b>[종목체크] 'LG이노텍‧비스토스‧한솔로지스틱스'…기대에 부응할까</b>
+                                <p>이날 한화투자증권은 한솔로지스틱스에 대해 아시아 외에 북미, 유럽 등으로 물류 범위 확장에 집중하고 있어 시장 성장에 따른 수혜가 기대된다는 분석을 제시했다.</p>
+                                <i>2022.12.07</i>
                             </a>
                         </li>
-                        <li class="main-ir__item">
-                            <a href="" class="main-ir__item__link">
-                                <b class="main-ir__item__title">[종목체크] 'LG이노텍‧비스토스‧한솔로지스틱스'…기대에 부응할까</b>
-                                <p class="main-ir__item__text">이날 한화투자증권은 한솔로지스틱스에 대해 아시아 외에 북미, 유럽 등으로 물류 범위 확장에 집중하고 있어 시장 성장에 따른 수혜가 기대된다는 분석을
-                                    제시했다.</p>
-                                <i class="date">2022.12.07</i>
+                        <li>
+                            <a href="">
+                                <b>[종목체크] 'LG이노텍‧비스토스‧한솔로지스틱스'…기대에 부응할까</b>
+                                <p>이날 한화투자증권은 한솔로지스틱스에 대해 아시아 외에 북미, 유럽 등으로 물류 범위 확장에 집중하고 있어 시장 성장에 따른 수혜가 기대된다는 분석을 제시했다.</p>
+                                <i>2022.12.07</i>
                             </a>
                         </li>
-                        <li class="main-ir__item">
-                            <a href="" class="main-ir__item__link">
-                                <b class="main-ir__item__title">[종목체크] 'LG이노텍‧비스토스‧한솔로지스틱스'…기대에 부응할까</b>
-                                <p class="main-ir__item__text">이날 한화투자증권은 한솔로지스틱스에 대해 아시아 외에 북미, 유럽 등으로 물류 범위 확장에 집중하고 있어 시장 성장에 따른 수혜가 기대된다는 분석을
-                                    제시했다.</p>
-                                <i class="date date">2022.12.07</i>
+                        <li>
+                            <a href="">
+                                <b>[종목체크] 'LG이노텍‧비스토스‧한솔로지스틱스'…기대에 부응할까</b>
+                                <p>이날 한화투자증권은 한솔로지스틱스에 대해 아시아 외에 북미, 유럽 등으로 물류 범위 확장에 집중하고 있어 시장 성장에 따른 수혜가 기대된다는 분석을 제시했다.</p>
+                                <i>2022.12.07</i>
                             </a>
                         </li>
                     </ul>
-                </div>
+                </div> 
                 <a href="" class="btn_detail">MORE DETAILS</a>
             </div>
         </div>
     </section>
-    <section class="main-pr">
-        <div class="inner">
-            <div class="main-title">
-                <h4 class="heading-level-4 txt-style__gra">PR CENTER</h4>
-                <h3 class="heading-level-3">
-                    고객이 만족하는 최고의<br>
-                    <b>Solution Provider</b> 한솔로지스틱스!
-                </h3>
-            </div>
-            <div class="main-pr__wrap">
-                <article class="main-pr__media article">
-                    <div class="tab">
-                        <div class="tab__title article__title">
+    <section class="section_pr">
+        <div class="contentBox">
+            <h3 class="txt_style1">PR CENTER</h3>
+            <p>
+                고객이 만족하는 최고의<br>
+                <strong>Solution Provider</strong> 한솔로지스틱스!
+            </p>
+            <div class="flex">
+                <div class="article_sns">
+                    <ul class="title">
+                        <li class="active"><button>언론보도</button></li>
+                        <li><button>소셜미디어</button></li>
+                    </ul>
+                    <ul class="content">
+                        <li class="main">
+                            <a href="">
+                                <span><img src="images/holings_221221.jpg" alt=""></span>
+                                <i>2022-12-21</i>
+                                <b>한솔그룹, 장애인 특화 재택근무 고용 플랫폼 도입</b>
+                                <p>한솔그룹이 장애인을 대상으로 재택근무 형태의 고용을 실행하는 솔루션 플랫폼을 도입한다고 21일 밝혔다. 해당 플랫폼은 최근 ESG(환경·사회·지배구조) 경영의 중요성이 높아지고 있는 상황에서 기업의 사회적 책임을 다하는 한편 장애인들의 재택근무를 통해 기업과 장애인이 '윈윈' 한다는 취지를 담고있다.</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <b>(한솔로지스틱스 수상) 관세청, '2022 AEO 활용사례 나눔대회' 개최</b>
+                                <i>2022-12-07</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <b>(대한민국정책브리핑) 2022 수출입 안전관리 우수업체(AEO) 활용사례 나눔대회 개최</b>
+                                <i>2022-12-07</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <b>디지털 트럭 화물 운송 기업 ‘로지스마일’, 전국구 서비스 구축 ‘시동’</b>
+                                <i>2022-11-23</i>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="" class="btn_more">더보기</a>
+                </div>
+                <div class="article_brochure">
+                    <b>브로슈어</b>
+                    <div class="flex">
+                        <div><img src="images/main_brochure_img.jpg" alt=""></div>
+                        <div>
+                            <p><strong>한솔로지스틱스 </strong><i>브로슈어 다운로드</i></p>
                             <ul>
-                                <li class="tab__title__item"><h5><button class="article__title__txt tab__title__btn active">언론보도</button></h5></li>
-                                <li class="tab__title__item"><h5><button class="article__title__txt tab__title__btn">소셜미디어</button></h5></li>
-                            </ul>
-                        </div>
-                        <div class="tab__content article__content">
-                            <ul class="tab__list active">
-                                <li class="tab__list__item main">
-                                    <a href="" class="tab__list__link">
-                                        <span class="tab__list__img"><img src="images/holings_221221.jpg" alt="" class="tab__list__img-src"></span>
-                                        <i class="date">2022-12-21</i>
-                                        <b class="tab__list__title">한솔그룹, 장애인 특화 재택근무 고용 플랫폼 도입</b>
-                                        <p class="tab__list__txt">한솔그룹이 장애인을 대상으로 재택근무 형태의 고용을 실행하는 솔루션 플랫폼을 도입한다고 21일 밝혔다. 해당 플랫폼은 최근
-                                            ESG(환경·사회·지배구조) 경영의 중요성이 높아지고 있는 상황에서 기업의 사회적 책임을 다하는 한편 장애인들의 재택근무를 통해 기업과
-                                            장애인이 '윈윈' 한다는 취지를 담고있다.</p>
-                                    </a>
-                                </li>
-                                <li class="main-pr__item">
-                                    <a href="" class="tab__list__link">
-                                        <b class="tab__list__txt">(한솔로지스틱스 수상) 관세청, '2022 AEO 활용사례 나눔대회' 개최</b>
-                                        <i class="date">2022-12-07</i>
-                                    </a>
-                                </li>
-                                <li class="main-pr__item">
-                                    <a href="" class="tab__list__link">
-                                        <b class="tab__list__txt">(대한민국정책브리핑) 2022 수출입 안전관리 우수업체(AEO) 활용사례 나눔대회 개최</b>
-                                        <i class="date">2022-12-07</i>
-                                    </a>
-                                </li>
-                                <li class="main-pr__item">
-                                    <a href="" class="tab__list__link">
-                                        <b class="tab__list__txt">디지털 트럭 화물 운송 기업 ‘로지스마일’, 전국구 서비스 구축 ‘시동’</b>
-                                        <i class="date">2022-11-23</i>
-                                    </a>
-                                </li>
-                            </ul>
-                            <ul class="tab__list">
-                                <li class="tab__list__item .main">
-                                    <a href="" class="tab__list__link">
-                                        <span class="tab__list__img"><img src="images/thumb_07.jpg" alt="" class="tab__list__img-src"></span>
-                                        <i class="date">2022-04-14</i>
-                                        <b class="tab__list__title">이곳이 꿈의 직장...? 한솔로지스틱스 사내 축구 동호회 V-LOG⚽</b>
-                                        <p class="tab__list__txt">#한솔 #한솔로지스틱스 #조직문화</p>
-                                    </a>
-                                </li>
-                                <li class="main-pr__item">
-                                    <a href="" class="tab__list__link">
-                                        <b class="tab__list__txt">한솔로지스틱스 : 한솔人 필수코스 모음ZIP. 중부권 메가시티 대전 편</b>
-                                        <i class="date">2022-09-01</i>
-                                    </a>
-                                </li>
-                                <li class="main-pr__item">
-                                    <a href="" class="tab__list__link">
-                                        <b class="tab__list__txt">한솔로지스틱스 : 직원의, 직원을 위한, 직원에 의한 안전한 사업장 만들기</b>
-                                        <i class="date">2022-03-23</i>
-                                    </a>
-                                </li>
-                                <li class="main-pr__item">
-                                    <a href="" class="tab__list__link">
-                                        <b class="tab__list__txt">[한솔 로지스틱스] 한솔 로지스틱스의 다섯 새싹들 31기 인턴의 하루 현장 교육 부터 센터에서의 출퇴근까지</b>
-                                        <i class="date">2021-08-06</i>
-                                    </a>
-                                </li>
+                                <li><button>국문 다운로드</button></li>
+                                <li><button>영문 다운로드</button></li>
+                                <li><button>중문 다운로드</button></li>
                             </ul>
                         </div>
                     </div>
-                    <a href="" class="btn-style__border icon__more">더보기</a>
-                </article>
-                <article class="main-pr__brochure article">
-                    <div class="article__title">
-                        <h5 class="article__title__txt">브로슈어</h5>
-                    </div>
-                    <div class="article__content">
-                        <div class="article__content__item"><img src="images/main_brochure_img.jpg" alt="" class="main-pr__brochure__img"></div>
-                        <div class="article__content__item">
-                            <p class="main-pr__brochure__txt"><strong>한솔로지스틱스 </strong><br>브로슈어 다운로드</p>
-                            <ul>
-                                <li><button class="btn-style__border icon__download">국문 다운로드</button></li>
-                                <li><button class="btn-style__border icon__download">영문 다운로드</button></li>
-                                <li><button class="btn-style__border icon__download">중문 다운로드</button></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <a href="" class="btn-style__border icon__more">더보기</a>
-                </article>
+                    <a href="" class="btn_more">더보기</a>
+                </div>
             </div>
         </div>
     </section>
-    <section class="main-etc">
-        <article class="main-etc__service article">
-            <h5 class="heading-level-5">물류상담 서비스</h5>
-            <p class="article__txt">
+    <section class="section_etc">
+        <article class="article_service">
+            <h3>물류상담 서비스</h3>
+            <p>
                 온라인을 통해 다양한 물류관련 문의와<br>
                 파트너 상담을 이용해보세요.
             </p>
-            <span class="article__btn-group">
-                <a href="" class="icon__more btn-style__border">물류 문의 바로가기</a>
-                <a href="" class="icon__more btn-style__border">파트너 모집 바로가기</a>
+            <span>
+                <a href="">물류 문의 바로가기</a>
+                <a href="">파트너 모집 바로가기</a>
             </span>
         </article>
-        <article class="main-etc__recruit article">
-            <h5 class="heading-level-5">인재채용</h5>
-            <p class="article__txt">
+        <article class="article_recruit">
+            <h3>인재채용</h3>
+            <p>
                 한솔로지스틱스에서 무한한 가능성을 키우고<br>
                 이상을 마음껏 펼쳐보세요.
             </p>
-            <span class="article__btn-group">
-                <a href="" class="btn-style__border icon__more">채용절차 바로가기</a>
-                <a href="" class="btn-style__border icon__more">채용공고 바로가기</a>
+            <span>
+                <a href="">채용절차 바로가기</a>
+                <a href="">채용공고 바로가기</a>
             </span>
         </article>
     </section>
-    <footer class="footer">
-        <div class="inner">
-            <div class="logo"></div>
-            <div class="footer__top">
-                <ul class="footer__list">
-                    <li class="footer__list__item"><a href="" class="footer__list__link">이용약관</a></li>
-                    <li class="footer__list__item"><a href="" class="footer__list__link">개인정보처리방침</a></li>
-                    <li class="footer__list__item"><a href="" class="footer__list__link">이메일무단수집거부</a></li>
+    <footer>
+        <div>
+            <div class="footer_top">
+                <ul class="footer_nav">
+                    <li><a href="">이용약관</a></li>
+                    <li><a href="">개인정보처리방침</a></li>
+                    <li><a href="">이메일무단수집거부</a></li>
                 </ul>
             </div>
-            <div class="footer__bottom">
+            <div class="footer_bottom">
                 <div>
-                    <ul class="foot__company footer__list">
-                        <li class="footer__list__item">한솔로지스틱스㈜</li>
-                        <li class="footer__list__item">사업자등록번호 : 102-81-41359</li>
+                    <ul class="footer_company">
+                        <li>한솔로지스틱스㈜</li>
+                        <li>사업자등록번호 : 102-81-41359</li>
                     </ul>
-                    <ul class="footer__list">
-                        <li class="footer__list__item">서울특별시 중구 을지로 100(을지로2가, 파인에비뉴 B동) 22층</li>
-                        <li class="footer__list__item">TEL : 02-3287-7400</li>
-                        <li class="footer__list__item">FAX : 02-6031-0981</li>
+                    <ul class="footer_info">
+                        <li>서울특별시 중구 을지로 100(을지로2가, 파인에비뉴 B동) 22층</li>
+                        <li>TEL : 02-3287-7400</li>
+                        <li>FAX : 02-6031-0981</li>
                     </ul>
-                    <p class="footer__copyright">Copyright © 2022 Hansol Logistics Co,.Ltd All Rights Reserved.</p>
+                    <p>Copyright © 2022 Hansol Logistics Co,.Ltd All Rights Reserved.</p>
                 </div>
                 <div>
-                    <select class="footer__site">
+                    <select>
                         <option>한솔그룹</option>
                         <option>한솔제지</option>
                         <option>한솔PNS</option>
@@ -551,9 +414,5 @@
             </div>
         </div>
     </footer>
-    <div class="quick_menu">
-        <button class="btn_up">TOP</button>
-    </div>
 </body>
-
 </html>
