@@ -1,77 +1,87 @@
+.inner { margin: 0 auto; width: 100%; max-width: 1240px; padding: 0 20px; box-sizing: border-box;}
+.clear::after { content: ""; display: block; clear: both;}
+.box-style__line { border: 1px solid #e4e8eb;}
+.btn-style__default { display: inline-block; width: 100%; height: 56px; line-height: 56px; background-color: #9da1a5; font-size: 17px; color: #fefefe; font-weight: 600;}
+.chb-style__box input { position: absolute; left: -5000px;}
+.chb-style__box label { position: relative; padding: 0 0 0 30px; }
+.chb-style__box label::before { position: absolute; content:""; left: 0; top:0; width: 20px; height: 20px; border: 1px solid #d9d9d9;}
+.chb-style__box input:checked + label::before { position: absolute; content:""; left: 0; top:0; width: 20px; height: 20px; border: 1px solid #34b4ed; background: url(images/ico_check2_off.png) no-repeat left 4px top 50%;}
+
 /** 헤더 **/
-header { position: absolute; top: 0; z-index: 100; width: 100%; height: 113px;}
-header .header_menubar { position: relative; margin: 0 auto; padding: 48px 0 0; width: 1200px; font-weight: 500; box-sizing: border-box;}
-header .btn_logo { display: inline-block; position: absolute; top:48px; left:0; width: 87px; height: auto; background-color: transparent;}
-header nav { width: 1200px; text-align: center;}
+header { position: absolute; top: 0; z-index: 200; width: 100%; height: 113px;}
+header .menubar { position: relative; padding-top: 48px; font-weight: 500;}
+header .link-logo { display: inline-block; position: absolute; top:48px; left:20px; width: 87px; height: auto; background-color: transparent;}
+header nav { padding: 0 220px 0 90px; max-width: 1200px; text-align: center; box-sizing: border-box;}
 header nav ul li { display: inline-block;}
-header nav ul li a {padding: 0 25px; line-height: 40px; font-size: 21px; color: #fff;}
-header .menu { display: inline-block; position: absolute; top:48px; right: 0; font-size: 15px;}
+header nav ul li a { display: inline-block; width: 130px; line-height: 40px; font-size: 21px; color: #fff;}
+header .menu { display: inline-block; position: absolute; top:48px; right: 20px; font-size: 15px;}
 header .menu button, 
-header .menu a { display: inline-block; margin: 0 0 0 17px; width: 40px; height: 40px;}
-header .menu .btn_mypage { background: url(images/ico_mypage.png) no-repeat center / auto 25px; }
-header .menu .btn_search {  background: url(images/ico_search.png) no-repeat center / auto 25px; }
-header .menu .btn_menu { padding: 0 0 0 38px; width: auto; color: #fff; font-size: 15px; line-height: 40px; background: url(images/ico_menu.png) no-repeat left 0 center / 25px auto;}
-header .util { position: absolute; top: 5px; right: 0;}
+header .menu a { display: inline-block; margin-left: 17px; width: 40px; height: 40px;}
+header .menu .btn-mypage { background: url(images/ico_mypage.png) no-repeat center / auto 25px; }
+header .menu .btn-search {  background: url(images/ico_search.png) no-repeat center / auto 25px; }
+header .menu .btn-menu { padding: 0 0 0 38px; width: auto; color: #fff; font-size: 15px; line-height: 40px; background: url(images/ico_menu.png) no-repeat left 0 center / 25px auto;}
+header .util { position: absolute; top: 5px; right: 20px;}
 header .util ul li { float: left;}
 header .util ul li button, 
-header .util ul li a { display: block; margin: 0 0 0 15px; color: white; background-color: transparent; font-size: 13px; line-height: 43px; box-sizing: border-box;}
+header .util ul li a { display: block; margin-left: 15px; color: white; background-color: transparent; font-size: 13px; line-height: 43px; box-sizing: border-box;}
 
 
 /** 헤더 팝업창 **/
-.popup { display: none; position: absolute; z-index: 999; left: 0; top: 113px; width: 100%; height: 100vh;}
-.popup_bg { width: 100%; height: 100vh; background-color: rgba(0,0,0,.6); box-sizing: border-box;}
-/** 헤더 팝업창 - 검색 **/
-.popup_search { display: none; position: absolute; left: 0; top: 0; width: 100%; background-color: #fff;}
-.popup_search div { position: relative; margin: 0 auto; padding: 0 106px; height: 72px; line-height: 72px; width: 1200px; box-sizing: border-box;}
-.popup_search div input[type="text"] { padding: 0 0 0 38px; width: calc( 100% - 40px); height: 30px; font-size: 19px; color: #676767; background: url(images/ico_search3.png) no-repeat 0 center / 20px auto; box-sizing: border-box;}
-.popup_search div .btn_search { width: 30px; height: 30px; background: url(images/bu_arrow_right5.png) no-repeat center / auto 15px; font-size: 0;}
-.popup_search div .btn_close { position: absolute; right: 0; top: 50%; padding: 20px 0 0; width: 30px; height: 30px; transform: translateY(-50%); background: url(images/btn_close.png) no-repeat center top / 14px auto; font-size: 11px; color: #404040; box-sizing: border-box;}
-/** 헤더 팝업창 - 전체메뉴 **/
-.popup_magamenu { display: none; position: absolute; left: 0; top: -113px; width: 100%; height: 100%; overflow: auto; background-color: #3f0cac;}
-.menu_header { width: 1200px; margin: 0 auto; padding: 0 90px; height: 113px; line-height: 113px; box-sizing: border-box;}
-.menu_header div:first-child { float: left;}
-.menu_header div:last-child { float: right;}
-.menu_header strong { display: inline-block; font-size: 28px; color: #fff;}
-.menu_header .btn_close { width: 22px; height: 22px; background: url(images/btn_close2.png) no-repeat center / 22px auto ; font-size: 0;}
-.menu_list { padding: 0 0 62px; background-color: #fff; }
-.menu_list .menu_depth1 { margin: 0 auto; padding: 0 90px; width: 1200px; box-sizing: border-box;}
-.menu_list .menu_depth1 > li { position: relative; padding: 38px 0 30px 190px; border-bottom: 1px solid #dadada;}
-.menu_list .menu_depth1 > li b { position: absolute; left: 0; top: 38px; font-size: 28px;}
-.menu_list .menu_depth2 > li { display: inline-block; width: 163px; vertical-align: top;}
-.menu_list .menu_depth2 > li > a { display: inline-block; margin: 0 0 13px; font-size: 18px; color: #000; font-weight: bold; line-height: 28px;}
-.menu_list .menu_depth2 > li > a i,
-.menu_list .menu_depth3 > li > a i { color: #e65338;}
-.menu_list .menu_depth3 > li > a { font-size: 13px; color: #000; line-height: 28px;}
+.popup { display: none; position: absolute; z-index: 999; left: 0; top: 113px; width: 100%; height: 100vh; background-color: rgba(0,0,0,.6);}
+.popup.active { display: block;}
+    /** 검색박스 **/
+.search-box { display: none; position: absolute; left: 0; top: 0; width: 100%; background-color: #fff;}
+.search-box.active { display: block;}
+.search-box .inner { padding-top: 20px; padding-bottom: 20px; height: 70px; font-size: 0; box-sizing: border-box;}
+.search-box .inner div { display: inline-block; padding: 0 60px 0 110px; width: calc(100% - 30px); box-sizing: border-box;}
+.search-box input[type="text"] { padding: 0 0 0 38px; width: calc( 100% - 30px); height: 30px; font-size: 19px; color: #676767; background: url(images/ico_search3.png) no-repeat 0 center / 20px auto; box-sizing: border-box;}
+.search-box .btn-search { width: 30px; height: 30px; background: url(images/bu_arrow_right5.png) no-repeat center / auto 15px; font-size: 0;}
+.search-box .btn-close { padding-top: 15px; width: 30px; height: 30px; background: url(images/btn_close.png) no-repeat center top / 14px auto; font-size: 11px; color: #404040; box-sizing: border-box;}
+    /** 전체메뉴 **/
+.megamenu { display: none; position: absolute; left: 0; top: -113px; width: 100%; overflow: auto; background-color: #3f0cac;}
+.megamenu.active { display: block; height: 100%; overflow: hidden;}
+.megamenu__header .inner { padding: 30px 110px; height: 113px; line-height: 50px; box-sizing: border-box;}
+.megamenu__header strong { display: inline-block; float: left; font-size: 28px; color: #fff;}
+.megamenu__header .btn-close { float: right; width: 50px; height: 50px; background: url(images/btn_close2.png) no-repeat center / 22px auto ; font-size: 0;}
+.megamenu__list { padding: 0 0 62px; height: 100%; background-color: #fff; overflow: scroll; box-sizing: border-box;}
+.megamenu__list .inner { padding: 0 110px; }
+.megamenu__list .depth1 > li { position: relative; padding: 38px 0 30px 190px; border-bottom: 1px solid #dadada;}
+.megamenu__list .depth1 > li b { position: absolute; left: 0; top: 38px; font-size: 28px;}
+.megamenu__list .depth2 > li { display: inline-block; margin-right: 10px; width: 150px; vertical-align: top;}
+.megamenu__list .depth2 > li > a { display: inline-block; margin: 0 0 13px; font-size: 18px; color: #000; font-weight: bold; line-height: 28px;}
+.megamenu__list .depth2 > li > a i,
+.megamenu__list .depth3 > li > a i { color: #e65338;}
+.megamenu__list .depth3 > li > a { font-size: 13px; color: #000; line-height: 28px;}
 
 
-
-/** 퀵 **/
-.quickmenu { position: fixed; left: calc(50% + 630px); top: 50%; transform: translateY(-50%);}
+/** 퀵메뉴 **/
+.quickmenu { position: fixed; z-index: 100; right: 55px; top: 50%; transform: translateY(-50%);}
 .quickmenu button { display: block; margin: 0 0 10px; width: 60px; height: 60px; border-radius: 30px; box-shadow: 0px 4px 10px rgba(4,0,0,0.27);}
-.quickmenu .btn_up { padding: 24px 0 0; font-size: 14px; border: 1px solid #e9ecf1; background: url(images/bu_arrow_up.png) no-repeat top 17px left 50% white; font-weight: 600; line-height: 1;}
-.quickmenu .btn_alarm { background: url(images/ico_alarm.png) no-repeat top 50% left 50% white;}
+.quickmenu .btn-up { padding: 24px 0 0; font-size: 14px; border: 1px solid #e9ecf1; background: url(images/bu_arrow_up.png) no-repeat top 17px left 50% white; font-weight: 600; line-height: 1;}
+.quickmenu .btn-alarm { background: url(images/ico_alarm.png) no-repeat top 50% left 50% white;}
 
 
 /** 푸터 **/
-footer { margin: 0 0 80px;}
-.stock { height: 72px; text-align: center; background-color: #0a1f55;}
-.stock p { display: inline-block; padding: 0 0 0 30px; font-size: 19px; color: #1dddfd; line-height: 72px; background: url(images/ico_footer_clock.png) no-repeat top 50% left;} 
-
-.tel_list { height: 67px; background-color: #f4f4f4; color: #081b50;}
-.tel_list ul { margin: 0 auto;    display: flex; flex-direction: row; justify-content: space-between; width: 1200px;}
-.tel_list ul li { line-height: 67px;}
-
-.footer { position: relative; margin: 0 auto; width: 1200px; font-size: 15px; font-weight: 600;}
-.footer_nav { padding: 16px 0;}
-.footer_nav li { float: left;}
-.footer_nav li a { margin: 0 25px 0 0; line-height: 48px; color: #000;}
-.footer_sns { position: absolute; top:16px; right: 0;}
-.footer_sns li { float: left; }
-.footer_sns li button { margin: 0 0 0 15px; width: 48px; height: 48px; background-color: transparent;}
-
-.footer_address { padding: 0 0 0 220px; text-align: left;  background: url(images/bg_logo2.png) no-repeat top 0 left 0; box-sizing: border-box;}
-.footer_address li { display: inline-block; padding: 0 20px 0 0; }
-.footer_address li,
-.footer_address li a {font-size: 13px; line-height: 28px; color: #000;}
-.footer_address li.point a { color: #067fd9;}
-.footer_address p { font-size: 13px; color: #66666a; font-weight: 400; line-height: 28px; }
+footer { margin-bottom: 80px;}
+    /** 스톡배너 **/
+footer .stock { height: 72px; text-align: center; background-color: #0a1f55;}
+footer .stock p { display: inline; padding-left: 30px; line-height: 72px; font-size: 19px; color: #1dddfd; background: url(images/ico_footer_clock.png) no-repeat left center;} 
+footer .tel { height: 67px; background-color: #f4f4f4; color: #081b50;}
+    /** 문의번호 **/
+footer .tel ul { display: flex; flex-direction: row; justify-content: space-between; }
+footer .tel ul li { line-height: 67px;}
+    /** 푸터메뉴 **/
+.fnb { font-size: 15px; font-weight: 600;}
+.fnb .inner { position: relative;}
+.fnb__menu { padding: 16px 0;}
+.fnb__menu li { float: left; margin-right: 25px;}
+.fnb__menu li a { line-height: 48px; color: #000;}
+.fnb__sns { position: absolute; top:16px; right: 20px;}
+.fnb__sns li { float: left; }
+.fnb__sns li button { margin: 0 0 0 15px; width: 48px; height: 48px; background-color: transparent;}
+.fnb__copyright { padding-left: 220px; text-align: left;  background: url(images/bg_logo2.png) no-repeat left top; box-sizing: border-box;}
+.fnb__copyright li { display: inline-block; padding-right: 20px; }
+.fnb__copyright li,
+.fnb__copyright li a { font-size: 13px; line-height: 28px; color: #000;}
+.fnb__copyright li.point a { color: #067fd9;}
+.fnb__copyright p { line-height: 28px; font-size: 13px; color: #66666a; font-weight: 400; }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>로그인 | 리베금융</title>
+    <title>약관동의 | 리베금융</title>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <link rel="stylesheet" href="default.css">
     <link rel="stylesheet" href="style.css">
@@ -24,59 +24,75 @@
                     <ul>
                         <li><a href="index.html">홈</a></li>
                         <li><a href="">로그인/회원가입</a></li>
-                        <li><a href="">로그인</a></li>
+                        <li><a href="">모의고객 회원가입</a></li>
                     </ul>
                 </nav>
-                <h2>로그인</h2> 
-                <div class="tab-menu">
+                <h2>모의고객 회원가입</h2>
+                <div class="tab-menu inner">
                     <ul>
                         <li><button>모의고객</button></li>
                         <li class="active"><button>계좌고객</button></li>
                     </ul>
+                    <b>약관동의</b>
                 </div>
             </div>
         </div>
-        <div class="content-box login">
+        <div class="content-box agree">
             <div class="inner">
                 <div class="form-box">
-                    <form class="login__form">
+                    <form class="agree__form">
                         <fieldset>
-                            <legend>아이디, 비밀번호를 입력하는 로그인 서식</legend>
-                            <input type="text" placeholder="계좌고객 ID">
-                            <input type="password" placeholder="접속 비밀번호">
-                            <div class="chb-style__box">
-                                <input type="checkbox" id="chb1">
-                                <label for="chb1">ID 저장</label>
+                            <legend>약관동의</legend>
+                            <div class="check-term box-style__line">
+                                <div class="check-term__main">
+                                    <input type="checkbox" id="chb2">
+                                    <label for="chb2">서비스이용 약관</label>
+                                    <a href="">보기</a>
+                                </div>
+                            </div>
+                            <div class="check-term box-style__line">
+                                <div class="check-term__main">
+                                    <input type="checkbox" id="chb3">
+                                    <label for="chb3">개인(신용)정보 필수동의서(공통)</label>
+                                    <a href="">보기</a>
+                                </div>
+                                <div class="check-term__sub">
+                                    <div>
+                                        <input type="checkbox" id="chb3_1">
+                                        <label for="chb3_1">개인(신용정보) 수집·이용에 관한 사항</label>
+                                        <a href="">보기</a>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="chb3_2">
+                                        <label for="chb3_2">개인(신용)정보의 업무위탁에 관한 사항</label>
+                                        <a href="">보기</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="check-term box-style__line">
+                                <div class="check-term__main">
+                                    <input type="checkbox" id="chb4">
+                                    <label for="chb4">개인(신용)정보 선택동의서(공통)</label>
+                                    <a href="">보기</a>
+                                </div>
+                                <div class="check-term__sub">
+                                    <span class="chb-style__box">
+                                        <input type="checkbox" id="chb5">
+                                        <label for="chb5">전화</label>
+                                    </span>
+                                    <span class="chb-style__box">
+                                        <input type="checkbox" id="chb6">
+                                        <label for="chb6">문자(SMS)</label>
+                                    </span>
+                                    <span class="chb-style__box">
+                                        <input type="checkbox" id="chb7">
+                                        <label for="chb7">이메일</label>
+                                    </span>
+                                </div>
                             </div>
                         </fieldset>
                     </form>
-                    <a href="" class="btn-style__default">로그인</a>
-                    <ul class="form_forget">
-                        <li><a href="">계좌고객 ID 찾기</a></li>
-                        <li><a href="">접속 비밀번호 변경</a></li>
-                        <li><a href="">비대면계좌개설</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="info">
-                <div class="inner">
-                    <div class="title-bar active">
-                        <b>유의사항</b>
-                        <button class="btn-control on"></button>
-                    </div>
-                    <ul class="active">
-                        <li>
-                            <strong>모의고객이란?</strong>
-                            모의거래를 신청한 고객으로 실거래 계좌가 없어도 가입이가능합니다.
-                        </li>
-                        <li>
-                            <strong>계좌고객이란?</strong>
-                            리베선물 실거래 계좌를 보유한 고객입니다.
-                        </li>
-                        <li>
-                            <strong>비밀번호 5회 이상 오류로 아이디가 잠긴 경우 비밀번호 변경 후 접속이 가능합니다.</strong>
-                        </li>
-                    </ul>
+                    <a href="join-form.html" class="btn-next btn-style__default">다음</a>
                 </div>
             </div>
         </div>
@@ -84,8 +100,9 @@
             <button class="btn-up">위로</button>
             <button class="btn-alarm"></button>
         </div>
-    </main>
-    <footer>
+     </main>
+     
+     <footer>
         <div class="stock">
                 <p>국내선물/해외선물/FX(개인)    02-1234-5678 (24시간)</p>
         </div>
@@ -126,5 +143,6 @@
             </div>
         </div>
     </footer>
+    
 </body>
 </html>
