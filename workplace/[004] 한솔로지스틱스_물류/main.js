@@ -1,21 +1,7 @@
-$( document ).ready(function() {
+$(document).ready(function () {
 
-// header
-    $(window).scroll(function(){
-        if($(this).scrollTop() > 0){
-            $('header').css('background','rgba(0,0,0,.7)')
-        }else{
-            $('header').css('background','transparent')
-        }
-    })
-
-    $('.btn_up').click(function(){
-        window.scrollTo(0, 0)
-    })
-
-
-// slick 자동재생 슬라이드
-    $('.fade').slick({
+    // slick 자동재생 슬라이드
+    $('.slide-slick__fade').slick({
         dots: true,
         infinite: true,
         autoplay: true,
@@ -24,34 +10,60 @@ $( document ).ready(function() {
         fade: true,
         arrows: false,
         cssEase: 'linear'
-      });
+    });
 
     //slickdot innerhtml 변경
     const slickDots = document.getElementsByClassName('slick-dots')[0];
     const slickDot = slickDots.getElementsByTagName('button')
-    for(i=0; i<slickDot.length; i++){
-        slickDot[i].innerHTML = '0'+[i+1]
+    for (i = 0; i < slickDot.length; i++) {
+        slickDot[i].innerHTML = '0' + [i + 1]
     }
-    
-// slick 무한루프 슬라이드
-    $('.slick-slider1').slick({
+
+    // slick 무한루프 슬라이드
+    $('.slide-slick__card').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
-        dots: true,
-        responsive: 
-        [{ breakpoint: 1029, // 반응형: 1029px이하
-                settings: { slidesToShow:3
+        arrows: true,
+        dots: false,
+        responsive:
+            [{
+                breakpoint: 1640,
+                settings: {
+                    arrows: false,
+                    dots: true
+
                 }
             },
-            { breakpoint: 769, // 반응형:769px이하
-                settings: { slidesToShow:2
+            {
+                breakpoint: 1029, // 반응형: 1029px이하
+                settings: {
+                    slidesToShow: 3,
+                    arrows: false,
+                    dots: true
+
                 }
             },
-            { breakpoint: 639, // 반응형:639px이하
-                settings: { slidesToShow:1
+            {
+                breakpoint: 769, // 반응형:769px이하
+                settings: {
+                    slidesToShow: 2,
+                    arrows: false,
+                    dots: true
+
                 }
             },
-        ]
-        });
+            {
+                breakpoint: 639, // 반응형:639px이하
+                settings: {
+                    slidesToShow: 1,
+                    arrows: false,
+                    dots: true
+
+                }
+            },
+            ]
+    });
+
+
 
 });
