@@ -9,25 +9,25 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/main.css?ver=1">
 </head>
-<body class="main">
+<body>
     <header>
-        <h1 class="hide">리베금융</h1>
-        <div>
-            <button class="btn_alarm">알람</button>
+        <h1 class="font-size__0">리베금융</h1>
+        <div class="header-left">
+            <button class="btn-alarm new">알람</button>
         </div>
-        <div>
-            <button class="btn_search">검색</button>
-            <a href="menu.html" class="btn_menu">전체메뉴</a>
+        <div class="header-right">
+            <button class="btn-search">검색</button>
+            <a href="allmenu.html" class="btn-menu">전체메뉴</a>
         </div>
     </header>
-    <main class="page_index">
-        <article class="index_top">
+    <main>
+        <section class="main-top">
             <h2>계좌정보</h2>
-            <div class="top">
-                <a href="sub1.html" class="top1">계좌조회</a>
-                <a href="" class="top2">이체</a>
-                <a href="sub2.html" class="top3">추천상품</a>
-            </div>
+            <ul class="main-menu">
+                <li><a href="account.html" class="btn-acc">계좌조회</a></li>
+                <li><a href="" class="btn-trans">이체</a></li>
+                <li><a href="product.html" class="btn-prod">추천상품</a></li>
+            </ul>
             <div class="account">
                 <a href="">
                     <div><em>BIG통장<i>[731-945156-12546]</i></em></div>
@@ -36,41 +36,58 @@
                         <span>거래내역</span>
                     </div>
                 </a>
-                <button class="btn_etc"></button>
+                <button class="btn-setting"></button>
             </div>
-        </article>
-        <article class="index_list">
+        </section>
+        <section class="main-bottom">
             <h2>금융서비스</h2>
-            <nav>
+            <div class="tab">
                 <ul>
                     <li class="selected"><button>자산관리</button></li>
                     <li><button>금융상품</button></li>
                     <li><button>생활뱅킹</button></li>
                     <li><button>제휴/혜택</button></li>
                 </ul>
-            </nav>
-            <ul>
-                <li><a href="" class="list1">리베페이<br>첫 결제<br>50%적립</a></li>
-                <li><a href="" class="list2"><i>내자산연구소</i>내 자산<br>꿀팁!</a></li>
-                <li><a href="" class="list3">리베금융<br>통합조회</a></li>
-                <li><a href="" class="list4"><i>오픈뱅킹 이벤트</i> 처음이면<br>커피부터</a></li>
-                <li><a href="" class="list5"><i>카드이벤트</i> 나만 몰랐던<br>대단한 혜택!</a></li>
-                <li><a href="" class="list6"><i>주식투자</i>애플 vs.<br>삼성</a></li>
-            </ul>
-        </article>
-    </main>
-    <div class="index_popup">
-        <div>
-            <h2>계좌설정</h2>
-            <ul>
-                <li><button>계좌순서 변경</button></li>
-                <li><button>계좌관리</button></li>
-                <li><button>계좌번호복사</button></li>
-                <li><button>통장사본보기</button></li>
-                <li><button>ATM출금</button></li>
-            </ul>
-            <button class="btn_close">닫기</button>
+            </div>
+            <div class="tab-content">
+                <ul>
+                    <li><a href="">리베페이<br>첫 결제<br>50%적립</a></li>
+                    <li><a href=""><i>내자산연구소</i>내 자산<br>꿀팁!</a></li>
+                    <li><a href="">리베금융<br>통합조회</a></li>
+                    <li><a href=""><i>오픈뱅킹 이벤트</i> 처음이면<br>커피부터</a></li>
+                    <li><a href=""><i>카드이벤트</i> 나만 몰랐던<br>대단한 혜택!</a></li>
+                    <li><a href=""><i>주식투자</i>애플 vs.<br>삼성</a></li>
+                </ul>
+            </div>
+        </section>
+        <div class="popup-box">
+            <div>
+                <h2>계좌설정</h2>
+                <ul>
+                    <li><button>계좌순서 변경</button></li>
+                    <li><button>계좌관리</button></li>
+                    <li><button>계좌번호복사</button></li>
+                    <li><button>통장사본보기</button></li>
+                    <li><button>ATM출금</button></li>
+                </ul>
+                <button class="btn-close">닫기</button>
+            </div>
         </div>
-    </div>
+    </main>
+    <script>
+        const body = document.getElementsByTagName('body')[0];
+        const btn_setting = document.getElementsByClassName('btn-setting')[0];
+        const popup_box = document.getElementsByClassName('popup-box')[0];
+        const btn_close = popup_box.getElementsByClassName('btn-close')[0];
+
+        btn_setting.addEventListener('click',function(){
+            body.style.overflow = 'hidden'
+            popup_box.classList.add('active');
+        });
+        btn_close.addEventListener('click',function(){
+            body.style.overflow = 'auto'
+            popup_box.classList.remove('active');
+        });
+    </script>
 </body>
 </html>

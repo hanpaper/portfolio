@@ -9,20 +9,20 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/main.css?ver=1">
 </head>
-<body class="menu">
+<body>
     <header>
-        <h1 class="hide">메뉴</h1>
-        <div>
-            <a href="index.html" class="btn_home">홈</a>
+        <h2 class="font-size__0">전체메뉴</h2>
+        <div class="header-left">
+            <a href="index.html" class="btn-home">홈</a>
         </div>
-        <div>
-            <button class="btn_close" onclick="history.back(-1)">닫기</button>
+        <div class="header-right">
+            <button class="btn-close" onclick="history.back(-1)">닫기</button>
         </div>
     </header>
-    <main class="page_menu">
-        <article class="menu_top">
-            <span></span>
+    <main>
+        <section class="allmenu-top">
             <div class="user">
+                <span></span>
                 <u>홍길동님</u>
                 <em>최근접속일시 </em>
                 <i>2020.10.11 10:11</i>
@@ -32,26 +32,11 @@
                 <input type="text" placeholder="메뉴를 검색해 보세요">
                 <button>검색</button>
             </div>
-        </article>
-        <article class="menu_list">
-            <ul>
+        </section>
+        <section class="allmenu-btm">
+            <ul class="tab">
                 <li class="selected">
                     <button class="menu_custom">맟춤메뉴</button>
-                    <div>
-                        <div class="title">
-                            <h2>맞춤메뉴</h2>
-                            <button>메뉴명 수정</button>
-                        </div>
-                        <ul>
-                            <li><a href="" class="fav">디지털브랜치</a></li>
-                            <li><a href="" class="fav">상품바구니</a></li>
-                            <li><a href="" class="history">나의금융현황</a></li>
-                            <li><a href="" class="history">예금상품</a></li>
-                            <li><a href="" class="history">통합계좌조회</a></li>
-                            <li><a href="" class="history">계좌이체</a></li>
-                            <li><a href="" class="history">환전</a></li>
-                        </ul>
-                    </div>
                 </li>
                 <li><button>My 리베</button></li>
                 <li><button>조회</button></li>
@@ -65,8 +50,23 @@
                 <li><button>외환</button></li>
                 <li><button>신용카드</button></li>
             </ul>
-        </article>
-        <div class="footer_menu">
+            <div class="tab-content">
+                <div class="title">
+                    <h2>맞춤메뉴</h2>
+                    <button>메뉴명 수정</button>
+                </div>
+                <ul>
+                    <li><a href="" class="fav">디지털브랜치</a></li>
+                    <li><a href="" class="fav">상품바구니</a></li>
+                    <li><a href="" class="history">나의금융현황</a></li>
+                    <li><a href="" class="history">예금상품</a></li>
+                    <li><a href="" class="history">통합계좌조회</a></li>
+                    <li><a href="" class="history">계좌이체</a></li>
+                    <li><a href="" class="history">환전</a></li>
+                </ul>
+            </div>
+        </section>
+        <div class="allmenu-footer">
             <ul>
                 <li><a href="">인증센터</a></li>
                 <li><a href="">이벤트</a></li>
