@@ -9,66 +9,72 @@
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="js/script.js"></script>
 </head>
 <body class="pay">
     <header>
-        <h2>Pay</h2>
+        <div class="header">
+            <h2>Pay</h2>
+        </div>
     </header>
     <main>
         <section>
-            <ul class="pay_card">
-                <li class="card_main">
-                    <div class="card">
+            <ul class="pay__card scroll-row">
+                <li class="main">
+                    <div class="info">
                         <span><img src="images/@card1.png" alt=""></span>
                         <i>Rainy Day 카드</i>
                         <b>0원</b>
-                        <button class="bnt_favor"></button>
+                        <button class="bnt-favor"></button>
                     </div>
                     <div class="barcode">
                         <span><img src="images/@barcode1.png" alt=""></span>
                         <p> ****-****-**56-3563</p>
                         <em>바코드 유효시간 <i>09:49</i></em>
                     </div>
-                    <ul class="charge">
-                        <li>
-                            <a href="" class="btn_charge1">자동충전</a>
-                        </li>
-                        <li>
-                            <a href="" class="btn_charge2">자동충전</a>
-                        </li>
-                    </ul>
+                    <div class="charge">
+                        <div>
+                            <a href="" class="btn-charge1">자동충전</a>
+                        </div>
+                        <div>
+                            <a href="" class="btn-charge2">일반충전</a>
+                        </div>
+                    </div>
                 </li>
                 <li>
-                    <div class="card">
+                    <div class="info">
                         <span><img src="images/@card2.png" alt=""></span>
                         <i>2016 하트 카드</i>
                         <b>0원</b>
-                        <button class="bnt_favor"></button>
+                        <button class="bnt-favor"></button>
                     </div>
                     <div class="barcode">
                         <span><img src="images/@barcode2.png" alt=""></span>
                         <p> ****-****-**16-7258</p>
                         <em>바코드 유효시간 <i>09:42</i></em>
                     </div>
-                    <ul class="charge">
-                        <li>
-                            <a href="" class="btn_charge1">자동충전</a>
-                        </li>
-                        <li>
-                            <a href="" class="btn_charge2">자동충전</a>
-                        </li>
-                    </ul>
+                    <div class="charge">
+                        <div>
+                            <a href="" class="btn-charge1">자동충전</a>
+                        </div>
+                        <div>
+                            <a href="" class="btn-charge2">자동충전</a>
+                        </div>
+                    </div>
                 </li>
             </ul>
-            <ul class="pay_btn">
+            <ul class="btn-group">
                 <li><button>Coupon<i>1</i></button></li>
                 <li><button>e-Gift Item</button></li>
             </ul>
+        </section>
+        <section>
             <div class="banner">
                 <img src="images/@banner1.png" alt="스타벅스 레터 토트백과 별 50개 혜택까지">
             </div>
         </section>
-        <nav class="nav_fix">
+        <nav class="menubar-fix">
             <ul>
                 <li class="btn_home">
                     <a href="index.html" >Home</a>

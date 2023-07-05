@@ -1,48 +1,56 @@
+.inner { padding: 0 0.55rem; }
 .align_justify div:first-child {float:left;}
 .align_justify div:last-child {float: right;}
 
 body,
 body a { color: #1b1c1e;}
-
-/** scrollbar 없애기 **/
-.scroll_row::-webkit-scrollbar { display: none; } /* Chrome, Safari, Opera*/
-.scroll_row {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
-}
-.scroll_row li { display: inline-block; vertical-align: top;}
+main { position: relative; padding-bottom: 52.5px; box-sizing: border-box;}
 
 
 /** 가로 스크롤 **/
-.scroll_row { width: 100%; white-space: nowrap; overflow: scroll;}
+.scroll-row { width: 100%; white-space: nowrap; overflow: scroll;}
+    /** scrollbar 없애기 **/
+.scroll-row::-webkit-scrollbar { display: none; } /* Chrome, Safari, Opera*/
+.scroll-row {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+/** xeicon **/
+.xeicon { position: relative;}
+.xeicon::before { position: absolute; left: 0; top: 50%; width: 100%; transform: translateY(-50%); font-family: 'xeicon'; text-align: center;}
 
 
 /** nav **/
-.nav_fix { position: fixed; bottom: 0; left: 0; padding: 0 0.55rem; width: 100%; height: 52.5px; background: linear-gradient( to bottom , #fff 5% , #f4f4f4, #f4f4f4); box-sizing: border-box;}
-.nav_fix ul { display: flex; justify-content: space-between; align-items: center; height: 100%;}
-.nav_fix ul li { font-size: 0.425rem; color: #9c9c9c;}
-.nav_fix ul li a { display: inline-block; padding: 30px 0 0; width: 40px; text-align: center; color: #949693; background-repeat: no-repeat; background-position: center 0 ; background-size: 30px auto; box-sizing: border-box;}
-.nav_fix ul li a.selected  { color: #1fae73;}
-.nav_fix ul li.btn_home a { background-image: url(../images/ico_home.png);}
-.nav_fix ul li.btn_home a.selected { background-image: url(../images/ico_home_selected.png);}
-.nav_fix ul li.btn_pay a { background-image: url(../images/ico_pay.png);}
-.nav_fix ul li.btn_pay a.selected { background-image: url(../images/ico_pay_selected.png);}
-.nav_fix ul li.btn_order a { background-image: url(../images/ico_order.png);}
-.nav_fix ul li.btn_order a.selected { background-image: url(../images/ico_order_selected.png);}
-.nav_fix ul li.btn_gift a { background-image: url(../images/ico_gift.png);}
-.nav_fix ul li.btn_gift a.selected { background-image: url(../images/ico_gift_selected.png);}
-.nav_fix ul li.btn_other a { background-image: url(../images/ico_other.png);}
-.nav_fix ul li.btn_other a.selected { background-image: url(../images/ico_other_selected.png);}
+.menubar-fix { position: fixed; bottom: 0; left: 0; padding: 0 0.55rem; width: 100%; height: 52.5px; background: linear-gradient( to bottom , #fff 5% , #f4f4f4, #f4f4f4); box-sizing: border-box;}
+.menubar-fix ul { display: flex; justify-content: space-between; align-items: center; height: 100%;}
+.menubar-fix ul li { font-size: 0.425rem; color: #9c9c9c;}
+.menubar-fix ul li a { display: inline-block; padding: 30px 0 0; width: 40px; text-align: center; color: #949693; background-repeat: no-repeat; background-position: center 0 ; background-size: 30px auto; box-sizing: border-box;}
+.menubar-fix ul li a.selected  { color: #1fae73;}
+.menubar-fix ul li.btn_home a { background-image: url(../images/ico_home.png);}
+.menubar-fix ul li.btn_home a.selected { background-image: url(../images/ico_home_selected.png);}
+.menubar-fix ul li.btn_pay a { background-image: url(../images/ico_pay.png);}
+.menubar-fix ul li.btn_pay a.selected { background-image: url(../images/ico_pay_selected.png);}
+.menubar-fix ul li.btn_order a { background-image: url(../images/ico_order.png);}
+.menubar-fix ul li.btn_order a.selected { background-image: url(../images/ico_order_selected.png);}
+.menubar-fix ul li.btn_gift a { background-image: url(../images/ico_gift.png);}
+.menubar-fix ul li.btn_gift a.selected { background-image: url(../images/ico_gift_selected.png);}
+.menubar-fix ul li.btn_other a { background-image: url(../images/ico_other.png);}
+.menubar-fix ul li.btn_other a.selected { background-image: url(../images/ico_other_selected.png);}
 
 
 
-
-/** view_style **/
-.view_style { width: 100%; padding: 0 0.7rem; font-size: 0.65rem; line-height: 1rem; box-sizing: border-box;}
-.view_style li { width: 114px; font-size: 0.65rem; line-height: 1rem;}
-.view_style li~li{ margin: 0 0 0 0.7rem;}
-.view_style li em { display: block; margin: 0.35rem 0 0 ; width: 114px; white-space: normal; text-align: center;}
-.view_style li span { display: inline-block; width: 114px; height: 114px; border-radius: 114px; border-radius: 100%;}
-.view_style li span img { width: 100%;}
+/** style **/
+    /** view_style **/
+.view-style { width: 100%; padding: 0 0.7rem; font-size: 0.65rem; line-height: 1rem; white-space: nowrap; overflow: scroll; box-sizing: border-box;}
+.view-style li { display: inline-block; width: 114px; font-size: 0.65rem; vertical-align: top;}
+.view-style li~li{ margin: 0 0 0 0.7rem;}
+.view-style li em { display: block; margin: 0.35rem 0 0 ; width: 100%; white-space: normal; line-height: 1.5; text-align: center;}
+.view-style li span { display: inline-block; width: 100%; height: 100%; border-radius: 50%; overflow: hidden;}
+.view-style li span img { width: 100%;}
+    /** banner_style **/
+.banner-style__pola span { display: inline-block; padding: 1.5rem 1.25rem; width: 100%; height: 110px; background-color: white; box-sizing: border-box;}
+.banner-style__pola span b { display: block; margin: 0 0 0.9rem; font-size: 0.9rem;}
+.banner-style__pola span i { font-size: 0.65rem; color: #717171;}
 
 

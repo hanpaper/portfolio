@@ -13,45 +13,45 @@
 <body class="home">
     <main>
         <h1>스타벅스</h1>
-        <section class="home_top">
-            <div class="visual">
-                <img src="images/@main.png" alt="">
-                <h2>
-                    한지영님의 하루도<br>
-                    화사하게 빛날 거예요!
-                </h2>
-            </div>
+        <section class="home__visual">
+            <img src="images/@main.png" alt="">
+            <h2>
+                한지영님의 하루도<br>
+                화사하게 빛날 거예요!
+            </h2>
             <div class="level">
-                <div class="left_items">
+                <div class="level__left">
                     <i><strong>25</strong>until Gold Level</i>
                     <div><span></span></div>
                 </div>
-                <div class="right_items">
+                <div class="level__right">
                     <b>5</b><strong>25</strong>
                 </div>
             </div>
-            <div class="menu align_justify">
-                <div>
-                    <a href="" class="link_new">What's New</a>
-                    <a href="" class="link_coupon">Coupon</a>
-                </div>
-                <div>
-                    <button class="btn_alarm"></button>
-                </div>
-            </div> 
         </section>
-        <section class="home_card">
-            <a href="">
-                <img src="images/@ad_card1.png" 
-            alt="스타벅스 리워드 1000만 회원 달성 기념
-            제조 음료 한잔당 최대 별 5개 추가 적립
-            2.1(수) ~ 2.7(화)
-            오전 10시 ~ 매장 운영 종료 시간까지">
-            </a>
+        <div class="menu-sticky align_justify">
+            <div>
+                <a href="" class="link_new">What's New</a>
+                <a href="" class="link_coupon">Coupon</a>
+            </div>
+            <div>
+                <button class="btn_alarm"></button>
+            </div>
+        </div> 
+        <section>
+            <div class="home__banner">
+                <a href="">
+                    <img src="images/@ad_card1.png" 
+                    alt="스타벅스 리워드 1000만 회원 달성 기념
+                    제조 음료 한잔당 최대 별 5개 추가 적립
+                    2.1(수) ~ 2.7(화)
+                    오전 10시 ~ 매장 운영 종료 시간까지">
+                </a>
+            </div>
         </section>
-        <section class="home_recom">
-            <h3><b>한지영</b>님을 위한 추천 메뉴</h3>
-            <ul class="scroll_row view_style">
+        <section class="home__recom">
+            <h2><b>한지영</b>님을 위한 추천 메뉴</h2>
+            <ul class="scroll-row view-style">
                 <li>
                     <a href="">
                         <span><img src="images/menu1.png" alt=""></span>
@@ -76,18 +76,26 @@
                         <em>아이스 자몽 허니 블랙 티</em>
                     </a>
                 </li>
+                <li>
+                    <a href="">
+                        <span><img src="images/menu4.png" alt=""></span>
+                        <em>아이스 자몽 허니 블랙 티</em>
+                    </a>
+                </li>
             </ul>
         </section>
-        <section class="home_card">
-            <a href="">
-                <img src="images/@ad_card2.png"
-            alt="2023년, 스타벅스에서 행운 가득한 신년을 맞이하세요
-            2023.01.01 - 02.14">
-            </a>
+        <section>
+            <div class="home__banner">
+                <a href="">
+                    <img src="images/@ad_card2.png"
+                    alt="2023년, 스타벅스에서 행운 가득한 신년을 맞이하세요
+                    2023.01.01 - 02.14">
+                </a>
+            </div>
         </section>
-        <section class="home_new">
-            <h3>What's New</h3>
-            <ul class="scroll_row">
+        <section class="home__new">
+            <h2>What's New</h2>
+            <ul class="scroll-row">
                 <li>
                     <a href="">
                         <img src="images/@new_card1.png" alt="">
@@ -106,27 +114,27 @@
             <a href="">See all</a>
         </section>
         <section>
-            <article class="home_card">
+            <div class="home__banner">
                 <a href="">
                     <img src="images/@ad_card3.png" alt="스타벅스 레터 토트백과 별 50개 혜택까지">
                 </a>
-            </article>
-            <article class="home_card">
+            </div>
+            <div class="home__banner">
                 <a href="">
                     <img src="images/@ad_card4.png" alt="스타벅스 케이크 온라인 서비스 안내
                 온라인 스토어에서 케이크 배송 서비스를 이용해보세요">
                 </a>
-            </article>
-            <article class="home_card">
+            </div>
+            <div class="home__banner">
                 <a href="">
                     <img src="images/@ad_card5.png" alt="딜리버리 예약 배달 서비스
                 특별한 순간을 위해 미리 예약해 보세요">
                 </a>
-            </article>
+            </div>
         </section>
-        <section class="home_dessert">
-            <h3>하루가 달콤해지는 디저트</h3>
-            <ul class="scroll_row view_style">
+        <section class="home__dessert">
+            <h2>하루가 달콤해지는 디저트</h2>
+            <ul class="view-style scroll-row">
                 <li>
                     <a href="">
                         <span><img src="images/dessert1.png" alt=""></span>
@@ -154,13 +162,13 @@
             </ul>
         </section>
         <section>
-            <article class="home_card">
+            <div class="home__banner">
                 <a href="">
                     <img src="images/@ad_card6.png" alt="스마일클럽 멤버십 가입하고
                 스타벅스 제조음료 SIZE UP 받으세요">
                 </a>
-            </article>
-            <article class="home_card card_style1">
+            </div>
+            <div class="home__banner banner-style__pola">
                 <a href="">
                     <img src="images/@ad_card7.png" alt="">
                     <span>
@@ -168,19 +176,19 @@
                         <i>스타벅스에서 즐기는 대표음료</i>
                     </span>
                 </a>
-            </article>
-            <article class="home_card">
+            </div>
+            <div class="home__banner">
                 <a href="">
                     <img src="images/@ad_card8.png" alt="INTRODUCING STARBUCKS RESERVE">
                 </a>
-            </article>
+            </div>
         </section>
-        <a class="btn_delivers" href="">
+        <a class="btn-delivers" href="">
             <span></span>
             <b>Delivers</b>
         </a>
     </main>
-    <nav class="nav_fix">
+    <nav class="menubar-fix">
         <ul>
             <li class="btn_home">
                 <a href="index.html" class="selected">Home</a>
@@ -202,19 +210,13 @@
     <script>
         $(window).scroll(function(){
             if($(this).scrollTop() > 207.875){
-                $('.menu').css('position','fixed')
-                $('.menu').css('top','0')
-                $('.menu').css('z-index','9999')
-                $('.menu').css('box-shadow', '0 1.5px 5px rgba(0, 0, 0, 0.2)')
-                $('.btn_delivers').addClass('btn_delivers_close')
+                $('.menu-sticky').css('box-shadow', '0 1.5px 5px rgba(0, 0, 0, 0.2)')
+                $('.btn-delivers').addClass('btn-delivers-circle')
             }else{
-                $('.menu').css('position','static')
-                $('.menu').css('top','auto')
-                $('.menu').css('box-shadow', 'none')
-                $('.btn_delivers').removeClass('btn_delivers_close')
+                $('.menu-sticky').css('box-shadow', 'none')
+                $('.btn-delivers').removeClass('btn-delivers-circle')
                 }
-        })
-        
+        });
     </script>
 </body>
 </html>
