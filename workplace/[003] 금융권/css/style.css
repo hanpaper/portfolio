@@ -5,7 +5,7 @@
 .chb-style__box input { position: absolute; left: -5000px;}
 .chb-style__box label { position: relative; padding: 0 0 0 30px; }
 .chb-style__box label::before { position: absolute; content:""; left: 0; top:0; width: 20px; height: 20px; border: 1px solid #d9d9d9;}
-.chb-style__box input:checked + label::before { position: absolute; content:""; left: 0; top:0; width: 20px; height: 20px; border: 1px solid #34b4ed; background: url(images/ico_check2_off.png) no-repeat left 4px top 50%;}
+.chb-style__box input:checked + label::before { position: absolute; content:""; left: 0; top:0; width: 20px; height: 20px; border: 1px solid #34b4ed; background: url(../images/ico_check2_off.png) no-repeat left 4px top 50%;}
 
 /** 헤더 **/
 header { position: absolute; top: 0; z-index: 200; width: 100%; height: 113px;}
@@ -17,9 +17,9 @@ header nav ul li a { display: inline-block; width: 130px; line-height: 40px; fon
 header .menu { display: inline-block; position: absolute; top:48px; right: 20px; font-size: 15px;}
 header .menu button, 
 header .menu a { display: inline-block; margin-left: 17px; width: 40px; height: 40px;}
-header .menu .btn-mypage { background: url(images/ico_mypage.png) no-repeat center / auto 25px; }
-header .menu .btn-search {  background: url(images/ico_search.png) no-repeat center / auto 25px; }
-header .menu .btn-menu { padding: 0 0 0 38px; width: auto; color: #fff; font-size: 15px; line-height: 40px; background: url(images/ico_menu.png) no-repeat left 0 center / 25px auto;}
+header .menu .btn-mypage { background: url(../images/ico_mypage.png) no-repeat center / auto 25px; }
+header .menu .btn-search {  background: url(../images/ico_search.png) no-repeat center / auto 25px; }
+header .menu .btn-menu { padding: 0 0 0 38px; width: auto; color: #fff; font-size: 15px; line-height: 40px; background: url(../images/ico_menu.png) no-repeat left 0 center / 25px auto;}
 header .util { position: absolute; top: 5px; right: 20px;}
 header .util ul li { float: left;}
 header .util ul li button, 
@@ -34,15 +34,15 @@ header .util ul li a { display: block; margin-left: 15px; color: white; backgrou
 .search-box.active { display: block;}
 .search-box .inner { padding-top: 20px; padding-bottom: 20px; height: 70px; font-size: 0; box-sizing: border-box;}
 .search-box .inner div { display: inline-block; padding: 0 60px 0 110px; width: calc(100% - 30px); box-sizing: border-box;}
-.search-box input[type="text"] { padding: 0 0 0 38px; width: calc( 100% - 30px); height: 30px; font-size: 19px; color: #676767; background: url(images/ico_search3.png) no-repeat 0 center / 20px auto; box-sizing: border-box;}
-.search-box .btn-search { width: 30px; height: 30px; background: url(images/bu_arrow_right5.png) no-repeat center / auto 15px; font-size: 0;}
-.search-box .btn-close { padding-top: 15px; width: 30px; height: 30px; background: url(images/btn_close.png) no-repeat center top / 14px auto; font-size: 11px; color: #404040; box-sizing: border-box;}
+.search-box input[type="text"] { padding: 0 0 0 38px; width: calc( 100% - 30px); height: 30px; font-size: 19px; color: #676767; background: url(../images/ico_search3.png) no-repeat 0 center / 20px auto; box-sizing: border-box;}
+.search-box .btn-search { width: 30px; height: 30px; background: url(../images/bu_arrow_right5.png) no-repeat center / auto 15px; font-size: 0;}
+.search-box .btn-close { padding-top: 15px; width: 30px; height: 30px; background: url(../images/btn_close.png) no-repeat center top / 14px auto; font-size: 11px; color: #404040; box-sizing: border-box;}
     /** 전체메뉴 **/
 .megamenu { display: none; position: absolute; left: 0; top: -113px; width: 100%; overflow: auto; background-color: #3f0cac;}
 .megamenu.active { display: block; height: 100%; overflow: hidden;}
 .megamenu__header .inner { padding: 30px 110px; height: 113px; line-height: 50px; box-sizing: border-box;}
 .megamenu__header strong { display: inline-block; float: left; font-size: 28px; color: #fff;}
-.megamenu__header .btn-close { float: right; width: 50px; height: 50px; background: url(images/btn_close2.png) no-repeat center / 22px auto ; font-size: 0;}
+.megamenu__header .btn-close { float: right; width: 50px; height: 50px; background: url(../images/btn_close2.png) no-repeat center / 22px auto ; font-size: 0;}
 .megamenu__list { padding: 0 0 62px; height: 100%; background-color: #fff; overflow: scroll; box-sizing: border-box;}
 .megamenu__list .inner { padding: 0 110px; }
 .megamenu__list .depth1 > li { position: relative; padding: 38px 0 30px 190px; border-bottom: 1px solid #dadada;}
@@ -57,15 +57,15 @@ header .util ul li a { display: block; margin-left: 15px; color: white; backgrou
 /** 퀵메뉴 **/
 .quickmenu { position: fixed; z-index: 100; right: 55px; top: 50%; transform: translateY(-50%);}
 .quickmenu button { display: block; margin: 0 0 10px; width: 60px; height: 60px; border-radius: 30px; box-shadow: 0px 4px 10px rgba(4,0,0,0.27);}
-.quickmenu .btn-up { padding: 24px 0 0; font-size: 14px; border: 1px solid #e9ecf1; background: url(images/bu_arrow_up.png) no-repeat top 17px left 50% white; font-weight: 600; line-height: 1;}
-.quickmenu .btn-alarm { background: url(images/ico_alarm.png) no-repeat top 50% left 50% white;}
+.quickmenu .btn-up { padding: 24px 0 0; font-size: 14px; border: 1px solid #e9ecf1; background: url(../images/bu_arrow_up.png) no-repeat top 17px left 50% white; font-weight: 600; line-height: 1;}
+.quickmenu .btn-alarm { background: url(../images/ico_alarm.png) no-repeat top 50% left 50% white;}
 
 
 /** 푸터 **/
 footer { margin-bottom: 80px;}
     /** 스톡배너 **/
 footer .stock { height: 72px; text-align: center; background-color: #0a1f55;}
-footer .stock p { display: inline; padding-left: 30px; line-height: 72px; font-size: 19px; color: #1dddfd; background: url(images/ico_footer_clock.png) no-repeat left center;} 
+footer .stock p { display: inline; padding-left: 30px; line-height: 72px; font-size: 19px; color: #1dddfd; background: url(../images/ico_footer_clock.png) no-repeat left center;} 
 footer .tel { height: 67px; background-color: #f4f4f4; color: #081b50;}
     /** 문의번호 **/
 footer .tel ul { display: flex; flex-direction: row; justify-content: space-between; }
@@ -79,7 +79,7 @@ footer .tel ul li { line-height: 67px;}
 .fnb__sns { position: absolute; top:16px; right: 20px;}
 .fnb__sns li { float: left; }
 .fnb__sns li button { margin: 0 0 0 15px; width: 48px; height: 48px; background-color: transparent;}
-.fnb__copyright { padding-left: 220px; text-align: left;  background: url(images/bg_logo2.png) no-repeat left top; box-sizing: border-box;}
+.fnb__copyright { padding-left: 220px; text-align: left;  background: url(../images/bg_logo2.png) no-repeat left top; box-sizing: border-box;}
 .fnb__copyright li { display: inline-block; padding-right: 20px; }
 .fnb__copyright li,
 .fnb__copyright li a { font-size: 13px; line-height: 28px; color: #000;}

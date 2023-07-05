@@ -4,7 +4,7 @@ body { line-height: 1;}
 
 /** 공통 스타일 **/
 h2 { padding-bottom: 30px; font-size: 30px; color: #0c1a3c;}
-.btn-more { padding: 0 17px 0 0; line-height: 17px; color: #000; font-size: 17px; background: url(images/bu_arrow_right2.png) no-repeat right top 4px;}
+.btn-more { padding: 0 17px 0 0; line-height: 17px; color: #000; font-size: 17px; background: url(../images/bu_arrow_right2.png) no-repeat right top 4px;}
 
 
 /** 메인화면 **/
@@ -27,15 +27,15 @@ h2 { padding-bottom: 30px; font-size: 30px; color: #0c1a3c;}
 .main-menu .title h2 { font-size: 28px; color: white;}
 .main-menu .title b { display: inline-block; margin-bottom: 15px; font-size: 14px; color: #77eaff;}
 .main-menu .menu-box { position: relative; display: inline-block; padding: 0 55px; width: calc(100% - 170px); box-sizing: border-box;}
-.main-menu .menu-box ul li a { display: inline-block; padding-top: 75px; width: 152px; height: 120px; color: #fff; text-align: center; font-size: 15px; box-sizing: border-box; background: url(images/btn_start_menu.png) no-repeat center top 20px;}
-.main-menu .menu-box ul li:nth-child(1) a { background-image: url(images/menu_1.png) ;}
-.main-menu .menu-box ul li:nth-child(2) a { background-image: url(images/menu_2.png) ;}
-.main-menu .menu-box ul li:nth-child(3) a { background-image: url(images/menu_3.png) ;}
-.main-menu .menu-box ul li:nth-child(4) a { background-image: url(images/menu_4.png) ;}
-.main-menu .menu-box ul li:nth-child(5) a { background-image: url(images/menu_5.png) ;}
-.main-menu .menu-box ul li:nth-child(6) a { background-image: url(images/menu_6.png) ;}
-.main-menu .menu-box ul li:nth-child(7) a { background-image: url(images/menu_1.png) ;}
-.main-menu .menu-box ul li:nth-child(8) a { background-image: url(images/menu_2.png) ;}
+.main-menu .menu-box ul li a { display: inline-block; padding-top: 75px; width: 152px; height: 120px; color: #fff; text-align: center; font-size: 15px; box-sizing: border-box; background: url(../images/btn_start_menu.png) no-repeat center top 20px;}
+.main-menu .menu-box ul li:nth-child(1) a { background-image: url(../images/menu_1.png) ;}
+.main-menu .menu-box ul li:nth-child(2) a { background-image: url(../images/menu_2.png) ;}
+.main-menu .menu-box ul li:nth-child(3) a { background-image: url(../images/menu_3.png) ;}
+.main-menu .menu-box ul li:nth-child(4) a { background-image: url(../images/menu_4.png) ;}
+.main-menu .menu-box ul li:nth-child(5) a { background-image: url(../images/menu_5.png) ;}
+.main-menu .menu-box ul li:nth-child(6) a { background-image: url(../images/menu_6.png) ;}
+.main-menu .menu-box ul li:nth-child(7) a { background-image: url(../images/menu_1.png) ;}
+.main-menu .menu-box ul li:nth-child(8) a { background-image: url(../images/menu_2.png) ;}
 .main-menu .btn-next__type2,
 .main-menu .btn-prev__type2 { top: 0; margin: 0; height: 100%; width: 55px;}
 .main-menu .btn-next__type2 { right: 0;}
@@ -45,7 +45,7 @@ h2 { padding-bottom: 30px; font-size: 30px; color: #0c1a3c;}
     /** 공지사항 **/
 .notice { height: 88px; background-color: white;}
 .notice .inner { height: 100%; font-size: 0; line-height: 1;}
-.notice .inner h2 { display: inline-block; padding: 0; width: 170px; font-size: 18px; color: #0c1a3c; line-height: 88px; background: url(images/bu_arrow_right.png) no-repeat left 85px center;}
+.notice .inner h2 { display: inline-block; padding: 0; width: 170px; font-size: 18px; color: #0c1a3c; line-height: 88px; background: url(../images/bu_arrow_right.png) no-repeat left 85px center;}
 .notice .inner .wrap { position: relative; display: inline-block; width: calc(100% - 170px); height: 100%; vertical-align: top;}
 .notice .inner .wrap .slide { height: 100%; margin-right: 15px;}
 .notice a { display: inline-block; width: 100%; }
@@ -79,7 +79,7 @@ h2 { padding-bottom: 30px; font-size: 30px; color: #0c1a3c;}
 .sec-news article .btn-more { position: absolute; top: 15px; right: 7px; }
         /** 실시간 뉴스 **/
 .sec-news__today ul { display: flex; flex-direction: row; justify-content: space-between;}
-.sec-news__today ul li a { position: relative; display: inline-block; margin: 0 15px 0 0; padding: 90px 55px 0 30px; width: 288px; height: 330px; background-color: white; border: 1px solid #e4e8eb; box-sizing: border-box; background: url(images/ico_quote.png) no-repeat top 60px left 30px;}
+.sec-news__today ul li a { position: relative; display: inline-block; margin: 0 15px 0 0; padding: 90px 55px 0 30px; width: 288px; height: 330px; background-color: white; border: 1px solid #e4e8eb; box-sizing: border-box; background: url(../images/ico_quote.png) no-repeat top 60px left 30px;}
 .sec-news__today ul li a:hover { border: 1px solid #067fd9; box-shadow: 0 0 13px rgba(0, 0, 0, 0.11); box-sizing: border-box;}
 .sec-news__today ul li p { font-size: 23px; line-height: 33px; color: #000 ;}
 .sec-news__today ul li div { position: absolute; bottom: 40px; left: 30px; height: 40px; line-height: 40px;}
@@ -96,9 +96,9 @@ h2 { padding-bottom: 30px; font-size: 30px; color: #0c1a3c;}
 .banner-main {  background:linear-gradient(to right, #f5f7f8 0%, #f5f7f8 50%, #e4f2f9 50%, #e4f2f9 100%);}
 .banner-main .inner { display: flex; }
 .banner-main a { display: inline-block; padding: 35px; width: 100%; height: 120px; background-repeat: no-repeat; background-position: right 55px center; box-sizing: border-box;}
-.banner-main a:nth-child(1) { background-image: url(images/ico_ad_btm1.png);}
-.banner-main a:nth-child(2) { background-image: url(images/ico_ad_btm2.png);}
-.banner-main b { display: inline-block; margin: 0 0 16px ; padding: 0 16px 0 0; font-size: 19px; color: #081b50; font-weight: 600; background: url(images/bu_arrow_right2.png) no-repeat top 50% right 0;}
+.banner-main a:nth-child(1) { background-image: url(../images/ico_ad_btm1.png);}
+.banner-main a:nth-child(2) { background-image: url(../images/ico_ad_btm2.png);}
+.banner-main b { display: inline-block; margin: 0 0 16px ; padding: 0 16px 0 0; font-size: 19px; color: #081b50; font-weight: 600; background: url(../images/bu_arrow_right2.png) no-repeat top 50% right 0;}
 .banner-main p { font-size: 17px; font-weight: 400; color: #081b50;}
 
 
@@ -112,7 +112,7 @@ h2 { padding-bottom: 30px; font-size: 30px; color: #0c1a3c;}
 .sub-main > .title-box > .inner { position: relative; height: 172px;}
 .sub-main > .title-box nav { position: absolute; left: 20px; top: 23px;}
 .sub-main > .title-box nav ul li { display: inline-block;}
-.sub-main > .title-box nav ul li~li { padding: 0 0 0 27px; background: url(images/bu_arrow_right3.png) no-repeat left 13px center;}
+.sub-main > .title-box nav ul li~li { padding: 0 0 0 27px; background: url(../images/bu_arrow_right3.png) no-repeat left 13px center;}
 .sub-main > .title-box nav ul li a { font-size: 11px; line-height: 20px; color: #000; }
 .sub-main > .title-box h2 { padding-top: 70px; text-align: center;}
 .sub-main > .title-box .tab-menu { position: absolute; left: 50%; bottom: 0; transform: translateX(-50%); width: 100%; height: 47px; text-align: center;}
@@ -136,7 +136,7 @@ h2 { padding-bottom: 30px; font-size: 30px; color: #0c1a3c;}
 .content-box .search-bar > div { margin: 0 auto; max-width: 630px; }
 .content-box .search-bar input { float: left; width: calc(100% - 45px); height: 35px; background-color: transparent; color: #fff; font-size: 17px; text-indent: 10px;}
 .content-box .search-bar input::placeholder { color: #fff; font-size: 17px;}
-.content-box .search-bar .btn_search { float: right; width: 35px; height: 35px; background: url(images/ico_search.png) no-repeat center / 23px auto;}
+.content-box .search-bar .btn_search { float: right; width: 35px; height: 35px; background: url(../images/ico_search.png) no-repeat center / 23px auto;}
     /* 콘텐츠 탭 메뉴 */
 .content-box .tab-menu { margin: 50px 0 85px; font-size: 0;}
 .content-box .tab-menu li { display: inline-block; margin: 0 0 0 -1px;}
@@ -148,8 +148,8 @@ h2 { padding-bottom: 30px; font-size: 30px; color: #0c1a3c;}
 .result-list .wrap-top p { float: left;}
 .result-list .wrap-top span { float: right;}
 .result-list .wrap-top span button { padding-left: 20px; background-repeat: no-repeat; background-position: left top; line-height: 15px;}
-.result-list .wrap-top span button.btn-view-list { background-image: url(images/ico_list.png);}
-.result-list .wrap-top span button.btn-view-card { background-image: url(images/ico_card.png);}
+.result-list .wrap-top span button.btn-view-list { background-image: url(../images/ico_list.png);}
+.result-list .wrap-top span button.btn-view-card { background-image: url(../images/ico_card.png);}
 .result-list .wrap-top span button~button { position: relative; margin: 0 0 0 15px;}
 .result-list .wrap-top span button~button::before { position: absolute; content: ""; left: -11px; top:0; width: 1px; height: 15px; background-color: #e4e8eb;}
 .result-list table { border-top: 2px solid #000;}
@@ -166,7 +166,7 @@ h2 { padding-bottom: 30px; font-size: 30px; color: #0c1a3c;}
 .result-list table .title ul li { display: inline-block;}
 .result-list table .title ul li a { font-size: 13px; line-height: 17px; color: #0041b2 ; vertical-align: top;}
 .result-list table .date { width: 115px; font-size: 13px;}
-.result-list .btn-more { padding-right: 23px; margin: 47px 0 65px; font-size: 15px; background: url(images/bu_arrow_down.png) no-repeat right 0 top 50%;}
+.result-list .btn-more { padding-right: 23px; margin: 47px 0 65px; font-size: 15px; background: url(../images/bu_arrow_down.png) no-repeat right 0 top 50%;}
 
 
 /* login.html */
@@ -185,8 +185,8 @@ h2 { padding-bottom: 30px; font-size: 30px; color: #0c1a3c;}
     /** 유의사항 **/
 .info { padding: 10px 0 65px; width: 100%; background-color: #fff; box-sizing: border-box;}
 .info .title-bar { height: 55px; width: 100%; border-bottom: 1px solid #e4e8eb; box-sizing: border-box;}
-.info .title-bar b { padding: 0 0 0 28px; background: url(images/ico_info.png) no-repeat left 4px top 50%; line-height: 55px; text-align: left;}
-.info .title-bar .btn-control { float: right; width: 55px; height: 55px; background: url(images/bu_arrow_up.png) no-repeat center / 14px auto; transform: rotate(-180deg);}
+.info .title-bar b { padding: 0 0 0 28px; background: url(../images/ico_info.png) no-repeat left 4px top 50%; line-height: 55px; text-align: left;}
+.info .title-bar .btn-control { float: right; width: 55px; height: 55px; background: url(../images/bu_arrow_up.png) no-repeat center / 14px auto; transform: rotate(-180deg);}
 .info .title-bar .btn-control.on { transform: none; }
 .info ul { display: none; padding: 20px; text-align: left;}
 .info ul.active { display: block;}
@@ -201,13 +201,13 @@ h2 { padding-bottom: 30px; font-size: 30px; color: #0c1a3c;}
 .agree__form .check-term input { position: absolute; left: -5000px;}
 .agree__form .check-term label { padding-left: 34px;}
 .agree__form .check-term__main { padding: 20px; height: 68px; box-sizing: border-box;}
-.agree__form .check-term__main label { float: left; display: inline-block; background: url(images/ico_check_on.png) no-repeat left center; line-height: 25px; font-size: 15px; font-weight: 600;}
-.agree__form .check-term__main input:checked + label { background-image: url(images/ico_check_off.png) ;}
-.agree__form .check-term__main > a { float: right; display: inline-block; width: 25px; height: 25px; background: url(images/bu_arrow_right4.png) no-repeat center / 7px auto; font-size: 0;}
+.agree__form .check-term__main label { float: left; display: inline-block; background: url(../images/ico_check_on.png) no-repeat left center; line-height: 25px; font-size: 15px; font-weight: 600;}
+.agree__form .check-term__main input:checked + label { background-image: url(../images/ico_check_off.png) ;}
+.agree__form .check-term__main > a { float: right; display: inline-block; width: 25px; height: 25px; background: url(../images/bu_arrow_right4.png) no-repeat center / 7px auto; font-size: 0;}
 .agree__form .check-term__sub { position: relative; padding: 20px; border-top:1px solid #e4e8eb; text-align: left;}
 .agree__form .check-term__sub > div { text-align: left; line-height: 36px;}
-.agree__form .check-term__sub > div label { font-size: 13px; font-weight: 400; background: url(images/ico_check2_on.png) no-repeat left 5px top 50%;}
-.agree__form .check-term__sub > div input:checked + label { background: url(images/ico_check2_off.png) no-repeat left 5px top 50%;}
+.agree__form .check-term__sub > div label { font-size: 13px; font-weight: 400; background: url(../images/ico_check2_on.png) no-repeat left 5px top 50%;}
+.agree__form .check-term__sub > div input:checked + label { background: url(../images/ico_check2_off.png) no-repeat left 5px top 50%;}
 .agree__form .check-term__sub > div a { float: right; color: #02a2e8; font-size: 13px; font-weight: 600; text-decoration: underline;}
 .agree__form .check-term__sub > span~span { padding-left: 24px;}
 .agree__form .check-term__sub > span label { line-height: 20px;  font-size: 13px; font-weight: 400;}
@@ -222,7 +222,7 @@ h2 { padding-bottom: 30px; font-size: 30px; color: #0c1a3c;}
 .join__form tr~tr th,
 .join__form tr~tr td { padding: 40px 0 0;}
 .join__form td { font-size: 0;}
-.join__form select { appearance: none; -webkit-appearance: none; background: url(images/ico_arrow_down.png) no-repeat right 14px center / 20px auto #fff;}
+.join__form select { appearance: none; -webkit-appearance: none; background: url(../images/ico_arrow_down.png) no-repeat right 14px center / 20px auto #fff;}
 .join__form select::-ms-expand { display: none;}
 .join__form td select,
 .join__form td input { padding: 0 0 0 15px; height: 48px; width: 100%; border: 1px solid #e4e8eb; line-height: 48px; vertical-align: top; box-sizing: border-box; }
