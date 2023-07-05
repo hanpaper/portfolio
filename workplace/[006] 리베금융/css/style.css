@@ -1,17 +1,10 @@
 html { font-size: 20px; line-height: 1; }
-body { position: relative; font-size: 1rem; color: #000;}
-
-@media ( min-width: 420px){
-    html { font-size: 27px;}
+@media ( min-width: 480px){
+    html { font-size: 25px;}
 }
-body a { color: #000;}
-
+body { position: relative; font-size: 1rem; color: #000;}
 main { font-size: 0;}
 main section:first-child { padding-top: 50px;}
-.btn-style__round { padding: 0 0.4rem; min-width: 66px; height: 28.666px; border-radius: 28.666px; border: 1px solid #D0D3D6; font-size: 0.583rem; color: #333; box-sizing: border-box;}
-.box-style__colorbar { display: inline-block; position: relative; padding: 1.283rem 0.7rem 0.45rem; width: 100%; height: 100%; background-color: #fff; box-sizing: border-box;}
-.box-style__colorbar::before { position: absolute; content: ""; top: 0.766rem; left: 0.666rem; width: 28.666px; height: 2.666px; border-radius: 2.666px; background-color: #239DEE;}
-.font-size__0 { font-size: 0;}
 
 
 
@@ -30,8 +23,15 @@ header .btn-search { background-image: url(../images/btn_search.png); background
 header .btn-home { background-image: url(../images/ico_home.png); background-size: 0.783rem auto;}
 header .btn-menu { background-image: url(../images/btn_menu.png); background-size: 1rem auto;}
 header .btn-close { background-image: url(../images/ico_close2.png); background-size: 0.7rem auto;}
-    /** 버튼 보조글자 **/
+/** 버튼 보조글자 **/
 header button.btn-style__font,
 header a.btn-style__font { padding-top: 20px; margin-left: .4rem; width: auto; line-height: 8.333px; font-size: 8.333px; background-position: center 0; color: #333; box-sizing: border-box;}
 header .btn-menu.btn-style__font { background-size: 0.883rem auto;}
 header .btn-alarm.btn-style__font { background-size: 1rem auto;}
+
+
+/** style **/
+.btn-style__round { padding: 0 0.4rem; min-width: 66px; height: 28.666px; border-radius: 28.666px; border: 1px solid #D0D3D6; font-size: 0.583rem; color: #333; box-sizing: border-box;}
+.box-style__colorbar { display: inline-block; position: relative; padding: 1.283rem 0.7rem 0.45rem; width: 100%; height: 100%; background-color: #fff; box-sizing: border-box;}
+.box-style__colorbar::before { position: absolute; content: ""; top: 0.766rem; left: 0.666rem; width: 28.666px; height: 2.666px; border-radius: 2.666px; background-color: #239DEE;}
+.font-size__0 { font-size: 0;}

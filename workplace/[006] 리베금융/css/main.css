@@ -98,7 +98,7 @@
 /** product.html **/
 .sub-prod header { background-color: #fff;}
 .prod-visual { padding: 1.283rem 0.733rem 1.566rem; background-color: #287BB2; box-sizing: border-box; }
-.prod-visual h2 { margin: 1.283rem 0 0.716rem; font-size: 0.783rem; color: #fff; text-align: center; font-weight: 300;}
+.prod-visual h3 { margin: 1.283rem 0 0.716rem; font-size: 0.783rem; color: #fff; text-align: center; font-weight: 300;}
 .prod-visual div { display: flex; justify-content: space-between;}
 .prod-visual article { width: calc(50% - 0.333rem);}
 .prod-visual article a em { line-height: 0.933rem; font-size: 0.633rem; color: #9EA8A7;}
