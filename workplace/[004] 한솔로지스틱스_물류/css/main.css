@@ -11,9 +11,9 @@
 .main-visual { position: relative; height: 100vh; padding: 0;}
 .main-visual .slide__img { width: 100%; height: 100vh; background-repeat: no-repeat; background-position: center; background-size: cover;}
 .main-visual .slide__img::before { position: absolute; content: ""; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,.6);}
-.main-visual .slide__img:nth-child(1) { background-image: url(images/bg_main_visual_1.jpg);}
-.main-visual .slide__img:nth-child(2) { background-image: url(images/bg_main_visual_2.jpg);}
-.main-visual .slide__img:nth-child(3) { background-image: url(images/bg_main_visual_3.jpg);}
+.main-visual .slide__img:nth-child(1) { background-image: url(../images/bg_main_visual_1.jpg);}
+.main-visual .slide__img:nth-child(2) { background-image: url(../images/bg_main_visual_2.jpg);}
+.main-visual .slide__img:nth-child(3) { background-image: url(../images/bg_main_visual_3.jpg);}
 .main-visual .inner { position: absolute; height: 100%; width: 100%; top: 0; left: 50%; transform: translateX(-50%);}
 .main-visual .inner h2 { position: absolute; top: 50%; transform: translateY(-50%); color: #fff; line-height: 1.3; font-size: 50px;}
 .main-visual .inner h2 b { display: block; padding-bottom: 73px; font-family: poppins;}
@@ -38,15 +38,15 @@
 
 
 /** 메인화면 - business **/
-.main_business { padding: 0 0 80px; background: url(images/bg_main_business.jpg) no-repeat left 0 top 0 / cover; color: white;}
+.main_business { padding: 0 0 80px; background: url(../images/bg_main_business.jpg) no-repeat left 0 top 0 / cover; color: white;}
 .main_business .inner { padding-top: 175px;}
 .main_business ul { margin: 0 -12px; display: flex; flex-direction: row;}
 .main_business ul li { padding: 0 12px 45px 12px; box-sizing: border-box;}
-.main_business ul li:nth-child(1) a div{ background: url(images/main_business_img1.jpg) no-repeat center / cover;}
-.main_business ul li:nth-child(2) a div{ background: url(images/main_business_img2.jpg) no-repeat center / cover;}
-.main_business ul li:nth-child(3) a div{ background: url(images/main_business_img3.jpg) no-repeat center / cover;}
-.main_business ul li:nth-child(4) a div{ background: url(images/main_business_img4.jpg) no-repeat center / cover;}
-.main_business ul li:nth-child(5) a div{ background: url(images/main_business_img5.jpg) no-repeat center / cover;}
+.main_business ul li:nth-child(1) a div{ background: url(../images/main_business_img1.jpg) no-repeat center / cover;}
+.main_business ul li:nth-child(2) a div{ background: url(../images/main_business_img2.jpg) no-repeat center / cover;}
+.main_business ul li:nth-child(3) a div{ background: url(../images/main_business_img3.jpg) no-repeat center / cover;}
+.main_business ul li:nth-child(4) a div{ background: url(../images/main_business_img4.jpg) no-repeat center / cover;}
+.main_business ul li:nth-child(5) a div{ background: url(../images/main_business_img5.jpg) no-repeat center / cover;}
 .main_business ul li a div { position: relative; width: 100%; height: 430px; line-height: 430px; text-align: center; overflow: hidden; background-repeat: no-repeat; background-position: center; background-size: auto; font-size: 0;}
 .main_business ul li a:hover div::after { position: absolute; content: "MORE DETAILS"; left: 0; top: 50%; transform: translateY(-50%); padding-top: 25px; width: 100%; text-align: center; color: #fff; font-size: 14px; font-weight: 600; box-sizing: border-box;}
 .main_business ul li a:hover div::before { position: absolute; z-index: 1; content: "\e97a"; left: 0; top: 50%; transform: translateY(-50%); padding-bottom: 25px; width: 100%; font-size: 23px; color: white; font-family: 'xeicon';}
@@ -59,7 +59,7 @@
 
 
 /** 메인화면 - esg **/
-.main_esg { position: relative; background: url(images/bg_main_esg.jpg) no-repeat left 0 top 0 / cover; box-sizing: border-box;}
+.main_esg { position: relative; background: url(../images/bg_main_esg.jpg) no-repeat left 0 top 0 / cover; box-sizing: border-box;}
 .main_esg .inner { padding-top: 217px; text-align: center;}
 .main_esg ul { display: flex; flex-direction: row; justify-content: center; padding: 50px 0; min-height: 330px; background-color: rgb(0, 0, 0, 0.3); box-sizing: border-box; vertical-align: middle;}
 .main_esg ul li { display: flex; flex-direction: column; justify-content: center; width: 100%; height: 230px; font-size: 22px; color: #fff; font-weight: 600; box-sizing: border-box; animation: padding2 .3s .1s both;}
@@ -84,7 +84,7 @@
 
 
 /** 메인화면 - ir **/
-.main_ir { width: 100%; background: url(images/bg_main_ir.jpg) no-repeat left 0 top 0 / cover; overflow: hidden;}
+.main_ir { width: 100%; background: url(../images/bg_main_ir.jpg) no-repeat left 0 top 0 / cover; overflow: hidden;}
 .main_ir .inner { position: relative; padding-top: 165px;}
     /** 상단 wrap **/
 .main_ir .wrap-top { display: flex; padding-bottom: 20px; justify-content: space-between;}
@@ -96,8 +96,8 @@
 .main_ir .container-article article a div { display: inline-block; position: relative; padding: 60px 45px; width: 100%; height: 100%; box-sizing: border-box;}
 .main_ir .container-article article a div b { font-size: 24px; color: #fff;}
 .main_ir .container-article article a div p { padding: 20px 0 0 0; font-size: 15px; color: rgba(255, 255, 255, 0.8); line-height: 24px;}
-.main_ir .container-article article:nth-child(1) a div { background: url(images/bg_main_ir_banner1.jpg) no-repeat left 0 bottom 20% / cover ;}
-.main_ir .container-article article:nth-child(2) a div { background: url(images/bg_main_ir_banner2.jpg) no-repeat left 0 bottom 20% / cover ;}
+.main_ir .container-article article:nth-child(1) a div { background: url(../images/bg_main_ir_banner1.jpg) no-repeat left 0 bottom 20% / cover ;}
+.main_ir .container-article article:nth-child(2) a div { background: url(../images/bg_main_ir_banner2.jpg) no-repeat left 0 bottom 20% / cover ;}
         /* icon_normal */
 .main_ir .container-article article a div::before { transition: all .2s 0s; position: absolute; content: "\e97a"; bottom: 30px; right: 30px; width: 50px; height: 50px; font-size: 23px; color: #fff; font-family: 'xeicon'; line-height: 50px; text-align: center; background-color: #007dc6;}
 .main_ir .container-article article a:hover div::before  { opacity: 0;}
@@ -124,7 +124,7 @@
 .main_ir .wrap-bottom .slide li a:hover { background-color: rgba(255, 255, 255, 0.1); border-color: rgba(255, 255, 255, 0.1);}
 .main_ir .wrap-bottom .slide li a b { display: block; font-size: 18px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
 .main_ir .wrap-bottom .slide li a p { padding: 19px 0 0; font-size: 16px; opacity: 0.5; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
-.main_ir .wrap-bottom .slide li a i { position: absolute; left: 30px; top: 140px; font-size: 14px; opacity: 0.5; background: url(images/ico_clock.png) no-repeat left 0 top 50%;}
+.main_ir .wrap-bottom .slide li a i { position: absolute; left: 30px; top: 140px; font-size: 14px; opacity: 0.5; background: url(../images/ico_clock.png) no-repeat left 0 top 50%;}
 .slide-slick__card .slick-arrow { transition: all .25s 0s; position: absolute; top:50%; transform: translateY(-50%); width: 60px; height: 60px; border-radius: 30px; background-color: #2a3036; font-size: 0; color: #fff;}
 .slide-slick__card .slick-arrow:hover { background-color: #007dc6;}
 .slide-slick__card .slick-next { right: -90px;}
@@ -138,7 +138,7 @@
 
 
 /** 메인화면 - pr **/
-.main_pr { width: 100%; background: url(images/bg_main_pr.jpg) no-repeat left 0 top 0 / cover; overflow: hidden;}
+.main_pr { width: 100%; background: url(../images/bg_main_pr.jpg) no-repeat left 0 top 0 / cover; overflow: hidden;}
 .main_pr .inner { padding-top: 147px;}
 .main_pr .box-title { text-align: center;}
 .main_pr .container-article { display: flex; margin: 0 -30px;}
@@ -185,8 +185,8 @@
 .main_inqu article .wrap::before { position: absolute; left: 20px; top: 0; font-family: 'xeicon'; font-size: 50px; color: #fff;}
 .main_inqu .article_service .wrap::before { content: "\ea64"; }
 .main_inqu .article_recruit .wrap::before { content: "\e9be"; }
-.main_inqu .article_service { background: url(images/bg_main_banner1.jpg) no-repeat left 0 top 50% / cover; }
-.main_inqu .article_recruit { background: url(images/bg_main_banner2.jpg) no-repeat left 0 top 50% / cover; }
+.main_inqu .article_service { background: url(../images/bg_main_banner1.jpg) no-repeat left 0 top 50% / cover; }
+.main_inqu .article_recruit { background: url(../images/bg_main_banner2.jpg) no-repeat left 0 top 50% / cover; }
 
 .main_inqu article h5 { font-size: 26px;}
 .main_inqu article p { padding: 27px 0 0; font-size: 18px; line-height: 27px;}
@@ -256,18 +256,18 @@
 /** 투자정보 | Contact IR **/
 .import::before { content: "*"; color: #007dc6;}
     /** 상단 컨텐츠 **/
-.ir__contact .wrap-top { position: relative; width: 100%; padding-top: 120px; background: url(images/contact_bg2.png) no-repeat right 0px top 0px / 500px auto #fafafa; box-sizing: border-box;}
-.ir__contact .wrap-top:before { position: absolute; z-index: -1; content: ""; left: 0; top: 0; width: 100%; height: 100%; background: url(images/contact_bg1.png) no-repeat left 0px top 0px / auto 500px;}
+.ir__contact .wrap-top { position: relative; width: 100%; padding-top: 120px; background: url(../images/contact_bg2.png) no-repeat right 0px top 0px / 500px auto #fafafa; box-sizing: border-box;}
+.ir__contact .wrap-top:before { position: absolute; z-index: -1; content: ""; left: 0; top: 0; width: 100%; height: 100%; background: url(../images/contact_bg1.png) no-repeat left 0px top 0px / auto 500px;}
 .ir__contact .layout-style__flex > div { width: 100%;}
 .ir__contact .wrap-top b { font-size: 18px; line-height: 1.3;}
 .ir__contact .wrap-top p { padding: 19px 0 56px; font-size: 17px; color: #58595b; line-height: 1.3;}
 .ir__contact .card { display: flex; align-items: center; padding: 40px 0; min-height: 222px; width: 100%; border: 1px solid #eeeeee; box-sizing: border-box; vertical-align: middle; background-color: #fff;}
-.ir__contact .card b { position: relative; display: inline-block; padding: 0 40px 0 205px; width: 390px; line-height: 33px; background: url(images/contact_icon2.png) no-repeat 95px center / 45px auto; font-size: 24px; word-break: keep-all; box-sizing: border-box; }
+.ir__contact .card b { position: relative; display: inline-block; padding: 0 40px 0 205px; width: 390px; line-height: 33px; background: url(../images/contact_icon2.png) no-repeat 95px center / 45px auto; font-size: 24px; word-break: keep-all; box-sizing: border-box; }
 .ir__contact .card > div { padding-left: 30px; border-left: 1px solid #eeeeee;}
 .ir__contact .card > div strong { display: inline-block; margin: 0 0 20px 0; font-size: 20px; color: #555;}
 .ir__contact .card > div a { padding: 0 0 0 32px; font-size: 16px; color: #888; line-height: 28px;}
-.ir__contact .card > div a.tel { background: url(images/ico_tel.png) no-repeat left center / 17px auto;}
-.ir__contact .card > div a.mail { background: url(images/ico_mail.png) no-repeat left top 3px / 17px auto;}
+.ir__contact .card > div a.tel { background: url(../images/ico_tel.png) no-repeat left center / 17px auto;}
+.ir__contact .card > div a.mail { background: url(../images/ico_mail.png) no-repeat left top 3px / 17px auto;}
 .ir__contact .card > div a:hover { text-decoration: underline;}
     /** 하단 컨텐츠 (폼) **/
 .ir__contact .wrap-bottom { margin: 115px auto 0; padding: 0 20px; max-width: 1380px; box-sizing: border-box;}
@@ -286,7 +286,7 @@
 .ir__contact form .table-row.tel .table-td > div > div~div { position: relative;}
 .ir__contact form .table-row.tel .table-td > div > div~div::before { position: absolute; content: "-"; left: -10px; top: 50%; transform: translateY(-50%); width: 20px; text-align: center; font-size: 16px; color: #333; line-height: 50px;}
 .ir__contact form .table-row.mail .table-td > div { display: inline-flex;}
-.ir__contact form .table-row.mail .table-td > div select { text-indent: 17px; appearance: none; -webkit-appearance: none; background: url(images/ico_select_arrow2.png) no-repeat right 20px center / auto ;}
+.ir__contact form .table-row.mail .table-td > div select { text-indent: 17px; appearance: none; -webkit-appearance: none; background: url(../images/ico_select_arrow2.png) no-repeat right 20px center / auto ;}
 .ir__contact form .table-row.mail .table-td > div select::-ms-expand { display: none;}
 .ir__contact form .table-row.mail .table-td > div:first-child > div~div { position: relative;}
 .ir__contact form .table-row.mail .table-td > div:first-child > div~div::before { position: absolute; content: "@"; left: -10px; top: 50%; transform: translateY(-50%); width: 20px; text-align: center; font-size: 16px; color: #333; line-height: 50px;}
@@ -303,14 +303,14 @@
 .ir__contact .term-box .checkbox { display: inline-block; padding: 0 0 0 40px; line-height: 70px;}
 .ir__contact .term-box .checkbox input { position: absolute; left: -5000px;}
 .ir__contact .term-box .checkbox label { position: relative; padding: 0 0 0 25px;}
-.ir__contact .term-box .checkbox label::before { position: absolute; content: ""; left: 0; top:5px; width: 16px; height: 16px; background: url(images/ico_unselect.png) no-repeat center / auto;}
-.ir__contact .term-box .checkbox input:checked + label::before { background-image: url(images/ico_select.png);}
-.ir__contact .wrap-bottom button { transition: all .3s 0s; margin: 80px auto 0; display: block; padding: 0 60px 0 0; width: 200px; height: 65px; background-color: #007dc6; color: #fff; font-size: 17px; font-weight: 600; background: url(images/ico_pencil.png) no-repeat right 30px center / auto #007dc6; box-sizing: border-box; }
-.ir__contact .wrap-bottom button:hover { border:1px solid #007dc6; background-image: url(images/ico_pencil_hover.png); background-color: #fff; color: #007dc6;}
+.ir__contact .term-box .checkbox label::before { position: absolute; content: ""; left: 0; top:5px; width: 16px; height: 16px; background: url(../images/ico_unselect.png) no-repeat center / auto;}
+.ir__contact .term-box .checkbox input:checked + label::before { background-image: url(../images/ico_select.png);}
+.ir__contact .wrap-bottom button { transition: all .3s 0s; margin: 80px auto 0; display: block; padding: 0 60px 0 0; width: 200px; height: 65px; background-color: #007dc6; color: #fff; font-size: 17px; font-weight: 600; background: url(../images/ico_pencil.png) no-repeat right 30px center / auto #007dc6; box-sizing: border-box; }
+.ir__contact .wrap-bottom button:hover { border:1px solid #007dc6; background-image: url(../images/ico_pencil_hover.png); background-color: #fff; color: #007dc6;}
 
 
 /** 홍보센터 | 소셜미디어 **/
-.pr__social > span { display: inline-block; margin: 55px 0 35px; padding: 0 0 0 24px; line-height: 14px; font-size: 15px; background: url(images/ico_page.png) no-repeat 0 center / auto 14px;}
+.pr__social > span { display: inline-block; margin: 55px 0 35px; padding: 0 0 0 24px; line-height: 14px; font-size: 15px; background: url(../images/ico_page.png) no-repeat 0 center / auto 14px;}
 .pr__social > span i { color: #007dc6;}
 .pr__social .list-social { display: flex; flex-direction: row; justify-content: space-between; flex-wrap: wrap; margin: 0 -26px;}
 .pr__social .list-social li { padding: 0 25px; width: 33.333%; box-sizing: border-box;}
@@ -321,7 +321,7 @@
 .pr__social .list-social li a:hover b { color: #007dc6;}
 .pr__social .list-social li a p { transition: all .3s 0s; margin: 0 0 30px; padding: 21px 0 27px; border-bottom: 1px solid #e5e5e5; font-size: 16px; color: #777; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
 .pr__social .list-social li a:hover p { border-bottom-color: #007dc6;}
-.pr__social .list-social li a i { padding: 0 0 0 24px; background: url(images/ico_clock2.png) no-repeat 0 center / auto; font-size: 14px; color: #858585; font-family: poppins;}
-.pr__social .list-social li a strong { float: right; padding: 0 26px 0 0; background: url(images/ico_plus4.png) no-repeat right 3px center / auto; font-size: 16px; color: #222; font-weight: 600;}
+.pr__social .list-social li a i { padding: 0 0 0 24px; background: url(../images/ico_clock2.png) no-repeat 0 center / auto; font-size: 14px; color: #858585; font-family: poppins;}
+.pr__social .list-social li a strong { float: right; padding: 0 26px 0 0; background: url(../images/ico_plus4.png) no-repeat right 3px center / auto; font-size: 16px; color: #222; font-weight: 600;}
 
 
